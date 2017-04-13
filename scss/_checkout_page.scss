@@ -1,0 +1,24 @@
+.checkout {
+  background-color: #f8f9fc;
+}
+
+.checkout-left {
+  @include col();
+  @include span(20, $gutter_pc, $gutter_px, $padding, $max_columns);
+  background-color: #ffffff;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+
+
+  height: 100px;
+
+}
+
+.checkout-right {
+  @include col();
+  @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include beta();
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+
+
+  height: 100px;
+}

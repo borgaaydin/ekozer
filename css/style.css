@@ -4533,7 +4533,7 @@ html {
   font-family: "Acumin Pro", sans-serif; }
 
 html, body {
-  background-color: #ffffff; }
+  background-color: #f8f9fc; }
 
 img {
   display: block;
@@ -4552,6 +4552,7 @@ a:hover {
   background-color: #f8f9fc; }
 
 .product_container {
+  background-color: #ffffff;
   padding: 45px 0 24px 0; }
   .product_container h3 {
     margin: 10px 0 27px 0; }
@@ -4603,6 +4604,36 @@ a:hover {
   .featured_categories_container .featured_category:last-child {
     margin-right: 0;
     border-left-width: 0; }
+
+.checkout {
+  background-color: #f8f9fc; }
+
+.checkout-left {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 780px;
+  border-right-width: 0;
+  padding: 0;
+  margin-right: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+  height: 100px; }
+
+.checkout-right {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 380px;
+  border-right-width: 0;
+  padding: 0;
+  margin-right: 20px;
+  margin-right: 0;
+  border-left-width: 0;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+  height: 100px; }
 
 .main_slider {
   max-width: 1180px;

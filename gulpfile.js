@@ -33,19 +33,19 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('copyHtml', function() {
-    // copy any html files in source/ to public/
-    gulp.src('./*.html').pipe(gulp.dest('public'));
-    gulp.src('./js/*.js').pipe(gulp.dest('public/js'));
+    // copy any html files in source/ to build/
+    gulp.src('./*.html').pipe(gulp.dest('build'));
+    gulp.src('./js/*.js').pipe(gulp.dest('build/js'));
 });
 
 gulp.task('copyfonts', function() {
-    // copy any html files in source/ to public/
-    gulp.src('./fonts/*.*').pipe(gulp.dest('public/fonts'));
+    // copy any html files in source/ to build/
+    gulp.src('./fonts/*.*').pipe(gulp.dest('build/fonts'));
 });
 
 gulp.task('copyImg', function() {
-    // copy any html files in source/ to public/
-    gulp.src('./img/**/*.*').pipe(gulp.dest('public/img'));
+    // copy any html files in source/ to build/
+    gulp.src('./img/**/*.*').pipe(gulp.dest('build/img'));
 });
 
 gulp.task('default', function () {
