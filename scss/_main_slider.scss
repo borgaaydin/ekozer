@@ -1,0 +1,105 @@
+.main_slider {
+  max-width: 1180px;
+  margin: 0 auto;
+
+
+  .slick-slide {
+    position: relative;
+    background-color: #f8f9fc;
+    margin: 0 5px 30px 5px;
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-left-color:$yellow; // default color
+    @include css_transition(all .5s);
+
+    opacity: 0.63;
+
+    @include box-shadow-args(inset 4px 0 0 0 rgba(0, 0, 0, 0.08));
+
+    img {
+      max-height: 320px;
+      outline: none;
+      opacity: 0.56;
+    }
+  }
+
+  .slick-active {
+    background-color: #40504c;
+    opacity: 1;
+  }
+
+  .slick-dots {
+    bottom: -14px;
+    li {
+      height: 4px;
+      width: 42px;
+      background-color: rgba(67, 75, 84, 0.27);
+
+      &.slick-active {
+        background-color: rgba(67, 75, 84, 1);
+      }
+
+      button:before {
+        display: none;
+      }
+    }
+  }
+
+  .slick-prev, .slick-next {
+    z-index: 20;
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+    top: calc(50% - 16px);
+  }
+
+  .slick-prev {
+    left: -58px;
+  }
+
+  .slick-next {
+    right: -58px;
+  }
+}
+
+.slider_row {
+  max-height: 320px;
+  @include clearfix();
+
+  padding: 20px 0 60px;
+}
+
+.slick-initialized .slick-slide {
+  outline: 0;
+}
+
+.slick-list {
+  overflow: visible;
+}
+
+.slide-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.slide-content {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+
+  h2 {
+    color: #ffffff;
+    margin: 23px 39px 11px 34px;
+  }
+
+  .slide-banner {
+
+  }
+}

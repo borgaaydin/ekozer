@@ -1,0 +1,51 @@
+// Core variables and mixins
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+
+// Utility classes
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+//Font Awesome
+@import "../bower_components/components-font-awesome/scss/variables";
+@import "../bower_components/components-font-awesome/scss/mixins";
+@import "../bower_components/components-font-awesome/scss/path";
+@import "../bower_components/components-font-awesome/scss/core";
+@import "../bower_components/components-font-awesome/scss/larger";
+@import "../bower_components/components-font-awesome/scss/fixed-width";
+@import "../bower_components/components-font-awesome/scss/list";
+@import "../bower_components/components-font-awesome/scss/bordered-pulled";
+@import "../bower_components/components-font-awesome/scss/animated";
+@import "../bower_components/components-font-awesome/scss/rotated-flipped";
+@import "../bower_components/components-font-awesome/scss/stacked";
+@import "../bower_components/components-font-awesome/scss/icons";
+@import "../bower_components/components-font-awesome/scss/screen-reader";
+
+
+@import "image";
+@import "mixin";
+@import "fonts";
+
+@import "gridpak";
+
+//SLIDER
+@import "slick";
+@import "slick-theme";
+
+@import "main";
+@import "main_page";
+
+@import "main_slider";
+
+@import "header";
+@import "footer";
+
+@import "product";
