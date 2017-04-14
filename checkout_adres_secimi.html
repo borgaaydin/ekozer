@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Ekozer Checkout</title>
+    <title>Ekozer Checkout - Adres Seçimi</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -47,6 +47,29 @@
 <div class="container-fluid checkout">
     <div class="container">
         <div class="checkout-left">
+            <div class="checkout-navigation">
+                <div class="checkout-navigation-item checkout-navigation-active">
+                    <div class="checkout-navigation-item-number">
+                        01
+                    </div>
+                    <div class="checkout-navigation-item-title">
+                        FATURA VE<br/>
+                        TESLİMAT BİLGİLERİ
+                    </div>
+                </div>
+                <div class="checkout-navigation-item">
+                    <div class="checkout-navigation-item-number">
+                        02
+                    </div>
+                    <div class="checkout-navigation-item-title">
+                        ÖDEME YÖNTEMİ
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-adress-form-header">
+                <h4>Fatura Adresiniz</h4>
+                <div class="description">Lütfen fatura adresinizi seçiniz.</div>
+            </div>
 
         </div>
 
@@ -162,6 +185,12 @@
         </div>
     </div>
 </div>
-
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script>
+$(document).ready(function() {
+$('select').niceSelect();
+});
+</script>
 </body>
 </html>

@@ -41,7 +41,7 @@ template {
 a {
   background-color: transparent; }
 
-a:active,
+a:active, a.nice-select.open,
 a:hover {
   outline: 0; }
 
@@ -4084,7 +4084,7 @@ th {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
+.sr-only-focusable:active, .sr-only-focusable.nice-select.open, .sr-only-focusable:focus {
   position: static;
   width: auto;
   height: auto;
@@ -4324,6 +4324,126 @@ link {
     margin-left: 0;
     border-left-width: 0;
     width: 100%; } }
+
+.nice-select {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  border-radius: 4px;
+  border: solid 1px #777777;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  width: auto; }
+  .nice-select:hover {
+    border-color: #6a6a6a; }
+  .nice-select:active, .nice-select.open, .nice-select:focus {
+    border-color: #555555; }
+  .nice-select:after {
+    border-bottom: 2px solid #555555;
+    border-right: 2px solid #555555;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
+    transition: all 0.15s ease-in-out;
+    width: 5px; }
+  .nice-select.open:after {
+    transform: rotate(-135deg); }
+  .nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1) translateY(0); }
+  .nice-select.disabled {
+    border-color: #7c7c7c;
+    color: #555555;
+    pointer-events: none; }
+    .nice-select.disabled:after {
+      border-color: #888888; }
+  .nice-select.wide {
+    width: 100%; }
+    .nice-select.wide .list {
+      left: 0 !important;
+      right: 0 !important; }
+  .nice-select.right {
+    float: right; }
+    .nice-select.right .list {
+      left: auto;
+      right: 0; }
+  .nice-select.small {
+    font-size: 12px;
+    height: 30px;
+    line-height: 28px; }
+    .nice-select.small:after {
+      height: 4px;
+      width: 4px; }
+    .nice-select.small .option {
+      line-height: 28px;
+      min-height: 28px; }
+  .nice-select .list {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(51, 51, 51, 0.11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform-origin: 50% 0;
+    transform: scale(0.75) translateY(-21px);
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9; }
+    .nice-select .list:hover .option:not(:hover) {
+      background-color: transparent !important; }
+  .nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    transition: all 0.2s; }
+    .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+      background-color: #eeeeee; }
+    .nice-select .option.selected {
+      font-weight: bold; }
+    .nice-select .option.disabled {
+      background-color: transparent;
+      color: #555555;
+      cursor: default; }
+
+.no-csspointerevents .nice-select .list {
+  display: none; }
+
+.no-csspointerevents .nice-select.open .list {
+  display: block; }
 
 /* Slider */
 .slick-slider {
@@ -4619,7 +4739,7 @@ a:hover {
   margin-right: 20px;
   background-color: #ffffff;
   box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
-  height: 100px; }
+  margin-top: 20px; }
 
 .checkout-right {
   float: left;
@@ -4633,7 +4753,164 @@ a:hover {
   margin-right: 0;
   border-left-width: 0;
   box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+  margin-top: 20px;
   height: 100px; }
+
+.checkout-navigation {
+  padding: 0 20px; }
+  .checkout-navigation:before, .checkout-navigation:after {
+    content: " ";
+    display: table; }
+  .checkout-navigation:after {
+    clear: both; }
+
+.checkout-navigation-item {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  box-shadow: inset 0 -3px 0 0 #dde3e8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; }
+  .checkout-navigation-item .checkout-navigation-item-number {
+    width: 44px;
+    height: 31px;
+    margin: 25px 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 0.9;
+    border-radius: 50%;
+    border: solid 2px rgba(221, 227, 232, 0.2);
+    text-align: center;
+    padding-top: 13px;
+    color: #dde3e8; }
+  .checkout-navigation-item .checkout-navigation-item-title {
+    text-align: center;
+    width: 290px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    margin: 25px 0;
+    color: #dde3e8; }
+
+.checkout-navigation-active {
+  box-shadow: inset 0 -3px 0 0 #f98e4e; }
+  .checkout-navigation-active .checkout-navigation-item-title, .checkout-navigation-active .checkout-navigation-item-number {
+    color: #f98e4e; }
+  .checkout-navigation-active .checkout-navigation-item-number {
+    border: solid 2px rgba(249, 142, 78, 0.06); }
+
+.checkout-adress-form-header {
+  padding: 0 20px;
+  margin-top: 23px; }
+  .checkout-adress-form-header h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 3px; }
+  .checkout-adress-form-header .description {
+    font-size: 16px;
+    line-height: 1.38;
+    color: #8c9196; }
+
+.checkout-adress-form-container {
+  padding: 0 20px;
+  padding-top: 6px; }
+  .checkout-adress-form-container .row {
+    margin-top: 20px; }
+  .checkout-adress-form-container .twoInRow {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 340px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 20px; }
+  .checkout-adress-form-container .threeInRow {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 220px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 20px; }
+  .checkout-adress-form-container label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #82858a;
+    display: block;
+    margin-bottom: 6px; }
+  .checkout-adress-form-container input[type="text"], .checkout-adress-form-container select, .checkout-adress-form-container .nice-select, .checkout-adress-form-container .adressTextArea {
+    height: 54px;
+    background-color: #fbfbfa;
+    border: solid 1px #f0f3f6;
+    width: 100%;
+    color: #626971;
+    font-size: 16px; }
+  .checkout-adress-form-container input:read-only {
+    background-color: #f0f3f8;
+    border: solid 1px #f0f3f6; }
+  .checkout-adress-form-container input:focus {
+    border: solid 1px #ff9f69;
+    outline: none; }
+  .checkout-adress-form-container .nice-select {
+    height: 58px; }
+  .checkout-adress-form-container .current {
+    line-height: 58px; }
+  .checkout-adress-form-container .checkBoxLine {
+    color: #8c9196;
+    font-size: 14px; }
+  .checkout-adress-form-container .adressTextArea {
+    height: 150px;
+    resize: none; }
+  .checkout-adress-form-container .teslimatCheckBox {
+    display: inline-block;
+    margin-right: 8px; }
+  .checkout-adress-form-container .line {
+    width: 740px;
+    height: 2px;
+    border: solid 1px #ededed;
+    background: #ededed;
+    margin: 32px 0 23px; }
+  .checkout-adress-form-container .irtibatNo {
+    margin-top: 18px; }
+
+.button-container {
+  margin-top: 30px;
+  height: 108px;
+  text-align: right;
+  background-color: #fafafc;
+  padding: 0 20px; }
+  .button-container .addButton {
+    width: 140px;
+    height: 48px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.32);
+    border: solid 1px #fff8f3;
+    color: #f98e4e;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px 0 30px 20px; }
+  .button-container .cancelButton {
+    color: #434b54;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 140px;
+    height: 48px;
+    background: transparent;
+    border: solid 1px rgba(206, 211, 219, 0.3); }
+
+.last-child {
+  margin-right: 0;
+  border-left-width: 0;
+  background: red; }
 
 .main_slider {
   max-width: 1180px;
