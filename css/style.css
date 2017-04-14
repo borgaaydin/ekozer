@@ -4543,7 +4543,8 @@ img {
 a,
 a:focus,
 a:hover {
-  outline: 0; }
+  outline: 0;
+  text-decoration: none; }
 
 .slider_container {
   background-color: #f8f9fc; }
@@ -4860,7 +4861,7 @@ a:hover {
 .footer-first-row {
   height: 256px;
   margin-top: 193px;
-  background-color: #6f7276; }
+  background-color: #75787c; }
   .footer-first-row .footer-logo {
     float: left;
     -webkit-box-sizing: border-box;
@@ -4912,10 +4913,117 @@ a:hover {
   .footer-first-row .footer-social {
     margin-right: 0;
     border-left-width: 0; }
+    .footer-first-row .footer-social .social-icons {
+      margin-left: 20px;
+      display: flex;
+      flex-direction: row; }
+      .footer-first-row .footer-social .social-icons .sc-icon {
+        width: 42px;
+        height: 42px;
+        border: solid 1px #ced3db;
+        margin-right: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .footer-first-row .footer-social .social-icons .sc-icon i {
+          color: #6F7276;
+          font-size: 24px; }
+  .footer-first-row .bulten-row {
+    margin-top: 50px; }
+    .footer-first-row .bulten-row .bulten-slogan {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 380px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px;
+      margin-left: 160px; }
+      .footer-first-row .bulten-row .bulten-slogan h3 {
+        color: #ced3db;
+        margin: 0 0 6px 0; }
+      .footer-first-row .bulten-row .bulten-slogan h4 {
+        color: #a2a8b2;
+        margin: 0; }
+    .footer-first-row .bulten-row .bulten-input {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 620px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px;
+      margin-right: 0;
+      border-left-width: 0;
+      display: flex;
+      flex-direction: row; }
+      .footer-first-row .bulten-row .bulten-input input {
+        width: 462px;
+        height: 50px;
+        background-color: rgba(254, 254, 254, 0.13);
+        border: 0;
+        padding: 0 0 0 20px; }
+      .footer-first-row .bulten-row .bulten-input a {
+        width: 142px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff9f69;
+        box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+        color: #ffffff;
+        text-decoration: none; }
+        .footer-first-row .bulten-row .bulten-input a:hover, .footer-first-row .bulten-row .bulten-input a:focus {
+          text-decoration: none; }
+    .footer-first-row .bulten-row .bulten-checkbox {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 620px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px;
+      margin-left: 560px;
+      margin-right: 0;
+      border-left-width: 0;
+      margin-top: 12px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start; }
+      .footer-first-row .bulten-row .bulten-checkbox input {
+        margin-right: 12px; }
+      .footer-first-row .bulten-row .bulten-checkbox label {
+        display: inline-block;
+        width: 358px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.29;
+        letter-spacing: 0.1px;
+        color: #cbcdcf; }
 
 .footer-second-row {
   height: 260px;
   background-color: #6f7276; }
+  .footer-second-row h4 {
+    padding: 28px 0 17px 0;
+    margin: 0;
+    line-height: 1.2;
+    color: #ced3db;
+    border-bottom: solid 2px #898a8b; }
+  .footer-second-row ul {
+    list-style: none;
+    padding: 0; }
+    .footer-second-row ul li a {
+      color: #aaadb0;
+      font-weight: 100;
+      line-height: 1.75;
+      text-decoration: none; }
+      .footer-second-row ul li a:hover, .footer-second-row ul li a:focus {
+        text-decoration: none; }
 
 .copyright .footer-copyright {
   height: 57px;
@@ -4970,7 +5078,8 @@ a:hover {
   width: 220px;
   border-right-width: 0;
   padding: 0;
-  margin-right: 20px; }
+  margin-right: 20px;
+  margin-left: 80px; }
 
 .footer-list-subscription {
   float: left;
@@ -4980,7 +5089,8 @@ a:hover {
   width: 220px;
   border-right-width: 0;
   padding: 0;
-  margin-right: 20px; }
+  margin-right: 20px;
+  margin-left: 80px; }
 
 .product {
   position: relative;
