@@ -4805,7 +4805,6 @@ a:hover {
     border: solid 2px rgba(249, 142, 78, 0.06); }
 
 .checkout-adress-form-header {
-  padding: 0 20px;
   margin-top: 23px; }
   .checkout-adress-form-header h4 {
     font-size: 20px;
@@ -4821,46 +4820,144 @@ a:hover {
   padding: 0 20px;
   padding-top: 6px; }
   .checkout-adress-form-container .row {
-    margin-top: 20px; }
-  .checkout-adress-form-container .twoInRow {
-    float: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 340px;
-    border-right-width: 0;
-    padding: 0;
-    margin-right: 20px; }
-  .checkout-adress-form-container .threeInRow {
-    float: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 220px;
-    border-right-width: 0;
-    padding: 0;
-    margin-right: 20px; }
+    margin-top: 20px;
+    /* 1. SATIR */
+    /* 2. SATIR */
+    /* 3. SATIR */
+    /* 4. SATIR */
+    /* 5. SATIR */
+    /* 6. SATIR */
+    /* 7. SATIR */ }
+    .checkout-adress-form-container .row .faturaSirketUnvani, .checkout-adress-form-container .row .faturaVergiNo {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 220px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px; }
+    .checkout-adress-form-container .row .faturaVergiDairesi {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 260px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px;
+      margin-right: 0;
+      border-left-width: 0; }
+    .checkout-adress-form-container .row .faturaSirketAdresi {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 740px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px;
+      margin-right: 0;
+      border-left-width: 0; }
+    .checkout-adress-form-container .row .faturaSubeAdi {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 340px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px;
+      margin-right: 0;
+      border-left-width: 0; }
+    .checkout-adress-form-container .row .faturaSubeFaturaYetkilisi, .checkout-adress-form-container .row .faturaYetkilisiEposta {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 360px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px; }
+    .checkout-adress-form-container .row .faturaYetkilisiEposta {
+      margin-right: 0;
+      border-left-width: 0; }
+    .checkout-adress-form-container .row .faturaIl, .checkout-adress-form-container .row .faturaIlce {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 240px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px; }
+    .checkout-adress-form-container .row .faturaPostaKodu {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 220px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px;
+      margin-right: 0;
+      border-left-width: 0; }
+    .checkout-adress-form-container .row .faturaAdresi {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 360px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px; }
+    .checkout-adress-form-container .row .faturaSubeTelefonNumarasi {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 360px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px;
+      margin-right: 0;
+      border-left-width: 0; }
+    .checkout-adress-form-container .row .teslimatAlacakKisi {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 360px;
+      border-right-width: 0;
+      padding: 0;
+      margin-right: 20px;
+      margin-right: 0;
+      border-left-width: 0; }
   .checkout-adress-form-container label {
     font-size: 14px;
     font-weight: 600;
     color: #82858a;
     display: block;
     margin-bottom: 6px; }
+  .checkout-adress-form-container input {
+    padding: 0; }
   .checkout-adress-form-container input[type="text"], .checkout-adress-form-container select, .checkout-adress-form-container .nice-select, .checkout-adress-form-container .adressTextArea {
     height: 54px;
     background-color: #fbfbfa;
     border: solid 1px #f0f3f6;
-    width: 100%;
+    padding: 0;
+    width: calc(100% - 2px);
     color: #626971;
     font-size: 16px; }
   .checkout-adress-form-container input:read-only {
     background-color: #f0f3f8;
     border: solid 1px #f0f3f6; }
-  .checkout-adress-form-container input:focus {
+  .checkout-adress-form-container input:focus, .checkout-adress-form-container .open, .checkout-adress-form-container textarea:focus {
     border: solid 1px #ff9f69;
     outline: none; }
   .checkout-adress-form-container .nice-select {
-    height: 58px; }
+    height: 58px;
+    border-radius: 0; }
   .checkout-adress-form-container .current {
     line-height: 58px; }
   .checkout-adress-form-container .checkBoxLine {
@@ -4908,10 +5005,72 @@ a:hover {
     background: transparent;
     border: solid 1px rgba(206, 211, 219, 0.3); }
 
-.last-child {
-  margin-right: 0;
-  border-left-width: 0;
-  background: red; }
+.siparisOzeti {
+  background-color: #ffffff; }
+  .siparisOzeti .siparisOzeti-title {
+    padding: 16px 20px;
+    box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.38; }
+  .siparisOzeti .siparisOzeti-info {
+    padding: 14px 20px; }
+    .siparisOzeti .siparisOzeti-info > div {
+      color: #8c9196;
+      font-size: 16px;
+      line-height: 1.38; }
+      .siparisOzeti .siparisOzeti-info > div > span {
+        float: right; }
+    .siparisOzeti .siparisOzeti-info .araToplam, .siparisOzeti .siparisOzeti-info .kdvToplami {
+      margin-bottom: 11px; }
+    .siparisOzeti .siparisOzeti-info .kargoBedeli {
+      margin-bottom: 16px; }
+  .siparisOzeti .siparisOzeti-genelToplam {
+    background: #fbfcfc;
+    padding: 16px 20px 18px; }
+    .siparisOzeti .siparisOzeti-genelToplam .genelToplam {
+      font-size: 16px;
+      color: #8c9196;
+      line-height: 1.38; }
+      .siparisOzeti .siparisOzeti-genelToplam .genelToplam .kdvDahil {
+        display: block;
+        font-size: 14px;
+        line-height: 1.57;
+        color: #b6bbc0; }
+      .siparisOzeti .siparisOzeti-genelToplam .genelToplam .genelToplamFiyat {
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        color: #f98e4e; }
+
+.araToplamFiyat, .kdvToplamiFiyat {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #434b54; }
+
+.kargoBedeli {
+  font-size: 14px;
+  line-height: 1.57;
+  color: #b6bbc0; }
+
+.blank {
+  height: 38px;
+  background: #fff; }
+
+.siparisOzetiButton {
+  width: 340px;
+  margin: -18px 20px 0;
+  padding: 16.7px 0 15.3px;
+  text-align: center;
+  box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+  background-color: #ffd9c4; }
+  .siparisOzetiButton a {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    border: none; }
 
 .main_slider {
   max-width: 1180px;

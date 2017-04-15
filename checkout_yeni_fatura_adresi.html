@@ -16,30 +16,6 @@
                     <img src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x, img/logo/logo@3x.png 3x" class="logo">
                 </a>
             </div>
-            <div class="search_input_container">
-                <input class="search_input" type="search" placeholder="Aradığını Hızlıca Bul">
-            </div>
-            <div class="auth_button_container">
-                <button>
-                        <span class="auth_button_text">
-                            <span>
-                                Giriş Yap
-                            </span>
-                            <span>
-                                veya Üye Ol
-                            </span>
-                        </span>
-
-                    <span>
-                            *
-                        </span>
-                </button>
-            </div>
-            <div class="basket_button_container">
-                <button>
-                    Sepetim
-                </button>
-            </div>
         </div>
     </div>
 </div>
@@ -66,78 +42,91 @@
                     </div>
                 </div>
             </div>
-            <div class="checkout-adress-form-header">
-                <h4>Yeni Şube Fatura Adresiniz</h4>
-                <div class="description">Lütfen eklemek istediğiniz şubeye ait fatura adres bilgilerinizi giriniz.</div>
-            </div>
             <div class="checkout-adress-form-container">
+                <div class="checkout-adress-form-header">
+                    <h4>Yeni Şube Fatura Adresiniz</h4>
+                    <div class="description">Lütfen eklemek istediğiniz şubeye ait fatura adres bilgilerinizi giriniz.</div>
+                </div>
                 <form>
                     <div class="row">
-                        <div class="threeInRow">
-                            <label for="faturaSirketUnvani">Şirket Ünvanı</label>
-                            <input type="text" id="faturaSirketUnvani" name="faturaSirketUnvani" readonly>
-                        </div>
-                        <div class="threeInRow">
-                            <label for="faturaVergiNo">Vergi No</label>
-                            <input type="text" id="faturaVergiNo" name="faturaVergiNo" readonly>
-                        </div>
-                        <div class="threeInRow last-child">
-                            <label for="faturaVergiDairesi">Vergi Dairesi</label>
-                            <input type="text" id="faturaVergiDairesi" name="faturaVergiDairesi" readonly>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <label for="faturaSirketAdresi">Şirket Adresi</label>
-                        <input type="text" id="faturaSirketAdresi" name="faturaSirketAdresi" readonly>
-                    </div>
-                    <div class="row">
-                        <div class="twoInRow">
-                            <label for="faturaSubeAdi">Şube Adı *</label>
-                            <input type="text" id="faturaSubeAdi" name="faturaSubeAdi" required>
+                        <div>
+                            <div class="faturaSirketUnvani">
+                                <label for="faturaSirketUnvani">Şirket Ünvanı</label>
+                                <input type="text" id="faturaSirketUnvani" name="faturaSirketUnvani" readonly>
+                            </div>
+                            <div class="faturaVergiNo">
+                                <label for="faturaVergiNo">Vergi No</label>
+                                <input type="text" id="faturaVergiNo" name="faturaVergiNo" readonly>
+                            </div>
+                            <div class="faturaVergiDairesi">
+                                <label for="faturaVergiDairesi">Vergi Dairesi</label>
+                                <input type="text" id="faturaVergiDairesi" name="faturaVergiDairesi" readonly>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="twoInRow">
-                            <label for="faturaSubeFaturaYetkilisi">Şube Fatura Yetkilisi *</label>
-                            <input type="text" id="faturaSubeFaturaYetkilisi" name="faturaSubeFaturaYetkilisi" required>
-                        </div>
-                        <div class="twoInRow last-child">
-                            <label for="faturaYetkilisiEposta">Fatura Yetkilisinin E-posta Adresi</label>
-                            <input type="text" id="faturaYetkilisiEposta" name="faturaYetkilisiEposta">
+                        <div>
+                            <div class="faturaSirketAdresi">
+                                <label for="faturaSirketAdresi">Şirket Adresi</label>
+                                <input type="text" id="faturaSirketAdresi" name="faturaSirketAdresi" readonly>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="threeInRow">
-                            <label for="faturaIl">İl*</label>
-                            <select id="faturaIl" name="faturaIl" required>
-                                <option data-display="İstanbul" value="İstanbul">İstanbul</option>
-                                <option value="Ankara">Ankara</option>
-                                <option value="Sivas">Sivas</option>
-                                <option value="Kayseri">Kayseri</option>
-                            </select>
-                        </div>
-                        <div class="threeInRow">
-                            <label for="faturaIlce">İlçe*</label>
-                            <select id="faturaIlce" name="faturaIlce" required>
-                                <option data-display="Kadıköy" value="Kadıköy">Kadıköy</option>
-                                <option value="Beşiktaş">Beşiktaş</option>
-                                <option value="Üsküdar">Üsküdar</option>
-                            </select>
-                        </div>
-                        <div class="threeInRow last-child">
-                            <label for="faturaPostaKodu">Posta Kodu *</label>
-                            <input type="text" id="faturaPostaKodu" name="faturaPostaKodu" required>
+                        <div>
+                            <div class="faturaSubeAdi">
+                                <label for="faturaSubeAdi">Şube Adı *</label>
+                                <input type="text" id="faturaSubeAdi" name="faturaSubeAdi" required>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="twoInRow">
-                            <label for="faturaAdresi">Fatura Adresiniz *</label>
-                            <textarea id="faturaAdresi" name="faturaAdresi" class="adressTextArea" required>
-                            </textarea>
+                        <div>
+                            <div class="faturaSubeFaturaYetkilisi">
+                                <label for="faturaSubeFaturaYetkilisi">Şube Fatura Yetkilisi *</label>
+                                <input type="text" id="faturaSubeFaturaYetkilisi" name="faturaSubeFaturaYetkilisi" required>
+                            </div>
+                            <div class="faturaYetkilisiEposta">
+                                <label for="faturaYetkilisiEposta">Fatura Yetkilisinin E-posta Adresi</label>
+                                <input type="text" id="faturaYetkilisiEposta" name="faturaYetkilisiEposta">
+                            </div>
                         </div>
-                        <div class="twoInRow last-child">
-                            <label for="faturaSubeTelefonNumarasi">Şube Telefon Numarası*</label>
-                            <input type="text" id="faturaSubeTelefonNumarasi" name="faturaSubeTelefonNumarasi" required>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <div class="faturaIl">
+                                <label for="faturaIl">İl*</label>
+                                <select id="faturaIl" name="faturaIl" required>
+                                    <option data-display="İstanbul" value="İstanbul">İstanbul</option>
+                                    <option value="Ankara">Ankara</option>
+                                    <option value="Sivas">Sivas</option>
+                                    <option value="Kayseri">Kayseri</option>
+                                </select>
+                            </div>
+                            <div class="faturaIlce">
+                                <label for="faturaIlce">İlçe*</label>
+                                <select id="faturaIlce" name="faturaIlce" required>
+                                    <option data-display="Kadıköy" value="Kadıköy">Kadıköy</option>
+                                    <option value="Beşiktaş">Beşiktaş</option>
+                                    <option value="Üsküdar">Üsküdar</option>
+                                </select>
+                            </div>
+                            <div class="faturaPostaKodu">
+                                <label for="faturaPostaKodu">Posta Kodu *</label>
+                                <input type="text" id="faturaPostaKodu" name="faturaPostaKodu" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <div class="faturaAdresi">
+                                <label for="faturaAdresi">Fatura Adresiniz *</label>
+                                <textarea id="faturaAdresi" name="faturaAdresi" class="adressTextArea" required></textarea>
+                            </div>
+                            <div class="faturaSubeTelefonNumarasi">
+                                <label for="faturaSubeTelefonNumarasi">Şube Telefon Numarası*</label>
+                                <input type="text" id="faturaSubeTelefonNumarasi" name="faturaSubeTelefonNumarasi" required>
+                            </div>
                         </div>
                     </div>
                     <div class="row checkBoxLine">
@@ -145,50 +134,57 @@
                     </div>
 
                     <div class="row line"></div>
-
-                    <h4>Teslimat Adresiniz</h4>
-                    <div class="description">Lütfen yeni teslimat adresi bilgilerinizi giriniz.</div>
+                    <div class="checkout-adress-form-header">
+                        <h4>Teslimat Adresiniz</h4>
+                        <div class="description">Lütfen yeni teslimat adresi bilgilerinizi giriniz.</div>
+                    </div>
                     <div class="row">
-                        <div class="twoInRow">
-                            <label for="teslimatSubeAdi">Şube Adı *</label>
-                            <input type="text" id="teslimatSubeAdi" name="teslimatSubeAdi" required>
+                        <div>
+                            <div class="faturaSubeAdi">
+                                <label for="teslimatSubeAdi">Şube Adı *</label>
+                                <input type="text" id="teslimatSubeAdi" name="teslimatSubeAdi" required>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="threeInRow">
-                            <label for="teslimatIl">İl*</label>
-                            <select id="teslimatIl" name="teslimatIl" required>
-                                <option data-display="İstanbul" value="İstanbul">İstanbul</option>
-                                <option value="Ankara">Ankara</option>
-                                <option value="Sivas">Sivas</option>
-                                <option value="Kayseri">Kayseri</option>
-                            </select>
-                        </div>
-                        <div class="threeInRow">
-                            <label for="teslimatIlce">İlçe*</label>
-                            <select id="teslimatIlce" name="teslimatIlce" required>
-                                <option data-display="Kadıköy" value="Kadıköy">Kadıköy</option>
-                                <option value="Beşiktaş">Beşiktaş</option>
-                                <option value="Üsküdar">Üsküdar</option>
-                            </select>
-                        </div>
-                        <div class="threeInRow last-child">
-                            <label for="teslimatPostaKodu">Posta Kodu *</label>
-                            <input type="text" id="teslimatPostaKodu" name="teslimatPostaKodu" required>
+                        <div>
+                            <div class="faturaIl">
+                                <label for="teslimatIl">İl*</label>
+                                <select id="teslimatIl" name="teslimatIl" required>
+                                    <option data-display="İstanbul" value="İstanbul">İstanbul</option>
+                                    <option value="Ankara">Ankara</option>
+                                    <option value="Sivas">Sivas</option>
+                                    <option value="Kayseri">Kayseri</option>
+                                </select>
+                            </div>
+                            <div class="faturaIlce">
+                                <label for="teslimatIlce">İlçe*</label>
+                                <select id="teslimatIlce" name="teslimatIlce" required>
+                                    <option data-display="Kadıköy" value="Kadıköy">Kadıköy</option>
+                                    <option value="Beşiktaş">Beşiktaş</option>
+                                    <option value="Üsküdar">Üsküdar</option>
+                                </select>
+                            </div>
+                            <div class="faturaPostaKodu">
+                                <label for="teslimatPostaKodu">Posta Kodu *</label>
+                                <input type="text" id="teslimatPostaKodu" name="teslimatPostaKodu" required>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="twoInRow">
-                            <label for="teslimatFaturaAdresi">Fatura Adresiniz *</label>
-                            <textarea id="teslimatFaturaAdresi" name="teslimatFaturaAdresi" class="adressTextArea" required>
-                            </textarea>
-                        </div>
-                        <div class="twoInRow last-child">
-                            <label for="teslimatAlacakKisi">Teslim Alacak Kişi *</label>
-                            <input type="text" id="teslimatAlacakKisi" name="teslimatAlacakKisi" required>
+                        <div>
+                            <div class="faturaAdresi">
+                                <label for="teslimatFaturaAdresi">Fatura Adresiniz *</label>
+                                <textarea id="teslimatFaturaAdresi" name="teslimatFaturaAdresi" class="adressTextArea" required></textarea>
+                            </div>
 
-                            <label for="teslimatIrtibatNumarasi" class="irtibatNo">İrtibat Numarası *</label>
-                            <input type="text" id="teslimatIrtibatNumarasi" name="teslimatIrtibatNumarasi" required>
+                            <div class="teslimatAlacakKisi">
+                                <label for="teslimatAlacakKisi">Teslim Alacak Kişi *</label>
+                                <input type="text" id="teslimatAlacakKisi" name="teslimatAlacakKisi" required>
+
+                                <label for="teslimatIrtibatNumarasi" class="irtibatNo">İrtibat Numarası *</label>
+                                <input type="text" id="teslimatIrtibatNumarasi" name="teslimatIrtibatNumarasi" required>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -201,7 +197,37 @@
         </div>
 
         <div class="checkout-right">
-
+            <div class="row">
+                <div>
+                    <div class="siparisOzeti">
+                        <div class="siparisOzeti-title">
+                            Sipariş Özetiniz
+                        </div>
+                        <div class="siparisOzeti-info">
+                            <div class="araToplam">
+                                Ara Toplam<span class="araToplamFiyat">70 ₺</span>
+                            </div>
+                            <div class="kdvToplami">
+                                KDV Toplamı<span class="kdvToplamiFiyat">20 ₺</span>
+                            </div>
+                            <div class="kargoBedeli">
+                                Kargo Bedeli<span class="kargoBedeli">Hesaplanacak</span>
+                            </div>
+                        </div>
+                        <div class="siparisOzeti-genelToplam">
+                            <div class="genelToplam">
+                                <span class="genelToplamFiyat">90 ₺</span>
+                                Genel Toplam
+                                <span class="kdvDahil">(KDV Dahil)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blank"></div>
+                </div>
+            </div>
+            <div class="siparisOzetiButton">
+                <a href="#">Devam et</a>
+            </div>
         </div>
     </div>
 </div>

@@ -64,7 +64,6 @@
   }
 }
 .checkout-adress-form-header {
-  padding: 0 20px;
   margin-top: 23px;
   h4 {
     font-size: 20px;
@@ -83,14 +82,71 @@
   padding-top: 6px;
   .row {
     margin-top: 20px;
-  }
-  .twoInRow {
-    @include col();
-    @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
-  }
-  .threeInRow {
-    @include col();
-    @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+    /* 1. SATIR */
+    .faturaSirketUnvani, .faturaVergiNo {
+      @include col();
+      @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+    }
+    .faturaVergiDairesi {
+      @include col();
+      @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+
+    /* 2. SATIR */
+    .faturaSirketAdresi {
+      @include col();
+      @include span(19, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+
+    /* 3. SATIR */
+    .faturaSubeAdi {
+      @include col();
+      @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+
+    /* 4. SATIR */
+    .faturaSubeFaturaYetkilisi, .faturaYetkilisiEposta {
+      @include col();
+      @include span(9.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+    }
+    .faturaYetkilisiEposta {
+      @include beta();
+    }
+
+    /* 5. SATIR */
+    .faturaIl, .faturaIlce {
+      @include col();
+      @include span(6.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+    }
+    .faturaPostaKodu {
+      @include col();
+      @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+
+    /* 6. SATIR */
+    .faturaAdresi {
+      @include col();
+      @include span(9.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+    }
+    .faturaSubeTelefonNumarasi {
+      @include col();
+      @include span(9.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+
+    /* 7. SATIR */
+    .teslimatAlacakKisi {
+      @include col();
+      @include span(9.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+
+
+
   }
   label {
     font-size: 14px;
@@ -99,11 +155,15 @@
     display: block;
     margin-bottom: 6px;
   }
+  input {
+    padding: 0;
+  }
   input[type="text"], select, .nice-select, .adressTextArea {
     height: 54px;
     background-color: #fbfbfa;
     border: solid 1px #f0f3f6;
-    width: 100%;
+    padding: 0;
+    width: calc(100% - 2px);
     color: #626971;
     font-size:16px;
   }
@@ -111,12 +171,13 @@
     background-color: #f0f3f8;
     border: solid 1px #f0f3f6;
   }
-  input:focus {
+  input:focus, .open, textarea:focus {
     border: solid 1px #ff9f69;
     outline: none;
   }
   .nice-select {
     height: 58px;
+    border-radius: 0;
   }
   .current {
     line-height: 58px;
@@ -173,7 +234,81 @@
     border: solid 1px rgba(206,211,219,0.3);
   }
 }
-.last-child {
-  @include beta();
-  background: red;
+.siparisOzeti {
+  background-color: #ffffff;
+  .siparisOzeti-title {
+    padding: 16px 20px;
+    box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.38;
+  }
+  .siparisOzeti-info {
+    padding: 14px 20px;
+    & > div {
+      color: #8c9196;
+      font-size: 16px;
+      line-height: 1.38;
+      & > span {
+        float: right;
+      }
+    }
+    .araToplam, .kdvToplami {
+      margin-bottom: 11px;
+    }
+    .kargoBedeli {
+      margin-bottom: 16px;
+    }
+  }
+  .siparisOzeti-genelToplam {
+    background: #fbfcfc;
+    padding: 16px 20px 18px;
+    .genelToplam {
+      font-size: 16px;
+      color: #8c9196;
+      line-height: 1.38;
+      .kdvDahil {
+        display: block;
+        font-size: 14px;
+        line-height: 1.57;
+        color: #b6bbc0;
+      }
+      .genelToplamFiyat {
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        color: #f98e4e;
+      }
+    }
+  }
+}
+.araToplamFiyat, .kdvToplamiFiyat {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #434b54;
+}
+.kargoBedeli {
+  font-size: 14px;
+  line-height: 1.57;
+  color: #b6bbc0;
+}
+.blank {
+  height: 38px;
+  background: #fff;
+}
+.siparisOzetiButton {
+  width: 340px;
+  margin: -18px 20px 0;
+  padding: 16.7px 0 15.3px;
+  text-align: center;
+  box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+  background-color: #ffd9c4;
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+  }
 }
