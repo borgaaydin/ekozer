@@ -9,7 +9,7 @@
 .footer-first-row {
   height: 256px;
   margin-top: 193px;
-  background-color: #6f7276;
+  background-color: #75787c;
 
   .footer-logo {
     @include col();
@@ -63,6 +63,110 @@
 
   .footer-social {
     @include beta();
+
+    .social-icons {
+      margin-left: 20px;
+      display: flex;
+      flex-direction: row;
+
+      .sc-icon {
+        width: 42px;
+        height: 42px;
+        border: solid 1px #ced3db;
+        margin-right: 20px;
+
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        i {
+          color: #6F7276;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .bulten-row {
+    margin-top: 50px;
+
+    .bulten-slogan {
+      @include col();
+      @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include push(4);
+
+      h3 {
+        color: #ced3db;
+        margin: 0 0 6px 0;
+      }
+
+      h4 {
+        color: #a2a8b2;
+        margin: 0;
+      }
+    }
+
+    .bulten-input {
+      @include col();
+      @include span(16, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+      display: flex;
+      flex-direction: row;
+
+      input {
+        width: 462px;
+        height: 50px;
+        background-color: rgba(254, 254, 254, 0.13);
+        border: 0;
+        padding: 0 0 0 20px;
+      }
+
+      a {
+        width: 142px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #ff9f69;
+        box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+        color: #ffffff;
+        text-decoration: none;
+
+
+        &:hover,
+        &:focus{
+          text-decoration: none;
+        }
+      }
+    }
+
+    .bulten-checkbox {
+      @include col();
+      @include span(16, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include push(14);
+      @include beta();
+      margin-top: 12px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      input {
+        margin-right: 12px;
+      }
+
+      label {
+        display: inline-block;
+        width: 358px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.29;
+        letter-spacing: 0.1px;
+        color:#cbcdcf;
+      }
+    }
   }
 }
 
@@ -70,6 +174,32 @@
   height: 260px;
   background-color: #6f7276;
 
+  h4 {
+    padding: 28px 0 17px 0;
+    margin: 0;
+    line-height: 1.2;
+    color: #ced3db;
+    border-bottom: solid 2px #898a8b;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      a {
+        color: #aaadb0;
+        font-weight: 100;
+        line-height: 1.75;
+        text-decoration: none;
+
+        &:hover,
+        &:focus{
+         text-decoration: none;
+       }
+      }
+    }
+  }
 }
 
 .copyright {
@@ -106,10 +236,13 @@
 .footer-list-help {
   @include col();
   @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include push(2);
 }
 
 .footer-list-subscription {
   @include col();
   @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include push(2);
+
 
 }
