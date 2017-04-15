@@ -1,0 +1,55 @@
+signup {
+  margin-top:20px;
+}
+.signup-left {
+  @include col();
+  @include span(18, $gutter_pc, $gutter_px, $padding, $max_columns);
+  background: #ffffff;
+  padding: 20px;
+}
+.signup-right {
+  @include col();
+  @include span(12, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include beta();
+}
+
+.signup {
+  h4 {
+    margin: 20px 0 3px 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #434b54;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 1.38;
+    color: #8c9196;
+  }
+}
+/* OVERRIDE */
+.nav-tabs {
+  &.nav-justified {
+    li {
+      background-color: #f9f9f8;
+      box-shadow: inset 0 4px 0 0 #dde3e8;
+      a, a:hover, a:focus {
+        border-radius:0;
+        border: none;
+      }
+    }
+    .active {
+      a, a:hover, a:focus {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.38;
+        color: #ff9f69;
+        padding: 19px 0;
+        border-radius:0;
+        border:none;
+        box-shadow: inset 0 4px 0 0 #ff9f69;
+      }
+    }
+  }
+}

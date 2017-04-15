@@ -13,6 +13,7 @@
 // Utility classes
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navs";
 
 //Font Awesome
 @import "../bower_components/components-font-awesome/scss/variables";
@@ -46,6 +47,7 @@
 @import "main";
 @import "main_page";
 @import "checkout_page";
+@import "signup_page";
 
 @import "main_slider";
 
