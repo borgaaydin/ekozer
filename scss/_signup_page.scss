@@ -232,7 +232,7 @@
     box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
   }
 }
-#bireyselUyelikSozlesmesiLabel {
+#bireyselUyelikSozlesmesiLabel, #kurumsalUyelikSozlesmesiLabel {
   text-decoration: underline;
 }
 
@@ -289,6 +289,12 @@
 }
 .signup-kurumsal-form-container {
   padding: 6px 20px 0;
+  h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.38;
+    margin: 0px;
+  }
   label {
     font-size: 14px;
     font-weight: 600;
@@ -392,7 +398,9 @@
     @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
     @include beta();
   }
+
   /* BASVURU SAHIBI */
+
   .kurumsalBasvuruAdVeSoyad {
     @include col();
     @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
@@ -434,7 +442,98 @@
       color: #aeb4bc;
     }
   }
+  /* KURUMSAL ADRES BILGILERI */
+  .kurumsalFaturaAdres {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalFaturaYetkilisi {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalFaturaEposta {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .kurumsalFaturaIl, .kurumsalFaturaIlce {
+    @include col();
+    @include span(5.5, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalFaturaPostaKodu {
+    @include col();
+    @include span(5, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .kurumsalFaturaAdresi {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalFaturaSirketTelefonu {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .kurumsalTeslimatAdresiAyni {
+    margin-top: 7px;
+    label {
+      display: inline;
+      font-size: 14px;
+      font-weight:normal;
+      color: #8c9196;
+      margin-left: 8px;
+    }
+    div {
+      margin: 11px 0 19px;
+      input {
+        margin-left: 26px;
+      }
+    }
+  }
+  .kurumsalTeslimatAdresi {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalTeslimatIl, .kurumsalTeslimatIlce {
+    @include col();
+    @include span(5.5, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalTeslimatPostaKodu {
+    @include col();
+    @include span(5, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .kurumsalTeslimatFaturaAdresi {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalTeslimatAlacakKisi {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .kurumsalTeslimatSirketNumarasi {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .kurumsalKampanyaCheckbox {
+    label {
+      display: inline;
+      font-size: 14px;
+      font-weight:normal;
+      color: #8c9196;
+      margin-left: 8px;
+    }
+    div {
+      margin: 11px 0 19px;
+      input {
+        margin-left: 26px;
+      }
+    }
+  }
 }
+
 .signupKurumsalButtonContainer {
   margin-top: 30px;
   background: #fafafc;
@@ -460,4 +559,13 @@
   border-color: #f0f3f6;
   border-style: solid;
   border-width: 1px 0 1px 1px;
+}
+.signup-kurumsal-form-container .adressTextArea {
+  height: 110px;
+  resize: none;
+  padding: 20px 12px 18px 16px;
+  width: calc(100% - 30px);
+}
+.teslimatSirketNumarasi {
+  margin-top: 18px;
 }

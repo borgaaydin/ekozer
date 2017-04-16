@@ -5352,8 +5352,8 @@ a:hover {
     color: #626971;
     font-size: 16px; }
   .signup-bireysel-form-container input[type="text"] {
-    padding: 0 20px;
-    width: calc(100% - 44px); }
+    padding: 0 16px 0 12px;
+    width: calc(100% - 32px); }
   .signup-bireysel-form-container input:read-only {
     background-color: #f0f3f8;
     border: solid 1px #f0f3f6;
@@ -5430,17 +5430,6 @@ a:hover {
     margin: 11px 0 19px; }
     .signup-bireysel-form-container .bireyselKampanyaCheckbox div input {
       margin-left: 26px; }
-  .signup-bireysel-form-container .guvenlikKoduResim {
-    float: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 54px;
-    background: #ededed;
-    width: 149px;
-    border-color: #f0f3f6;
-    border-style: solid;
-    border-width: 1px 0 1px 1px; }
   .signup-bireysel-form-container .nice-select {
     height: 58px;
     border-radius: 0; }
@@ -5485,7 +5474,7 @@ a:hover {
     background: #ffd9c4;
     box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25); }
 
-#bireyselUyelikSozlesmesiLabel {
+#bireyselUyelikSozlesmesiLabel, #kurumsalUyelikSozlesmesiLabel {
   text-decoration: underline; }
 
 /* KURUMSAL */
@@ -5521,6 +5510,9 @@ a:hover {
     text-align: center;
     padding-top: 6px;
     color: #dde3e8; }
+    .signup-kurumsal-navigation-item .signup-kurumsal-navigation-item-number span {
+      position: absolute;
+      margin-top: -2px; }
   .signup-kurumsal-navigation-item .signup-kurumsal-navigation-item-title {
     text-align: center;
     width: 207px;
@@ -5538,7 +5530,15 @@ a:hover {
     border: solid 2px rgba(249, 142, 78, 0.06); }
 
 .signup-kurumsal-form-container {
-  padding: 6px 20px 0; }
+  padding: 6px 20px 0;
+  /* SIRKET BILGILERI */
+  /* BASVURU SAHIBI */
+  /* KURUMSAL ADRES BILGILERI */ }
+  .signup-kurumsal-form-container h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.38;
+    margin: 0px; }
   .signup-kurumsal-form-container label {
     font-size: 14px;
     font-weight: 600;
@@ -5553,8 +5553,8 @@ a:hover {
     color: #626971;
     font-size: 16px; }
   .signup-kurumsal-form-container input[type="text"] {
-    padding: 0 20px;
-    width: calc(100% - 44px); }
+    padding: 0 16px 0 12px;
+    width: calc(100% - 32px); }
   .signup-kurumsal-form-container input:read-only {
     background-color: #f0f3f8;
     border: solid 1px #f0f3f6;
@@ -5659,6 +5659,237 @@ a:hover {
     margin-right: 18px;
     margin-right: 0;
     border-left-width: 0; }
+  .signup-kurumsal-form-container .kurumsalBasvuruAdVeSoyad {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalBasvuruEposta {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signup-kurumsal-form-container .kurumsalBasvuruCepTelefonu {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalBasvuruSektor {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signup-kurumsal-form-container .kurumsalBasvuruIsyeriNo {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 220px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalBasvuruIsyeriNoDahili {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 60px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalBasvuruGuvenlikKodu {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+    .signup-kurumsal-form-container .kurumsalBasvuruGuvenlikKodu input {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 149px;
+      border-color: #f0f3f6;
+      border-style: solid;
+      border-width: 1px 1px 1px 0; }
+    .signup-kurumsal-form-container .kurumsalBasvuruGuvenlikKodu input::placeholder {
+      color: #aeb4bc; }
+  .signup-kurumsal-form-container .kurumsalFaturaAdres {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalFaturaYetkilisi {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalFaturaEposta {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signup-kurumsal-form-container .kurumsalFaturaIl, .signup-kurumsal-form-container .kurumsalFaturaIlce {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalFaturaPostaKodu {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 180px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signup-kurumsal-form-container .kurumsalFaturaAdresi {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalFaturaSirketTelefonu {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signup-kurumsal-form-container .kurumsalTeslimatAdresiAyni {
+    margin-top: 7px; }
+    .signup-kurumsal-form-container .kurumsalTeslimatAdresiAyni label {
+      display: inline;
+      font-size: 14px;
+      font-weight: normal;
+      color: #8c9196;
+      margin-left: 8px; }
+    .signup-kurumsal-form-container .kurumsalTeslimatAdresiAyni div {
+      margin: 11px 0 19px; }
+      .signup-kurumsal-form-container .kurumsalTeslimatAdresiAyni div input {
+        margin-left: 26px; }
+  .signup-kurumsal-form-container .kurumsalTeslimatAdresi {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalTeslimatIl, .signup-kurumsal-form-container .kurumsalTeslimatIlce {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalTeslimatPostaKodu {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 180px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signup-kurumsal-form-container .kurumsalTeslimatFaturaAdresi {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalTeslimatAlacakKisi {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signup-kurumsal-form-container .kurumsalTeslimatSirketNumarasi {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signup-kurumsal-form-container .kurumsalKampanyaCheckbox label {
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    color: #8c9196;
+    margin-left: 8px; }
+  .signup-kurumsal-form-container .kurumsalKampanyaCheckbox div {
+    margin: 11px 0 19px; }
+    .signup-kurumsal-form-container .kurumsalKampanyaCheckbox div input {
+      margin-left: 26px; }
 
 .signupKurumsalButtonContainer {
   margin-top: 30px;
@@ -5675,6 +5906,27 @@ a:hover {
     color: #ffffff;
     background: #ff9f69;
     box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25); }
+
+.guvenlikKoduResim {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 54px;
+  background: #ededed;
+  width: 149px;
+  border-color: #f0f3f6;
+  border-style: solid;
+  border-width: 1px 0 1px 1px; }
+
+.signup-kurumsal-form-container .adressTextArea {
+  height: 110px;
+  resize: none;
+  padding: 20px 12px 18px 16px;
+  width: calc(100% - 30px); }
+
+.teslimatSirketNumarasi {
+  margin-top: 18px; }
 
 .product-detail-navigation {
   margin-top: 30px; }
