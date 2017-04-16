@@ -69,7 +69,7 @@
         <div class="signup-left">
             <h4>Üyelik</h4>
             <div class="description">Ekozer fırsatlarından yararlanmak için hemen üye olun.</div>
-            <div>
+            <div class="signup-forms">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs nav-justified" role="tablist">
                     <li role="presentation" class="active"><a href="#bireysel" aria-controls="bireysel" role="tab" data-toggle="tab">BİREYSEL ÜYE OL</a></li>
@@ -78,12 +78,116 @@
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="bireysel">1</div>
+                    <div role="tabpanel" class="tab-pane active" id="bireysel">
+                        <div class="signup-form-container">
+                            <div class="row">
+                                <div>
+                                    <div class="bireyselAdVeSoyad">
+                                        <label for="bireyselAdVeSoyad">Adınız ve Soyadınız*</label>
+                                        <input type="text" id="bireyselAdVeSoyad" name="bireyselAdVeSoyad" required>
+                                    </div>
+                                    <div class="bireyselEposta">
+                                        <label for="bireyselEposta">E-posta Adresiniz*</label>
+                                        <input type="text" id="bireyselEposta" name="bireyselEposta">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="bireyselSifreniz">
+                                        <label for="bireyselSifreniz">Şifreniz*</label>
+                                        <input type="text" id="bireyselSifreniz" name="bireyselSifreniz" required>
+                                        <span class="sifreIcon">
+                                            <img src="img/signup/eye.png" srcset="img/signup/eye@2x.png 2x, img/signup/eye@3x.png 3x" class="eye">
+                                        </span>
+                                    </div>
+                                    <div class="bireyselGuvenlikKodu">
+                                        <label for="bireyselGuvenlikKodu">E-posta Adresiniz*</label>
+                                        <div class="guvenlikKoduResim"></div>
+                                        <input type="text" id="bireyselGuvenlikKodu" name="bireyselGuvenlikKodu" placeholder="Güvenlik Kodu">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="bireyselKampanyaCheckbox">
+                                        <input type="checkbox" name="bireyselKampanya" value="bireyselKampanya" id="bireyselKampanya"><label for="bireyselKampanya">Kampanyalardan haberdar olmak istiyorum:</label>
+                                        <div>
+                                            <input type="checkbox" name="bireyselKampanyaSms" value="bireyselKampanyaSms" id="bireyselKampanyaSms"><label for="bireyselKampanyaSms">SMS</label>
+                                            <input type="checkbox" name="bireyselKampanyaEposta" value="bireyselKampanyaEposta" id="bireyselKampanyaEposta"><label for="bireyselKampanyaEposta">E-posta</label>
+                                            <input type="checkbox" name="bireyselKampanyaCagriMerkezi" value="bireyselKampanyaCagriMerkezi" id="bireyselKampanyaCagriMerkezi"><label for="bireyselKampanyaCagriMerkezi">Çağrı Merkezi<label>
+                                        </div>
+                                        <input type="checkbox" name="bireyselKampanya" value="bireyselKampanya" id="bireyselKampanya"><label for="bireyselKampanya"><span id="bireyselUyelikSozlesmesi">Üyelik Sözlesmesini</span> okudum ve kabul ediyorum</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <div class="signupButtonContainer">
+                                    <a href="#">Üye Ol</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div role="tabpanel" class="tab-pane" id="kurumsal">2</div>
                 </div>
             </div>
         </div>
-        <div class="signup-right">a</div>
+        <div class="signup-right">
+            <h4>Ekozer Avantajları</h4>
+            <div class="description">Ekozer fırsatlarından yararlanmak için hemen üye olun.</div>
+            <div class="info">
+                <div class="avantaj">
+                    <div class="icon">
+                        <img src="img/signup/ico-free-shipping.png"
+                             srcset="img/signup/ico-free-shipping@2x.png 2x,
+                        img/signup/ico-free-shipping@3x.png 3x"
+                             class="ico-free-shipping">
+                    </div>
+                    <div class="detail">
+                        Ücretsiz Kargo
+                        <span>Seçili ürünlerde standart kargo ücretsiz.</span>
+                    </div>
+                </div>
+                <div class="avantaj">
+                    <div class="icon">
+                        <img src="img/signup/group.png"
+                             srcset="img/signup/group@2x.png 2x,
+                        img/signup/group@3x.png 3x"
+                             class="group">
+                    </div>
+                    <div class="detail">
+                        Ücretsiz Kargo
+                        <span>Seçili ürünlerde standart kargo ücretsiz.</span>
+                    </div>
+                </div>
+                <div class="avantaj">
+                    <div class="icon">
+                        <img src="img/signup/box-indirim.png"
+                             srcset="img/signup/box-indirim@2x.png 2x,
+                        img/signup/box-indirim@3x.png 3x"
+                             class="box-indirim">
+                    </div>
+                    <div class="detail">
+                        Ücretsiz Kargo
+                        <span>Seçili ürünlerde standart kargo ücretsiz.</span>
+                    </div>
+                </div>
+                <div class="avantaj">
+                    <div class="icon">
+                        <img src="img/signup/box-call.png"
+                             srcset="img/signup/box-call@2x.png 2x,
+                        img/signup/box-call@3x.png 3x"
+                             class="box-call">
+                    </div>
+                    <div class="detail">
+                        Ücretsiz Kargo
+                        <span>Seçili ürünlerde standart kargo ücretsiz.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
