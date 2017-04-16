@@ -6,6 +6,7 @@
   @include span(18, $gutter_pc, $gutter_px, $padding, $max_columns);
   background: #ffffff;
   padding: 0 20px;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
 }
 .signup-right {
   @include col();
@@ -13,6 +14,7 @@
   @include beta();
   background: #ffffff;
   padding: 0 20px;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
 }
 
 .signup {
@@ -232,10 +234,10 @@
     box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
   }
 }
-#bireyselUyelikSozlesmesiLabel, #kurumsalUyelikSozlesmesiLabel {
+#bireyselUyelikSozlesmesiLabel, #kurumsalUyelikSozlesmesiLabel, #davetUyelikSozlesmesiLabel {
   text-decoration: underline;
 }
-#bireyselUyelikSozlesmesiLabel:hover, #kurumsalUyelikSozlesmesiLabel:hover {
+#bireyselUyelikSozlesmesiLabel:hover, #kurumsalUyelikSozlesmesiLabel:hover, #davetUyelikSozlesmesiLabel:hover {
   cursor: pointer;
 }
 
@@ -651,6 +653,137 @@
   padding: 20px 19px 50.3px 0;
   a {
     padding: 16.7px 36.5px 15.3px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 180px;
+    height: 48px;
+    color: #ffffff;
+    background: #ff9f69;
+    box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+  }
+}
+
+/* DAVET */
+.subelerContainer {
+  margin-top: 30px;
+}
+.sube {
+  padding: 24px 0 0 21px;
+  border: solid 1px #dde4e8;
+  margin-bottom: 20px;
+  .subeAdi {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.12;
+    margin-bottom: 13px;
+  }
+  .subeSorumlusu {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #343a42;
+  }
+  .subeAdresi {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #8c9196;
+    margin-bottom: 26px;
+  }
+}
+.raporEt {
+  background: #fafafc;
+  margin: 0 -20px;
+  padding: 19px 0 19px 20px;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #8c9196;
+  a {
+    font-size: 14px;
+    line-height: 1.57;
+    color: #8c9196;
+    float: right;
+    padding-right: 20px;
+    text-decoration: underline;
+  }
+}
+.signup-davet {
+  .description {
+    padding-bottom: 10px;
+  }
+}
+.signup-davet-form-container {
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #82858a;
+    display: block;
+    margin-bottom: 6px;
+  }
+  input[type="text"], select, .nice-select, .adressTextArea {
+    height: 54px;
+    background-color: #fbfbfa;
+    border: solid 1px #f0f3f6;
+    width: calc(100% - 4px);
+    color: #626971;
+    font-size:16px;
+  }
+  input[type="text"] {
+    padding: 0 16px 0 12px;
+    width: calc(100% - 32px);
+  }
+  input:read-only {
+    background-color: #f0f3f8;
+    border: solid 1px #f0f3f6;
+    color: #4c535c;
+  }
+  input:focus, .open, textarea:focus {
+    border: solid 1px #ff9f69;
+    outline: none;
+    color: #4c535c;
+  }
+  .row {
+    margin-top: 20px;
+  }
+  .davetSifreniz {
+    position: relative;
+    .sifreIcon {
+      position: absolute;
+      top: 40px;
+      right: 17px;
+    }
+  }
+  .davetKampanyaCheckbox {
+    padding-top: 5px;
+    label {
+      display: inline;
+      font-size: 14px;
+      font-weight:normal;
+      color: #8c9196;
+      margin-left: 8px;
+    }
+    div {
+      margin: 11px 0 19px;
+      input {
+        margin-left: 26px;
+      }
+    }
+  }
+}
+.davetGirisYapButtonContainer {
+  margin: 30px -20px 0 -20px;
+  background: #fafafc;
+  text-align: right;
+  padding: 39.8px 19px 42.2px 0;
+  a {
+    padding: 16.7px 58px 15.3px;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
