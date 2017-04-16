@@ -4,6 +4,7 @@
   @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
 
   @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.08));
+  @include css_transition(all .3s);
 
   .product-image {
     width: 100%;

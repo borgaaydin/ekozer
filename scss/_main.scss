@@ -57,3 +57,7 @@ a:hover{
 .row {
   margin: 0;
 }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+}

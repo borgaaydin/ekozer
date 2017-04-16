@@ -4811,6 +4811,9 @@ a:hover {
 .row {
   margin: 0; }
 
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent; }
+
 .title-bar {
   width: 90px;
   height: 4px;
@@ -4826,7 +4829,29 @@ a:hover {
   padding: 0;
   margin-right: 20px;
   position: relative;
-  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.06); }
+  -webkit-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .featured_categories_container .featured_category a:before, .featured_categories_container .featured_category a:after {
+    content: " ";
+    display: table; }
+  .featured_categories_container .featured_category a:after {
+    clear: both; }
+  .featured_categories_container .featured_category:hover {
+    -moz-transform: scale(1.045);
+    -o-transform: scale(1.045);
+    -ms-transform: scale(1.045);
+    -webkit-transform: scale(1.045);
+    transform: scale(1.045);
+    -webkit-box-shadow: 0 8px 38px 0 rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 8px 38px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 8px 38px 0 rgba(0, 0, 0, 0.35); }
   .featured_categories_container .featured_category .featured_category_overlay {
     position: absolute;
     width: 100%;
@@ -5463,6 +5488,63 @@ a:hover {
 #bireyselUyelikSozlesmesiLabel {
   text-decoration: underline; }
 
+.product-detail-navigation {
+  margin-top: 30px; }
+
+.product-tab.nav-justified > li:first-child {
+  border-left: 1px solid #dde3e8; }
+
+.product-tab.nav-justified > li:last-child {
+  border-right: 1px solid #dde3e8; }
+
+.product-tab.nav-justified > li > a {
+  border-radius: 0;
+  border: 0 !important; }
+  .product-tab.nav-justified > li > a h5 {
+    font-weight: 500;
+    margin: 2px   0; }
+
+.product-tab.nav-justified > li.active a, .product-tab.nav-justified > li.active:focus a, .product-tab.nav-justified > li.active:hover a {
+  border: 0; }
+
+.product-tab-content {
+  background-color: #ffffff;
+  border: 1px solid #dde3e8;
+  border-top: 0;
+  display: block;
+  position: relative;
+  padding: 20px 20px 56px 20px;
+  color: #8c9196; }
+
+.bread-row {
+  height: 72px; }
+
+.product-title-image {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 660px;
+  border-right-width: 0;
+  padding: 0;
+  margin-right: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  padding: 15px 0 23px 20px; }
+  .product-title-image h1 {
+    color: #434b54;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    margin-bottom: 5px;
+    margin-top: 0; }
+  .product-title-image .product-code {
+    color: #8c9196;
+    font-size: 16px;
+    line-height: 1.38;
+    margin-top: 0;
+    margin-bottom: 5px; }
+
 .main_slider {
   max-width: 1180px;
   margin: 0 auto; }
@@ -5607,22 +5689,25 @@ a:hover {
     padding: 0;
     margin-right: 20px;
     margin-left: 160px; }
-    .header .auth_button_container button {
+    .header .auth_button_container a {
       height: 46px;
       width: 100%;
       border: 0;
       text-align: left;
-      padding: 0 10px;
       color: #ffffff;
       background-color: #ff9f69;
-      box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25); }
-      .header .auth_button_container button .auth_button_text {
+      box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .header .auth_button_container a .auth_button_text {
         text-align: left;
-        display: inline-block; }
-        .header .auth_button_container button .auth_button_text span {
+        display: inline-block;
+        margin-left: 11px; }
+        .header .auth_button_container a .auth_button_text span {
           display: block;
           font-size: 14px; }
-        .header .auth_button_container button .auth_button_text span:first-child {
+        .header .auth_button_container a .auth_button_text span:first-child {
           font-weight: bold; }
   .header .basket_button_container {
     float: left;
@@ -5634,21 +5719,39 @@ a:hover {
     padding: 0;
     margin-right: 20px;
     margin-left: 0; }
-    .header .basket_button_container button {
+    .header .basket_button_container a {
       height: 46px;
       width: 100%;
       text-align: left;
-      padding: 0 10px;
       color: #f98e4e;
       font-size: 14px;
       background-color: #ffffff;
       box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.25);
-      border: solid 1px #fff8f3; }
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .header .basket_button_container a .basket_button_text {
+        margin-left: 11px; }
+
+.nav_container.inner-page {
+  background-color: #fbfbfb;
+  margin-top: -1px;
+  -webkit-box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.04); }
+  .nav_container.inner-page .nav_row {
+    margin-top: 0; }
+  .nav_container.inner-page nav {
+    margin: 0; }
+  .nav_container.inner-page .nav_list li {
+    height: 50px;
+    line-height: 50px; }
 
 .nav_row {
   margin-top: 20px; }
   .nav_row nav {
-    margin: 10px 0; }
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
 .nav_list {
   list-style: none;
@@ -5728,8 +5831,7 @@ a:hover {
       z-index: 11; }
     .footer-first-row .footer-icon h4 {
       color: #f98e4e;
-      margin-bottom: 5px;
-      margin-left: 20px; }
+      margin: 16px 0 5px 20px; }
     .footer-first-row .footer-icon h3 {
       margin-top: 5px;
       margin-left: 20px; }
@@ -5931,7 +6033,12 @@ a:hover {
   margin-right: 20px;
   -webkit-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
   -moz-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08); }
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
   .product .product-image {
     width: 100%;
     height: 220px;

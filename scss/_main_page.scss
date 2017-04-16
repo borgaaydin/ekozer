@@ -11,7 +11,20 @@
     @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
     position: relative;
 
-    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.06);
+    @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.06));
+
+    cursor: pointer;
+
+    @include css_transition(all .3s);
+
+    a {
+      @include clearfix();
+    }
+
+    &:hover {
+      @include transform(scale(1.045));
+      @include box-shadow-args(0 8px 38px 0 rgba(0, 0, 0, 0.35));
+    }
 
     .featured_category_overlay {
       position: absolute;
