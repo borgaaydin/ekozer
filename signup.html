@@ -72,14 +72,14 @@
             <div class="signup-forms">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs nav-justified" role="tablist">
-                    <li role="presentation" class="active"><a href="#bireysel" aria-controls="bireysel" role="tab" data-toggle="tab">BİREYSEL ÜYE OL</a></li>
-                    <li role="presentation"><a href="#kurumsal" aria-controls="kurumsal" role="tab" data-toggle="tab">KURUMSAL ÜYE OL</a></li>
+                    <li role="presentation"><a href="#bireysel" aria-controls="bireysel" role="tab" data-toggle="tab">BİREYSEL ÜYE OL</a></li>
+                    <li role="presentation" class="active"><a href="#kurumsal" aria-controls="kurumsal" role="tab" data-toggle="tab">KURUMSAL ÜYE OL</a></li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="bireysel">
-                        <div class="signup-form-container">
+                    <div role="tabpanel" class="tab-pane" id="bireysel">
+                        <div class="signup-bireysel-form-container">
                             <div class="row">
                                 <div>
                                     <div class="bireyselAdVeSoyad">
@@ -124,13 +124,90 @@
                         </div>
                         <div class="row">
                             <div>
-                                <div class="signupButtonContainer">
+                                <div class="signupBireyselButtonContainer">
                                     <a href="#">Üye Ol</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="kurumsal">2</div>
+                    <div role="tabpanel" class="tab-pane active" id="kurumsal">
+                        <div class="signup-kurumsal-navigation">
+                            <div class="signup-kurumsal-navigation-item signup-kurumsal-navigation-active">
+                                <div class="signup-kurumsal-navigation-item-number">
+                                    01
+                                </div>
+                                <div class="signup-kurumsal-navigation-item-title">
+                                    Şirket Bilgileri
+                                </div>
+                            </div>
+                            <div class="signup-kurumsal-navigation-item">
+                                <div class="signup-kurumsal-navigation-item-number">
+                                    02
+                                </div>
+                                <div class="signup-kurumsal-navigation-item-title">
+                                    Başvuru Sahibi
+                                </div>
+                            </div>
+                            <div class="signup-kurumsal-navigation-item">
+                                <div class="signup-kurumsal-navigation-item-number">
+                                    03
+                                </div>
+                                <div class="signup-kurumsal-navigation-item-title">
+                                    Adres Bilgileri
+                                </div>
+                            </div>
+                        </div>
+                        <div class="signup-kurumsal-form-container">
+                            <div class="row">
+                                <div>
+                                    <div class="kurumsalSirketUnvani">
+                                        <label for="kurumsalSirketUnvani">Şirket Ünvanı*<span><input type="checkbox" name="kurumsalSahisSirketiCheckbox" value="kurumsalSahisSirketiCheckbox"> Şahıs Şirketi</span></label>
+                                        <input type="text" id="kurumsalSirketUnvani" name="kurumsalSirketUnvani" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="kurumsalVergiNo">
+                                        <label for="kurumsalVergiNo">Vergi No*</label>
+                                        <input type="text" id="kurumsalVergiNo" name="kurumsalVergiNo" required>
+                                    </div>
+                                    <div class="kurumsalVergiDairesi">
+                                        <label for="kurumsalVergiDairesi">Vergi Daresi*</label>
+                                        <input type="text" id="kurumsalVergiDairesi" name="kurumsalVergiDairesi" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="kurumsalCalisanSayisi">
+                                        <label for="kurumsalCalisanSayisi">Çalışan Sayısı</label>
+                                        <select id="kurumsalCalisanSayisi" name="kurumsalCalisanSayisi">
+                                            <option data-display="0 - 10" value="0 - 10">0 - 10</option>
+                                            <option value="10 - 50">10 - 50</option>
+                                            <option value="50 - 100">50 - 100</option>
+                                            <option value="100+">100+</option>
+                                        </select>
+                                    </div>
+                                    <div class="kurumsalSektor">
+                                        <label for="kurumsalSektor">Sektör</label>
+                                        <select id="kurumsalSektor" name="kurumsalSektor">
+                                            <option data-display="Teknoloji" value="Teknoloji">Teknoloji</option>
+                                            <option value="Kozmetik">Kozmetik</option>
+                                            <option value="Tekstil">Tekstil</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <div class="signupKurumsalButtonContainer">
+                                    <a href="#">Devam Et</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,10 +241,7 @@
                 </div>
                 <div class="avantaj">
                     <div class="icon">
-                        <img src="img/signup/box-indirim.png"
-                             srcset="img/signup/box-indirim@2x.png 2x,
-                        img/signup/box-indirim@3x.png 3x"
-                             class="box-indirim">
+                        <img src="img/signup/box-indirim.png" srcset="img/signup/box-indirim@2x.png 2x, img/signup/box-indirim@3x.png 3x" class="box-indirim">
                     </div>
                     <div class="detail">
                         Ücretsiz Kargo
@@ -200,7 +274,6 @@
             </div>
             <div class="footer-icon footer-phone">
                 <img srcset="img/footer/icons/ico-footer-callus@2x.png 2x, img/footer/icons/ico-footer-callus@3x.png 3x" src="img/footer/icons/ico-footer-callus.png" alt="Bizi Arayın">
-
                 <div class="icon-overlay">
                 </div>
                 <div>
@@ -332,12 +405,14 @@
 <script src="js/slick.min.js"></script>
 <script src="js/global.js"></script>
 <script src="js/tab.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
 <script>
     $(document).ready(function() {
         $('.nav-tabs a').click(function (e) {
             e.preventDefault()
             $(this).tab('show')
         });
+        $('select').niceSelect();
     });
 </script>
 </body>

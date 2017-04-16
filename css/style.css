@@ -5335,36 +5335,36 @@ a:hover {
   margin-top: 20px;
   margin-bottom: 21px; }
 
-.signup-form-container {
+.signup-bireysel-form-container {
   padding: 6px 20px 0;
   /* BIREYSEL */ }
-  .signup-form-container label {
+  .signup-bireysel-form-container label {
     font-size: 14px;
     font-weight: 600;
     color: #82858a;
     display: block;
     margin-bottom: 6px; }
-  .signup-form-container input[type="text"], .signup-form-container select, .signup-form-container .nice-select, .signup-form-container .adressTextArea {
+  .signup-bireysel-form-container input[type="text"], .signup-bireysel-form-container select, .signup-bireysel-form-container .nice-select, .signup-bireysel-form-container .adressTextArea {
     height: 54px;
     background-color: #fbfbfa;
     border: solid 1px #f0f3f6;
     width: calc(100% - 4px);
     color: #626971;
     font-size: 16px; }
-  .signup-form-container input[type="text"] {
+  .signup-bireysel-form-container input[type="text"] {
     padding: 0 20px;
     width: calc(100% - 44px); }
-  .signup-form-container input:read-only {
+  .signup-bireysel-form-container input:read-only {
     background-color: #f0f3f8;
     border: solid 1px #f0f3f6;
     color: #4c535c; }
-  .signup-form-container input:focus, .signup-form-container .open, .signup-form-container textarea:focus {
+  .signup-bireysel-form-container input:focus, .signup-bireysel-form-container .open, .signup-bireysel-form-container textarea:focus {
     border: solid 1px #ff9f69;
     outline: none;
     color: #4c535c; }
-  .signup-form-container .row {
+  .signup-bireysel-form-container .row {
     margin-top: 20px; }
-  .signup-form-container .bireyselAdVeSoyad {
+  .signup-bireysel-form-container .bireyselAdVeSoyad {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5373,7 +5373,7 @@ a:hover {
     border-right-width: 0;
     padding: 0;
     margin-right: 18px; }
-  .signup-form-container .bireyselEposta {
+  .signup-bireysel-form-container .bireyselEposta {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5384,7 +5384,7 @@ a:hover {
     margin-right: 18px;
     margin-right: 0;
     border-left-width: 0; }
-  .signup-form-container .bireyselSifreniz {
+  .signup-bireysel-form-container .bireyselSifreniz {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5394,11 +5394,11 @@ a:hover {
     padding: 0;
     margin-right: 18px;
     position: relative; }
-  .signup-form-container .sifreIcon {
+  .signup-bireysel-form-container .sifreIcon {
     position: absolute;
     top: 40px;
     right: 17px; }
-  .signup-form-container .bireyselGuvenlikKodu {
+  .signup-bireysel-form-container .bireyselGuvenlikKodu {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5409,7 +5409,7 @@ a:hover {
     margin-right: 18px;
     margin-right: 0;
     border-left-width: 0; }
-    .signup-form-container .bireyselGuvenlikKodu input {
+    .signup-bireysel-form-container .bireyselGuvenlikKodu input {
       float: left;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -5418,19 +5418,19 @@ a:hover {
       border-color: #f0f3f6;
       border-style: solid;
       border-width: 1px 1px 1px 0; }
-    .signup-form-container .bireyselGuvenlikKodu input::placeholder {
+    .signup-bireysel-form-container .bireyselGuvenlikKodu input::placeholder {
       color: #aeb4bc; }
-  .signup-form-container .bireyselKampanyaCheckbox label {
+  .signup-bireysel-form-container .bireyselKampanyaCheckbox label {
     display: inline;
     font-size: 14px;
     font-weight: normal;
     color: #8c9196;
     margin-left: 8px; }
-  .signup-form-container .bireyselKampanyaCheckbox div {
+  .signup-bireysel-form-container .bireyselKampanyaCheckbox div {
     margin: 11px 0 19px; }
-    .signup-form-container .bireyselKampanyaCheckbox div input {
+    .signup-bireysel-form-container .bireyselKampanyaCheckbox div input {
       margin-left: 26px; }
-  .signup-form-container .guvenlikKoduResim {
+  .signup-bireysel-form-container .guvenlikKoduResim {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5441,40 +5441,40 @@ a:hover {
     border-color: #f0f3f6;
     border-style: solid;
     border-width: 1px 0 1px 1px; }
-  .signup-form-container .nice-select {
+  .signup-bireysel-form-container .nice-select {
     height: 58px;
     border-radius: 0; }
-    .signup-form-container .nice-select .list {
+    .signup-bireysel-form-container .nice-select .list {
       border-radius: 0;
       margin-top: 2px;
       width: 100%;
       max-height: 292px;
       overflow-y: auto;
       padding: 0 12.4px 0 9px; }
-      .signup-form-container .nice-select .list .option {
+      .signup-bireysel-form-container .nice-select .list .option {
         color: #868a8f;
         padding: 10px 0 12px 0;
         font-size: 16px;
         line-height: 1.38;
         box-shadow: inset 0 -1px 0 0 #f0f3f6;
         min-height: auto; }
-        .signup-form-container .nice-select .list .option:last-child {
+        .signup-bireysel-form-container .nice-select .list .option:last-child {
           box-shadow: none; }
-        .signup-form-container .nice-select .list .option:hover, .signup-form-container .nice-select .list .option.focus {
+        .signup-bireysel-form-container .nice-select .list .option:hover, .signup-bireysel-form-container .nice-select .list .option.focus {
           background: white;
           font-weight: normal; }
-      .signup-form-container .nice-select .list .option.selected {
+      .signup-bireysel-form-container .nice-select .list .option.selected {
         color: #f57353;
         background: white; }
-  .signup-form-container .current {
+  .signup-bireysel-form-container .current {
     line-height: 58px; }
 
-.signupButtonContainer {
+.signupBireyselButtonContainer {
   margin-top: 31px;
   background: #fafafc;
   text-align: right;
   padding: 39.8px 19px 42.2px 0; }
-  .signupButtonContainer a {
+  .signupBireyselButtonContainer a {
     padding: 16.7px 65.5px 15.3px;
     font-size: 16px;
     font-weight: 500;
@@ -5487,6 +5487,183 @@ a:hover {
 
 #bireyselUyelikSozlesmesiLabel {
   text-decoration: underline; }
+
+/* KURUMSAL */
+.signup-kurumsal-navigation {
+  padding: 0 20px;
+  margin-top: 20px; }
+  .signup-kurumsal-navigation:before, .signup-kurumsal-navigation:after {
+    content: " ";
+    display: table; }
+  .signup-kurumsal-navigation:after {
+    clear: both; }
+
+.signup-kurumsal-navigation-item {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: calc(100% / 3);
+  box-shadow: inset 0 -3px 0 0 #dde3e8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; }
+  .signup-kurumsal-navigation-item .signup-kurumsal-navigation-item-number {
+    width: 35px;
+    height: 20px;
+    margin: 15px 0 15px 22.2px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    border-radius: 50%;
+    border: solid 2px rgba(221, 227, 232, 0.2);
+    text-align: center;
+    padding-top: 6px;
+    color: #dde3e8; }
+  .signup-kurumsal-navigation-item .signup-kurumsal-navigation-item-title {
+    text-align: center;
+    width: 207px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.38;
+    margin: 16px 0;
+    color: #dde3e8; }
+
+.signup-kurumsal-navigation-active {
+  box-shadow: inset 0 -3px 0 0 #ff9f69; }
+  .signup-kurumsal-navigation-active .signup-kurumsal-navigation-item-title, .signup-kurumsal-navigation-active .signup-kurumsal-navigation-item-number {
+    color: #ff9f69; }
+  .signup-kurumsal-navigation-active .signup-kurumsal-navigation-item-number {
+    border: solid 2px rgba(249, 142, 78, 0.06); }
+
+.signup-kurumsal-form-container {
+  padding: 6px 20px 0; }
+  .signup-kurumsal-form-container label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #82858a;
+    display: block;
+    margin-bottom: 6px; }
+  .signup-kurumsal-form-container input[type="text"], .signup-kurumsal-form-container select, .signup-kurumsal-form-container .nice-select, .signup-kurumsal-form-container .adressTextArea {
+    height: 54px;
+    background-color: #fbfbfa;
+    border: solid 1px #f0f3f6;
+    width: calc(100% - 4px);
+    color: #626971;
+    font-size: 16px; }
+  .signup-kurumsal-form-container input[type="text"] {
+    padding: 0 20px;
+    width: calc(100% - 44px); }
+  .signup-kurumsal-form-container input:read-only {
+    background-color: #f0f3f8;
+    border: solid 1px #f0f3f6;
+    color: #4c535c; }
+  .signup-kurumsal-form-container input:focus, .signup-kurumsal-form-container .open, .signup-kurumsal-form-container textarea:focus {
+    border: solid 1px #ff9f69;
+    outline: none;
+    color: #4c535c; }
+  .signup-kurumsal-form-container .row {
+    margin-top: 20px; }
+  .signup-kurumsal-form-container .nice-select {
+    height: 58px;
+    border-radius: 0; }
+    .signup-kurumsal-form-container .nice-select .list {
+      border-radius: 0;
+      margin-top: 2px;
+      width: 100%;
+      max-height: 292px;
+      overflow-y: auto;
+      padding: 0 12.4px 0 9px; }
+      .signup-kurumsal-form-container .nice-select .list .option {
+        color: #868a8f;
+        padding: 10px 0 12px 0;
+        font-size: 16px;
+        line-height: 1.38;
+        box-shadow: inset 0 -1px 0 0 #f0f3f6;
+        min-height: auto; }
+        .signup-kurumsal-form-container .nice-select .list .option:last-child {
+          box-shadow: none; }
+        .signup-kurumsal-form-container .nice-select .list .option:hover, .signup-kurumsal-form-container .nice-select .list .option.focus {
+          background: white;
+          font-weight: normal; }
+      .signup-kurumsal-form-container .nice-select .list .option.selected {
+        color: #f57353;
+        background: white; }
+  .signup-kurumsal-form-container .current {
+    line-height: 58px; }
+  .signup-kurumsal-form-container .kurumsalSirketUnvani {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 20px; }
+    .signup-kurumsal-form-container .kurumsalSirketUnvani span {
+      float: right;
+      font-size: 14px;
+      font-weight: normal;
+      color: #8c9196; }
+    .signup-kurumsal-form-container .kurumsalSirketUnvani label {
+      width: 100%; }
+  .signup-kurumsal-form-container .kurumsalVergiNo {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalVergiDairesi {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signup-kurumsal-form-container .kurumsalCalisanSayisi {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px; }
+  .signup-kurumsal-form-container .kurumsalSektor {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+
+.signupKurumsalButtonContainer {
+  margin-top: 30px;
+  background: #fafafc;
+  text-align: right;
+  padding: 39.8px 19px 42.2px 0; }
+  .signupKurumsalButtonContainer a {
+    padding: 16.7px 55.5px 15.3px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 180px;
+    height: 48px;
+    color: #ffffff;
+    background: #ff9f69;
+    box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25); }
 
 .product-detail-navigation {
   margin-top: 30px; }
