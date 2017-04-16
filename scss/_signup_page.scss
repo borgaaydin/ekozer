@@ -624,3 +624,40 @@
     box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
   }
 }
+/* AKTIVASYON MAIL - MESSAGE */
+.message-panel {
+  width: 620px;
+  margin: 20px;
+  background: #fbfcfc;
+  .icon {
+    padding-top: 25px;
+    margin: 0 auto;
+    text-align: center;
+    width: 66px;
+  }
+  .info {
+    width: 516px;
+    margin: 16px auto 0;
+    padding-bottom: 51px;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: #8c9196;
+  }
+}
+.magazayaDonButtonContainer {
+  margin-top: 0;
+  text-align: center;
+  padding: 20px 19px 50.3px 0;
+  a {
+    padding: 16.7px 36.5px 15.3px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 180px;
+    height: 48px;
+    color: #ffffff;
+    background: #ff9f69;
+    box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+  }
+}
