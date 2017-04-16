@@ -40,6 +40,11 @@
 // JQUERY NICE SELECT
 @import "../bower_components/jquery-nice-select/scss/nice-select.scss";
 
+// Pretty Checkbox
+@import "../bower_components/pretty-checkbox/src/pretty.scss";
+@import "pretty-checkbox";
+
+
 //SLIDER
 @import "slick";
 @import "slick-theme";
