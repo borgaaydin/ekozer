@@ -114,8 +114,8 @@
     font-size:16px;
   }
   input[type="text"] {
-    padding: 0 20px;
-    width: calc(100% - 44px);
+    padding: 0 16px 0 12px;
+    width: calc(100% - 32px);
   }
   input:read-only {
     background-color: #f0f3f8;
@@ -179,15 +179,6 @@
         margin-left: 26px;
       }
     }
-  }
-  .guvenlikKoduResim {
-    @include col();
-    height: 54px;
-    background: #ededed;
-    width: 149px;
-    border-color: #f0f3f6;
-    border-style: solid;
-    border-width: 1px 0 1px 1px;
   }
   .nice-select {
     height: 58px;
@@ -272,6 +263,10 @@
     text-align: center;
     padding-top: 6px;
     color: #dde3e8;
+    span {
+      position: absolute;
+      margin-top: -2px;
+    }
   }
   .signup-kurumsal-navigation-item-title {
     text-align: center;
@@ -310,8 +305,8 @@
     font-size: 16px;
   }
   input[type="text"] {
-    padding: 0 20px;
-    width: calc(100% - 44px);
+    padding: 0 16px 0 12px;
+    width: calc(100% - 32px);
   }
   input:read-only {
     background-color: #f0f3f8;
@@ -373,6 +368,7 @@
       width: 100%;
     }
   }
+  /* SIRKET BILGILERI */
   .kurumsalVergiNo {
     @include col();
     @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
@@ -396,6 +392,48 @@
     @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
     @include beta();
   }
+  /* BASVURU SAHIBI */
+  .kurumsalBasvuruAdVeSoyad {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalBasvuruEposta {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .kurumsalBasvuruCepTelefonu {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalBasvuruSektor {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .kurumsalBasvuruIsyeriNo {
+    @include col();
+    @include span(6, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalBasvuruIsyeriNoDahili {
+    @include col();
+    @include span(2, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  }
+  .kurumsalBasvuruGuvenlikKodu {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+    input {
+      @include col();
+      width: 149px;
+      border-color: #f0f3f6;
+      border-style: solid;
+      border-width: 1px 1px 1px 0;
+    }
+    input::placeholder {
+      color: #aeb4bc;
+    }
+  }
 }
 .signupKurumsalButtonContainer {
   margin-top: 30px;
@@ -413,4 +451,13 @@
     background: #ff9f69;
     box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
   }
+}
+.guvenlikKoduResim {
+  @include col();
+  height: 54px;
+  background: #ededed;
+  width: 149px;
+  border-color: #f0f3f6;
+  border-style: solid;
+  border-width: 1px 0 1px 1px;
 }

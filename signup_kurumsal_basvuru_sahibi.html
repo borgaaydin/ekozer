@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Ekozer Sign Up - Kurumsal Şirket Şahıs</title>
+    <title>Ekozer Sign Up - Kurumsal Başvuru Sahibi</title>
 </head>
 <link rel="stylesheet" href="css/style.css">
 
@@ -134,15 +134,16 @@
                     </div>
                     <div role="tabpanel" class="tab-pane active" id="kurumsal">
                         <div class="signup-kurumsal-navigation">
-                            <div class="signup-kurumsal-navigation-item signup-kurumsal-navigation-active">
+                            <div class="signup-kurumsal-navigation-item">
                                 <div class="signup-kurumsal-navigation-item-number">
                                     01
+                                    <span><img src="img/signup/oval-check.png" srcset="img/signup/oval-check@2x.png 2x, img/signup/oval-check@3x.png 3x" class="oval-copy-2"></span>
                                 </div>
                                 <div class="signup-kurumsal-navigation-item-title">
                                     Şirket Bilgileri
                                 </div>
                             </div>
-                            <div class="signup-kurumsal-navigation-item">
+                            <div class="signup-kurumsal-navigation-item signup-kurumsal-navigation-active">
                                 <div class="signup-kurumsal-navigation-item-number">
                                     02
                                 </div>
@@ -162,34 +163,46 @@
                         <div class="signup-kurumsal-form-container">
                             <div class="row">
                                 <div>
-                                    <div class="kurumsalSirketUnvani">
-                                        <label for="kurumsalSirketUnvani">Şirket Ünvanı*<span><input type="checkbox" name="kurumsalSahisSirketiCheckbox" value="kurumsalSahisSirketiCheckbox" checked> Şahıs Şirketi</span></label>
-                                        <input type="text" id="kurumsalSirketUnvani" name="kurumsalSirketUnvani" required>
+                                    <div class="kurumsalBasvuruAdVeSoyad">
+                                        <label for="kurumsalBasvuruAdVeSoyad">Adınız ve Soyadınız*</label>
+                                        <input type="text" id="kurumsalBasvuruAdVeSoyad" name="kurumsalBasvuruAdVeSoyad" required>
                                     </div>
-                                    <div class="kurumsalTCKNO">
-                                        <label for="kurumsalTCKNO">TC Kimlik No*</label>
-                                        <input type="text" id="kurumsalTCKNO" name="kurumsalTCKNO" required>
+                                    <div class="kurumsalBasvuruEposta">
+                                        <label for="kurumsalBasvuruEposta">E-posta Adresiniz*</label>
+                                        <input type="text" id="kurumsalBasvuruEposta" name="kurumsalBasvuruEposta" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div>
-                                    <div class="kurumsalCalisanSayisi">
-                                        <label for="kurumsalCalisanSayisi">Çalışan Sayısı</label>
-                                        <select id="kurumsalCalisanSayisi" name="kurumsalCalisanSayisi">
-                                            <option data-display="0 - 10" value="0 - 10">0 - 10</option>
-                                            <option value="10 - 50">10 - 50</option>
-                                            <option value="50 - 100">50 - 100</option>
-                                            <option value="100+">100+</option>
-                                        </select>
+                                    <div class="kurumsalBasvuruCepTelefonu">
+                                        <label for="kurumsalBasvuruCepTelefonu">Cep Telefon Numaranız*</label>
+                                        <input type="text" id="kurumsalBasvuruCepTelefonu" name="kurumsalBasvuruCepTelefonu" required>
                                     </div>
-                                    <div class="kurumsalSektor">
-                                        <label for="kurumsalSektor">Sektör</label>
-                                        <select id="kurumsalSektor" name="kurumsalSektor">
+                                    <div class="kurumsalBasvuruSektor">
+                                        <label for="kurumsalBasvuruSektor">Sektör*</label>
+                                        <select id="kurumsalBasvuruSektor" name="kurumsalBasvuruSektor" required>
                                             <option data-display="Teknoloji" value="Teknoloji">Teknoloji</option>
                                             <option value="Kozmetik">Kozmetik</option>
                                             <option value="Tekstil">Tekstil</option>
                                         </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="kurumsalBasvuruIsyeriNo">
+                                        <label for="kurumsalBasvuruAdVeSoyad">İş Yeri Numaranız</label>
+                                        <input type="text" id="kurumsalBasvuruAdVeSoyad" name="kurumsalBasvuruAdVeSoyad">
+                                    </div>
+                                    <div class="kurumsalBasvuruIsyeriNoDahili">
+                                        <label for="kurumsalBasvuruEposta">Dahili</label>
+                                        <input type="text" id="kurumsalBasvuruEposta" name="kurumsalBasvuruEposta">
+                                    </div>
+                                    <div class="kurumsalBasvuruGuvenlikKodu">
+                                        <label for="kurumsalBasvuruGuvenlikKodu">&nbsp;</label>
+                                        <div class="guvenlikKoduResim"></div>
+                                        <input type="text" id="kurumsalBasvuruGuvenlikKodu" name="kurumsalBasvuruGuvenlikKodu" placeholder="Güvenlik Kodu">
                                     </div>
                                 </div>
                             </div>
