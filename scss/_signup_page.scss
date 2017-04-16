@@ -235,6 +235,9 @@
 #bireyselUyelikSozlesmesiLabel, #kurumsalUyelikSozlesmesiLabel {
   text-decoration: underline;
 }
+#bireyselUyelikSozlesmesiLabel:hover, #kurumsalUyelikSozlesmesiLabel:hover {
+  cursor: pointer;
+}
 
 /* KURUMSAL */
 
@@ -568,4 +571,56 @@
 }
 .teslimatSirketNumarasi {
   margin-top: 18px;
+}
+/* MODAL OVERRIDE */
+.modal-dialog {
+  width: 620px;
+  height: 477px;
+}
+.modal-content {
+  border-radius: 0;
+  background-color: #ffffff;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.04);
+  .modal-header {
+    padding:0;
+    text-align: center;
+    border: none;
+    .modal-title {
+      margin: 25px 0;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+  }
+  .modal-body {
+    height: 296px;
+    background-color: #fbfcfc;
+    padding:11px 19px 10px;
+    overflow-y: auto;
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+  .modal-footer {
+    border: none;
+    padding:0;
+  }
+}
+.uyelikSozlesmesiButtonContainer {
+  margin-top: 30px;
+  background: #fafafc;
+  text-align: center;
+  padding: 44px 0 49px;
+  a {
+    padding: 16.7px 70px 15.3px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 340px;
+    height: 48px;
+    color: #ffffff;
+    background: #ff9f69;
+    box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+  }
 }
