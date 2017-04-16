@@ -1,0 +1,26 @@
+.pretty {
+  i {
+    color: #ffffff;
+    line-height: 17px;
+    margin-right: 11px;
+
+    &::before {
+      background-color: transparent;
+      width: 17px;
+      height: 17px;
+      border-radius: 2px;
+    }
+
+    &::after {
+      border-radius: 3px;
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  label {
+    display: flex;
+    flex-direction: row;
+  }
+
+}

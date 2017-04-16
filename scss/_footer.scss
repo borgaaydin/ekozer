@@ -157,7 +157,8 @@
       }
 
       label {
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
         width: 358px;
         font-size: 14px;
         font-weight: 300;
