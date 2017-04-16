@@ -362,7 +362,7 @@
   }
   .kurumsalSirketUnvani {
     @include col();
-    @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
     span {
       float: right;
       font-size: 14px;
@@ -387,6 +387,11 @@
     @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
   }
   .kurumsalSektor {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .kurumsalTCKNO {
     @include col();
     @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
     @include beta();
