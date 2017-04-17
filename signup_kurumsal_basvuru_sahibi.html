@@ -119,15 +119,17 @@
                                             <input type="checkbox" name="bireyselKampanyaEposta" value="bireyselKampanyaEposta" id="bireyselKampanyaEposta"><label for="bireyselKampanyaEposta">E-posta</label>
                                             <input type="checkbox" name="bireyselKampanyaCagriMerkezi" value="bireyselKampanyaCagriMerkezi" id="bireyselKampanyaCagriMerkezi"><label for="bireyselKampanyaCagriMerkezi">Çağrı Merkezi<label>
                                         </div>
-                                        <input type="checkbox" name="bireyselUyelikSozlesmesi" value="bireyselUyelikSozlesmesi" id="bireyselUyelikSozlesmesi"><label for="bireyselUyelikSozlesmesi"><span id="bireyselUyelikSozlesmesiLabel">Üyelik Sözlesmesini</span> okudum ve kabul ediyorum</label>
+                                        <input type="checkbox" name="bireyselUyelikSozlesmesi" value="bireyselUyelikSozlesmesi" id="bireyselUyelikSozlesmesi"><label><span id="bireyselUyelikSozlesmesiLabel">Üyelik Sözleşmesini</span> okudum ve kabul ediyorum</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div>
-                                <div class="signupBireyselButtonContainer">
-                                    <a href="#">Üye Ol</a>
+                                <div class="signup-form-footer">
+                                    <div class="signup-form-button-container signup-form-button-passive">
+                                        <a href="#">Üye Ol</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -209,8 +211,10 @@
                         </div>
                         <div class="row">
                             <div>
-                                <div class="signupKurumsalButtonContainer">
-                                    <a href="#">Devam Et</a>
+                                <div class="signup-form-footer">
+                                    <div class="signup-form-button-container">
+                                        <a href="#">Devam Et</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -407,16 +411,45 @@
         </div>
     </div>
 </div>
+<div class="modal fade" tabindex="-1" role="dialog" id="bireyselUyelikSozlesmesiModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Üyelik Sözleşmesi</h4>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt lorem vitae orci semper auctor. Mauris finibus a lacus in lacinia. Sed sed pharetra felis. Etiam id ex erat. Nulla a semper nisl, ac rutrum ante.</p>
+                <p>Integer ultricies, sapien hendrerit scelerisque blandit, quam nisl porttitor augue, vitae tincidunt purus tortor a ex. Nulla pulvinar finibus lorem mollis laoreet. Vivamus pharetra lacus et pellentesque vehicula. Phasellus dictum imperdiet faucibus. Morbi tempor consequat nunc, at tincidunt lectus condimentum id. Quisque id ante et turpis aliquet tempus in nec tellus.</p>
+                <p>Nullam commodo, erat ac tempus viverra, elit dolor ultrices elit, et varius lacus sapien ac ligula. Nulla mi diam, mattis sed volutpat eu, mattis eget ante. Nulla scelerisque, ex quis condimentum pellentesque, erat orci elementum lectus, non varius odio metus ut lacus. Mauris nec iaculis est. In tristique diam mauris, feugiat luctus sem pretium nec. In luctus ipsum ac diam consectetur hendrerit id id ipsum. Cras velit elit, efficitur non ex scelerisque, commodo elementum nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nunc sit amet ligula maximus rutrum sit amet sit amet tortor. Sed non nibh metus. Aliquam ac massa at nulla ultricies elementum quis eget dolor. Ut consectetur in urna non auctor. Fusce eleifend facilisis sagittis. Etiam tortor magna, convallis sit amet est sit amet, rutrum lobortis purus.</p>
+            </div>
+            <div class="modal-footer">
+                <div class="signup-form-footer signup-form-footer-centered">
+                    <div class="signup-form-button-container signup-form-uyelik-button-container">
+                        <a href="#" id="bireyselUyelikSozlesmesiOnay">Okudum ve Kabul Ediyorum</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <script src="js/jquery.min.js"></script>
 <script src="js/global.js"></script>
 <script src="js/tab.js"></script>
+<script src="js/modal.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
 <script>
     $(document).ready(function() {
         $('.nav-tabs a').click(function (e) {
             e.preventDefault()
             $(this).tab('show')
+        });
+        $('#bireyselUyelikSozlesmesiLabel').click(function() {
+            $('#bireyselUyelikSozlesmesiModal').modal('show');
+        });
+        $('#bireyselUyelikSozlesmesiOnay').click(function() {
+            $('#bireyselUyelikSozlesmesiModal').modal('hide');
+            $('#bireyselUyelikSozlesmesi').prop('checked', true);
         });
         $('select').niceSelect();
     });
