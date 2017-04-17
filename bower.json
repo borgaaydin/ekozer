@@ -19,7 +19,8 @@
     "animate.css": "^3.5.2",
     "font-awesome": "^4.7.0",
     "components-font-awesome": "^4.7.0",
-    "jquery-nice-select": "^1.1.0"
+    "jquery-nice-select": "^1.1.0",
+    "pretty-checkbox": "^2.2.1"
   },
   "devDependencies": {
     "slick": "*"
