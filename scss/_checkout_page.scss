@@ -271,6 +271,16 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.38;
+    span.urunSayisi {
+      background-color: #ff9f69;
+      box-shadow: 0 2px 2px 0 rgba(221, 149, 103, 0.25);
+      padding: 6px 10px 2px;
+      font-weight: 500;
+      font-style: italic;
+      text-align: center;
+      color: #ffffff;
+      margin-left: 12px;
+    }
   }
   .siparisOzeti-info {
     padding: 14px 20px;
