@@ -5640,6 +5640,9 @@ a:hover {
     text-align: center;
     padding-top: 13px;
     color: #dde3e8; }
+    .checkout-navigation-item .checkout-navigation-item-number span {
+      position: absolute;
+      margin-top: -7px; }
   .checkout-navigation-item .checkout-navigation-item-title {
     text-align: center;
     width: 290px;
@@ -5824,8 +5827,7 @@ a:hover {
         padding: 10px 0 12px 0;
         font-size: 16px;
         line-height: 1.38;
-        box-shadow: inset 0 -1px 0 0 #f0f3f6;
-        min-height: auto; }
+        box-shadow: inset 0 -1px 0 0 #f0f3f6; }
         .checkout-adress-form-container .nice-select .list .option:last-child {
           box-shadow: none; }
         .checkout-adress-form-container .nice-select .list .option:hover, .checkout-adress-form-container .nice-select .list .option.focus {
@@ -6046,6 +6048,91 @@ a:hover {
   margin-right: 20px;
   margin-right: 0;
   border-left-width: 0; }
+
+/* ODEME YONTEMI */
+.checkout-odeme-yontemi-left {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 220px;
+  border-right-width: 0;
+  padding: 0;
+  margin-right: 20px;
+  margin-right: 0;
+  border-left-width: 0; }
+
+.checkout-odeme-yontemi-right {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 560px;
+  border-right-width: 0;
+  padding: 0;
+  margin-right: 20px;
+  margin-right: 0;
+  border-left-width: 0;
+  padding: 0 20px;
+  border-left: solid 1px #eceded;
+  min-height: 192px; }
+
+.checkout-odeme-yontemi-header {
+  padding: 0 20px;
+  margin-top: 23px; }
+  .checkout-odeme-yontemi-header h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 3px; }
+  .checkout-odeme-yontemi-header .description {
+    font-size: 16px;
+    line-height: 1.38;
+    color: #8c9196;
+    margin-bottom: 27px; }
+
+.checkout-odeme-yontemi-container {
+  padding: 0; }
+  .checkout-odeme-yontemi-container .row {
+    margin-top: 20px; }
+
+.checkout-odeme-yontemi-right-content {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  background: #fbfcfc; }
+  .checkout-odeme-yontemi-right-content .icon {
+    margin: 0 auto;
+    width: 109px;
+    padding: 66px 0 17px; }
+  .checkout-odeme-yontemi-right-content .info {
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #8c9196;
+    padding-bottom: 69px; }
+    .checkout-odeme-yontemi-right-content .info span {
+      font-weight: bold;
+      color: #f57a3e; }
+
+/* OVERRIDE */
+.nav-pills > li > a {
+  color: #434b54;
+  padding-top: 11px;
+  padding-bottom: 15px;
+  padding-left: 18px;
+  border-radius: 0;
+  line-height: 1.38; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background: transparent;
+  color: #fa9458;
+  box-shadow: inset 4px 0 0 0 #ff9f69, inset 0 1px 0 0 #f0f3f6; }
+
+.nav-stacked > li {
+  box-shadow: inset 4px 0 0 0 #dde3e8, inset 0 1px 0 0 #f0f3f6; }
+
+.nav-stacked > li + li {
+  margin-top: 0; }
 
 .signup {
   margin-top: 20px; }
