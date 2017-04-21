@@ -407,3 +407,14 @@
   @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
   @include beta();
 }
+
+/* BIREYSEL TESLIMAT ADRESI */
+.bireyselTeslimAlacakKisi {
+  @include col();
+  @include span(9.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.bireyselTeslimAlacakTelefon {
+  @include col();
+  @include span(9.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include beta();
+}
