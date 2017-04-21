@@ -397,3 +397,13 @@
     }
   }
 }
+/* BIREYSEL FATURA ADRESI */
+.bireyselFaturaAdSoyad, .bireyselFaturaTCKNO {
+  @include col();
+  @include span(6.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.bireyselFaturaTelefon {
+  @include col();
+  @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include beta();
+}

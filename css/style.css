@@ -6001,6 +6001,29 @@ a:hover {
       box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.32);
       border: solid 1px #fff8f3; }
 
+/* BIREYSEL FATURA ADRESI */
+.bireyselFaturaAdSoyad, .bireyselFaturaTCKNO {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 240px;
+  border-right-width: 0;
+  padding: 0;
+  margin-right: 20px; }
+
+.bireyselFaturaTelefon {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 220px;
+  border-right-width: 0;
+  padding: 0;
+  margin-right: 20px;
+  margin-right: 0;
+  border-left-width: 0; }
+
 .signup {
   margin-top: 20px; }
 
