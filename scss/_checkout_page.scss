@@ -266,9 +266,9 @@
     border: solid 1px rgba(206,211,219,0.3);
   }
 }
-.siparisOzeti {
+.alisverisBilgileri {
   background-color: #ffffff;
-  .siparisOzeti-title {
+  .alisverisBilgileri-title {
     padding: 16px 20px;
     box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
     font-size: 16px;
@@ -285,7 +285,7 @@
       margin-left: 12px;
     }
   }
-  .siparisOzeti-info {
+  .alisverisBilgileri-info {
     padding: 14px 20px;
     & > div {
       color: #8c9196;
@@ -302,7 +302,7 @@
       margin-bottom: 16px;
     }
   }
-  .siparisOzeti-genelToplam {
+  .alisverisBilgileri-genelToplam {
     background: #fbfcfc;
     padding: 16px 20px 18px;
     .genelToplam {
@@ -339,7 +339,7 @@
   height: 38px;
   background: #fff;
 }
-.siparisOzetiButton {
+.alisverisBilgileriButton {
   width: 340px;
   margin: -18px 20px 0;
   padding: 16.7px 0 15.3px;
@@ -433,7 +433,6 @@
   @include col();
   @include span(14.5, $gutter_pc, $gutter_px, $padding, $max_columns);
   @include beta();
-  padding: 0 20px;
   border-left: solid 1px #eceded;
   min-height: 192px;
 }
@@ -462,21 +461,23 @@
 .checkout-odeme-yontemi-right-content {
   padding: 0 20px;
   margin-bottom: 20px;
-  background: #fbfcfc;
-  .icon {
-    margin: 0 auto;
-    width: 109px;
-    padding: 66px 0 17px;
-  }
-  .info {
-    line-height: 1.38;
-    letter-spacing: normal;
-    text-align: center;
-    color: #8c9196;
-    padding-bottom: 69px;
-    span {
-      font-weight: bold;
-      color: #f57a3e;
+  .tab-pane#acikHesap {
+    background: #fbfcfc;
+    .icon {
+      margin: 0 auto;
+      width: 109px;
+      padding: 66px 0 17px;
+    }
+    .info {
+      line-height: 1.38;
+      letter-spacing: normal;
+      text-align: center;
+      color: #8c9196;
+      padding-bottom: 69px;
+      span {
+        font-weight: bold;
+        color: #f57a3e;
+      }
     }
   }
 }

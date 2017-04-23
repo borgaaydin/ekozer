@@ -5885,15 +5885,15 @@ a:hover {
     background: transparent;
     border: solid 1px rgba(206, 211, 219, 0.3); }
 
-.siparisOzeti {
+.alisverisBilgileri {
   background-color: #ffffff; }
-  .siparisOzeti .siparisOzeti-title {
+  .alisverisBilgileri .alisverisBilgileri-title {
     padding: 16px 20px;
     box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.38; }
-    .siparisOzeti .siparisOzeti-title span.urunSayisi {
+    .alisverisBilgileri .alisverisBilgileri-title span.urunSayisi {
       background-color: #ff9f69;
       box-shadow: 0 2px 2px 0 rgba(221, 149, 103, 0.25);
       padding: 6px 10px 2px;
@@ -5902,31 +5902,31 @@ a:hover {
       text-align: center;
       color: #ffffff;
       margin-left: 12px; }
-  .siparisOzeti .siparisOzeti-info {
+  .alisverisBilgileri .alisverisBilgileri-info {
     padding: 14px 20px; }
-    .siparisOzeti .siparisOzeti-info > div {
+    .alisverisBilgileri .alisverisBilgileri-info > div {
       color: #8c9196;
       font-size: 16px;
       line-height: 1.38; }
-      .siparisOzeti .siparisOzeti-info > div > span {
+      .alisverisBilgileri .alisverisBilgileri-info > div > span {
         float: right; }
-    .siparisOzeti .siparisOzeti-info .araToplam, .siparisOzeti .siparisOzeti-info .kdvToplami {
+    .alisverisBilgileri .alisverisBilgileri-info .araToplam, .alisverisBilgileri .alisverisBilgileri-info .kdvToplami {
       margin-bottom: 11px; }
-    .siparisOzeti .siparisOzeti-info .kargoBedeli {
+    .alisverisBilgileri .alisverisBilgileri-info .kargoBedeli {
       margin-bottom: 16px; }
-  .siparisOzeti .siparisOzeti-genelToplam {
+  .alisverisBilgileri .alisverisBilgileri-genelToplam {
     background: #fbfcfc;
     padding: 16px 20px 18px; }
-    .siparisOzeti .siparisOzeti-genelToplam .genelToplam {
+    .alisverisBilgileri .alisverisBilgileri-genelToplam .genelToplam {
       font-size: 16px;
       color: #8c9196;
       line-height: 1.38; }
-      .siparisOzeti .siparisOzeti-genelToplam .genelToplam .kdvDahil {
+      .alisverisBilgileri .alisverisBilgileri-genelToplam .genelToplam .kdvDahil {
         display: block;
         font-size: 14px;
         line-height: 1.57;
         color: #b6bbc0; }
-      .siparisOzeti .siparisOzeti-genelToplam .genelToplam .genelToplamFiyat {
+      .alisverisBilgileri .alisverisBilgileri-genelToplam .genelToplam .genelToplamFiyat {
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -5947,14 +5947,14 @@ a:hover {
   height: 38px;
   background: #fff; }
 
-.siparisOzetiButton {
+.alisverisBilgileriButton {
   width: 340px;
   margin: -18px 20px 0;
   padding: 16.7px 0 15.3px;
   text-align: center;
   box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
   background-color: #ffd9c4; }
-  .siparisOzetiButton a {
+  .alisverisBilgileriButton a {
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -6073,7 +6073,6 @@ a:hover {
   margin-right: 20px;
   margin-right: 0;
   border-left-width: 0;
-  padding: 0 20px;
   border-left: solid 1px #eceded;
   min-height: 192px; }
 
@@ -6098,21 +6097,22 @@ a:hover {
 
 .checkout-odeme-yontemi-right-content {
   padding: 0 20px;
-  margin-bottom: 20px;
-  background: #fbfcfc; }
-  .checkout-odeme-yontemi-right-content .icon {
-    margin: 0 auto;
-    width: 109px;
-    padding: 66px 0 17px; }
-  .checkout-odeme-yontemi-right-content .info {
-    line-height: 1.38;
-    letter-spacing: normal;
-    text-align: center;
-    color: #8c9196;
-    padding-bottom: 69px; }
-    .checkout-odeme-yontemi-right-content .info span {
-      font-weight: bold;
-      color: #f57a3e; }
+  margin-bottom: 20px; }
+  .checkout-odeme-yontemi-right-content .tab-pane#acikHesap {
+    background: #fbfcfc; }
+    .checkout-odeme-yontemi-right-content .tab-pane#acikHesap .icon {
+      margin: 0 auto;
+      width: 109px;
+      padding: 66px 0 17px; }
+    .checkout-odeme-yontemi-right-content .tab-pane#acikHesap .info {
+      line-height: 1.38;
+      letter-spacing: normal;
+      text-align: center;
+      color: #8c9196;
+      padding-bottom: 69px; }
+      .checkout-odeme-yontemi-right-content .tab-pane#acikHesap .info span {
+        font-weight: bold;
+        color: #f57a3e; }
 
 /* OVERRIDE */
 .nav-pills > li > a {

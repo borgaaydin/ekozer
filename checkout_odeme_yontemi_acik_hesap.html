@@ -49,21 +49,30 @@
                     <div class="description">Lütfen yeni teslimat adresi bilgilerinizi giriniz.</div>
                 </div>
                 <div class="checkout-odeme-yontemi-left">
-                    <ul class="nav nav-pills nav-stacked">
-                        <li role="presentation" class="active"><a href="#">Açık Hesap</a></li>
-                        <li role="presentation"><a href="#">Kredi Kartı</a></li>
-                        <li role="presentation"><a href="#">Puan + Kredi Kartı</a></li>
-                        <li role="presentation"><a href="#">Havale</a></li>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-pills nav-stacked" role="tablist">
+                        <li role="presentation" class="active"><a href="#acikHesap" aria-controls="acikHesap" role="tab" data-toggle="tab">Açık Hesap</a></li>
+                        <li role="presentation"><a href="#krediKarti" aria-controls="krediKarti" role="tab" data-toggle="tab">Kredi Kartı</a></li>
+                        <li role="presentation"><a href="#puanKrediKarti" aria-controls="puanKrediKarti" role="tab" data-toggle="tab">Puan + Kredi Kartı</a></li>
+                        <li role="presentation"><a href="#havale" aria-controls="havale" role="tab" data-toggle="tab">Havale</a></li>
                     </ul>
                 </div>
                 <div class="checkout-odeme-yontemi-right">
                     <div class="checkout-odeme-yontemi-right-content">
-                        <div class="icon">
-                            <img src="img/checkout/acik-hesap.png" srcset="img/checkout/acik-hesap@2x.png 2x, img/checkout/acik-hesap@3x.png 3x" class="acik-hesap">
-                        </div>
-                        <div class="info">
-                            Siparişinizin bedeli olan <span>99,90 ₺</span><br/>
-                            şirketinizin açık hesap limitinden düşülecektir.
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="acikHesap">
+                                <div class="icon">
+                                    <img src="img/checkout/acik-hesap.png" srcset="img/checkout/acik-hesap@2x.png 2x, img/checkout/acik-hesap@3x.png 3x" class="acik-hesap">
+                                </div>
+                                <div class="info">
+                                    Siparişinizin bedeli olan <span>99,90 ₺</span><br/>
+                                    şirketinizin açık hesap limitinden düşülecektir.
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="krediKarti">.2..</div>
+                            <div role="tabpanel" class="tab-pane" id="puanKrediKarti">3...</div>
+                            <div role="tabpanel" class="tab-pane" id="havale">.4..</div>
                         </div>
                     </div>
                 </div>
@@ -73,11 +82,11 @@
         <div class="checkout-right">
             <div class="row">
                 <div>
-                    <div class="siparisOzeti">
-                        <div class="siparisOzeti-title">
+                    <div class="alisverisBilgileri">
+                        <div class="alisverisBilgileri-title">
                             Sipariş Özetiniz <span class="urunSayisi">7 Ürün</span>
                         </div>
-                        <div class="siparisOzeti-info">
+                        <div class="alisverisBilgileri-info">
                             <div class="araToplam">
                                 Ara Toplam<span class="araToplamFiyat">70 ₺</span>
                             </div>
@@ -88,18 +97,19 @@
                                 Kargo Bedeli<span class="kargoBedeli">Hesaplanacak</span>
                             </div>
                         </div>
-                        <div class="siparisOzeti-genelToplam">
+                        <div class="alisverisBilgileri-genelToplam">
                             <div class="genelToplam">
                                 <span class="genelToplamFiyat">90 ₺</span>
                                 Genel Toplam
                                 <span class="kdvDahil">(KDV Dahil)</span>
                             </div>
                         </div>
+                        <div class=""></div>
                     </div>
                     <div class="blank"></div>
                 </div>
             </div>
-            <div class="siparisOzetiButton">
+            <div class="alisverisBilgileriButton">
                 <a href="#">Devam et</a>
             </div>
         </div>
@@ -214,9 +224,14 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
+<script src="js/tab.js"></script>
 <script>
     $(document).ready(function() {
         $('select').niceSelect();
+        $('.nav-stacked a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
     });
 </script>
 </body>
