@@ -110,6 +110,22 @@
       }
     }
   }
+
+  .user-details {
+
+  }
+
+  &.logged-in {
+    .search_input_container,
+    .basket_button_container,
+    .auth_button_container {
+      display: none;
+    }
+
+    .user-details {
+      display: block;
+    }
+  }
 }
 
 .header_nav_slider {

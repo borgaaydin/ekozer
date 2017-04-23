@@ -5523,6 +5523,65 @@ a:hover {
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent; }
 
+.fourofour-content {
+  margin-top: 127px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25); }
+  .fourofour-content .fourofour-left {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 580px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 20px; }
+    .fourofour-content .fourofour-left .fourofour-img {
+      margin: -80px 80px 40px 60px; }
+  .fourofour-content .fourofour-right {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 580px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 20px;
+    margin-right: 0;
+    border-left-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .fourofour-content .fourofour-right h1 {
+      font-size: 214px;
+      font-weight: 900;
+      line-height: 0.89;
+      color: #f57353;
+      text-shadow: 0 8px 28px rgba(245, 115, 83, 0.2);
+      margin: 0;
+      margin-top: 40px; }
+    .fourofour-content .fourofour-right p {
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 0.76;
+      color: #434b54; }
+    .fourofour-content .fourofour-right a {
+      width: 224px;
+      height: 48px;
+      background-color: #ff9f69;
+      box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px; }
+      .fourofour-content .fourofour-right a > span {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff; }
+
 .title-bar {
   width: 90px;
   height: 4px;
@@ -7831,6 +7890,12 @@ a:hover {
       align-items: center; }
       .header .basket_button_container a .basket_button_text {
         margin-left: 11px; }
+  .header.logged-in .search_input_container,
+  .header.logged-in .basket_button_container,
+  .header.logged-in .auth_button_container {
+    display: none; }
+  .header.logged-in .user-details {
+    display: block; }
 
 .nav_container.inner-page {
   background-color: #f1f0f0;

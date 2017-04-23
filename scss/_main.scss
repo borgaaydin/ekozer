@@ -61,3 +61,66 @@ a:hover{
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
 }
+
+.fourofour-content {
+
+  margin-top: 127px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+
+  .fourofour-left {
+    @include col();
+    @include span(15, $gutter_pc, $gutter_px, $padding, $max_columns);
+
+    .fourofour-img {
+      margin: -80px 80px 40px 60px;
+    }
+
+  }
+
+  .fourofour-right {
+    @include col();
+    @include span(15, $gutter_pc, $gutter_px, $padding, $max_columns);
+    @include beta();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 214px;
+      font-weight: 900;
+      line-height: 0.89;
+      color: #f57353;
+      text-shadow: 0 8px 28px rgba(245, 115, 83, 0.2);
+      margin:0;
+      margin-top: 40px;
+    }
+
+    p {
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 0.76;
+      color: #434b54;
+    }
+
+    a {
+      width: 224px;
+      height: 48px;
+      background-color: #ff9f69;
+      box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      
+      >span {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+}
