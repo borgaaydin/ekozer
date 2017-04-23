@@ -195,6 +195,7 @@
         font-size: 16px;
         line-height: 1.38;
         box-shadow: inset 0 -1px 0 0 #f0f3f6;
+        min-height: 16px;
         &:last-child {
           box-shadow: none;
         }
@@ -298,7 +299,7 @@
     .araToplam, .kdvToplami {
       margin-bottom: 11px;
     }
-    .kargoBedeli {
+    .kargoBedeliHesaplanacak {
       margin-bottom: 16px;
     }
   }
@@ -330,10 +331,17 @@
   line-height: 1.1;
   color: #434b54;
 }
-.kargoBedeli {
+.kargoBedeliHesaplanacak {
   font-size: 14px;
   line-height: 1.57;
   color: #b6bbc0;
+}
+.kargoBedeliFiyat {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #434b54;
+  margin-left: 12px;
 }
 .blank {
   height: 38px;
@@ -425,13 +433,13 @@
 /* ODEME YONTEMI */
 .checkout-odeme-yontemi-left {
   @include col();
-  @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include span(5.5, $gutter_pc, $gutter_px, $padding, $max_columns);
   @include beta();
 }
 
 .checkout-odeme-yontemi-right {
   @include col();
-  @include span(14.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include span(15, $gutter_pc, $gutter_px, $padding, $max_columns);
   @include beta();
   border-left: solid 1px #eceded;
   min-height: 192px;
@@ -477,6 +485,348 @@
       span {
         font-weight: bold;
         color: #f57a3e;
+      }
+    }
+  }
+}
+.alisverisBilgileriOnayCheckbox {
+  margin-top: 20px;
+  margin-left: 20px;
+  label {
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 8px;
+    color: #8c9196;
+  }
+  div {
+    &:first-child {
+      margin-bottom:11px;
+    }
+  }
+}
+#mesafeliSatisSozlesmesiLabel, #onBilgilendirmeFormuLabel {
+  text-decoration: underline;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.odeme-yontemi-form-container {
+  padding-top: 6px;
+  .row {
+    margin-top: 20px;
+    .krediKartiKartNo {
+      @include col();
+      @include span(7, $gutter_pc - 1px, $gutter_px, $padding, $max_columns);
+    }
+    .krediKartiKartIsim {
+      @include col();
+      @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+    .krediKartiSKT {
+      @include col();
+      @include span(7, $gutter_pc - 1px, $gutter_px, $padding, $max_columns);
+    }
+    .krediKartiSKTAy {
+      @include col();
+      @include span(3.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+    }
+    .krediKartiSKTYil {
+      @include col();
+      @include span(3.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+    .krediKartiGuvenlikKodu {
+      @include col();
+      @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+      position: relative;
+    }
+    .puankrediKartiToplamPuan {
+      @include col();
+      @include span(7, $gutter_pc - 1px, $gutter_px, $padding, $max_columns);
+    }
+    .puankrediKartiKargoTutari {
+      @include col();
+      @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+    .puankrediKartiKullanilacakPuan {
+      @include col();
+      @include span(7, $gutter_pc - 1px, $gutter_px, $padding, $max_columns);
+    }
+    .puankrediKartiKullanabileceginizPuan {
+      @include col();
+      @include span(7, $gutter_pc - 1px, $gutter_px, $padding, $max_columns);
+      position: relative;
+    }
+    .puankrediKartiKalanTutar {
+      @include col();
+      @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+      position: relative;
+    }
+    .puankrediKartiKartNo {
+      @include col();
+      @include span(7, $gutter_pc - 1px, $gutter_px, $padding, $max_columns);
+    }
+    .puankrediKartiKartIsim {
+      @include col();
+      @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+    .puankrediKartiSKT {
+      @include col();
+      @include span(7, $gutter_pc - 1px, $gutter_px, $padding, $max_columns);
+    }
+    .puankrediKartiSKTAy {
+      @include col();
+      @include span(3.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+    }
+    .puankrediKartiSKTYil {
+      @include col();
+      @include span(3.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+    }
+    .puankrediKartiGuvenlikKodu {
+      @include col();
+      @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+      @include beta();
+      position: relative;
+    }
+  }
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #82858a;
+    display: block;
+    margin-bottom: 6px;
+  }
+  input[type="text"], select, .nice-select, .adressTextArea {
+    height: 54px;
+    background-color: #fbfbfa;
+    border: solid 1px #f0f3f6;
+    width: calc(100% - 2px);
+    color: #626971;
+    font-size:16px;
+  }
+  input[type="text"] {
+    padding: 0 20px;
+    width: calc(100% - 42px);
+  }
+  input:read-only {
+    background-color: #f0f3f8;
+    border: solid 1px #f0f3f6;
+    color: #4c535c;
+  }
+  input:focus, .open, textarea:focus {
+    border: solid 1px #ff9f69;
+    outline: none;
+    color: #4c535c;
+  }
+  .nice-select {
+    height: 58px;
+    border-radius: 0;
+    .list {
+      border-radius: 0;
+      margin-top: 2px;
+      width: 100%;
+      max-height: 292px;
+      overflow-y: auto;
+      padding: 0 12.4px 0 9px;
+      .option {
+        color: #868a8f;
+        padding: 10px 0 12px 0;
+        font-size: 16px;
+        line-height: 1.38;
+        min-height: 16px;
+        box-shadow: inset 0 -1px 0 0 #f0f3f6;
+        &:last-child {
+          box-shadow: none;
+        }
+        &:hover, &.focus {
+          background: white;
+          font-weight: normal;
+        }
+      }
+      .option.selected {
+        color: #f57353;
+        background: white;
+      }
+    }
+  }
+  .guvenlikKoduIcon {
+    position: absolute;
+    top: 40px;
+    right: 14px;
+  }
+  .current {
+    line-height: 58px;
+  }
+  .checkBoxLine {
+    color: #8c9196;
+    font-size: 14px;
+  }
+  .adressTextArea {
+    height: 110px;
+    resize: none;
+    padding: 20px 12px 18px 16px;
+    width: calc(100% - 30px);
+  }
+  .teslimatCheckBox {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .line {
+    width: 540px;
+    height: 1px;
+    background: #f0f1f1;
+    margin: 9px 0;
+  }
+  .irtibatNo {
+    margin-top: 18px;
+  }
+}
+.krediKartiTaksitSecenekleriGoster {
+  margin: 90px -20px 0 -20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  color: #434b54;
+  padding: 23px 0;
+  box-shadow: inset 0 1px 0 0 #eceded, inset 0 -1px 0 0 #eceded;
+  &.active {
+    color: #ff9f69;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  span {
+    margin: 0 18px 0 20px;
+    img {
+      display: inline;
+    }
+  }
+}
+.krediKartiTaksitSecenekleriDetay {
+  background: #fbfcfc;
+  margin: 0 -20px;
+}
+.puankrediKartiCheckbox {
+  padding-top: 40px;
+  label {
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 8px;
+    color: #8c9196;
+  }
+  div {
+    &:first-child {
+      margin-bottom:11px;
+    }
+  }
+}
+.puankrediKartiTaksitSecenekleriGoster {
+  margin: 90px -20px 0 -20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  color: #434b54;
+  padding: 23px 0;
+  box-shadow: inset 0 1px 0 0 #eceded, inset 0 -1px 0 0 #eceded;
+  &.active {
+    color: #ff9f69;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  span {
+    margin: 0 18px 0 20px;
+    img {
+      display: inline;
+    }
+  }
+}
+.puankrediKartiTaksitSecenekleriDetay {
+  background: #fbfcfc;
+  margin: 0 -20px;
+}
+/* ODEME YONTEMI HAVALE */
+.havale-message-panel {
+  width: 540px;
+  background: #fbfcfc;
+  .icon {
+    padding-top: 28px;
+    margin: 0 auto;
+    text-align: center;
+    width: 110px;
+  }
+  .info {
+    width: 516px;
+    margin: 18px auto 28px;
+    padding-bottom: 27px;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+    color: #8c9196;
+    span {
+      color: #f57a3e;
+      font-weight:bold;
+    }
+  }
+}
+.havaleHesap {
+  margin-bottom: 20px;
+  float: left;
+  clear: both;
+  border: solid 1px #dde4e8;
+}
+.havaleHesapSecimi {
+  width: 80px;
+  background-color: rgba(221, 227, 232, 0.1);
+  min-height: 132px;
+  float: left;
+}
+.havaleHesapBanka {
+  width: 114px;
+  float: left;
+  min-height: 132px;
+  padding: 0 8px;
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+}
+.havaleHesapBilgileri {
+  width: 327px;
+  min-height: 132px;
+  float: left;
+  font-size: 16px;
+  line-height: 1.38;
+  .havaleHesapIBAN {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.12;
+    color: #434b54;
+    margin-top: 25px;
+  }
+  .havaleHesapBankaBilgileri {
+    margin-top: 12px;
+    font-weight: normal;
+    color: #8c9196;
+  }
+  .havaleHesapBankaHesapBilgileri{
+    color: #8c9196;
+    font-weight: 600;
+    div {
+      display: inline;
+      &:first-child {
+        margin-right: 10px;
+      }
+      span {
+        color: #343b43;
       }
     }
   }
