@@ -303,10 +303,51 @@
       margin-bottom: 16px;
     }
   }
+  .alisverisBilgileri-kullanilacakPuan {
+    font-size: 14px;
+    line-height: 1.57;
+    color: #8c9196;
+    padding: 8px 20px 10px;
+
+    & > span {
+      float: right;
+      color: #434b54;
+      line-height: 1.57;
+    }
+  }
+  .alisverisBilgileri-kampanyaIndirimleri {
+    font-size: 14px;
+    line-height: 1.57;
+    color: #8c9196;
+    padding: 8px 20px 10px;
+
+    & > span {
+      float: right;
+      color: #434b54;
+      line-height: 1.57;
+    }
+  }
+  .alisverisBilgileri-taksitDetaylari {
+    font-size: 14px;
+    line-height: 1.57;
+    color: #8c9196;
+    padding: 8px 20px 10px;
+
+    & > span {
+      float: right;
+      color: #434b54;
+      line-height: 1.57;
+    }
+  }
   .alisverisBilgileri-genelToplam {
     background: #fbfcfc;
-    padding: 16px 20px 18px;
+    .line {
+      background: #dde3e8;
+      margin: 0;
+      height: 1px;
+    }
     .genelToplam {
+      padding: 16px 20px 18px;
       font-size: 16px;
       color: #8c9196;
       line-height: 1.38;
@@ -321,6 +362,22 @@
         font-size: 28px;
         font-weight: bold;
         color: #f98e4e;
+      }
+      .genelToplamFiyatEski {
+        margin-top: -10px;
+        float: right;
+        line-height: 1.57;
+        color: #434b54;
+        font-size: 14px;
+        text-decoration: line-through;
+      }
+      .genelToplamFiyatYeni {
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        color: #f98e4e;
+        clear: both;
+        line-height: 1.25;
       }
     }
   }

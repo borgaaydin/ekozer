@@ -5974,10 +5974,41 @@ a:hover {
       margin-bottom: 11px; }
     .alisverisBilgileri .alisverisBilgileri-info .kargoBedeliHesaplanacak {
       margin-bottom: 16px; }
+  .alisverisBilgileri .alisverisBilgileri-kullanilacakPuan {
+    font-size: 14px;
+    line-height: 1.57;
+    color: #8c9196;
+    padding: 8px 20px 10px; }
+    .alisverisBilgileri .alisverisBilgileri-kullanilacakPuan > span {
+      float: right;
+      color: #434b54;
+      line-height: 1.57; }
+  .alisverisBilgileri .alisverisBilgileri-kampanyaIndirimleri {
+    font-size: 14px;
+    line-height: 1.57;
+    color: #8c9196;
+    padding: 8px 20px 10px; }
+    .alisverisBilgileri .alisverisBilgileri-kampanyaIndirimleri > span {
+      float: right;
+      color: #434b54;
+      line-height: 1.57; }
+  .alisverisBilgileri .alisverisBilgileri-taksitDetaylari {
+    font-size: 14px;
+    line-height: 1.57;
+    color: #8c9196;
+    padding: 8px 20px 10px; }
+    .alisverisBilgileri .alisverisBilgileri-taksitDetaylari > span {
+      float: right;
+      color: #434b54;
+      line-height: 1.57; }
   .alisverisBilgileri .alisverisBilgileri-genelToplam {
-    background: #fbfcfc;
-    padding: 16px 20px 18px; }
+    background: #fbfcfc; }
+    .alisverisBilgileri .alisverisBilgileri-genelToplam .line {
+      background: #dde3e8;
+      margin: 0;
+      height: 1px; }
     .alisverisBilgileri .alisverisBilgileri-genelToplam .genelToplam {
+      padding: 16px 20px 18px;
       font-size: 16px;
       color: #8c9196;
       line-height: 1.38; }
@@ -5991,6 +6022,20 @@ a:hover {
         font-size: 28px;
         font-weight: bold;
         color: #f98e4e; }
+      .alisverisBilgileri .alisverisBilgileri-genelToplam .genelToplam .genelToplamFiyatEski {
+        margin-top: -10px;
+        float: right;
+        line-height: 1.57;
+        color: #434b54;
+        font-size: 14px;
+        text-decoration: line-through; }
+      .alisverisBilgileri .alisverisBilgileri-genelToplam .genelToplam .genelToplamFiyatYeni {
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        color: #f98e4e;
+        clear: both;
+        line-height: 1.25; }
 
 .araToplamFiyat, .kdvToplamiFiyat {
   font-size: 20px;
