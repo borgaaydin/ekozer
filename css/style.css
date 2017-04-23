@@ -4760,7 +4760,7 @@ link {
     display: inline-block;
     vertical-align: bottom;
     color: transparent;
-    background-color: #ff9f69; }
+    background-color: #fff; }
   .pretty i:after {
     position: absolute;
     top: 0;
@@ -4775,7 +4775,7 @@ link {
 .pretty > input[type='checkbox']:checked + label > i:before,
 .pretty > input[type='radio']:checked + label > i:before {
   color: inherit;
-  background-color: #ff9f69; }
+  background-color: #fff; }
 
 .pretty > input[type='radio'] + label > i.default:before {
   left: 0;
@@ -4783,7 +4783,7 @@ link {
   content: '\0000';
   color: transparent;
   border-radius: 0;
-  background: #ff9f69;
+  background: #fff;
   transform: scale(0.8); }
 
 .pretty > input[type='radio']:checked + label > i.default:before {
@@ -6481,6 +6481,18 @@ a:hover {
   .puankrediKartiCheckbox div:first-child {
     margin-bottom: 11px; }
 
+.puankrediKartiPuanKullanimiCheckbox {
+  color: #8c9196;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 10px; }
+  .puankrediKartiPuanKullanimiCheckbox label {
+    display: inline;
+    margin-left: 8px; }
+  .puankrediKartiPuanKullanimiCheckbox span {
+    font-size: 20px;
+    color: #f57a3e; }
+
 .puankrediKartiTaksitSecenekleriGoster {
   margin: 90px -20px 0 -20px;
   font-size: 16px;
@@ -6501,6 +6513,66 @@ a:hover {
 .puankrediKartiTaksitSecenekleriDetay {
   background: #fbfcfc;
   margin: 0 -20px; }
+
+.puankrediKartiTaksitDetaylari {
+  background-color: #fbfcfc;
+  box-shadow: inset 0 1px 0 0 #f0f3f6;
+  margin: 0 -20px;
+  padding: 0 20px 0 21px;
+  float: left; }
+  .puankrediKartiTaksitDetaylari .puankrediKartiTaksitSecenegi {
+    border: solid 1px #f0f3f6;
+    margin-bottom: 9px;
+    float: left;
+    clear: both; }
+    .puankrediKartiTaksitDetaylari .puankrediKartiTaksitSecenegi > div {
+      display: inline-block;
+      float: left;
+      text-align: center;
+      padding: 16px 0 0 0;
+      min-height: 42px;
+      font-size: 14px;
+      line-height: 1.64;
+      letter-spacing: -0.1px;
+      color: #768291; }
+  .puankrediKartiTaksitDetaylari .puankrediKartiTaksitSecenegiHeader {
+    border: none;
+    margin: 22px 0 11px;
+    float: left;
+    clear: both; }
+    .puankrediKartiTaksitDetaylari .puankrediKartiTaksitSecenegiHeader > div {
+      border: solid 1px #f0f3f6;
+      display: inline-block;
+      float: left;
+      text-align: center;
+      color: #6d6e70;
+      letter-spacing: -0.1px;
+      line-height: 1.64;
+      padding: 6px 0 9px;
+      font-weight: 600;
+      min-height: 22px;
+      background: #fff; }
+  .puankrediKartiTaksitDetaylari .puankrediKartiTaksitCheckbox {
+    width: 116px;
+    background-color: rgba(221, 227, 232, 0.1); }
+  .puankrediKartiTaksitDetaylari .puankrediKartiTaksitSuresi {
+    width: 111px;
+    font-weight: 600;
+    background: #fff; }
+  .puankrediKartiTaksitDetaylari .puankrediKartiTaksitTutari {
+    width: 156px;
+    background: #fff; }
+  .puankrediKartiTaksitDetaylari .puankrediKartiTaksitToplamTutar {
+    width: 151px;
+    background: #fff; }
+  .puankrediKartiTaksitDetaylari .puankrediKartiHeader1 {
+    width: 115px; }
+  .puankrediKartiTaksitDetaylari .puankrediKartiHeader2 {
+    width: 110px; }
+  .puankrediKartiTaksitDetaylari .puankrediKartiHeader3 {
+    width: 155px; }
+  .puankrediKartiTaksitDetaylari .puankrediKartiHeader4 {
+    width: 150px; }
 
 /* ODEME YONTEMI HAVALE */
 .havale-message-panel {
