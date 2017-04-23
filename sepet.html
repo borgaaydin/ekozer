@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ekozer Sepet</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container-fluid header logged-in">
+    <div class="container">
+        <div class="row">
+            <div class="logo_container">
+                <a href="#">
+                    <img src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x, img/logo/logo@3x.png 3x" class="logo">
+                </a>
+            </div>
+            <div class="search_input_container">
+                <input class="search_input" type="search" placeholder="Aradığını Hızlıca Bul">
+            </div>
+            <div class="auth_button_container">
+                <a href="#">
+                        <span class="auth_button_text">
+                            <span>
+                                Giriş Yap
+                            </span>
+                            <span>
+                                veya Üye Ol
+                            </span>
+                        </span>
+
+                    <span>
+                            *
+                        </span>
+                </a>
+            </div>
+            <div class="basket_button_container">
+                <a href="#">
+                        <span class="basket_button_text">
+                            Sepetim
+                        </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/global.js"></script>
+<script>
+    $(document).ready(function() {
+        $('select').niceSelect();
+    });
+</script>
+</body>
+</html>

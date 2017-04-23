@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Ekozer Checkout - Adres Seçimi</title>
+    <title>Ekozer Ürün Detay</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -419,13 +419,146 @@
                 </div>
             </div>
             <div class="product-control">
-                <div class="favori-box">
-                    <a href="#">
-                        Favorilerime Ekle
-                    </a>
+                <div class="row">
+                    <div class="favori-box">
+                        <a href="#">
+                            Favorilerime Ekle
+                        </a>
+                    </div>
                 </div>
-                <div>
 
+                <div class="row">
+                    <div class="product-options">
+                        <div class="product-option">
+                            <label for="product-option1">Litre</label>
+                            <select id="product-option1" name="product-option1" required>
+                                <option data-display="5L" value="5L">5L</option>
+                                <option value="Ankara">10L</option>
+
+                            </select>
+                        </div>
+                        <div class="product-option">
+                            <label for="product-option2">Koku</label>
+                            <select id="product-option2" name="product-option1" required>
+                                <option data-display="Yaban Gülü" value="Yaban Gülü">Yaban Gülü</option>
+                                <option value="Yaban Gülü">Yaban Gülü</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product-detail-price-row">
+                    <div class="product-detail-price">
+                        <div class="price">
+                            <div class="old-price">
+                                <del>
+                                    <span>
+                                        24,72
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                        + KDV
+                                    </span>
+                                </del>
+                                <div class="discount-pop">
+                                    <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                                    <span>
+                                        %100
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="actual-price">
+                                <span>
+                                    13,72
+                                    <i class="fa fa-try" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    + KDV
+                                </span>
+                            </div>
+                            <div class="actual-price-kdv">
+                                <span>
+                                    16,18
+                                    <i class="fa fa-try" aria-hidden="true"></i>
+                                    (KDV Dahil)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-pops">
+                            <div class="product-pop-new">
+                                YENİ
+                            </div>
+                            <div class="product-pop-mass-discount">
+                                TOPLU İNDİRİM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="product-detail-actions">
+                        <div class="product-detail-counter">
+                            <a class="product-counter-minus">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                            <div class="product-count">
+                                <span class="product-count-box">
+                                    1
+                                </span>
+                                <span class="product-count-label">
+                                    Paket
+                                </span>
+                            </div>
+
+                            <a class="product-counter-plus">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="product-detail-button">
+                            <a href="#">
+                                <span>
+                                    Sepete Ekle
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product-detail-shipment-row">
+                    <div class="product-detail-shipment">
+                        <div class="shipment-time">
+                            <span>
+                                Kargoya Teslim Süresi
+                            </span>
+                            <span>
+                                1 Günde Kargoda
+                            </span>
+                        </div>
+                        <div class="installment-info">
+                            <span>
+                                Bu ürün en fazla 3 taksitle satın alınabilir
+                            </span>
+                            <span>
+                                icon
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="product-detail-icons">
+                        <div>
+                            <span>
+                                icon
+                            </span>
+                            <span>
+                                Hızlı Teslimat
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                icon
+                            </span>
+                            <span>
+                                Bedava Kargo
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -480,7 +613,303 @@
                     </p>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="taksit-secenekleri">
+                    <div class="installments">
+                        <div class="installment-detail axess">
+                            <div>
+                                <img src="img/product/bank-logos/axess.png" srcset="img/product/bank-logos/axess@2x.png 2x, img/product/bank-logos/axess@3x.png 3x" class="axess">
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Taksit</th>
+                                        <th>Taksit Tutarı</th>
+                                        <th>Toplam Tutar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            158,19
+                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                        </td>
+                                        <td>
+                                            316,38
+                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            105,46
+                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                        </td>
+                                        <td>
+                                            316,38
+                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            79,10
+                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                        </td>
+                                        <td>
+                                            316,38
+                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="installment-detail paraf">
+                            <div>
+                                <img src="img/product/bank-logos/paraf.png" srcset="img/product/bank-logos/paraf@2x.png 2x, img/product/bank-logos/paraf@3x.png 3x" class="paraf">
+                            </div>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Taksit</th>
+                                    <th>Taksit Tutarı</th>
+                                    <th>Toplam Tutar</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        158,19
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        105,46
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        79,10
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="installment-detail cardfinans">
+                            <div>
+                                <img src="img/product/bank-logos/cardfinans.png" srcset="img/product/bank-logos/cardfinans@2x.png 2x, img/product/bank-logos/cardfinans@3x.png 3x" class="cardfinans">
+                            </div>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Taksit</th>
+                                    <th>Taksit Tutarı</th>
+                                    <th>Toplam Tutar</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        158,19
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        105,46
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        79,10
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="installment-detail maximum">
+                            <div>
+                                <img src="img/product/bank-logos/maximum.png" srcset="img/product/bank-logos/maximum@2x.png 2x, img/product/bank-logos/maximum@3x.png 3x" class="maximum">
+                            </div>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Taksit</th>
+                                    <th>Taksit Tutarı</th>
+                                    <th>Toplam Tutar</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        158,19
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        105,46
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        79,10
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="installment-detail bonus">
+                            <div>
+                                <img src="img/product/bank-logos/bonus.png" srcset="img/product/bank-logos/bonus@2x.png 2x, img/product/bank-logos/bonus@3x.png 3x" class="bonus">
+                            </div>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Taksit</th>
+                                    <th>Taksit Tutarı</th>
+                                    <th>Toplam Tutar</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        158,19
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        105,46
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        79,10
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="installment-detail world">
+                            <div>
+                                <img src="img/product/bank-logos/world.png" srcset="img/product/bank-logos/world@2x.png 2x, img/product/bank-logos/world@3x.png 3x" class="world">
+                            </div>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Taksit</th>
+                                    <th>Taksit Tutarı</th>
+                                    <th>Toplam Tutar</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        158,19
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        105,46
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        79,10
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        316,38
+                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
+                    </div>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="kampanyalar">
 
