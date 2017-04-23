@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ekozer Checkout - Bireysel Blank</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container-fluid header">
+    <div class="container">
+        <div class="row">
+            <div class="logo_container">
+                <a href="#">
+                    <img src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x, img/logo/logo@3x.png 3x" class="logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid checkout">
+    <div class="container">
+        <div class="checkout-left">
+            <div class="checkout-navigation">
+                <div class="checkout-navigation-item">
+                    <div class="checkout-navigation-item-number">
+                        01
+                        <span><img src="img/checkout/oval-check.png" srcset="img/checkout/oval-check@2x.png 2x, img/checkout/oval-check@3x.png 3x" class="oval-copy-2"></span>
+                    </div>
+                    <div class="checkout-navigation-item-title">
+                        FATURA VE<br/>
+                        TESLİMAT BİLGİLERİ
+                    </div>
+                </div>
+                <div class="checkout-navigation-item checkout-navigation-active">
+                    <div class="checkout-navigation-item-number">
+                        02
+                    </div>
+                    <div class="checkout-navigation-item-title">
+                        ÖDEME YÖNTEMİ
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-odeme-yontemi-container">
+                <div class="checkout-odeme-yontemi-header">
+                    <h4>Ödeme Yöntemi</h4>
+                    <div class="description">Lütfen yeni teslimat adresi bilgilerinizi giriniz.</div>
+                </div>
+                <div class="checkout-odeme-yontemi-left">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-pills nav-stacked" role="tablist">
+                        <li role="presentation" class="active"><a href="#acikHesap" aria-controls="acikHesap" role="tab" data-toggle="tab">Açık Hesap</a></li>
+                        <li role="presentation"><a href="#krediKarti" aria-controls="krediKarti" role="tab" data-toggle="tab">Kredi Kartı</a></li>
+                        <li role="presentation"><a href="#puanKrediKarti" aria-controls="puanKrediKarti" role="tab" data-toggle="tab">Puan + Kredi Kartı</a></li>
+                        <li role="presentation"><a href="#havale" aria-controls="havale" role="tab" data-toggle="tab">Havale</a></li>
+                    </ul>
+                </div>
+                <div class="checkout-odeme-yontemi-right">
+                    <div class="checkout-odeme-yontemi-right-content">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane" id="acikHesap">
+                                <div class="icon">
+                                    <img src="img/checkout/acik-hesap.png" srcset="img/checkout/acik-hesap@2x.png 2x, img/checkout/acik-hesap@3x.png 3x" class="acik-hesap">
+                                </div>
+                                <div class="info">
+                                    Siparişinizin bedeli olan <span>99,90 ₺</span><br/>
+                                    şirketinizin açık hesap limitinden düşülecektir.
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="krediKarti">
+                                <div class="odeme-yontemi-form-container">
+                                    <div class="row">
+                                        <div>
+                                            <div class="krediKartiKartNo">
+                                                <label for="krediKartiKartNo">Kart Numarası *</label>
+                                                <input type="text" id="krediKartiKartNo" name="krediKartiKartNo" required>
+                                            </div>
+                                            <div class="krediKartiKartIsim">
+                                                <label for="krediKartiKartIsim">Kart Üzerindeki İsim *</label>
+                                                <input type="text" id="krediKartiKartIsim" name="krediKartiKartIsim" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <div class="krediKartiSKT">
+                                                <label>Son Kullanma Tarihi *</label>
+                                                <div class="krediKartiSKTAy">
+                                                    <select id="krediKartiSKTAy" name="krediKartiSKTAy" required>
+                                                        <option data-display="Ocak" value="Ocak">Ocak</option>
+                                                        <option value="Şubat">Şubat</option>
+                                                        <option value="Mart">Mart</option>
+                                                        <option value="Nisan">Nisan</option>
+                                                        <option value="Mayıs">Mayıs</option>
+                                                        <option value="Haziran">Haziran</option>
+                                                        <option value="Temmuz">Temmuz</option>
+                                                        <option value="Ağustos">Ağustos</option>
+                                                        <option value="Eylül">Eylül</option>
+                                                        <option value="Ekim">Ekim</option>
+                                                        <option value="Kasım">Kasım</option>
+                                                        <option value="Aralık">Aralık</option>
+                                                    </select>
+                                                </div>
+                                                <div class="krediKartiSKTYil">
+                                                    <select id="krediKartiSKTYil" name="krediKartiSKTYil" required>
+                                                        <option data-display="2017" value="2017">2017</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2020">2020</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="krediKartiGuvenlikKodu">
+                                                <label for="krediKartiGuvenlikKodu">Güvenlik Kodu *</label>
+                                                <input type="text" id="krediKartiGuvenlikKodu" name="krediKartiGuvenlikKodu" required>
+                                                <span class="guvenlikKoduIcon">
+                                                    <img src="img/checkout/question.png" srcset="img/checkout/question@2x.png 2x, img/checkout/question@3x.png 3x" class="question">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <div class="krediKartiTaksitSecenekleriGoster">
+                                            <span><img src="img/checkout/plus.png" srcset="img/checkout/plus@2x.png 2x, img/checkout/plus@3x.png 3x" class="ico-plus"></span>Taksit Seçeneklerini Göster</div>
+                                        <div class="krediKartiTaksitSecenekleriDetay">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="puanKrediKarti">
+                                <div class="odeme-yontemi-form-container">
+                                    <div class="row">
+                                        <div>
+                                            <div class="puankrediKartiToplamPuan">
+                                                <label for="puankrediKartiToplamPuan">Toplam Puanınız</label>
+                                                <input type="text" id="puankrediKartiToplamPuan" name="puankrediKartiToplamPuan" required>
+                                            </div>
+                                            <div class="puankrediKartiKargoTutari">
+                                                <label for="puankrediKartiKargoTutari">Puanlı Ürün ve Kargo Tutarınız</label>
+                                                <input type="text" id="puankrediKartiKargoTutari" name="puankrediKartiKargoTutari" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <div class="puankrediKartiKullanilacakPuan">
+                                                <label for="puankrediKartiKullanilacakPuan">Kullanılacak Puanınız</label>
+                                                <input type="text" id="puankrediKartiKullanilacakPuan" name="puankrediKartiKullanilacakPuan" required>
+                                            </div>
+                                            <div class="puankrediKartiCheckbox">
+                                                <input type="checkbox" name="puankrediKartiCheckbox" value="puankrediKartiCheckbox" id="puankrediKartiCheckbox"><label for="puankrediKartiCheckbox">Hepsini puanla öde</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <div class="puankrediKartiKullanabileceginizPuan">
+                                                <label for="puankrediKartiKullanabileceginizPuan">Kullanabileceğiniz Puan</label>
+                                                <input type="text" id="puankrediKartiKullanabileceginizPuan" name="puankrediKartiKullanabileceginizPuan" readonly>
+                                                <span class="guvenlikKoduIcon">
+                                                    <img src="img/checkout/question.png" srcset="img/checkout/question@2x.png 2x, img/checkout/question@3x.png 3x" class="question">
+                                                </span>
+                                            </div>
+                                            <div class="puankrediKartiKalanTutar">
+                                                <label for="puankrediKartiKalanTutar">Kalan Tutar</label>
+                                                <input type="text" id="puankrediKartiKalanTutar" name="puankrediKartiKalanTutar" readonly>
+                                                <span class="guvenlikKoduIcon">
+                                                    <img src="img/checkout/question.png" srcset="img/checkout/question@2x.png 2x, img/checkout/question@3x.png 3x" class="question">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <div class="puankrediKartiKartNo">
+                                                <label for="krediKartiKartNo">Kart Numarası *</label>
+                                                <input type="text" id="krediKartiKartNo" name="krediKartiKartNo" required>
+                                            </div>
+                                            <div class="puankrediKartiKartIsim">
+                                                <label for="krediKartiKartIsim">Kart Üzerindeki İsim *</label>
+                                                <input type="text" id="krediKartiKartIsim" name="krediKartiKartIsim" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <div class="puankrediKartiSKT">
+                                                <label>Son Kullanma Tarihi *</label>
+                                                <div class="puankrediKartiSKTAy">
+                                                    <select id="puankrediKartiSKTAy" name="puankrediKartiSKTAy" required>
+                                                        <option data-display="Ocak" value="Ocak">Ocak</option>
+                                                        <option value="Şubat">Şubat</option>
+                                                        <option value="Mart">Mart</option>
+                                                        <option value="Nisan">Nisan</option>
+                                                        <option value="Mayıs">Mayıs</option>
+                                                        <option value="Haziran">Haziran</option>
+                                                        <option value="Temmuz">Temmuz</option>
+                                                        <option value="Ağustos">Ağustos</option>
+                                                        <option value="Eylül">Eylül</option>
+                                                        <option value="Ekim">Ekim</option>
+                                                        <option value="Kasım">Kasım</option>
+                                                        <option value="Aralık">Aralık</option>
+                                                    </select>
+                                                </div>
+                                                <div class="puankrediKartiSKTYil">
+                                                    <select id="puankrediKartiSKTYil" name="puankrediKartiSKTYil" required>
+                                                        <option data-display="2017" value="2017">2017</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2020">2020</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="puankrediKartiGuvenlikKodu">
+                                                <label for="puankrediKartiGuvenlikKodu">Güvenlik Kodu *</label>
+                                                <input type="text" id="puankrediKartiGuvenlikKodu" name="puankrediKartiGuvenlikKodu" required>
+                                                <span class="guvenlikKoduIcon">
+                                                    <img src="img/checkout/question.png" srcset="img/checkout/question@2x.png 2x, img/checkout/question@3x.png 3x" class="question">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <div class="puankrediKartiTaksitSecenekleriGoster">
+                                                <span><img src="img/checkout/plus.png" srcset="img/checkout/plus@2x.png 2x, img/checkout/plus@3x.png 3x" class="ico-plus"></span>Taksit Seçeneklerini Göster</div>
+                                            <div class="puankrediKartiTaksitSecenekleriDetay">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane active" id="havale">
+                                <div class="havale-message-panel">
+                                    <div class="icon">
+                                        <img src="img/checkout/bank-transfer.png" srcset="img/checkout/bank-transfer@2x.png 2x, img/checkout/bank-transfer@3x.png 3x" class="oval-7">
+                                    </div>
+                                    <div class="info">
+                                        Siparişinizin bedeli olan <span>99,90 ₺</span> haveleyi<br/>
+                                        gerçekleştireceğiniz banka hesabını seçiniz.
+                                    </div>
+                                </div>
+                                <div class="havaleHesaplar-container">
+                                    <div class="havaleHesap">
+                                        <div class="havaleHesapSecimi">
+
+                                        </div>
+                                        <div class="havaleHesapBanka">
+                                            BANKA LOGO
+                                        </div>
+                                        <div class="havaleHesapBilgileri">
+                                            <div class="havaleHesapIBAN">IBAN: TR280006400000111110040927</div>
+                                            <div>
+                                                <div class="havaleHesapBankaBilgileri">İş Bankası, İstanbul Kurumsal Şube</div>
+                                                <div class="havaleHesapBankaHesapBilgileri"><div>Şube Kodu: <span>1111</span></div><div>Hesap No: <span>0040927</span></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="havaleHesap">
+                                        <div class="havaleHesapSecimi">
+
+                                        </div>
+                                        <div class="havaleHesapBanka">
+                                            BANKA LOGO
+                                        </div>
+                                        <div class="havaleHesapBilgileri">
+                                            <div class="havaleHesapIBAN">IBAN: TR280006400000111110040927</div>
+                                            <div>
+                                                <div class="havaleHesapBankaBilgileri">İş Bankası, İstanbul Kurumsal Şube</div>
+                                                <div class="havaleHesapBankaHesapBilgileri"><div>Şube Kodu: <span>1111</span></div><div>Hesap No: <span>0040927</span></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="havaleHesap">
+                                        <div class="havaleHesapSecimi">
+
+                                        </div>
+                                        <div class="havaleHesapBanka">
+                                            BANKA LOGO
+                                        </div>
+                                        <div class="havaleHesapBilgileri">
+                                            <div class="havaleHesapIBAN">IBAN: TR280006400000111110040927</div>
+                                            <div>
+                                                <div class="havaleHesapBankaBilgileri">İş Bankası, İstanbul Kurumsal Şube</div>
+                                                <div class="havaleHesapBankaHesapBilgileri"><div>Şube Kodu: <span>1111</span></div><div>Hesap No: <span>0040927</span></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-right">
+            <div class="row">
+                <div>
+                    <div class="alisverisBilgileri">
+                        <div class="alisverisBilgileri-title">
+                            Sipariş Özetiniz <span class="urunSayisi">7 Ürün</span>
+                        </div>
+                        <div class="alisverisBilgileri-info">
+                            <div class="araToplam">
+                                Ara Toplam<span class="araToplamFiyat">70 ₺</span>
+                            </div>
+                            <div class="kdvToplami">
+                                KDV Toplamı<span class="kdvToplamiFiyat">20 ₺</span>
+                            </div>
+                            <div class="kargoBedeli">
+                                Kargo Bedeli<span class="kargoBedeliFiyat">9,90 ₺</span><span class="kargoBedeliHesaplanacak">Yurtiçi Kargo (Ekspres)</span>
+                            </div>
+                        </div>
+                        <div class="alisverisBilgileri-genelToplam">
+                            <div class="alisverisBilgileri-kullanilacakPuan">
+                                Kullanılacak Puan<span class="kullanilanPuan">- 18,90 ₺</span>
+                            </div>
+                            <div class="line"></div>
+                            <div class="genelToplam">
+                                <span class="genelToplamFiyatEski">99,90 ₺</span>
+                                <span class="genelToplamFiyatYeni">71 ₺</span>
+                                Genel Toplam
+                                <span class="kdvDahil">(KDV Dahil)</span>
+                            </div>
+                        </div>
+                        <div class="alisverisBilgileriOnayCheckbox">
+                            <div><input type="checkbox" name="mesafeliSatisSozlesmesi" value="mesafeliSatisSozlesmesi" id="mesafeliSatisSozlesmesi"><label><span id="mesafeliSatisSozlesmesiLabel">Mesafeli Satış sözleşmesi</span>'ni okudum ve onaylıyorum.</label></div>
+                            <div><input type="checkbox" name="onBilgilendirmeFormu" value="onBilgilendirmeFormu" id="onBilgilendirmeFormu"><label><span id="onBilgilendirmeFormuLabel">Ön Bilgilendirme formu</span>'nu okudum ve onaylıyorum.</label></div>
+                        </div>
+                    </div>
+                    <div class="blank"></div>
+                </div>
+            </div>
+            <div class="alisverisBilgileriButton">
+                <a href="#">Alışverişi Tamamla</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER-->
+<div class="container-fluid footer-first-row">
+    <div class="container">
+        <div class="row footer-head">
+            <div class="footer-logo">
+                <img src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x, img/logo/logo@3x.png 3x" class="logo">
+            </div>
+            <div class="footer-icon footer-phone">
+                <img srcset="img/footer/icons/ico-footer-callus@2x.png 2x, img/footer/icons/ico-footer-callus@3x.png 3x" src="img/footer/icons/ico-footer-callus.png" alt="Bizi Arayın">
+
+                <div class="icon-overlay">
+                </div>
+                <div>
+                    <h4>
+                        Bizi Arayın
+                    </h4>
+                    <h3>
+                        <a href="tel:+904440612">444 06 12</a>
+                    </h3>
+                </div>
+
+            </div>
+            <div class="footer-icon footer-mail">
+                <img srcset="img/footer/icons/ico-footer-writetous@2x.png 2x, img/footer/icons/ico-footer-writetous@3x.png 3x" src="img/footer/icons/ico-footer-writetous.png" alt="Bize Yazın">
+                <div class="icon-overlay">
+                </div>
+                <div>
+                    <h4>
+                        Bize Yazın
+                    </h4>
+                    <h3>
+                        <a href="mailto:info@ekozer.com">info@ekozer.com</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="footer-icon footer-social">
+                <img srcset="img/footer/icons/ico-footer-follow-social-media@2x.png 2x, img/footer/icons/ico-footer-follow-social-media@3x.png 3x" src="img/footer/icons/ico-footer-follow-social-media.png" alt="Bizi Takip Edin">
+                <div class="icon-overlay">
+                </div>
+                <div>
+                    <h4>
+                        Bizi Takip Edin
+                    </h4>
+                    <div class="social-icons">
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer-second-row">
+    <div class="container">
+        <div class="footer-list-about">
+            <h4>
+                Ekozer Hakkında
+            </h4>
+            <ul>
+                <li><a href="">Gizlilik ve Garanti Politikamız</a></li>
+                <li><a href="">Satış Sözleşmesi</a></li>
+                <li><a href="">Havale / EFT Bilgileri</a></li>
+                <li><a href="">Hakkımızda</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="footer-list-help">
+            <h4>
+                Yardım
+            </h4>
+            <ul>
+                <li><a href="">Müşteri Hizmetleri</a></li>
+                <li><a href="">Sıkça Sorulan Sorular</a></li>
+                <li><a href="">Ödeme Seçenekleri</a></li>
+                <li><a href="">Kargo Seçenekleri</a></li>
+                <li><a href="">İptal / Değişim / İade</a></li>
+            </ul>
+        </div>
+        <div class="footer-list-subscription">
+            <h4>
+                Üyelik
+            </h4>
+            <ul>
+                <li><a href="">Bireysel Üyelik</a></li>
+                <li><a href="">Kurumsal Üyelik</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid copyright">
+    <div class="container">
+        <div class="footer-copyright">
+            <div class="copyright-text">
+                    <span>
+                        © Copyright
+                        <script>document.write(new Date().getFullYear())</script>
+                    </span>
+            </div>
+            <div class="bank-list">
+                <img src="img/footer/bank-list.jpg" srcset="img/footer/bank-list@2x.jpg 2x">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="mesafeliSatisSozlesmesiModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Üyelik Sözleşmesi</h4>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt lorem vitae orci semper auctor. Mauris finibus a lacus in lacinia. Sed sed pharetra felis. Etiam id ex erat. Nulla a semper nisl, ac rutrum ante.</p>
+                <p>Integer ultricies, sapien hendrerit scelerisque blandit, quam nisl porttitor augue, vitae tincidunt purus tortor a ex. Nulla pulvinar finibus lorem mollis laoreet. Vivamus pharetra lacus et pellentesque vehicula. Phasellus dictum imperdiet faucibus. Morbi tempor consequat nunc, at tincidunt lectus condimentum id. Quisque id ante et turpis aliquet tempus in nec tellus.</p>
+                <p>Nullam commodo, erat ac tempus viverra, elit dolor ultrices elit, et varius lacus sapien ac ligula. Nulla mi diam, mattis sed volutpat eu, mattis eget ante. Nulla scelerisque, ex quis condimentum pellentesque, erat orci elementum lectus, non varius odio metus ut lacus. Mauris nec iaculis est. In tristique diam mauris, feugiat luctus sem pretium nec. In luctus ipsum ac diam consectetur hendrerit id id ipsum. Cras velit elit, efficitur non ex scelerisque, commodo elementum nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nunc sit amet ligula maximus rutrum sit amet sit amet tortor. Sed non nibh metus. Aliquam ac massa at nulla ultricies elementum quis eget dolor. Ut consectetur in urna non auctor. Fusce eleifend facilisis sagittis. Etiam tortor magna, convallis sit amet est sit amet, rutrum lobortis purus.</p>
+            </div>
+            <div class="modal-footer">
+                <div class="signup-form-footer signup-form-footer-centered">
+                    <div class="signup-form-button-container signup-form-uyelik-button-container">
+                        <a href="#" id="mesafeliSatisSozlesmesiOnay">Okudum ve Kabul Ediyorum</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="onBilgilendirmeFormuModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Üyelik Sözleşmesi</h4>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt lorem vitae orci semper auctor. Mauris finibus a lacus in lacinia. Sed sed pharetra felis. Etiam id ex erat. Nulla a semper nisl, ac rutrum ante.</p>
+                <p>Integer ultricies, sapien hendrerit scelerisque blandit, quam nisl porttitor augue, vitae tincidunt purus tortor a ex. Nulla pulvinar finibus lorem mollis laoreet. Vivamus pharetra lacus et pellentesque vehicula. Phasellus dictum imperdiet faucibus. Morbi tempor consequat nunc, at tincidunt lectus condimentum id. Quisque id ante et turpis aliquet tempus in nec tellus.</p>
+                <p>Nullam commodo, erat ac tempus viverra, elit dolor ultrices elit, et varius lacus sapien ac ligula. Nulla mi diam, mattis sed volutpat eu, mattis eget ante. Nulla scelerisque, ex quis condimentum pellentesque, erat orci elementum lectus, non varius odio metus ut lacus. Mauris nec iaculis est. In tristique diam mauris, feugiat luctus sem pretium nec. In luctus ipsum ac diam consectetur hendrerit id id ipsum. Cras velit elit, efficitur non ex scelerisque, commodo elementum nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nunc sit amet ligula maximus rutrum sit amet sit amet tortor. Sed non nibh metus. Aliquam ac massa at nulla ultricies elementum quis eget dolor. Ut consectetur in urna non auctor. Fusce eleifend facilisis sagittis. Etiam tortor magna, convallis sit amet est sit amet, rutrum lobortis purus.</p>
+            </div>
+            <div class="modal-footer">
+                <div class="signup-form-footer signup-form-footer-centered">
+                    <div class="signup-form-button-container signup-form-uyelik-button-container">
+                        <a href="#" id="onBilgilendirmeFormuOnay">Okudum ve Kabul Ediyorum</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/modal.js"></script>
+<script>
+    $(document).ready(function() {
+        $('select').niceSelect();
+        $('.nav-stacked a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
+        $('#mesafeliSatisSozlesmesiLabel').click(function() {
+            $('#mesafeliSatisSozlesmesiModal').modal('show');
+        });
+        $('#mesafeliSatisSozlesmesiOnay').click(function() {
+            $('#mesafeliSatisSozlesmesiModal').modal('hide');
+            $('#mesafeliSatisSozlesmesi').prop('checked', true);
+        });
+        $('#onBilgilendirmeFormuLabel').click(function() {
+            $('#onBilgilendirmeFormuModal').modal('show');
+        });
+        $('#onBilgilendirmeFormuOnay').click(function() {
+            $('#onBilgilendirmeFormuModal').modal('hide');
+            $('#onBilgilendirmeFormu').prop('checked', true);
+        });
+    });
+</script>
+</body>
+</html>
