@@ -20,7 +20,8 @@
     "font-awesome": "^4.7.0",
     "components-font-awesome": "^4.7.0",
     "jquery-nice-select": "^1.1.0",
-    "pretty-checkbox": "^2.2.1"
+    "pretty-checkbox": "^2.2.1",
+    "protonet/jquery.inview": "^1.1.2"
   },
   "devDependencies": {
     "slick": "*"

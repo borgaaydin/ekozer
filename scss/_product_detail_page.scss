@@ -1,7 +1,31 @@
 
 
 .breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
 
+  .root {
+    color: #c4c7d0;
+    margin-right: 25px;
+  }
+
+  .level {
+    span {
+      font-size: 14px;
+      line-height: 1.71;
+      color: #c6c9d1;
+
+      &:first-child {
+        margin-right: 25px;
+      }
+
+      &:nth-child(2) {
+        margin-right: 25px;
+      }
+    }
+  }
 }
 
 .product-detail-navigation {
@@ -205,6 +229,7 @@
   @include beta();
 
   @include clearfix();
+  width: 520px;
   height: 561px;
 
   background-color: #ffffff;
@@ -496,75 +521,74 @@
 
 }
 
+.price {
+  .old-price {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c9196;
+  }
+
+  .discount-pop {
+    max-width: 66px;
+    height: 22px;
+    background-color: #67ddac;
+    box-shadow: 0 2px 2px 0 rgba(103, 221, 172, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 6px;
+    margin-left: 30px;
+
+    >i {
+      color: white;
+    }
+
+    >span {
+      font-size: 14px;
+      color: #2a8b63;
+      font-weight: 500;
+    }
+  }
+
+  .actual-price {
+    margin: 12px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    line-height: 24px;
+
+    >span:first-child {
+      font-size: 34px;
+      font-weight: 500;
+      color: #f57353;
+      margin-right: 10px;
+    }
+
+    >span:nth-child(2) {
+      font-size: 24px;
+      font-weight: 200;
+      color: #758080;
+    }
+  }
+
+  .actual-price-kdv {
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c9196;
+  }
+}
+
 .product-detail-price-row {
   margin-left: 40px;
   margin-top: 20px;
   position: relative;
-
-  .product-detail-price {
-
-    .old-price {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-
-      font-size: 14px;
-      font-weight: 300;
-      color: #8c9196;
-    }
-
-    .discount-pop {
-      max-width: 66px;
-      height: 22px;
-      background-color: #67ddac;
-      box-shadow: 0 2px 2px 0 rgba(103, 221, 172, 0.25);
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      padding: 0 6px;
-      margin-left: 30px;
-
-      >i {
-        color: white;
-      }
-
-      >span {
-        font-size: 14px;
-        color: #2a8b63;
-        font-weight: 500;
-      }
-    }
-
-    .actual-price {
-      margin: 12px 0;
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-
-      line-height: 24px;
-
-      >span:first-child {
-        font-size: 34px;
-        font-weight: 500;
-        color: #f57353;
-        margin-right: 10px;
-      }
-
-      >span:nth-child(2) {
-        font-size: 24px;
-        font-weight: 200;
-        color: #758080;
-      }
-    }
-
-    .actual-price-kdv {
-      margin-top: 2px;
-      font-size: 14px;
-      font-weight: 300;
-      color: #8c9196;
-    }
-  }
 
   .product-pops {
     position: absolute;
@@ -764,6 +788,44 @@
     >span:nth-child(2) {
       font-size: 14px;
       font-weight: 500;
+    }
+  }
+}
+
+.sticky-price-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sticky-price-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  .product-detail-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+
+    .product-detail-counter {
+      margin-top: 0;
+      margin-bottom: 10px;
+      margin-right: 0;
+      .product-count {
+
+        .product-count-label {
+          display: none;
+        }
+      }
+    }
+
+    .product-detail-button {
+      a {
+        width: 164px;
+      }
     }
   }
 }
