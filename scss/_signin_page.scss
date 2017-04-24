@@ -1,0 +1,279 @@
+.signin {
+  margin-top:20px;
+}
+.signin-left {
+  @include col();
+  @include span(12, $gutter_pc, $gutter_px, $padding, $max_columns);
+  background: #ffffff;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+}
+.signin-right {
+  @include col();
+  @include span(18, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include beta();
+  background: #ffffff;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+}
+.signin {
+  h4 {
+    margin: 20px 0 3px 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #434b54;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 1.38;
+    color: #8c9196;
+  }
+}
+.signin-left-header {
+  padding: 0 20px;
+}
+.signin-form-container {
+  padding: 6px 20px 0;
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #82858a;
+    display: block;
+    margin-bottom: 6px;
+  }
+  input[type="text"], input[type="password"], select, .nice-select, .adressTextArea {
+    height: 54px;
+    background-color: #fbfbfa;
+    border: solid 1px #f0f3f6;
+    width: calc(100% - 4px);
+    color: #626971;
+    font-size:16px;
+  }
+  input[type="text"], input[type="password"] {
+    padding: 0 16px 0 20px;
+    width: calc(100% - 36px);
+  }
+  input:read-only {
+    background-color: #f0f3f8;
+    border: solid 1px #f0f3f6;
+    color: #4c535c;
+  }
+  input:focus, .open, textarea:focus {
+    border: solid 1px #ff9f69;
+    outline: none;
+    color: #4c535c;
+  }
+  .eye {
+    position: absolute;
+    top: 40px;
+    right: 17px;
+  }
+  .eye-closed {
+    position: absolute;
+    top: 40px;
+    right: 17px;
+    display: none;
+  }
+  .row {
+    margin-top: 20px;
+  }
+  .uyeEposta {
+    @include col();
+    @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .uyeSifre {
+    @include col();
+    @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
+    position: relative;
+  }
+  .uyeSifreSifreIcon {
+    position: absolute;
+    top: 40px;
+    right: 17px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .uyeGuvenlikKodu {
+    @include col();
+    @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+    @include beta();
+    input {
+      @include col();
+      width: 149px;
+      border-color: #f0f3f6;
+      border-style: solid;
+      border-width: 1px 1px 1px 0;
+    }
+    input::placeholder {
+      color: #aeb4bc;
+    }
+  }
+  .sifremiUnuttumButton {
+    a {
+      font-size: 14px;
+      color: #b4b9bd;
+      text-decoration: underline;
+    }
+  }
+  .nice-select {
+    height: 58px;
+    border-radius: 0;
+    .list {
+      border-radius: 0;
+      margin-top: 2px;
+      width: 100%;
+      max-height: 292px;
+      overflow-y: auto;
+      padding: 0 12.4px 0 9px;
+      .option {
+        color: #868a8f;
+        padding: 10px 0 12px 0;
+        font-size: 16px;
+        line-height: 1.38;
+        box-shadow: inset 0 -1px 0 0 #f0f3f6;
+        min-height: 16px;
+        &:last-child {
+          box-shadow: none;
+        }
+        &:hover, &.focus {
+          background: white;
+          font-weight: normal;
+        }
+      }
+      .option.selected {
+        color: #f57353;
+        background: white;
+      }
+    }
+  }
+  .current {
+    line-height: 58px;
+  }
+  .uyeBeniHatirlaCheckbox {
+     label {
+       display: inline;
+       font-size: 14px;
+       font-weight:normal;
+       color: #8c9196;
+       margin-left: 8px;
+     }
+     div {
+       margin: 11px 0 19px;
+       input {
+         margin-left: 26px;
+       }
+     }
+   }
+}
+.signin-form-footer {
+  margin-top: 30px;
+  background: #fafafc;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: row;
+  .signin-form-button-container {
+    width: 180px;
+    padding: 30px 19px 30px 0;
+    a {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      width: 100%;
+      height: 48px;
+      color: #ffffff;
+      background: #ff9f69;
+      box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+    }
+  }
+}
+.signin-right-header {
+  padding-left: 20px;
+}
+.signin-right-info {
+  padding: 20px;
+  float: left;
+  clear: both;
+  .signin-right-info-left {
+    @include col();
+    @include span(8.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+  }
+  .signin-right-info-right {
+    @include col();
+    @include span(8.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .avantaj {
+    margin-top: 40px;
+    float: left;
+    width: 100%;
+    &:first-child {
+      margin-top: 20px;
+    }
+    .icon {
+      width: 37px;
+      display: inline-block;
+      text-align: right;
+      vertical-align: top;
+      .ico-free-shipping {
+        padding-left: 1px;
+      }
+      .group {
+      }
+      .box-indirim {
+        padding-left: 4px;
+      }
+      .box-call {
+      }
+    }
+    .detail {
+      padding-left: 10px;
+      width: calc(100% - 57px);
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.38;
+      color: #ff9f69;
+      span {
+        font-size: 14px;
+        line-height: 1.57;
+        color: #8c9196;
+        display: block;
+      }
+    }
+  }
+}
+
+.signin-right-footer {
+  float: left;
+  margin-top: 30px;
+  background: #fafafc;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: row;
+  .signin-right-button-container {
+    width: 180px;
+    padding: 30px 19px 30px 0;
+    a {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      width: 100%;
+      height: 48px;
+      background-color: #ffffff;
+      color: #f98e4e;
+      box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.32);
+      border: solid 1px #fff8f3;
+    }
+  }
+}

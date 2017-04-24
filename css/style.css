@@ -4760,7 +4760,7 @@ link {
     display: inline-block;
     vertical-align: bottom;
     color: transparent;
-    background-color: #ff9f69; }
+    background-color: #fff; }
   .pretty i:after {
     position: absolute;
     top: 0;
@@ -4775,7 +4775,7 @@ link {
 .pretty > input[type='checkbox']:checked + label > i:before,
 .pretty > input[type='radio']:checked + label > i:before {
   color: inherit;
-  background-color: #ff9f69; }
+  background-color: #fff; }
 
 .pretty > input[type='radio'] + label > i.default:before {
   left: 0;
@@ -4783,7 +4783,7 @@ link {
   content: '\0000';
   color: transparent;
   border-radius: 0;
-  background: #ff9f69;
+  background: #fff;
   transform: scale(0.8); }
 
 .pretty > input[type='radio']:checked + label > i.default:before {
@@ -5274,8 +5274,8 @@ link {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?tt5hy");
-  src: url("../fonts/icomoon.eot?tt5hy#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?tt5hy") format("truetype"), url("../fonts/icomoon.woff?tt5hy") format("woff"), url("../fonts/icomoon.svg?tt5hy#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?4b2a1k");
+  src: url("fonts/icomoon.eot?4b2a1k#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?4b2a1k") format("truetype"), url("fonts/icomoon.woff?4b2a1k") format("woff"), url("fonts/icomoon.svg?4b2a1k#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -5292,154 +5292,134 @@ link {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-credit-card:before {
-  content: "\e900"; }
+.icon-ico-warning .path1:before {
+  content: "\e900";
+  color: #1a1a1a; }
 
-.icon-download:before {
-  content: "\e901"; }
+.icon-ico-warning .path2:before {
+  content: "\e901";
+  margin-left: -1.0458984375em;
+  color: white; }
 
-.icon-group-2:before {
-  content: "\e902"; }
+.icon-ico-warning .path3:before {
+  content: "\e902";
+  margin-left: -1.0458984375em;
+  color: white; }
 
-.icon-group-6:before {
+.icon-ico-search:before {
   content: "\e903"; }
 
-.icon-ico-3-grid:before {
+.icon-ico-question-radius:before {
   content: "\e904"; }
 
-.icon-ico-4-grid:before {
-  content: "\e905"; }
+.icon-ico-questio-oval .path1:before {
+  content: "\e905";
+  color: #1a1a1a; }
 
-.icon-ico-all-category:before {
-  content: "\e906"; }
+.icon-ico-questio-oval .path2:before {
+  content: "\e906";
+  margin-left: -1.0458984375em;
+  color: white; }
 
-.icon-ico-arrow:before {
-  content: "\e907"; }
+.icon-ico-questio-oval .path3:before {
+  content: "\e907";
+  margin-left: -1.0458984375em;
+  color: white; }
 
-.icon-ico-basket:before {
-  content: "\e908"; }
+.icon-ico-questio-oval-copy .path1:before {
+  content: "\e908";
+  color: #1a1a1a; }
 
-.icon-ico-centered:before {
-  content: "\e909"; }
+.icon-ico-questio-oval-copy .path2:before {
+  content: "\e909";
+  margin-left: -1.0458984375em;
+  color: white; }
 
-.icon-ico-close-copy:before {
-  content: "\e90a"; }
+.icon-ico-questio-oval-copy .path3:before {
+  content: "\e90a";
+  margin-left: -1.0458984375em;
+  color: white; }
 
-.icon-ico-close:before {
+.icon-ico-new-favorite-list:before {
   content: "\e90b"; }
 
-.icon-ico-delete-solid:before {
+.icon-ico-logout:before {
   content: "\e90c"; }
 
-.icon-ico-delete:before {
+.icon-ico-login-signup:before {
   content: "\e90d"; }
 
-.icon-ico-down-arrow:before {
+.icon-ico-list-item:before {
   content: "\e90e"; }
 
-.icon-ico-edit:before {
+.icon-ico-home:before {
   content: "\e90f"; }
 
-.icon-ico-fast-cargo:before {
+.icon-ico-gift:before {
   content: "\e910"; }
 
 .icon-ico-free-shipping:before {
   content: "\e911"; }
 
-.icon-ico-gift:before {
+.icon-ico-fast-cargo:before {
   content: "\e912"; }
 
-.icon-ico-home:before {
+.icon-ico-edit:before {
   content: "\e913"; }
 
-.icon-ico-list-item:before {
+.icon-ico-delete:before {
   content: "\e914"; }
 
-.icon-ico-login-signup:before {
-  content: "\e915"; }
+.icon-ico-delete-solid .path1:before {
+  content: "\e915";
+  color: #1a1a1a; }
 
-.icon-ico-logout:before {
-  content: "\e916"; }
+.icon-ico-delete-solid .path2:before {
+  content: "\e916";
+  margin-left: -1.0439453125em;
+  color: white; }
 
-.icon-ico-new-favorite-list:before {
-  content: "\e917"; }
+.icon-ico-close .path1:before {
+  content: "\e917";
+  color: #1a1a1a; }
 
-.icon-ico-plus:before {
-  content: "\e918"; }
+.icon-ico-close .path2:before {
+  content: "\e918";
+  margin-left: -1.0458984375em;
+  color: white; }
 
-.icon-ico-questio-oval-copy .path1:before {
+.icon-ico-close-copy .path1:before {
   content: "\e919";
   color: #1a1a1a; }
 
-.icon-ico-questio-oval-copy .path2:before {
+.icon-ico-close-copy .path2:before {
   content: "\e91a";
   margin-left: -1.0458984375em;
-  color: none; }
-
-.icon-ico-questio-oval-copy .path3:before {
-  content: "\e91b";
-  margin-left: -1.0458984375em;
   color: white; }
 
-.icon-ico-questio-oval .path1:before {
-  content: "\e91c";
-  color: #1a1a1a; }
+.icon-ico-basket:before {
+  content: "\e91b"; }
 
-.icon-ico-questio-oval .path2:before {
-  content: "\e91d";
-  margin-left: -1.0458984375em;
-  color: none; }
+.icon-ico-arrow:before {
+  content: "\e91c"; }
 
-.icon-ico-questio-oval .path3:before {
-  content: "\e91e";
-  margin-left: -1.0458984375em;
-  color: none; }
+.icon-ico-all-category:before {
+  content: "\e91d"; }
 
-.icon-ico-questio-oval .path4:before {
-  content: "\e91f";
-  margin-left: -1.0458984375em;
-  color: white; }
+.icon-ico-4-grid:before {
+  content: "\e91e"; }
 
-.icon-ico-question-radius:before {
+.icon-ico-3-grid:before {
+  content: "\e91f"; }
+
+.icon-group-6:before {
   content: "\e920"; }
 
-.icon-ico-search:before {
+.icon-download:before {
   content: "\e921"; }
 
-.icon-ico-showcase-left-arrow:before {
+.icon-credit-card:before {
   content: "\e922"; }
-
-.icon-ico-showcase-right-arrow:before {
-  content: "\e923"; }
-
-.icon-ico-slider-navi-left:before {
-  content: "\e924"; }
-
-.icon-ico-slider-navi-right:before {
-  content: "\e925"; }
-
-.icon-ico-warning .path1:before {
-  content: "\e926";
-  color: #1a1a1a; }
-
-.icon-ico-warning .path2:before {
-  content: "\e927";
-  margin-left: -1.0458984375em;
-  color: none; }
-
-.icon-ico-warning .path3:before {
-  content: "\e928";
-  margin-left: -1.0458984375em;
-  color: white; }
-
-.icon-love-favorite .path1:before {
-  content: "\e92b";
-  color: white; }
-
-.icon-love-favorite .path2:before {
-  content: "\e92c";
-  margin-left: -1.125em;
-  color: white; }
 
 /* Slider */
 .slick-slider {
@@ -8450,6 +8430,284 @@ a:hover {
         display: none; }
     .sticky-price-controls .product-detail-actions .product-detail-button a {
       width: 164px; }
+
+.signin {
+  margin-top: 20px; }
+
+.signin-left {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 460px;
+  border-right-width: 0;
+  padding: 0;
+  margin-right: 20px;
+  background: #ffffff;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25); }
+
+.signin-right {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 700px;
+  border-right-width: 0;
+  padding: 0;
+  margin-right: 20px;
+  margin-right: 0;
+  border-left-width: 0;
+  background: #ffffff;
+  box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25); }
+
+.signin h4 {
+  margin: 20px 0 3px 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #434b54; }
+
+.signin .description {
+  font-size: 16px;
+  line-height: 1.38;
+  color: #8c9196; }
+
+.signin-left-header {
+  padding: 0 20px; }
+
+.signin-form-container {
+  padding: 6px 20px 0; }
+  .signin-form-container label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #82858a;
+    display: block;
+    margin-bottom: 6px; }
+  .signin-form-container input[type="text"], .signin-form-container input[type="password"], .signin-form-container select, .signin-form-container .nice-select, .signin-form-container .adressTextArea {
+    height: 54px;
+    background-color: #fbfbfa;
+    border: solid 1px #f0f3f6;
+    width: calc(100% - 4px);
+    color: #626971;
+    font-size: 16px; }
+  .signin-form-container input[type="text"], .signin-form-container input[type="password"] {
+    padding: 0 16px 0 20px;
+    width: calc(100% - 36px); }
+  .signin-form-container input:read-only {
+    background-color: #f0f3f8;
+    border: solid 1px #f0f3f6;
+    color: #4c535c; }
+  .signin-form-container input:focus, .signin-form-container .open, .signin-form-container textarea:focus {
+    border: solid 1px #ff9f69;
+    outline: none;
+    color: #4c535c; }
+  .signin-form-container .eye {
+    position: absolute;
+    top: 40px;
+    right: 17px; }
+  .signin-form-container .eye-closed {
+    position: absolute;
+    top: 40px;
+    right: 17px;
+    display: none; }
+  .signin-form-container .row {
+    margin-top: 20px; }
+  .signin-form-container .uyeEposta {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 420px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 20px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signin-form-container .uyeSifre {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 420px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 20px;
+    position: relative; }
+  .signin-form-container .uyeSifreSifreIcon {
+    position: absolute;
+    top: 40px;
+    right: 17px; }
+    .signin-form-container .uyeSifreSifreIcon:hover {
+      cursor: pointer; }
+  .signin-form-container .uyeGuvenlikKodu {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 18px;
+    margin-right: 0;
+    border-left-width: 0; }
+    .signin-form-container .uyeGuvenlikKodu input {
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 149px;
+      border-color: #f0f3f6;
+      border-style: solid;
+      border-width: 1px 1px 1px 0; }
+    .signin-form-container .uyeGuvenlikKodu input::placeholder {
+      color: #aeb4bc; }
+  .signin-form-container .sifremiUnuttumButton a {
+    font-size: 14px;
+    color: #b4b9bd;
+    text-decoration: underline; }
+  .signin-form-container .nice-select {
+    height: 58px;
+    border-radius: 0; }
+    .signin-form-container .nice-select .list {
+      border-radius: 0;
+      margin-top: 2px;
+      width: 100%;
+      max-height: 292px;
+      overflow-y: auto;
+      padding: 0 12.4px 0 9px; }
+      .signin-form-container .nice-select .list .option {
+        color: #868a8f;
+        padding: 10px 0 12px 0;
+        font-size: 16px;
+        line-height: 1.38;
+        box-shadow: inset 0 -1px 0 0 #f0f3f6;
+        min-height: 16px; }
+        .signin-form-container .nice-select .list .option:last-child {
+          box-shadow: none; }
+        .signin-form-container .nice-select .list .option:hover, .signin-form-container .nice-select .list .option.focus {
+          background: white;
+          font-weight: normal; }
+      .signin-form-container .nice-select .list .option.selected {
+        color: #f57353;
+        background: white; }
+  .signin-form-container .current {
+    line-height: 58px; }
+  .signin-form-container .uyeBeniHatirlaCheckbox label {
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    color: #8c9196;
+    margin-left: 8px; }
+  .signin-form-container .uyeBeniHatirlaCheckbox div {
+    margin: 11px 0 19px; }
+    .signin-form-container .uyeBeniHatirlaCheckbox div input {
+      margin-left: 26px; }
+
+.signin-form-footer {
+  margin-top: 30px;
+  background: #fafafc;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: row; }
+  .signin-form-footer .signin-form-button-container {
+    width: 180px;
+    padding: 30px 19px 30px 0; }
+    .signin-form-footer .signin-form-button-container a {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      width: 100%;
+      height: 48px;
+      color: #ffffff;
+      background: #ff9f69;
+      box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25); }
+
+.signin-right-header {
+  padding-left: 20px; }
+
+.signin-right-info {
+  padding: 20px;
+  float: left;
+  clear: both; }
+  .signin-right-info .signin-right-info-left {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 320px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 20px; }
+  .signin-right-info .signin-right-info-right {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 320px;
+    border-right-width: 0;
+    padding: 0;
+    margin-right: 20px;
+    margin-right: 0;
+    border-left-width: 0; }
+  .signin-right-info .avantaj {
+    margin-top: 40px;
+    float: left;
+    width: 100%; }
+    .signin-right-info .avantaj:first-child {
+      margin-top: 20px; }
+    .signin-right-info .avantaj .icon {
+      width: 37px;
+      display: inline-block;
+      text-align: right;
+      vertical-align: top; }
+      .signin-right-info .avantaj .icon .ico-free-shipping {
+        padding-left: 1px; }
+      .signin-right-info .avantaj .icon .box-indirim {
+        padding-left: 4px; }
+    .signin-right-info .avantaj .detail {
+      padding-left: 10px;
+      width: calc(100% - 57px);
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.38;
+      color: #ff9f69; }
+      .signin-right-info .avantaj .detail span {
+        font-size: 14px;
+        line-height: 1.57;
+        color: #8c9196;
+        display: block; }
+
+.signin-right-footer {
+  float: left;
+  margin-top: 30px;
+  background: #fafafc;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: row; }
+  .signin-right-footer .signin-right-button-container {
+    width: 180px;
+    padding: 30px 19px 30px 0; }
+    .signin-right-footer .signin-right-button-container a {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      width: 100%;
+      height: 48px;
+      background-color: #ffffff;
+      color: #f98e4e;
+      box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.32);
+      border: solid 1px #fff8f3; }
 
 .main_slider {
   max-width: 1180px;
