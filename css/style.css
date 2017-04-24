@@ -4760,7 +4760,7 @@ link {
     display: inline-block;
     vertical-align: bottom;
     color: transparent;
-    background-color: #fff; }
+    background-color: #ff9f69; }
   .pretty i:after {
     position: absolute;
     top: 0;
@@ -4775,7 +4775,7 @@ link {
 .pretty > input[type='checkbox']:checked + label > i:before,
 .pretty > input[type='radio']:checked + label > i:before {
   color: inherit;
-  background-color: #fff; }
+  background-color: #ff9f69; }
 
 .pretty > input[type='radio'] + label > i.default:before {
   left: 0;
@@ -4783,7 +4783,7 @@ link {
   content: '\0000';
   color: transparent;
   border-radius: 0;
-  background: #fff;
+  background: #ff9f69;
   transform: scale(0.8); }
 
 .pretty > input[type='radio']:checked + label > i.default:before {
@@ -8381,7 +8381,14 @@ a:hover {
     width: 460px;
     border-right-width: 0;
     padding: 0 20px 0 0;
-    margin-right: 20px; }
+    margin-right: 20px;
+    position: relative; }
+    .header .search_input_container img.search-icon {
+      position: absolute;
+      right: 30px;
+      top: 10px;
+      box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.08);
+      padding: 0 12px; }
   .header .logo {
     max-height: 46px; }
   .header .search_input {
@@ -8507,14 +8514,35 @@ a:hover {
     flex-grow: 1;
     position: relative;
     cursor: pointer; }
+    .nav_list > li img.nav-icon {
+      position: absolute;
+      top: 23px;
+      right: 20px;
+      -webkit-transition: 0.3s all;
+      -moz-transition: 0.3s all;
+      -ms-transition: 0.3s all;
+      -o-transition: 0.3s all;
+      transition: 0.3s all; }
+    .nav_list > li img.nav-all-cat-icon {
+      position: absolute;
+      top: 18px;
+      left: 14px; }
     .nav_list > li:hover .nav_list_lv1 {
       display: block; }
+    .nav_list > li:hover img.nav-icon {
+      -moz-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg); }
     .nav_list > li:first-child {
       min-width: 254px;
       max-width: 254px;
       color: #ffffff;
       background-color: #ff9f69;
       box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25); }
+      .nav_list > li:first-child:hover {
+        background-color: #f58553; }
 
 .nav_list_lv1 {
   position: absolute;
@@ -8589,6 +8617,8 @@ a:hover {
             font-size: 14px;
             color: #434b54;
             font-weight: 100; }
+            .nav_list_lv1 .nav_list_lv2 .nav_col > ul > li > a:hover {
+              color: #f46b49; }
           .nav_list_lv1 .nav_list_lv2 .nav_col > ul > li:last-child {
             margin-top: 5px; }
             .nav_list_lv1 .nav_list_lv2 .nav_col > ul > li:last-child > a {

@@ -30,6 +30,15 @@
   .search_input_container {
     @include col;
     @include span(12, $gutter_pc, $gutter_px, 0 20px 0 0, $max_columns);
+    position: relative;
+
+    img.search-icon {
+      position: absolute;
+      right: 30px;
+      top: 10px;
+      box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.08);
+      padding: 0 12px;
+    }
   }
 
   .logo {
@@ -191,10 +200,27 @@
     position: relative;
     cursor: pointer;
 
+    img.nav-icon {
+      position: absolute;
+      top: 23px;
+      right: 20px;
+      @include css_transition(.3s all);
+
+    }
+
+    img.nav-all-cat-icon {
+      position: absolute;
+      top: 18px;
+      left: 14px;
+    }
 
     &:hover {
       .nav_list_lv1 {
         display: block;
+      }
+
+      img.nav-icon {
+        @include transform(rotate(-180deg));
       }
     }
 
@@ -204,6 +230,10 @@
       color: #ffffff;
       background-color: #ff9f69;
       box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+
+      &:hover {
+        background-color: #f58553;
+      }
     }
   }
 }
@@ -256,7 +286,6 @@
           a {
             span {
               color: #ff9f69;
-
             }
           }
 
@@ -300,6 +329,11 @@
             font-size: 14px;
             color: #434b54;
             font-weight: 100;
+
+
+            &:hover {
+              color: #f46b49;
+            }
           }
 
           &:last-child {
