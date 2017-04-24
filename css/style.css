@@ -4760,7 +4760,7 @@ link {
     display: inline-block;
     vertical-align: bottom;
     color: transparent;
-    background-color: #ff9f69; }
+    background-color: #fff; }
   .pretty i:after {
     position: absolute;
     top: 0;
@@ -4775,7 +4775,7 @@ link {
 .pretty > input[type='checkbox']:checked + label > i:before,
 .pretty > input[type='radio']:checked + label > i:before {
   color: inherit;
-  background-color: #ff9f69; }
+  background-color: #fff; }
 
 .pretty > input[type='radio'] + label > i.default:before {
   left: 0;
@@ -4783,7 +4783,7 @@ link {
   content: '\0000';
   color: transparent;
   border-radius: 0;
-  background: #ff9f69;
+  background: #fff;
   transform: scale(0.8); }
 
 .pretty > input[type='radio']:checked + label > i.default:before {
@@ -6744,6 +6744,17 @@ a:hover {
   padding: 0 20px;
   box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25); }
 
+.eye {
+  position: absolute;
+  top: 40px;
+  right: 17px; }
+
+.eye-closed {
+  position: absolute;
+  top: 40px;
+  right: 17px;
+  display: none; }
+
 .signup h4 {
   margin: 20px 0 3px 0;
   padding: 0;
@@ -6822,14 +6833,14 @@ a:hover {
     color: #82858a;
     display: block;
     margin-bottom: 6px; }
-  .signup-bireysel-form-container input[type="text"], .signup-bireysel-form-container select, .signup-bireysel-form-container .nice-select, .signup-bireysel-form-container .adressTextArea {
+  .signup-bireysel-form-container input[type="text"], .signup-bireysel-form-container input[type="password"], .signup-bireysel-form-container select, .signup-bireysel-form-container .nice-select, .signup-bireysel-form-container .adressTextArea {
     height: 54px;
     background-color: #fbfbfa;
     border: solid 1px #f0f3f6;
     width: calc(100% - 4px);
     color: #626971;
     font-size: 16px; }
-  .signup-bireysel-form-container input[type="text"] {
+  .signup-bireysel-form-container input[type="text"], .signup-bireysel-form-container input[type="password"] {
     padding: 0 16px 0 12px;
     width: calc(100% - 32px); }
   .signup-bireysel-form-container input:read-only {
@@ -6872,10 +6883,12 @@ a:hover {
     padding: 0;
     margin-right: 18px;
     position: relative; }
-  .signup-bireysel-form-container .sifreIcon {
+  .signup-bireysel-form-container .bireyselSifrenizSifreIcon {
     position: absolute;
     top: 40px;
     right: 17px; }
+    .signup-bireysel-form-container .bireyselSifrenizSifreIcon:hover {
+      cursor: pointer; }
   .signup-bireysel-form-container .bireyselGuvenlikKodu {
     float: left;
     -webkit-box-sizing: border-box;
@@ -7044,14 +7057,14 @@ a:hover {
     color: #82858a;
     display: block;
     margin-bottom: 6px; }
-  .signup-kurumsal-form-container input[type="text"], .signup-kurumsal-form-container select, .signup-kurumsal-form-container .nice-select, .signup-kurumsal-form-container .adressTextArea {
+  .signup-kurumsal-form-container input[type="text"], .signup-kurumsal-form-container input[type="password"], .signup-kurumsal-form-container select, .signup-kurumsal-form-container .nice-select, .signup-kurumsal-form-container .adressTextArea {
     height: 54px;
     background-color: #fbfbfa;
     border: solid 1px #f0f3f6;
     width: calc(100% - 4px);
     color: #626971;
     font-size: 16px; }
-  .signup-kurumsal-form-container input[type="text"] {
+  .signup-kurumsal-form-container input[type="text"], .signup-kurumsal-form-container input[type="password"] {
     padding: 0 16px 0 12px;
     width: calc(100% - 32px); }
   .signup-kurumsal-form-container input:read-only {
@@ -7547,7 +7560,7 @@ a:hover {
   display: block;
   margin-bottom: 6px; }
 
-.signup-davet-form-container input[type="text"], .signup-davet-form-container select, .signup-davet-form-container .nice-select, .signup-davet-form-container .adressTextArea {
+.signup-davet-form-container input[type="text"], .signup-davet-form-container input[type="password"], .signup-davet-form-container select, .signup-davet-form-container .nice-select, .signup-davet-form-container .adressTextArea {
   height: 54px;
   background-color: #fbfbfa;
   border: solid 1px #f0f3f6;
@@ -7555,7 +7568,7 @@ a:hover {
   color: #626971;
   font-size: 16px; }
 
-.signup-davet-form-container input[type="text"] {
+.signup-davet-form-container input[type="text"], .signup-davet-form-container input[type="password"] {
   padding: 0 16px 0 12px;
   width: calc(100% - 32px); }
 

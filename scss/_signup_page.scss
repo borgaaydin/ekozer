@@ -16,7 +16,17 @@
   padding: 0 20px;
   box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
 }
-
+.eye {
+  position: absolute;
+  top: 40px;
+  right: 17px;
+}
+.eye-closed {
+  position: absolute;
+  top: 40px;
+  right: 17px;
+  display: none;
+}
 .signup {
   h4 {
     margin: 20px 0 3px 0;
@@ -119,7 +129,7 @@
     display: block;
     margin-bottom: 6px;
   }
-  input[type="text"], select, .nice-select, .adressTextArea {
+  input[type="text"], input[type="password"], select, .nice-select, .adressTextArea {
     height: 54px;
     background-color: #fbfbfa;
     border: solid 1px #f0f3f6;
@@ -127,7 +137,7 @@
     color: #626971;
     font-size:16px;
   }
-  input[type="text"] {
+  input[type="text"], input[type="password"] {
     padding: 0 16px 0 12px;
     width: calc(100% - 32px);
   }
@@ -159,10 +169,13 @@
     @include span(8, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
     position: relative;
   }
-  .sifreIcon {
+  .bireyselSifrenizSifreIcon {
     position: absolute;
     top: 40px;
     right: 17px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   .bireyselGuvenlikKodu {
     @include col();
@@ -342,7 +355,7 @@
     display: block;
     margin-bottom: 6px;
   }
-  input[type="text"], select, .nice-select, .adressTextArea {
+  input[type="text"], input[type="password"], select, .nice-select, .adressTextArea {
     height: 54px;
     background-color: #fbfbfa;
     border: solid 1px #f0f3f6;
@@ -350,7 +363,7 @@
     color: #626971;
     font-size: 16px;
   }
-  input[type="text"] {
+  input[type="text"], input[type="password"] {
     padding: 0 16px 0 12px;
     width: calc(100% - 32px);
   }
@@ -745,7 +758,7 @@
     display: block;
     margin-bottom: 6px;
   }
-  input[type="text"], select, .nice-select, .adressTextArea {
+  input[type="text"], input[type="password"], select, .nice-select, .adressTextArea {
     height: 54px;
     background-color: #fbfbfa;
     border: solid 1px #f0f3f6;
@@ -753,7 +766,7 @@
     color: #626971;
     font-size:16px;
   }
-  input[type="text"] {
+  input[type="text"], input[type="password"] {
     padding: 0 16px 0 12px;
     width: calc(100% - 32px);
   }
