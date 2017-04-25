@@ -61,6 +61,21 @@
   .slick-next {
     right: -58px;
   }
+
+
+  .image-only-slide {
+    border:0;
+    opacity: 1;
+
+    img {
+      opacity:1;
+    }
+
+    .slide-overlay {
+      display: none !important;
+    }
+  }
+
 }
 
 .slider_row {

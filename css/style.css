@@ -4333,6 +4333,32 @@ th {
   clip: auto; }
 
 /* Sample color palette */
+@font-face {
+  font-family: AcuminPro;
+  src: url("../fonts/acumin_light_italic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: AcuminPro;
+  src: url("../fonts/acumin_regular.otf") format("opentype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: AcuminPro;
+  src: url("../fonts/acumin_medium.otf") format("opentype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: AcuminPro;
+  src: url("../fonts/acumin_semibold.otf") format("opentype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: AcuminPro;
+  src: url("../fonts/acumin_bold.otf") format("opentype");
+  font-weight: 600; }
+
 /* Text styles */
 h1 {
   font-family: AcuminPro, sans-serif;
@@ -4760,7 +4786,7 @@ link {
     display: inline-block;
     vertical-align: bottom;
     color: transparent;
-    background-color: #fff; }
+    background-color: #ff9f69; }
   .pretty i:after {
     position: absolute;
     top: 0;
@@ -4775,7 +4801,7 @@ link {
 .pretty > input[type='checkbox']:checked + label > i:before,
 .pretty > input[type='radio']:checked + label > i:before {
   color: inherit;
-  background-color: #fff; }
+  background-color: #ff9f69; }
 
 .pretty > input[type='radio'] + label > i.default:before {
   left: 0;
@@ -4783,7 +4809,7 @@ link {
   content: '\0000';
   color: transparent;
   border-radius: 0;
-  background: #fff;
+  background: #ff9f69;
   transform: scale(0.8); }
 
 .pretty > input[type='radio']:checked + label > i.default:before {
@@ -5288,6 +5314,7 @@ link {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  color: #f57353;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -5420,6 +5447,12 @@ link {
 
 .icon-credit-card:before {
   content: "\e922"; }
+
+.icon-ico-free-shipping {
+  font-size: 24px; }
+
+.icon-ico-fast-cargo {
+  font-size: 20px; }
 
 /* Slider */
 .slick-slider {
@@ -8885,6 +8918,13 @@ a:hover {
     left: -58px; }
   .main_slider .slick-next {
     right: -58px; }
+  .main_slider .image-only-slide {
+    border: 0;
+    opacity: 1; }
+    .main_slider .image-only-slide img {
+      opacity: 1; }
+    .main_slider .image-only-slide .slide-overlay {
+      display: none !important; }
 
 .slider_row {
   max-height: 320px;

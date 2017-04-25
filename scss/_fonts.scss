@@ -4,6 +4,38 @@ $yellow: #fecf33;
 $light_orange: #fdbd39;
 $peach: #ee6723;
 
+@font-face {
+  font-family: AcuminPro;
+  src: url("../fonts/acumin_light_italic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: AcuminPro;
+  src: url("../fonts/acumin_regular.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: AcuminPro;
+  src: url("../fonts/acumin_medium.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: AcuminPro;
+  src: url("../fonts/acumin_semibold.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: AcuminPro;
+  src: url("../fonts/acumin_bold.otf") format("opentype");
+  font-weight: 600;
+}
+
+
 /* Text styles */
 
 h1 {
