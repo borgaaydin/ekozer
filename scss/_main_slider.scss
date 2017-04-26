@@ -118,6 +118,7 @@
 
   }
 }
+
 .slick-prev:before {
   font-family: 'icomoon' !important;
   content: "\e925";
@@ -129,4 +130,40 @@
   content: "\e928";
   font-size: 31px;
   color: #434b54;
+}
+
+.product_slider {
+  .slick-prev,
+  .slick-next {
+    width: 42px;
+    height: 42px;
+    background-color: #fbfbfb;
+    position: absolute;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slick-prev {
+    left: inherit;
+    top: -24px;
+    right: 42px;
+    background-color: #f6f9ff;
+  }
+
+  .slick-next {
+    top: -24px;
+    right: 0;
+  }
+
+  .slick-list {
+    overflow: hidden;
+    padding: 20px 0 30px 0;
+    margin: -10px 0 -60px 0;
+  }
 }

@@ -67,6 +67,10 @@
       height: 42px;
       background-color: rgba(255, 255, 255, 0.75);
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.11);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -198,5 +202,22 @@
 
   .product-button {
     display: block;
+  }
+}
+
+.product_container_head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+  .show-all a {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #8c9196;
+    border-bottom: 1px solid #8c9196;
+    padding-bottom: 3px;
+    margin-right: 100px;
   }
 }

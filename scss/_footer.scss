@@ -54,7 +54,7 @@
 
       a {
         color: #6f7276;
-        font-weight: 400;
+        font-weight: 300;
         text-decoration: none;
       }
     }
@@ -83,6 +83,36 @@
         i {
           color: #6F7276;
           font-size: 24px;
+        }
+      }
+
+      .facebook {
+        &:hover {
+          background-color: #3b5a9a;
+          border-color: #3b5a9a;
+          i {
+            color: white;
+          }
+        }
+      }
+
+      .twitter {
+        &:hover {
+          background-color: #23abe7;
+          border-color: #23abe7;
+          i {
+            color: white;
+          }
+        }
+      }
+
+      .linkedin {
+        &:hover {
+          background-color: #117bb7;
+          border-color: #117bb7;
+          i {
+            color: white;
+          }
         }
       }
     }
@@ -120,6 +150,8 @@
         background-color: rgba(254, 254, 254, 0.13);
         border: 0;
         padding: 0 0 0 20px;
+
+        outline: 0;
       }
 
       a {
