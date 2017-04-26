@@ -118,3 +118,15 @@
 
   }
 }
+.slick-prev:before {
+  font-family: 'icomoon' !important;
+  content: "\e925";
+  font-size: 31px;
+  color: #434b54;
+}
+.slick-next:before {
+  font-family: 'icomoon' !important;
+  content: "\e928";
+  font-size: 31px;
+  color: #434b54;
+}

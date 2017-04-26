@@ -4786,7 +4786,7 @@ link {
     display: inline-block;
     vertical-align: bottom;
     color: transparent;
-    background-color: #ff9f69; }
+    background-color: #fff; }
   .pretty i:after {
     position: absolute;
     top: 0;
@@ -4801,7 +4801,7 @@ link {
 .pretty > input[type='checkbox']:checked + label > i:before,
 .pretty > input[type='radio']:checked + label > i:before {
   color: inherit;
-  background-color: #ff9f69; }
+  background-color: #fff; }
 
 .pretty > input[type='radio'] + label > i.default:before {
   left: 0;
@@ -4809,7 +4809,7 @@ link {
   content: '\0000';
   color: transparent;
   border-radius: 0;
-  background: #ff9f69;
+  background: #fff;
   transform: scale(0.8); }
 
 .pretty > input[type='radio']:checked + label > i.default:before {
@@ -5300,8 +5300,8 @@ link {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?4b2a1k");
-  src: url("fonts/icomoon.eot?4b2a1k#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?4b2a1k") format("truetype"), url("fonts/icomoon.woff?4b2a1k") format("woff"), url("fonts/icomoon.svg?4b2a1k#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?4ahpt6");
+  src: url("../fonts/icomoon.eot?4ahpt6#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?4ahpt6") format("truetype"), url("../fonts/icomoon.woff?4ahpt6") format("woff"), url("../fonts/icomoon.svg?4ahpt6#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -5314,10 +5314,33 @@ link {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  color: #f57353;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-ico-arrow-down:before {
+  content: "\e92a"; }
+
+.icon-ico-down-arrow:before {
+  content: "\e923"; }
+
+.icon-ico-up-arrow:before {
+  content: "\e929"; }
+
+.icon-ico-arrow2:before {
+  content: "\e924"; }
+
+.icon-ico-navi-left:before {
+  content: "\e925"; }
+
+.icon-ico-line:before {
+  content: "\e926"; }
+
+.icon-ico-plus:before {
+  content: "\e927"; }
+
+.icon-ico-navi-right:before {
+  content: "\e928"; }
 
 .icon-ico-warning .path1:before {
   content: "\e900";
@@ -5447,12 +5470,6 @@ link {
 
 .icon-credit-card:before {
   content: "\e922"; }
-
-.icon-ico-free-shipping {
-  font-size: 24px; }
-
-.icon-ico-fast-cargo {
-  font-size: 20px; }
 
 /* Slider */
 .slick-slider {
@@ -8959,6 +8976,18 @@ a:hover {
     color: #ffffff;
     margin: 23px 39px 11px 34px; }
 
+.slick-prev:before {
+  font-family: 'icomoon' !important;
+  content: "\e925";
+  font-size: 31px;
+  color: #434b54; }
+
+.slick-next:before {
+  font-family: 'icomoon' !important;
+  content: "\e928";
+  font-size: 31px;
+  color: #434b54; }
+
 .header {
   background-color: #fff;
   height: 66px;
@@ -8992,12 +9021,14 @@ a:hover {
     padding: 0 20px 0 0;
     margin-right: 20px;
     position: relative; }
-    .header .search_input_container img.search-icon {
+    .header .search_input_container .icon-ico-search {
       position: absolute;
-      right: 30px;
+      right: 18px;
       top: 10px;
       box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.08);
-      padding: 0 12px; }
+      padding: 0 20px 0 16px;
+      color: #8c9196;
+      font-size: 28px; }
   .header .logo {
     max-height: 46px; }
   .header .search_input {
@@ -9050,6 +9081,9 @@ a:hover {
           font-size: 14px; }
         .header .auth_button_container a .auth_button_text span:first-child {
           font-weight: bold; }
+      .header .auth_button_container a span.icon-ico-login-signup {
+        font-size: 30px;
+        margin-left: 18px; }
   .header .basket_button_container {
     float: left;
     -webkit-box-sizing: border-box;
@@ -9073,6 +9107,9 @@ a:hover {
       align-items: center; }
       .header .basket_button_container a .basket_button_text {
         margin-left: 11px; }
+    .header .basket_button_container .icon-ico-basket {
+      margin-left: 35px;
+      font-size: 29px; }
   .header.logged-in .search_input_container,
   .header.logged-in .basket_button_container,
   .header.logged-in .auth_button_container {
@@ -9136,7 +9173,7 @@ a:hover {
     flex-grow: 1;
     position: relative;
     cursor: pointer; }
-    .nav_list > li img.nav-icon {
+    .nav_list > li .icon-ico-arrow-down {
       position: absolute;
       top: 23px;
       right: 20px;
@@ -9144,19 +9181,24 @@ a:hover {
       -moz-transition: 0.3s all;
       -ms-transition: 0.3s all;
       -o-transition: 0.3s all;
-      transition: 0.3s all; }
-    .nav_list > li img.nav-all-cat-icon {
+      transition: 0.3s all;
+      color: rgba(0, 0, 0, 0.26);
+      font-size: 9px; }
+    .nav_list > li .icon-ico-all-category {
       position: absolute;
       top: 18px;
-      left: 14px; }
+      left: 14px;
+      font-size: 22px;
+      color: #fff; }
     .nav_list > li:hover .nav_list_lv1 {
       display: block; }
-    .nav_list > li:hover img.nav-icon {
+    .nav_list > li:hover .icon-ico-arrow-down {
       -moz-transform: rotate(-180deg);
       -o-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
       -webkit-transform: rotate(-180deg);
-      transform: rotate(-180deg); }
+      transform: rotate(-180deg);
+      color: white; }
     .nav_list > li:first-child {
       min-width: 254px;
       max-width: 254px;
@@ -9204,9 +9246,14 @@ a:hover {
           color: #434b54;
           width: 100%;
           height: 100%;
-          display: block; }
+          display: block;
+          position: relative; }
           .nav_list_lv1 .nav_left > ul > li > a > span {
             margin-left: 16px; }
+          .nav_list_lv1 .nav_left > ul > li > a .icon-ico-navi-right {
+            position: absolute;
+            right: 16px;
+            top: 21px; }
         .nav_list_lv1 .nav_left > ul > li:hover {
           background-color: #ffffff;
           box-shadow: inset 0 -1px 0 0 #fce6d8; }
@@ -9627,6 +9674,8 @@ a:hover {
       line-height: 22px; }
       .product .old-price .discount-pop > span {
         color: #2a8b63; }
+      .product .old-price .discount-pop > span.icon-ico-down-arrow {
+        color: #fff; }
   .product .actual-price {
     margin: 0 16px; }
     .product .actual-price > span:first-child {

@@ -32,12 +32,14 @@
     @include span(12, $gutter_pc, $gutter_px, 0 20px 0 0, $max_columns);
     position: relative;
 
-    img.search-icon {
+    .icon-ico-search {
       position: absolute;
-      right: 30px;
+      right: 18px;
       top: 10px;
       box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.08);
-      padding: 0 12px;
+      padding: 0 20px 0 16px;
+      color: #8c9196;
+      font-size: 28px;
     }
   }
 
@@ -89,9 +91,10 @@
         span:first-child {
           font-weight: bold;
         }
-        span:last-child {
-
-        }
+      }
+      span.icon-ico-login-signup {
+        font-size: 30px;
+        margin-left: 18px;
       }
     }
   }
@@ -119,6 +122,10 @@
       .basket_button_text {
         margin-left: 11px;
       }
+    }
+    .icon-ico-basket {
+      margin-left: 35px;
+      font-size: 29px;
     }
   }
 
@@ -233,18 +240,21 @@
     position: relative;
     cursor: pointer;
 
-    img.nav-icon {
+    .icon-ico-arrow-down {
       position: absolute;
       top: 23px;
       right: 20px;
       @include css_transition(.3s all);
-
+      color: rgba(0, 0, 0, 0.26);
+      font-size: 9px;
     }
 
-    img.nav-all-cat-icon {
+    .icon-ico-all-category {
       position: absolute;
       top: 18px;
       left: 14px;
+      font-size: 22px;
+      color: #fff;
     }
 
     &:hover {
@@ -252,8 +262,9 @@
         display: block;
       }
 
-      img.nav-icon {
+      .icon-ico-arrow-down {
         @include transform(rotate(-180deg));
+        color: rgba(255, 255, 255, 1);
       }
     }
 
@@ -306,9 +317,15 @@
           width: 100%;
           height: 100%;
           display: block;
+          position: relative;
 
           >span {
             margin-left: 16px;
+          }
+          .icon-ico-navi-right {
+            position: absolute;
+            right: 16px;
+            top: 21px;
           }
         }
 

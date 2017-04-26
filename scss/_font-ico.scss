@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ico-arrow-down:before {
+  content: "\e92a";
+}
 .icon-ico-down-arrow:before {
   content: "\e923";
 }
