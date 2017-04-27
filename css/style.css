@@ -4888,7 +4888,7 @@ link {
     display: inline-block;
     vertical-align: bottom;
     color: transparent;
-    background-color: #ff9f69; }
+    background-color: #fff; }
   .pretty i:after {
     position: absolute;
     top: 0;
@@ -4903,7 +4903,7 @@ link {
 .pretty > input[type='checkbox']:checked + label > i:before,
 .pretty > input[type='radio']:checked + label > i:before {
   color: inherit;
-  background-color: #ff9f69; }
+  background-color: #fff; }
 
 .pretty > input[type='radio'] + label > i.default:before {
   left: 0;
@@ -4911,7 +4911,7 @@ link {
   content: '\0000';
   color: transparent;
   border-radius: 0;
-  background: #ff9f69;
+  background: #fff;
   transform: scale(0.8); }
 
 .pretty > input[type='radio']:checked + label > i.default:before {

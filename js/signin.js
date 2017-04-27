@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var uyeSifre = $("#uyeSifre");
     var change = "";
-    $(".uyeSifre .eye").click(function(){
+    $(".uyeSifre .eye-closed").click(function(){
         change = "password";
         $(this).hide();
         var rep = $("<input type='" + change + "' />")
@@ -12,9 +12,9 @@ $(document).ready(function(){
             .insertBefore(uyeSifre);
         uyeSifre.remove();
         uyeSifre = rep;
-        $(".uyeSifre .eye-closed").show();
+        $(".uyeSifre .eye").show();
     }).insertAfter(uyeSifre);
-    $(".uyeSifre .eye-closed").click(function(){
+    $(".uyeSifre .eye").click(function(){
         change = "text";
         $(this).hide();
         var rep = $("<input type='" + change + "' />")
@@ -25,6 +25,6 @@ $(document).ready(function(){
             .insertBefore(uyeSifre);
         uyeSifre.remove();
         uyeSifre = rep;
-        $(".uyeSifre .eye").show();
+        $(".uyeSifre .eye-closed").show();
     }).insertAfter(uyeSifre);
 });

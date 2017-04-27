@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var bireyselSifreniz = $("#bireyselSifreniz");
     var change = "";
-    $(".bireyselSifreniz .eye").click(function(){
+    $(".bireyselSifreniz .eye-closed").click(function(){
         change = "password";
         $(this).hide();
         var rep = $("<input type='" + change + "' />")
@@ -12,9 +12,9 @@ $(document).ready(function(){
             .insertBefore(bireyselSifreniz);
         bireyselSifreniz.remove();
         bireyselSifreniz = rep;
-        $(".bireyselSifreniz .eye-closed").show();
+        $(".bireyselSifreniz .eye").show();
     }).insertAfter(bireyselSifreniz);
-    $(".bireyselSifreniz .eye-closed").click(function(){
+    $(".bireyselSifreniz .eye").click(function(){
         change = "text";
         $(this).hide();
         var rep = $("<input type='" + change + "' />")
@@ -25,6 +25,6 @@ $(document).ready(function(){
             .insertBefore(bireyselSifreniz);
         bireyselSifreniz.remove();
         bireyselSifreniz = rep;
-        $(".bireyselSifreniz .eye").show();
+        $(".bireyselSifreniz .eye-closed").show();
     }).insertAfter(bireyselSifreniz);
 });
