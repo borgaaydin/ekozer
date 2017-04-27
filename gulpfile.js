@@ -8,6 +8,7 @@ var concat = require('gulp-concat');
 var nano = require('gulp-cssnano');
 var modernizr = require('gulp-modernizr');
 var stripCssComments = require('gulp-strip-css-comments');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('modernizr', function() {
     gulp.src('./js/*.js')
@@ -22,7 +23,9 @@ gulp.task('default', function() {
 
 gulp.task('sass', function () {
     return gulp.src('./scss/**/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass.sync().on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./css'));
 });
 

@@ -216,6 +216,10 @@
   .checkBoxLine {
     color: #8c9196;
     font-size: 14px;
+    font-weight: 400;
+    label {
+      font-weight: 400;
+    }
   }
   .adressTextArea {
     height: 110px;
@@ -724,16 +728,17 @@
   .checkBoxLine {
     color: #8c9196;
     font-size: 14px;
+    > pretty {
+      label {
+        font-weight: 400;
+      }
+    }
   }
   .adressTextArea {
     height: 110px;
     resize: none;
     padding: 20px 12px 18px 16px;
     width: calc(100% - 30px);
-  }
-  .teslimatCheckBox {
-    display: inline-block;
-    margin-right: 8px;
   }
   .line {
     width: 540px;
