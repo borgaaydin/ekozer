@@ -106,7 +106,70 @@
                         </div>
                     </div>
                     <div class="row checkBoxLine">
-                        <input type="checkbox" name="teslimatAdresiAyni" value="teslimatAdresiAyni" class="teslimatCheckBox">Teslimat adresim aynı
+                        <div class="pretty">
+                            <input type="checkbox" name="teslimatAdresiAyni" id="teslimatAdresiAyni" value="teslimatAdresiAyni">
+                            <label><i class="fa fa-check"></i>Teslimat adresim aynı</label>
+                        </div>
+                    </div>
+                    <div class="teslimatDetaylari">
+                        <div class="row line"></div>
+                        <div class="checkout-adress-form-header">
+                            <h4>Yeni Teslimat Adresiniz</h4>
+                            <div class="description">Lütfen yeni teslimat adresi bilgilerinizi giriniz.</div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <div class="faturaSubeAdi">
+                                    <label for="teslimatSubeAdi">Fatura Adresi Adı *</label>
+                                    <input type="text" id="teslimatSubeAdi" name="teslimatSubeAdi" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <div class="bireyselTeslimAlacakKisi">
+                                    <label for="bireyselTeslimAlacakKisi">Fatura Adresi Adı *</label>
+                                    <input type="text" id="bireyselTeslimAlacakKisi" name="bireyselTeslimAlacakKisi" required>
+                                </div>
+                                <div class="bireyselTeslimAlacakTelefon">
+                                    <label for="bireyselTeslimAlacakTelefon">Fatura Adresi Adı *</label>
+                                    <input type="text" id="bireyselTeslimAlacakTelefon" name="bireyselTeslimAlacakTelefon" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <div class="faturaIl">
+                                    <label for="teslimatIl">İl*</label>
+                                    <select id="teslimatIl" name="teslimatIl" required>
+                                        <option data-display="İstanbul" value="İstanbul">İstanbul</option>
+                                        <option value="Ankara">Ankara</option>
+                                        <option value="Sivas">Sivas</option>
+                                        <option value="Kayseri">Kayseri</option>
+                                    </select>
+                                </div>
+                                <div class="faturaIlce">
+                                    <label for="teslimatIlce">İlçe*</label>
+                                    <select id="teslimatIlce" name="teslimatIlce" required>
+                                        <option data-display="Kadıköy" value="Kadıköy">Kadıköy</option>
+                                        <option value="Beşiktaş">Beşiktaş</option>
+                                        <option value="Üsküdar">Üsküdar</option>
+                                    </select>
+                                </div>
+                                <div class="faturaPostaKodu">
+                                    <label for="teslimatPostaKodu">Posta Kodu *</label>
+                                    <input type="text" id="teslimatPostaKodu" name="teslimatPostaKodu" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <div class="bireyselTeslimatFaturaAdresi">
+                                    <label for="bireyselTeslimatFaturaAdresi">Fatura Adresiniz *</label>
+                                    <textarea id="bireyselTeslimatFaturaAdresi" name="bireyselTeslimatFaturaAdresi" class="adressTextArea" required></textarea>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -120,11 +183,11 @@
         <div class="checkout-right">
             <div class="row">
                 <div>
-                    <div class="siparisOzeti">
-                        <div class="siparisOzeti-title">
+                    <div class="alisverisBilgileri">
+                        <div class="alisverisBilgileri-title">
                             Sipariş Özetiniz <span class="urunSayisi">7 Ürün</span>
                         </div>
-                        <div class="siparisOzeti-info">
+                        <div class="alisverisBilgileri-info">
                             <div class="araToplam">
                                 Ara Toplam<span class="araToplamFiyat">70 ₺</span>
                             </div>
@@ -135,7 +198,7 @@
                                 Kargo Bedeli<span class="kargoBedeli">Hesaplanacak</span>
                             </div>
                         </div>
-                        <div class="siparisOzeti-genelToplam">
+                        <div class="alisverisBilgileri-genelToplam">
                             <div class="genelToplam">
                                 <span class="genelToplamFiyat">90 ₺</span>
                                 Genel Toplam
@@ -146,7 +209,7 @@
                     <div class="blank"></div>
                 </div>
             </div>
-            <div class="siparisOzetiButton">
+            <div class="alisverisBilgileriButton">
                 <a href="#">Devam et</a>
             </div>
         </div>
@@ -263,6 +326,15 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <script>
     $(document).ready(function() {
+        var teslimatAdresiCheckbox = $("#teslimatAdresiAyni");
+        teslimatAdresiCheckbox.click(function() {
+            if (teslimatAdresiCheckbox.is(":checked")) {
+                // Check etmis
+                $(".teslimatDetaylari").hide();
+            } else {
+                $(".teslimatDetaylari").show();
+            }
+        });
         $('select').niceSelect();
     });
 </script>
