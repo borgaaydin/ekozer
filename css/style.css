@@ -7056,7 +7056,7 @@ a:hover {
   margin-right: 0;
   border-left-width: 0;
   background: #ffffff;
-  padding: 0 20px;
+  padding: 0 20px 22px 20px;
   box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25); }
 
 .eye {
@@ -7068,6 +7068,15 @@ a:hover {
   position: absolute;
   top: 40px;
   right: 17px;
+  display: none; }
+
+.pretty > input[type='checkbox']:checked + label > i:before {
+  background: #ff9f69; }
+
+.pretty > input[type='checkbox']:checked + label > i:after {
+  border-color: #ff9f69 !important; }
+
+.sahisSirketiChecked {
   display: none; }
 
 .signup h4 {
@@ -7084,6 +7093,7 @@ a:hover {
   color: #8c9196; }
 
 .avantaj {
+  width: 100%;
   margin-top: 35px;
   float: left; }
   .avantaj:first-child {
@@ -7232,10 +7242,12 @@ a:hover {
     font-weight: normal;
     color: #8c9196;
     margin-left: 8px; }
-  .signup-bireysel-form-container .bireyselKampanyaCheckbox div {
-    margin: 11px 0 19px; }
-    .signup-bireysel-form-container .bireyselKampanyaCheckbox div input {
-      margin-left: 26px; }
+  .signup-bireysel-form-container .bireyselKampanyaCheckbox input {
+    margin-left: 26px; }
+  .signup-bireysel-form-container .bireyselKampanyaCheckbox .bireyselKampanyaCheckboxDetails {
+    padding-left: 23px; }
+  .signup-bireysel-form-container .bireyselKampanyaCheckbox .bireyselKampanyaSubcheckbox {
+    margin: 10px 0 20px; }
   .signup-bireysel-form-container .nice-select {
     height: 58px;
     border-radius: 0; }
@@ -7713,10 +7725,12 @@ a:hover {
     font-weight: normal;
     color: #8c9196;
     margin-left: 8px; }
-  .signup-kurumsal-form-container .kurumsalKampanyaCheckbox div {
-    margin: 11px 0 19px; }
-    .signup-kurumsal-form-container .kurumsalKampanyaCheckbox div input {
-      margin-left: 26px; }
+  .signup-kurumsal-form-container .kurumsalKampanyaCheckbox input {
+    margin-left: 26px; }
+  .signup-kurumsal-form-container .kurumsalKampanyaCheckbox .kurumsalKampanyaCheckboxDetails {
+    padding-left: 23px; }
+  .signup-kurumsal-form-container .kurumsalKampanyaCheckbox .kurumsalKampanyaSubcheckbox {
+    margin: 10px 0 20px; }
 
 .guvenlikKoduResim {
   float: left;
@@ -7915,10 +7929,12 @@ a:hover {
     font-weight: normal;
     color: #8c9196;
     margin-left: 8px; }
-  .signup-davet-form-container .davetKampanyaCheckbox div {
-    margin: 11px 0 19px; }
-    .signup-davet-form-container .davetKampanyaCheckbox div input {
-      margin-left: 26px; }
+  .signup-davet-form-container .davetKampanyaCheckbox input {
+    margin-left: 26px; }
+  .signup-davet-form-container .davetKampanyaCheckbox .davetKampanyaCheckboxDetails {
+    padding-left: 23px; }
+  .signup-davet-form-container .davetKampanyaCheckbox .davetKampanyaSubcheckbox {
+    margin: 10px 0 20px; }
 
 .davetGirisYapButtonContainer {
   margin: 30px -20px 0 -20px;

@@ -114,13 +114,31 @@
                             <div class="row">
                                 <div>
                                     <div class="bireyselKampanyaCheckbox">
-                                        <input type="checkbox" name="bireyselKampanya" value="bireyselKampanya" id="bireyselKampanya"><label for="bireyselKampanya">Kampanyalardan haberdar olmak istiyorum:</label>
-                                        <div>
-                                            <input type="checkbox" name="bireyselKampanyaSms" value="bireyselKampanyaSms" id="bireyselKampanyaSms"><label for="bireyselKampanyaSms">SMS</label>
-                                            <input type="checkbox" name="bireyselKampanyaEposta" value="bireyselKampanyaEposta" id="bireyselKampanyaEposta"><label for="bireyselKampanyaEposta">E-posta</label>
-                                            <input type="checkbox" name="bireyselKampanyaCagriMerkezi" value="bireyselKampanyaCagriMerkezi" id="bireyselKampanyaCagriMerkezi"><label for="bireyselKampanyaCagriMerkezi">Çağrı Merkezi<label>
+                                        <div class="pretty">
+                                            <input type="checkbox" name="bireyselKampanya" value="bireyselKampanya" id="bireyselKampanya">
+                                            <label for="bireyselKampanya">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                                Kampanyalardan haberdar olmak istiyorum:
+                                            </label>
                                         </div>
-                                        <input type="checkbox" name="bireyselUyelikSozlesmesi" value="bireyselUyelikSozlesmesi" id="bireyselUyelikSozlesmesi"><label><span id="bireyselUyelikSozlesmesiLabel">Üyelik Sözleşmesini</span> okudum ve kabul ediyorum</label>
+                                        <div class="bireyselKampanyaCheckboxDetails">
+                                            <div class="pretty">
+                                                <input type="checkbox" name="bireyselKampanyaSms" value="bireyselKampanyaSms" id="bireyselKampanyaSms">
+                                                <label for="bireyselKampanyaSms"><i class="fa fa-check" aria-hidden="true"></i>SMS</label>
+                                            </div>
+                                            <div class="pretty bireyselKampanyaSubcheckbox">
+                                                <input type="checkbox" name="bireyselKampanyaEposta" value="bireyselKampanyaEposta" id="bireyselKampanyaEposta">
+                                                <label for="bireyselKampanyaEposta"><i class="fa fa-check" aria-hidden="true"></i>E-posta</label>
+                                            </div>
+                                            <div class="pretty">
+                                                <input type="checkbox" name="bireyselKampanyaCagriMerkezi" value="bireyselKampanyaCagriMerkezi" id="bireyselKampanyaCagriMerkezi">
+                                                <label for="bireyselKampanyaCagriMerkezi"><i class="fa fa-check" aria-hidden="true"></i>Çağrı Merkezi</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty">
+                                            <input type="checkbox" name="bireyselUyelikSozlesmesi" value="bireyselUyelikSozlesmesi" id="bireyselUyelikSozlesmesi">
+                                            <label><i class="fa fa-check" aria-hidden="true"></i><span id="bireyselUyelikSozlesmesiLabel">Üyelik Sözleşmesini</span> okudum ve kabul ediyorum</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -228,71 +246,91 @@
                             <div class="row">
                                 <div>
                                     <div class="kurumsalTeslimatAdresiAyni">
-                                        <input type="checkbox" id="kurumsalTeslimatAdresiAyni" name="kurumsalTeslimatAdresiAyni" value="kurumsalTeslimatAdresiAyni" class="teslimatCheckBox"><label for="kurumsalTeslimatAdresiAyni">Teslimat adresim aynı</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h4>Teslimat Adres Bilgileriniz</h4>
-                            </div>
-                            <div class="row">
-                                <div>
-                                    <div class="kurumsalTeslimatAdresi">
-                                        <label for="kurumsalTeslimatAdresi">Adres Adı*</label>
-                                        <input type="text" id="kurumsalTeslimatAdresi" name="kurumsalTeslimatAdresi" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div>
-                                    <div class="kurumsalTeslimatIl">
-                                        <label for="kurumsalTeslimatIl">İl*</label>
-                                        <select id="kurumsalTeslimatIl" name="kurumsalTeslimatIl" required>
-                                            <option data-display="İstanbul" value="İstanbul">İstanbul</option>
-                                            <option value="Ankara">Ankara</option>
-                                            <option value="Sivas">Sivas</option>
-                                            <option value="Kayseri">Kayseri</option>
-                                        </select>
-                                    </div>
-                                    <div class="kurumsalTeslimatIlce">
-                                        <label for="kurumsalTeslimatIlce">İlçe*</label>
-                                        <select id="kurumsalTeslimatIlce" name="kurumsalTeslimatIlce" required>
-                                            <option data-display="Kadıköy" value="Kadıköy">Kadıköy</option>
-                                            <option value="Beşiktaş">Beşiktaş</option>
-                                            <option value="Üsküdar">Üsküdar</option>
-                                        </select>
-                                    </div>
-                                    <div class="kurumsalTeslimatPostaKodu">
-                                        <label for="kurumsalTeslimatPostaKodu">Posta Kodu *</label>
-                                        <input type="text" id="kurumsalTeslimatPostaKodu" name="kurumsalTeslimatPostaKodu" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div>
-                                    <div class="kurumsalTeslimatFaturaAdresi">
-                                        <label for="kurumsalTeslimatFaturaAdresi">Fatura Adresiniz *</label>
-                                        <textarea id="kurumsalTeslimatFaturaAdresi" name="kurumsalTeslimatFaturaAdresi" class="adressTextArea" required></textarea>
-                                    </div>
-
-                                    <div class="kurumsalTeslimatAlacakKisi">
-                                        <label for="kurumsalTeslimatAlacakKisi">Teslim Alacak Kişi *</label>
-                                        <input type="text" id="kurumsalTeslimatAlacakKisi" name="kurumsalTeslimatAlacakKisi" required>
-                                        <label for="kurumsalTeslimatSirketNumarasi" class="teslimatSirketNumarasi">Şirket Numarası *</label>
-                                        <input type="text" id="kurumsalTeslimatSirketNumarasi" name="kurumsalTeslimatSirketNumarasi" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div>
-                                    <div class="kurumsalKampanyaCheckbox">
-                                        <input type="checkbox" name="kurumsalKampanya" value="kurumsalKampanya" id="kurumsalKampanya"><label for="kurumsalKampanya">Kampanyalardan haberdar olmak istiyorum:</label>
-                                        <div>
-                                            <input type="checkbox" name="kurumsalKampanyaSms" value="kurumsalKampanyaSms" id="kurumsalKampanyaSms"><label for="kurumsalKampanyaSms">SMS</label>
-                                            <input type="checkbox" name="kurumsalKampanyaEposta" value="kurumsalKampanyaEposta" id="kurumsalKampanyaEposta"><label for="kurumsalKampanyaEposta">E-posta</label>
-                                            <input type="checkbox" name="kurumsalKampanyaCagriMerkezi" value="kurumsalKampanyaCagriMerkezi" id="kurumsalKampanyaCagriMerkezi"><label for="kurumsalKampanyaCagriMerkezi">Çağrı Merkezi<label>
+                                        <div class="pretty">
+                                            <input type="checkbox" id="kurumsalTeslimatAdresiAyni" name="kurumsalTeslimatAdresiAyni" value="kurumsalTeslimatAdresiAyni" class="teslimatCheckBox">
+                                            <label for="kurumsalTeslimatAdresiAyni"><i class="fa fa-check" aria-hidden="true"></i>Teslimat adresim aynı</label>
                                         </div>
-                                        <input type="checkbox" name="kurumsalUyelikSozlesmesi" value="kurumsalUyelikSozlesmesi" id="kurumsalUyelikSozlesmesi"><label><span id="kurumsalUyelikSozlesmesiLabel">Üyelik Sözleşmesini</span> okudum ve kabul ediyorum</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teslimatDetaylari">
+                                <div class="row">
+                                    <h4>Teslimat Adres Bilgileriniz</h4>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <div class="kurumsalTeslimatAdresi">
+                                            <label for="kurumsalTeslimatAdresi">Adres Adı*</label>
+                                            <input type="text" id="kurumsalTeslimatAdresi" name="kurumsalTeslimatAdresi" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <div class="kurumsalTeslimatIl">
+                                            <label for="kurumsalTeslimatIl">İl*</label>
+                                            <select id="kurumsalTeslimatIl" name="kurumsalTeslimatIl" required>
+                                                <option data-display="İstanbul" value="İstanbul">İstanbul</option>
+                                                <option value="Ankara">Ankara</option>
+                                                <option value="Sivas">Sivas</option>
+                                                <option value="Kayseri">Kayseri</option>
+                                            </select>
+                                        </div>
+                                        <div class="kurumsalTeslimatIlce">
+                                            <label for="kurumsalTeslimatIlce">İlçe*</label>
+                                            <select id="kurumsalTeslimatIlce" name="kurumsalTeslimatIlce" required>
+                                                <option data-display="Kadıköy" value="Kadıköy">Kadıköy</option>
+                                                <option value="Beşiktaş">Beşiktaş</option>
+                                                <option value="Üsküdar">Üsküdar</option>
+                                            </select>
+                                        </div>
+                                        <div class="kurumsalTeslimatPostaKodu">
+                                            <label for="kurumsalTeslimatPostaKodu">Posta Kodu *</label>
+                                            <input type="text" id="kurumsalTeslimatPostaKodu" name="kurumsalTeslimatPostaKodu" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <div class="kurumsalTeslimatFaturaAdresi">
+                                            <label for="kurumsalTeslimatFaturaAdresi">Fatura Adresiniz *</label>
+                                            <textarea id="kurumsalTeslimatFaturaAdresi" name="kurumsalTeslimatFaturaAdresi" class="adressTextArea" required></textarea>
+                                        </div>
+
+                                        <div class="kurumsalTeslimatAlacakKisi">
+                                            <label for="kurumsalTeslimatAlacakKisi">Teslim Alacak Kişi *</label>
+                                            <input type="text" id="kurumsalTeslimatAlacakKisi" name="kurumsalTeslimatAlacakKisi" required>
+                                            <label for="kurumsalTeslimatSirketNumarasi" class="teslimatSirketNumarasi">Şirket Numarası *</label>
+                                            <input type="text" id="kurumsalTeslimatSirketNumarasi" name="kurumsalTeslimatSirketNumarasi" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <div class="kurumsalKampanyaCheckbox">
+                                            <div class="pretty">
+                                                <input type="checkbox" name="kurumsalKampanya" value="kurumsalKampanya" id="kurumsalKampanya">
+                                                <label for="kurumsalKampanya"><i class="fa fa-check" aria-hidden="true"></i>Kampanyalardan haberdar olmak istiyorum:</label>
+                                            </div>
+                                            <div class="kurumsalKampanyaCheckboxDetails">
+                                                <div class="pretty">
+                                                    <input type="checkbox" name="kurumsalKampanyaSms" value="kurumsalKampanyaSms" id="kurumsalKampanyaSms">
+                                                    <label for="kurumsalKampanyaSms"><i class="fa fa-check" aria-hidden="true"></i>SMS</label>
+                                                </div>
+                                                <div class="pretty kurumsalKampanyaSubcheckbox">
+                                                    <input type="checkbox" name="kurumsalKampanyaEposta" value="kurumsalKampanyaEposta" id="kurumsalKampanyaEposta">
+                                                    <label for="kurumsalKampanyaEposta"><i class="fa fa-check" aria-hidden="true"></i>E-posta</label>
+                                                </div>
+                                                <div class="pretty">
+                                                    <input type="checkbox" name="kurumsalKampanyaCagriMerkezi" value="kurumsalKampanyaCagriMerkezi" id="kurumsalKampanyaCagriMerkezi">
+                                                    <label for="kurumsalKampanyaCagriMerkezi"><i class="fa fa-check" aria-hidden="true"></i>Çağrı Merkezi</label>
+                                                </div>
+                                            </div>
+                                            <div class="pretty">
+                                                <input type="checkbox" name="kurumsalUyelikSozlesmesi" value="kurumsalUyelikSozlesmesi" id="kurumsalUyelikSozlesmesi">
+                                                <label><i class="fa fa-check" aria-hidden="true"></i><span id="kurumsalUyelikSozlesmesiLabel">Üyelik Sözleşmesini</span> okudum ve kabul ediyorum</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -569,6 +607,15 @@
             $('#kurumsalUyelikSozlesmesi').prop('checked', true);
         });
         $('select').niceSelect();
+        var teslimatAdresiCheckbox = $("#kurumsalTeslimatAdresiAyni");
+        $("#kurumsalTeslimatAdresiAyni").click(function() {
+            if (teslimatAdresiCheckbox.is(":checked")) {
+                // Check etmis
+                $(".teslimatDetaylari").hide();
+            } else {
+                $(".teslimatDetaylari").show();
+            }
+        });
     });
 </script>
 </body>

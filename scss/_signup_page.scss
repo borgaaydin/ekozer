@@ -13,7 +13,7 @@
   @include span(12, $gutter_pc, $gutter_px, $padding, $max_columns);
   @include beta();
   background: #ffffff;
-  padding: 0 20px;
+  padding: 0 20px 22px 20px;
   box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
 }
 .eye {
@@ -25,6 +25,19 @@
   position: absolute;
   top: 40px;
   right: 17px;
+  display: none;
+}
+.pretty {
+  >input[type='checkbox']:checked + label {
+    > i:before {
+      background: #ff9f69;
+    }
+    > i:after {
+      border-color: #ff9f69 !important;
+    }
+  }
+}
+.sahisSirketiChecked {
   display: none;
 }
 .signup {
@@ -43,6 +56,7 @@
   }
 }
 .avantaj {
+  width: 100%;
   margin-top: 35px;
   float: left;
   &:first-child {
@@ -200,11 +214,14 @@
       color: #8c9196;
       margin-left: 8px;
     }
-    div {
-      margin: 11px 0 19px;
-      input {
-        margin-left: 26px;
-      }
+    input {
+      margin-left: 26px;
+    }
+    .bireyselKampanyaCheckboxDetails {
+      padding-left: 23px;
+    }
+    .bireyselKampanyaSubcheckbox {
+      margin: 10px 0 20px;
     }
   }
   .nice-select {
@@ -578,11 +595,15 @@
       color: #8c9196;
       margin-left: 8px;
     }
-    div {
-      margin: 11px 0 19px;
-      input {
-        margin-left: 26px;
-      }
+    input {
+      margin-left: 26px;
+    }
+
+    .kurumsalKampanyaCheckboxDetails {
+      padding-left: 23px;
+    }
+    .kurumsalKampanyaSubcheckbox {
+      margin: 10px 0 20px;
     }
   }
 }
@@ -800,11 +821,14 @@
       color: #8c9196;
       margin-left: 8px;
     }
-    div {
-      margin: 11px 0 19px;
-      input {
-        margin-left: 26px;
-      }
+    input {
+      margin-left: 26px;
+    }
+    .davetKampanyaCheckboxDetails {
+      padding-left: 23px;
+    }
+    .davetKampanyaSubcheckbox {
+      margin: 10px 0 20px;
     }
   }
 }
