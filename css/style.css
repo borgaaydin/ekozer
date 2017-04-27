@@ -7079,6 +7079,9 @@ a:hover {
 .sahisSirketiChecked {
   display: none; }
 
+.kurumsalSirketUnvani .pretty > label {
+  font-weight: 400; }
+
 .signup h4 {
   margin: 20px 0 3px 0;
   padding: 0;
