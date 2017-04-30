@@ -19,13 +19,14 @@
   text-transform: none;
   line-height: 1;
 
-  color: #f57353;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ico-checkbox-check:before {
+  content: "\e92b";
+}
 .icon-ico-arrow-down:before {
   content: "\e92a";
 }
@@ -178,20 +179,4 @@
 }
 .icon-credit-card:before {
   content: "\e922";
-}
-
-.icon-ico-fast-cargo {
-  font-size: 20px;
-}
-
-.icon-ico-home {
-  font-size: 20px;
-}
-
-.icon-ico-free-shipping {
-  font-size: 24px;
-}
-
-.icon-ico-gift {
-  font-size: 24px;
 }
