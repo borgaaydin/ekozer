@@ -81,6 +81,9 @@
   }
   .row {
     margin-top: 20px;
+    > div > div {
+      position: relative;
+    }
   }
   .uyeEposta {
     @include col();
@@ -428,5 +431,38 @@
       background: #ff9f69;
       box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
     }
+  }
+}
+.hataMesaj {
+  display: none;
+  background: #e33a3a;
+  box-shadow: 0 6px 6px 0 rgba(218, 218, 218, 0.64);
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.17;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  max-width: 180px;
+  padding: 10px 20px;
+  bottom: 50px;
+  right: -25px;
+  &:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-top: solid 10px #e33a3a;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+  }
+}
+.hata {
+  .hataMesaj {
+    display: block;
   }
 }
