@@ -12,6 +12,10 @@ html,body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.white {
+  background-color: white;
+}
+
 img {
   @include img-responsive(block);
 }

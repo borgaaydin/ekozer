@@ -1,0 +1,371 @@
+.after-search-container {
+  padding-top: 50px;
+  background-color: #ffffff;
+}
+
+.category-left {
+  @include col();
+  @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.category-right {
+  @include col();
+  @include span(24, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include beta();
+}
+
+.category-filter-block,
+.regular-filter-block,
+.price-filter-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.block-head {
+  border: 1px solid #f1f4f6;
+  padding: 15px;
+  border-bottom: 0;
+
+  span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.38;
+    color: #434b54;
+  }
+}
+
+.category-right-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-info {
+  h4 {
+    margin: 0;
+  }
+
+  >span>span {
+    line-height: 22px;
+    font-size: 16px;
+
+    &:first-child {
+      color: #fd8c57;
+    }
+
+    &:last-child {
+      color: #8c9196;
+    }
+  }
+}
+
+.view-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.listing-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  >div {
+    width: 42px;
+    height: 42px;
+    background-color: #ffffff;
+    border: solid 1px #f0f3f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    span {
+      color: #434b54;
+      font-size: 16px;
+    }
+
+    &.active,
+    &:hover{
+      cursor: pointer;
+
+      span {
+        color: #f57353;
+      }
+    }
+  }
+}
+
+.category-filter-list {
+  border:1px solid #f0f3f6;
+
+  ul {
+    margin: 20px;
+    li {
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+      }
+      margin-bottom: 8px;
+
+      span {
+        font-size: 14px;
+        font-weight: 300;
+        color: #434b54;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover,
+      &.active{
+        a span{
+          color: #f57353;
+        }
+      }
+    }
+  }
+}
+
+.filter-show-all-bottom {
+  height: 56px;
+  background-color: #fafafc;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+
+  a {
+    font-size: 14px;
+    color: #8c9196;
+    border-bottom: 1px solid #8c9196;
+    padding-bottom: 3px;
+  }
+}
+
+.regular-filter-list {
+  border:1px solid #f0f3f6;
+
+  ul {
+    margin: 20px;
+    li {
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+      }
+      margin-bottom: 8px;
+
+      span {
+        font-size: 14px;
+        font-weight: 300;
+        color: #434b54;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .checkbox-outer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        >span:last-child {
+          margin-left: 9px;
+          line-height: 20px;
+
+        }
+      }
+
+      .checkbox {
+        display: inline-block;
+        border: solid 1px #e1e1e1;
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        color: white;
+
+        .icon-ico-checkbox-check {
+          display: none;
+          font-size: 12px;
+        }
+      }
+
+      &:hover,
+      &.active{
+        a span{
+          color: #f57353;
+        }
+
+        .checkbox {
+          background-color: #f57353;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .icon-ico-checkbox-check {
+            display: inline-block;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.category-products {
+  padding: 25px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -20px;
+
+  .product-link {
+    margin-bottom: 18px;
+  }
+
+  .product {
+    margin-right: 0;
+    margin-left: 20px;
+
+    &:hover {
+      z-index: 23;
+    }
+  }
+}
+
+.sorting-options {
+  input[type="text"], select, .nice-select, .adressTextArea {
+    height: 54px;
+    background-color: #fbfbfa;
+    border: solid 1px #f0f3f6;
+    width: calc(100% - 2px);
+    color: #626971;
+    font-size:16px;
+  }
+  input[type="text"] {
+    padding: 0 20px;
+    width: calc(100% - 42px);
+  }
+  input:read-only {
+    background-color: #f0f3f8;
+    border: solid 1px #f0f3f6;
+    color: #4c535c;
+  }
+  input:focus, .open, textarea:focus {
+    border: solid 1px #ff9f69;
+    outline: none;
+    color: #4c535c;
+  }
+  .nice-select {
+    height: 44px;
+    width: 180px;
+    margin-left: 20px;
+    border-radius: 0;
+    .list {
+      border-radius: 0;
+      margin-top: 2px;
+      width: 100%;
+      max-height: 292px;
+      overflow-y: auto;
+      padding: 0 9px;
+      z-index: 25;
+      @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.08));
+
+      .option {
+        color: #868a8f;
+        padding: 10px 0 12px 0;
+        font-size: 16px;
+        line-height: 1.38;
+        box-shadow: inset 0 -1px 0 0 #f0f3f6;
+        min-height: auto;
+
+        &:last-child {
+          box-shadow: none;
+        }
+        &:hover, &.focus {
+          background: white;
+          font-weight: normal;
+        }
+      }
+      .option.selected {
+        color: #f57353;
+        background: white;
+      }
+    }
+
+    &:after {
+      height: 11px;
+      width: 10px;
+      margin-top: -9px;
+    }
+  }
+}
+
+.category-pagination {
+  float: right;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgba(255, 255, 255, 0.75);
+    @include box-shadow-args(0 0 4px 0 rgba(0, 0, 0, 0.11));
+    
+    li {
+      a {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: #999ea4;
+
+        &.active {
+          color: white;
+          background-color: #f57353;
+          @include box-shadow-args(0 3px 3px 0 rgba(255, 159, 105, 0.25));
+          
+          &:hover {
+            color: white;
+          }
+        }
+
+        &:hover {
+          color: #ff9f69;
+        }
+      }
+
+      &:last-child {
+        a {
+          background-color: rgba(246, 248, 254, 0.31);
+          border-left: solid 1px rgba(206, 211, 219, 0.3);
+
+          span {
+            color: #434b54;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
