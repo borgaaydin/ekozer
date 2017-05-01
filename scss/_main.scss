@@ -6,6 +6,10 @@ html {
 
 html,body {
   background-color: #f8f9fc;
+
+  -webkit-font-smoothing:antialiased; /* Removes buzz during css transition ! */
+  -webkit-backface-visibility:hidden; /* Removes buzz during css transition ! */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {

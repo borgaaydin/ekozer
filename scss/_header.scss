@@ -64,6 +64,245 @@
     }
   }
 
+  .auth_logged_container {
+    @include col;
+    width: 267px;
+    margin-top: -10px;
+    border-left: 1px solid #e8eaee;
+    background-color: white;
+    position: relative;
+
+    .first-row {
+      height: 32px;
+      background-color: #fff7f3;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      
+      span.company-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: #f56b49;
+        margin-left: 10px;
+      }
+
+      span.company-fund {
+        font-size: 14px;
+        font-weight: 600;
+        color: #434b54;
+        margin-right: 30px;
+      }
+    }
+
+    .second-row {
+      height: 32px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      span.customer-name {
+        font-size: 14px;
+        font-weight: 200;
+        color: #434b54;
+        margin-left: 10px;
+      }
+    }
+
+    .logged-nav {
+      top:8px;
+      right: -25px;
+
+      position: absolute;
+
+
+      .logged-nav-button {
+        width: 46px;
+        height: 46px;
+        background-color: #ffffff;
+        box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.25);
+        border: solid 1px #fff8f3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      &.open {
+
+        .logged-nav-container {
+          display: block;
+        }
+
+        .logged-nav-button>span {
+          @include transform(rotate(180deg));
+          color: #f46b49;
+        }
+      }
+
+      .logged-nav-button>span {
+        font-size: 11px;
+        color: #434b54;
+      }
+
+      div.logged-nav-container {
+        display: none;
+        width: 290px;
+        position: absolute;
+        right: 0;
+        top: 54px;
+        z-index: 22;
+        background-color: #ffffff;
+        @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.08));
+
+        >div {
+          display: flex;
+          flex-direction: column;
+          padding-top: 16px;
+        }
+
+        .options-list {
+          background-color: #fafafc;
+
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 8px;
+
+            li {
+              padding: 0 20px;
+              margin-bottom: 16px;
+
+              a {
+                font-size: 14px;
+                font-weight: 400;
+                color: #434b54;
+              }
+
+            }
+          }
+        }
+
+        .company-list {
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+              height: 33px;
+              display: flex;
+              align-items: center;
+
+              a {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.57;
+                color: #434b54;
+                padding: 0 20px;
+              }
+
+              &.active {
+                background-color: #fff8f3;
+                a {
+                  color: #f46b49;;
+                }
+              }
+            }
+          }
+        }
+
+        span.title {
+          font-size: 12px;
+          font-weight: 600;
+          color: #aab5c1;
+          margin-left: 20px;
+        }
+
+        .options-list {
+          list-style: none;
+          margin: 0;
+          padding-top: 16px;
+
+          li {
+            .accordion {
+              outline: 0;
+              cursor: pointer;
+
+              .ui-accordion-header-active {
+                .fa-minus {
+                  display: inline-block;
+                }
+
+                .fa-plus {
+                  display: none;
+                }
+              }
+
+              .fa-minus {
+                display: none;
+              }
+
+              h3 {
+                font-size: 14px;
+                font-weight: 400;
+                color: #434b54;
+                margin: 0;
+                outline: 0;
+              }
+
+              >div {
+                margin-left: 30px;
+                display: flex;
+                flex-direction: column;
+                margin: 10px 30px;
+
+                a {
+                  font-size: 14px;
+                  font-weight: 300;
+                  line-height: 1.57;
+                  color: #434b54;
+                  margin-bottom: 8px;
+                }
+              }
+            }
+          }
+        }
+
+        .logout {
+          height: 43px;
+          background-color: rgba(0,0,0,0.06);
+          padding: 0 20px;
+
+          a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+          }
+
+          span:first-child {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.57;
+            color: #434b54;
+            opacity: 0.66;
+          }
+
+          span:last-child {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.57;
+            color: #434b54;
+          }
+        }
+      }
+    }
+  }
+
   .auth_button_container{
     @include col;
     @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
@@ -108,6 +347,7 @@
     @include col;
     @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
     margin-left: 0;
+    float: right;
 
     a {
       height: $header_element_height;
@@ -115,6 +355,7 @@
       text-align: left;
       color: #f98e4e;
       font-size: 14px;
+      position: relative;
 
       background-color: #ffffff;
       box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.25);
@@ -127,9 +368,30 @@
       .basket_button_text {
         margin-left: 11px;
       }
+
+      .basket_count {
+        position: absolute;
+        top: 4px;
+        right: 12px;
+        background-color: #f98e4e;
+
+        color: white;
+        padding: 3px 4px;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 12px;
+        @include box-shadow-args( 0 2px 2px 0 rgba(221, 149, 103, 0.25));
+      }
     }
+
+    &.empty {
+      .icon-ico-basket {
+        margin-left: 35px;
+      }
+    }
+
     .icon-ico-basket {
-      margin-left: 35px;
+      margin-left: 25px;
       font-size: 29px;
     }
   }
