@@ -426,13 +426,14 @@
   top:45px;
   background-color: white;
   z-index: 99;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 
-  @include box-shadow-args(inset 0 1px 0 0 rgba(0, 0, 0, 0.08));
+  @include box-shadow-args(0 16px 9px 0 rgba(0, 0, 0, 0.1));
 
   .search_list {
     height: 340px;
     background-color: white;
-    margin: 20px;
+    margin: 20px 20px 0 20px;
 
     ul {
       list-style: none;
@@ -457,6 +458,22 @@
 
       img {
         margin-right: 10px;
+      }
+
+      .search-list-price-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        align-items: flex-end;
+
+        .price {
+          display: flex;
+          flex-direction: row;
+
+          .discount-pop {
+            margin: 0 5px;
+          }
+        }
       }
     }
 
@@ -486,9 +503,9 @@
   }
 
   .search-categories-suggest {
-    height: 155px;
+    height: 140px;
     background-color: #fafafc;
-    box-shadow: 0 -1px 0 0 #dde3e8;
+    padding-top: 15px;
 
     span.title {
       font-size: 12px;
@@ -499,12 +516,14 @@
 
     ul {
       list-style: none;
-      padding: 0 20px 16px 20px;
+      padding: 6px 20px 0 20px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      margin: 0;
 
       li {
+        margin-bottom: 10px;
         a {
           font-size: 14px;
           color: #434b54;
@@ -512,15 +531,15 @@
           &:hover {
           }
         }
-
-        margin-bottom: 5px;
       }
     }
   }
 
   .search-categories-brands {
-    height: 100px;
+    height: 85px;
     background-color: #fafafc;
+    padding-top: 15px;
+    @include box-shadow-args(0 -1px 0 0 #dde3e8);
 
     span.title {
       font-size: 12px;
@@ -531,13 +550,16 @@
 
     ul {
       list-style: none;
-      padding: 0 20px 16px 20px;
+      padding: 6px 20px 0 20px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-start;
+      margin: 0;
 
       li {
+        margin-bottom: 10px;
+        margin-right: 30px;
         a {
           font-size: 14px;
           color: #434b54;
@@ -545,8 +567,6 @@
           &:hover {
           }
         }
-
-        margin-bottom: 5px;
       }
     }
   }
