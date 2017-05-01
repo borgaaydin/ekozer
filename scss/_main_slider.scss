@@ -65,7 +65,6 @@
 
   .image-only-slide {
     border:0;
-    opacity: 1;
 
     img {
       opacity:1;
@@ -124,12 +123,14 @@
   content: "\e925";
   font-size: 31px;
   color: #434b54;
+  margin-right: 4px;
 }
 .slick-next:before {
   font-family: 'icomoon' !important;
   content: "\e928";
   font-size: 31px;
   color: #434b54;
+  margin-left: 4px;
 }
 
 .product_slider {

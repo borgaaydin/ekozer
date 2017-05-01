@@ -48,3 +48,17 @@
     }
   }
 }
+
+.firsat-list {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li {
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+}
