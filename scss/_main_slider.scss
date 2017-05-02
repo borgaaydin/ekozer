@@ -1,4 +1,4 @@
-.main_slider {
+.main_slider, .category_slider{
   max-width: 1180px;
   margin: 0 auto;
 
@@ -76,6 +76,8 @@
   }
 
 }
+
+
 
 .slider_row {
   max-height: 320px;
@@ -166,5 +168,13 @@
     overflow: hidden;
     padding: 20px 0 30px 0;
     margin: -10px 0 -60px 0;
+  }
+}
+
+.category_slider {
+  max-width: 960px;
+
+  .slick-list {
+    overflow: hidden;
   }
 }

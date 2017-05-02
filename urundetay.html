@@ -1648,20 +1648,5 @@
 <script src="js/tab.js"></script>
 <script src="js/product_page.js"></script>
 
-<script>
-    $(document).ready(function() {
-        $('select').niceSelect();
-
-        $('.main-button').on('inview', function(event, isInView) {
-            if (isInView) {
-                $('.sticky-price').hide();
-                $('.copyright').removeClass("product-copyright");
-            } else {
-                $('.sticky-price').show();
-                $('.copyright').addClass("product-copyright");
-            }
-        });
-    });
-</script>
 </body>
 </html>

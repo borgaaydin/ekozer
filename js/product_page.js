@@ -27,4 +27,16 @@ $(function() {
         vertical: true,
         arrows: false
     });
+
+    $('select').niceSelect();
+
+    $('.main-button').on('inview', function(event, isInView) {
+        if (isInView) {
+            $('.sticky-price').hide();
+            $('.copyright').removeClass("product-copyright");
+        } else {
+            $('.sticky-price').show();
+            $('.copyright').addClass("product-copyright");
+        }
+    });
 });
