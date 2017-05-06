@@ -421,7 +421,7 @@
   padding: 16.7px 0 15.3px;
   text-align: center;
   box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
-  background-color: #ffd9c4;
+  background-color: #ff9f69;
   a {
     font-size: 16px;
     font-weight: 500;
@@ -429,6 +429,9 @@
     color: #ffffff;
     border: none;
   }
+}
+.disabledButton {
+  background: #ffd9c4 !important;
 }
 /* BIREYSEL BLANK */
 .checkout-message-panel {
