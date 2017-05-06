@@ -42,19 +42,200 @@
                         </span>
                 </a>
             </div>
+            <div class="auth_logged_container">
+                <div class="first-row">
+                            <span class="company-name">
+                                Damstartup Stüdyo
+                            </span>
+                    <span class="company-fund">
+                                12.550
+                                <i class="fa fa-try" aria-hidden="true"></i>
+                                <span class="icon-ico-questio-oval"></span>
+                            </span>
+
+                </div>
+                <div class="second-row">
+                            <span class="customer-name">
+                                Muharrem Songüldönmez
+                            </span>
+                </div>
+                <div class="logged-nav">
+                    <div class="logged-nav-button">
+                        <span class="icon-ico-arrow-down"></span>
+                    </div>
+                    <div class="logged-nav-container">
+                        <div>
+                            <div class="company-list">
+                                        <span class="title">
+                                            Şirketler
+                                        </span>
+                                <ul class="logged-nav-list">
+                                    <li>
+                                        <a href="#">
+                                            Yirmibirgram Reklam ve Pazarlama
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">
+                                            DAM Startup Studio
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Yirmibirgram Reklam ve Pazarlama
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="options-list">
+                                        <span class="title">
+                                            Hesabım
+                                        </span>
+                                <ul class="logged-nav-list">
+                                    <li>
+                                        <div class="accordion">
+                                            <h3>
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                                Profilim
+                                            </h3>
+                                            <div>
+                                                <a href="#">
+                                                    Kişisel Bilgilerim
+                                                </a>
+                                                <a href="#">
+                                                    Şirket Bilgilerim
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Siparişlerim
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="accordion">
+                                            <h3>
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                                Favorilerim
+                                            </h3>
+                                            <div>
+                                                <a href="#">...</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Şubeler ve Kullanıcılar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Destek ve İade
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="logout">
+                                <a href="#">
+                                            <span>
+                                            Çıkış Yap
+                                            </span>
+                                    <span class="icon-ico-logout"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
 
+<div class="container-fluid basket-container">
+    <div class="container">
+        <div class="basket-left">
+            <div class="basket-left-head">
+                <div class="first-col">
+                    <h1>
+                        Sepetim
+                    </h1>
+                    <div>
+                        <span>7 ürün</span>
+                        <span>bulunuyor.</span>
+                    </div>
+                </div>
+                <div class="second-col">
+                    <div class="basket-banner">
+                        <span>100 ₺</span>
+                        <span>ve üzeri alışverişlerinizde</span>
+                        <span>ücretsiz kargo!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="basket-warning">
+                <div class="accordion">
+                    <h3>
+
+                    </h3>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+            <ul class="basket-product-list">
+                <li>
+                    <img src="" alt="">
+                    <div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="basket-right">
+            <div class="basket-summary">
+                <div class="coupon-box">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function() {
         $('select').niceSelect();
+
+        $(".accordion").accordion({
+            collapsible: true,
+            active: false,
+            heightStyle: "content"
+        });
+
+
+        var display = false;
+        $( ".logged-nav-button" ).click(function() {
+            display = !display;
+            if ( display === true ) {
+                $( ".logged-nav" ).addClass("open");
+            } else if ( display === false ) {
+                $( ".logged-nav" ).removeClass("open");
+                $(".accordion").accordion( "option", "active", false );
+            }
+        });
     });
 </script>
 </body>

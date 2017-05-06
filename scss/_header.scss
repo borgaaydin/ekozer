@@ -597,6 +597,12 @@
   }
 
   &.logged-in {
+
+    .auth_logged_container {
+      float: right;
+      right: 20px;
+    }
+
     .search_input_container,
     .basket_button_container,
     .auth_button_container {
