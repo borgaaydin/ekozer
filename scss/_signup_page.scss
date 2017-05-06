@@ -37,6 +37,12 @@
     }
   }
 }
+
+// Override pretty z-index
+.pretty > input[type='checkbox'], .pretty > input[type='radio'] {
+  z-index: 99 !important;
+}
+
 .sahisSirketiChecked {
   display: none;
 }
@@ -308,6 +314,8 @@
 }
 #bireyselUyelikSozlesmesiLabel, #kurumsalUyelikSozlesmesiLabel, #davetUyelikSozlesmesiLabel {
   text-decoration: underline;
+  position: relative;
+  z-index: 999;
 }
 #bireyselUyelikSozlesmesiLabel:hover, #kurumsalUyelikSozlesmesiLabel:hover, #davetUyelikSozlesmesiLabel:hover {
   cursor: pointer;

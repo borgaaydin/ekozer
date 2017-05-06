@@ -361,6 +361,109 @@
         }
       }
     }
+
+    ul {
+      height: 240px;
+      width: 100%;
+      overflow-y: scroll;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+
+      li {
+        height: 66px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid #dde3e8;
+
+        .name-col {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          span:first-child {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.83;
+            color: #434b54;
+          }
+
+          span:last-child {
+            font-size: 12px;
+            line-height: 1.83;
+            color: #8c9196;
+          }
+        }
+
+        .qty-col {
+          width: 69px;
+          height: 66px;
+          background-color: #fbfcfc;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.38;
+            text-align: center;
+            color: #8c9196;
+          }
+        }
+
+        .price-col {
+          width: 69px;
+          height: 66px;
+          background-color: #ffffff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span:first-child {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.38;
+            text-align: center;
+            color: #434b54;
+          }
+
+          span:last-child {
+            font-size: 10px;
+            line-height: 2.2;
+            text-align: right;
+            color: #b6bbc0;
+          }
+        }
+      }
+    }
+
+    div.bottom {
+      height: 30px;
+
+      .total-price {
+
+      }
+
+      a {
+        width: 346px;
+        height: 48px;
+        background-color: #ff9f69;
+        @include box-shadow-args(0 3px 3px 0 rgba(255, 159, 105, 0.25));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+
+        span {
+          font-size: 16px;
+          font-weight: 500;
+          color: #ffffff;
+        }
+      }
+    }
   }
 
   .auth_button_container{
@@ -666,7 +769,7 @@
           .icon-ico-navi-right {
             position: absolute;
             right: 16px;
-            top: 18px;
+            top: 20px;
             font-size: 14px;
             color: #bbbdbf;
           }
