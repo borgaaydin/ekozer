@@ -364,9 +364,9 @@
 
     ul {
       height: 240px;
-      width: 100%;
+      width: calc(100% - 6px);
       overflow-y: scroll;
-      padding: 0;
+      padding: 10px 0 0 6px;
       list-style: none;
       margin: 0;
 
@@ -375,12 +375,20 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         border-bottom: 1px solid #dde3e8;
+
+        >div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
 
         .name-col {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          padding: 0 10px;
 
           span:first-child {
             font-size: 12px;
@@ -441,10 +449,34 @@
     }
 
     div.bottom {
-      height: 30px;
+      height: 85px;
 
       .total-price {
+        padding: 16px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
+        .col-left {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          span:first-child {
+            font-size: 16px;
+            color: #8c9196;
+          }
+
+          span:last-child {
+            font-size: 12px;
+            color: #b6bbc0;
+          }
+        }
+        .col-right {
+          font-size: 24px;
+          font-weight: bold;
+          text-align: right;
+          color: #f98e4e;
+        }
       }
 
       a {
@@ -455,7 +487,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 10px auto;
+        margin: 0 auto;
+        margin-top: -5px;
 
         span {
           font-size: 16px;
@@ -564,6 +597,12 @@
   }
 
   &.logged-in {
+
+    .auth_logged_container {
+      float: right;
+      right: 20px;
+    }
+
     .search_input_container,
     .basket_button_container,
     .auth_button_container {

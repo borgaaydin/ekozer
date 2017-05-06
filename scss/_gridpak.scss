@@ -39,12 +39,10 @@ $gutter_pc: 20px;
 
 @mixin alpha {
   margin-left:0;
-  border-left-width:0;
 }
 
 @mixin beta {
     margin-right:0;
-    border-left-width:0;
 }
 
 @mixin push($num) {
