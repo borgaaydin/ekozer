@@ -81,7 +81,7 @@
     color: #8c9196;
   }
 }
-.checkout-adres-secimi-fatura-adresi-line {
+.checkout-adres-secimi-fatura-adresi-line, .checkout-adres-secimi-teslimat-adresi-line {
   width: 100%;
   background: #ededed;
   float: left;
@@ -987,7 +987,7 @@
   }
 }
 /* ADRES SECIMI */
-.checkout-adres-secimi-fatura-adresi-container {
+.checkout-adres-secimi-fatura-adresi-container, .checkout-adres-secimi-teslimat-adresi-container {
   height: 352px;
   overflow-y: scroll;
   padding-bottom:20px;
@@ -1040,7 +1040,10 @@
     }
   }
 }
-.checkout-adres-secimi-fatura-adresi-footer {
+.checkout-adres-secimi-teslimat-yontemi-container {
+  padding-bottom: 20px;
+}
+.checkout-adres-secimi-fatura-adresi-footer, .checkout-adres-secimi-teslimat-adresi-footer {
   float: left;
   margin-top: 30px;
   width: 100%;
@@ -1070,17 +1073,71 @@
 .checkout-adres-secimi-item {
   border: solid 1px #dde4e8;
 }
-.checkout-adres-secimi-checkbox {
+.checkout-adres-secimi-checkbox, .checkout-teslimat-yontemi-checkbox {
   @include col();
   @include span(2.5, $gutter_pc, $gutter_px, $padding, $max_columns);
   background: rgba(221, 227, 232, 0.1);
   text-align: center;
   label {
-    padding: 55px 0;
+    padding: 45px 0;
     width: 80px;
   }
   .pretty.circle i{
     margin-right: 0;
+  }
+}
+.checkout-teslimat-yontemi-logo {
+  @include col();
+  @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  height: 109px;
+}
+.checkout-teslimat-yontemi-details {
+  @include col();
+  @include span(9, $gutter_pc - 2px, $gutter_px, $padding, $max_columns);
+  > h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.12;
+    margin-top: 31px;
+    color: #434b54;
+  }
+  .checkout-teslimat-yontemi-details-kargo {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #343a42;
+    span {
+      color: #8c9196;
+    }
+  }
+}
+.checkout-teslimat-yontemi-fiyat {
+  @include col();
+  @include span(3.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include beta();
+  height: 109px;
+  padding-right: 20px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #434b54;
+  span {
+    display: block;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #b6bbc0;
   }
 }
 /* OVERRIDE */
@@ -1118,6 +1175,7 @@
 }
 .pretty.circle i:after {
   border: 1px solid #b9b9b9;
+  background: #fff;
 }
 .pretty.circle > input[type='checkbox']:checked + label > i:after, .pretty.circle > input[type='radio']:checked + label > i:after {
   border: solid 1px #ff9f69;
