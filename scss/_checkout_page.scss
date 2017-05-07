@@ -511,6 +511,11 @@
   @include col();
   @include span(5.5, $gutter_pc, $gutter_px, $padding, $max_columns);
   @include beta();
+  .odeme-yontemi-nav-icon {
+    float: right;
+    font-size: 16px;
+    margin-top: 3px;
+  }
 }
 
 .checkout-odeme-yontemi-right {
@@ -544,7 +549,6 @@
 }
 .checkout-odeme-yontemi-right-content {
   padding: 0 20px;
-  margin-bottom: 20px;
   .tab-pane#acikHesap {
     background: #fbfcfc;
     .icon {
@@ -789,6 +793,12 @@
 .krediKartiTaksitSecenekleriDetay {
   background: #fbfcfc;
   margin: 0 -20px;
+  padding-top: 20px;
+  > div.installment-detail {
+    background: #fff;
+    margin-right: 10px;
+    margin-left: 16px;
+  }
 }
 .puankrediKartiCheckbox {
   padding-top: 40px;
@@ -948,16 +958,28 @@
 }
 .havaleHesapSecimi {
   width: 80px;
-  background-color: rgba(221, 227, 232, 0.1);
-  min-height: 132px;
   float: left;
+  background: rgba(221, 227, 232, 0.1);
+  text-align: center;
+  label {
+    padding: 56px 0;
+    width: 80px;
+    justify-content: center;
+  }
+  .pretty.circle i{
+    margin-right: 0;
+  }
 }
 .havaleHesapBanka {
   width: 114px;
   float: left;
-  min-height: 132px;
+  height: 132px;
   padding: 0 8px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   img {
     max-width: 100%;
   }

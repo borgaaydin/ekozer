@@ -51,10 +51,18 @@
                 <div class="checkout-odeme-yontemi-left">
                     <!-- Nav tabs -->
                     <ul class="nav nav-pills nav-stacked" role="tablist">
-                        <li role="presentation" class="active"><a href="#acikHesap" aria-controls="acikHesap" role="tab" data-toggle="tab">Açık Hesap</a></li>
-                        <li role="presentation"><a href="#krediKarti" aria-controls="krediKarti" role="tab" data-toggle="tab">Kredi Kartı</a></li>
-                        <li role="presentation"><a href="#puanKrediKarti" aria-controls="puanKrediKarti" role="tab" data-toggle="tab">Puan + Kredi Kartı</a></li>
-                        <li role="presentation"><a href="#havale" aria-controls="havale" role="tab" data-toggle="tab">Havale</a></li>
+                        <li role="presentation" class="active">
+                            <a href="#acikHesap" aria-controls="acikHesap" role="tab" data-toggle="tab">Açık Hesap <span class="odeme-yontemi-nav-icon icon-ico-navi-right"></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#krediKarti" aria-controls="krediKarti" role="tab" data-toggle="tab">Kredi Kartı <span class="odeme-yontemi-nav-icon icon-ico-navi-right"></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#puanKrediKarti" aria-controls="puanKrediKarti" role="tab" data-toggle="tab">Puan + Kredi Kartı <span class="odeme-yontemi-nav-icon icon-ico-navi-right"></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#havale" aria-controls="havale" role="tab" data-toggle="tab">Havale <span class="odeme-yontemi-nav-icon icon-ico-navi-right"></span></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="checkout-odeme-yontemi-right">
@@ -126,8 +134,303 @@
                                 <div class="row">
                                     <div>
                                         <div class="krediKartiTaksitSecenekleriGoster">
-                                            <span><img src="img/checkout/plus.png" srcset="img/checkout/plus@2x.png 2x, img/checkout/plus@3x.png 3x" class="ico-plus"></span>Taksit Seçeneklerini Göster</div>
-                                        <div class="krediKartiTaksitSecenekleriDetay">
+                                            <a href="#" id="krediKartiTaksitSecenekleriGosterButton"><span class="icon-ico-plus"></span>Taksit Seçeneklerini Göster</a>
+                                        </div>
+                                        <div class="krediKartiTaksitSecenekleriDetay installments">
+                                            <div class="installment-detail axess">
+                                                <div>
+                                                    <img src="img/product/bank-logos/axess.png" srcset="img/product/bank-logos/axess@2x.png 2x, img/product/bank-logos/axess@3x.png 3x" class="axess">
+                                                </div>
+                                                <table>
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Taksit</th>
+                                                        <th>Taksit Tutarı</th>
+                                                        <th>Toplam Tutar</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            158,19
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            105,46
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>
+                                                            79,10
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="installment-detail paraf">
+                                                <div>
+                                                    <img src="img/product/bank-logos/paraf.png" srcset="img/product/bank-logos/paraf@2x.png 2x, img/product/bank-logos/paraf@3x.png 3x" class="paraf">
+                                                </div>
+                                                <table>
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Taksit</th>
+                                                        <th>Taksit Tutarı</th>
+                                                        <th>Toplam Tutar</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            158,19
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            105,46
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>
+                                                            79,10
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="installment-detail cardfinans">
+                                                <div>
+                                                    <img src="img/product/bank-logos/cardfinans.png" srcset="img/product/bank-logos/cardfinans@2x.png 2x, img/product/bank-logos/cardfinans@3x.png 3x" class="cardfinans">
+                                                </div>
+                                                <table>
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Taksit</th>
+                                                        <th>Taksit Tutarı</th>
+                                                        <th>Toplam Tutar</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            158,19
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            105,46
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>
+                                                            79,10
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="installment-detail maximum">
+                                                <div>
+                                                    <img src="img/product/bank-logos/maximum.png" srcset="img/product/bank-logos/maximum@2x.png 2x, img/product/bank-logos/maximum@3x.png 3x" class="maximum">
+                                                </div>
+                                                <table>
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Taksit</th>
+                                                        <th>Taksit Tutarı</th>
+                                                        <th>Toplam Tutar</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            158,19
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            105,46
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>
+                                                            79,10
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="installment-detail bonus">
+                                                <div>
+                                                    <img src="img/product/bank-logos/bonus.png" srcset="img/product/bank-logos/bonus@2x.png 2x, img/product/bank-logos/bonus@3x.png 3x" class="bonus">
+                                                </div>
+                                                <table>
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Taksit</th>
+                                                        <th>Taksit Tutarı</th>
+                                                        <th>Toplam Tutar</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            158,19
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            105,46
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>
+                                                            79,10
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="installment-detail world">
+                                                <div>
+                                                    <img src="img/product/bank-logos/world.png" srcset="img/product/bank-logos/world@2x.png 2x, img/product/bank-logos/world@3x.png 3x" class="world">
+                                                </div>
+                                                <table>
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Taksit</th>
+                                                        <th>Taksit Tutarı</th>
+                                                        <th>Toplam Tutar</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            158,19
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            105,46
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>
+                                                            79,10
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            316,38
+                                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -172,7 +475,10 @@
                                 <div class="havaleHesaplar-container">
                                     <div class="havaleHesap">
                                         <div class="havaleHesapSecimi">
-
+                                            <div class="pretty circle">
+                                                <input type="radio" name="radio1">
+                                                <label><i class="fa fa-circle"></i></label>
+                                            </div>
                                         </div>
                                         <div class="havaleHesapBanka">
                                             BANKA LOGO
@@ -187,7 +493,10 @@
                                     </div>
                                     <div class="havaleHesap">
                                         <div class="havaleHesapSecimi">
-
+                                            <div class="pretty circle">
+                                                <input type="radio" name="radio1">
+                                                <label><i class="fa fa-circle"></i></label>
+                                            </div>
                                         </div>
                                         <div class="havaleHesapBanka">
                                             BANKA LOGO
@@ -202,7 +511,10 @@
                                     </div>
                                     <div class="havaleHesap">
                                         <div class="havaleHesapSecimi">
-
+                                            <div class="pretty circle">
+                                                <input type="radio" name="radio1">
+                                                <label><i class="fa fa-circle"></i></label>
+                                            </div>
                                         </div>
                                         <div class="havaleHesapBanka">
                                             BANKA LOGO
@@ -437,6 +749,10 @@
             $('#onBilgilendirmeFormuModal').modal('hide');
             $('#onBilgilendirmeFormu').prop('checked', true);
         });
+        $(".krediKartiTaksitSecenekleriGosterButton").click(function () {
+            console.log("ok");
+            (this).find("span").removeClass("krediKartiTaksitSecenekleriGoster").addClass("icon-ico-line")
+        })
     });
 </script>
 </body>
