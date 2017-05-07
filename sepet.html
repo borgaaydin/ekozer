@@ -178,34 +178,186 @@
             </div>
             <div class="basket-warning">
                 <div class="accordion">
-                    <h3>
+                    <div class="head">
+                        <div>
 
-                    </h3>
+                            Uyarı (2)
+                        </div>
+                        <div>
+                            <span class="head-hide">
+                            Mesajları Gizle
+                            </span>
+                            <span class="head-show">
+                            Mesajları Göster
+                            </span>
+                        </div>
+                    </div>
                     <div>
-
+                        <ol>
+                            <li>
+                                Rulopak Z Katlama Kağıt Havlu 200 Yaprak 12 Adet isimli ürün en fazla 3 taksitle satın alınabilir. Bu yüzden siparişiniz 3 taksitle sınırlandırılacaktır. Daha fazla taksitlendirme için bu ürünü ayrıca sipariş etmeniz önerilir.
+                            </li>
+                            <li>
+                                Glade Refresh Air Oda Kokusu Mountain Morning 275 ml isimli ürün puanla satın alınabilir. Ödeme yöntemi olarak
+                                Puan + Kredi Kartı tercih edebilirsiniz.
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>
 
-            <ul class="basket-product-list">
-                <li>
-                    <img src="" alt="">
-                    <div>
+            <div class="basket-product-list">
+                <div class="list-titles">
+                    <span>
+                        Ürün
+                    </span>
+                    <span>
+                        Miktar
+                    </span>
+                    <span>
+                        Net Fiyat
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        <img src="img/product/product-slider-sample-image-1.png" alt="product sample">
+                        <div>
+                            <div class="name-col">
+                                <span>
+                                    Pritt 964531 Yapıştırıcı No:11, 90gr
+                                </span>
+                                <span>
+                                    Ürün Kodu: 53262
+                                </span>
+                            </div>
+                            <div class="tag-col">
+                                <div class="tag-puan">
+                                    <span>
+                                        PUAN
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="qty-col">
+                                <div class="product-detail-counter">
+                                    <a class="product-counter-minus">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="product-count">
+                                <span class="product-count-box">
+                                    1
+                                </span>
+                                        <span class="product-count-label">
+                                    Paket
+                                </span>
+                                    </div>
+                                    <a class="product-counter-plus">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-col">
+                                <span>2 x 9.90 ₺</span>
+                                <span>19.80 ₺</span>
+                                <span>
+                                    + KDV (%4)
+                                    <span class="ico"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-delete">
+                            <span class="">
 
-                    </div>
-                </li>
-            </ul>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="basket-left-bottom">
+                <a href="#">
+                    <span class="icon-ico-navi-left">
+
+                    </span>
+                    Alışverişe Geri Dön
+                </a>
+                <a href="#">
+                    Sepeti Temizle
+                </a>
+            </div>
         </div>
 
         <div class="basket-right">
             <div class="basket-summary">
                 <div class="coupon-box">
+                    <label for="coupon">
+                        Kupon
+                    </label>
+                    <input type="text" name="Kupon" id="coupon" placeholder="Kupon Kodunuz">
+                    <a href="#">Kullan</a>
+                </div>
+                <div class="costs">
+                    <div class="ara-toplam">
+                        <span>
+                            Ara Toplam
+                        </span>
+                        <span>
+                            70 ₺
+                        </span>
+                    </div>
+                    <div class="kdv">
+                        <span>
+                            KDV
+                            <span>
 
+                            </span>
+                        </span>
+                        <span>
+                            20 ₺
+                        </span>
+                    </div>
+                    <div class="kargo">
+                        <span>
+                            Kargo Bedeli
+                        </span>
+                        <span class="kargo-hesaplanacak">
+                            Hesaplanacak
+                        </span>
+                    </div>
+                </div>
+                <div class="genel-toplam">
+                    <div>
+                        <span>Genel Toplam</span>
+                        <span>(KDV Dahil)</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <a href="#">
+                        Satın Al
+                    </a>
+                </div>
+            </div>
+            <div class="basket-suggest">
+                <div>
+                   <span class="icon-ico-free-shipping"></span>
+                </div>
+                <div>
+                    <span>
+                        Sepetinize <span>10₺’lik</span> ürün daha ekleyin.
+                    </span>
+                    <span>
+                        Kargo ücreti ödemeyin.
+                    </span>
+                    <a href="#">Önerileri göster.</a>
                 </div>
             </div>
 
-
         </div>
+    </div>
+</div>
+
+<div class="container-fluid basket-speacial-products">
+    <div class="container">
+
     </div>
 </div>
 
@@ -223,6 +375,13 @@
             collapsible: true,
             active: false,
             heightStyle: "content"
+        });
+
+        $(".warning-accordion").accordion({
+            collapsible: true,
+            active: false,
+            header: ".head"
+
         });
 
 
