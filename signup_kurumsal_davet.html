@@ -351,9 +351,13 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/modal.js"></script>
 <script>
+    var uncheck = function() {
+        $('#davetUyelikSozlesmesi').prop('checked', false);
+    };
     $(document).ready(function() {
         $('#davetUyelikSozlesmesiLabel').click(function() {
             $('#davetUyelikSozlesmesiModal').modal('show');
+            setTimeout(uncheck, 1);
         });
         $('#davetUyelikSozlesmesiOnay').click(function() {
             $('#davetUyelikSozlesmesiModal').modal('hide');

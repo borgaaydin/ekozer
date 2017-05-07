@@ -19,13 +19,14 @@
   text-transform: none;
   line-height: 1;
 
-  font-size: 24px;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ico-close-blank:before {
+  content: "\e92c";
+}
 .icon-ico-checkbox-check:before {
   content: "\e92b";
 }
@@ -181,8 +182,4 @@
 }
 .icon-credit-card:before {
   content: "\e922";
-}
-
-.icon-ico-fast-cargo {
-  font-size: 20px;
 }

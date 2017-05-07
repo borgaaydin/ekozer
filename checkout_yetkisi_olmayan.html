@@ -142,8 +142,8 @@
                         </div>
                     </div>
                     <div class="checkout-adres-secimi-fatura-adresi-footer">
-                        <div class="checkout-fatura-adresi-button-container">
-                            <a href="#">Yeni Fatura Adresi Ekle</a>
+                        <div class="checkout-fatura-adresi-button-container yetkisi-olmayan">
+                            <a href="#" id="faturaAdresiGuncellemeTalebi">Adres Güncelleme Talebi</a>
                         </div>
                     </div>
                     <div class="checkout-adres-secimi-fatura-adresi-line"></div>
@@ -221,8 +221,8 @@
                         </div>
                     </div>
                     <div class="checkout-adres-secimi-teslimat-adresi-footer">
-                        <div class="checkout-fatura-adresi-button-container">
-                            <a href="#">Yeni Teslimat Adresi Ekle</a>
+                        <div class="checkout-fatura-adresi-button-container yetkisi-olmayan">
+                            <a href="#" id="teslimatAdresiGuncellemeTalebi">Adres Güncelleme Talebi</a>
                         </div>
                     </div>
                     <div class="checkout-adres-secimi-teslimat-adresi-line"></div>
@@ -328,6 +328,120 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="faturaAdresiGuncellemeTalebiModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Adres Güncelleme Talebi</h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-desc">Size atanan adreslerle ilgili problemle mi karşılaştınız? Lütfen yöneticinize bildirin.</div>
+                <div class="row">
+                    <div>
+                        <div class="faturaAdresiGuncellemeTalepNedeni">
+                            <label for="faturaAdresiGuncellemeTalepNedeni">Güncelleme Talep Nedeni</label>
+                            <select id="faturaAdresiGuncellemeTalepNedeni" name="faturaAdresiGuncellemeTalepNedeni">
+                                <option data-display="T1" value="T1">T1</option>
+                                <option value="T2">T2</option>
+                                <option value="T3">T3</option>
+                                <option value="T4">T4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div class="faturaAdresiGuncellemeTalebiAciklama">
+                            <label for="faturaAdresiGuncellemeTalebiAciklama">Açıklama</label>
+                            <textarea id="faturaAdresiGuncellemeTalebiAciklama" name="faturaAdresiGuncellemeTalebiAciklama" class="aciklamaTextArea" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="guncelleme-talebi-modal-button-container cancelButton">
+                    <a href="#" id="faturaAdresiGuncellemeTalebiCancel">Vazgeç</a>
+                </div>
+                <div class="guncelleme-talebi-modal-button-container">
+                    <a href="#" id="faturaAdresiGuncellemeTalebiSubmit">Gönder</a>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="teslimatAdresiGuncellemeTalebiModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Adres Güncelleme Talebi</h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-desc">Size atanan adreslerle ilgili problemle mi karşılaştınız? Lütfen yöneticinize bildirin.</div>
+                <div class="row">
+                    <div>
+                        <div class="teslimatAdresiGuncellemeTalepNedeni">
+                            <label for="teslimatAdresiGuncellemeTalepNedeni">Güncelleme Talep Nedeni</label>
+                            <select id="teslimatAdresiGuncellemeTalepNedeni" name="teslimatAdresiGuncellemeTalepNedeni">
+                                <option data-display="T1" value="T1">T1</option>
+                                <option value="T2">T2</option>
+                                <option value="T3">T3</option>
+                                <option value="T4">T4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div class="teslimatAdresiGuncellemeTalebiAciklama">
+                            <label for="teslimatAdresiGuncellemeTalebiAciklama">Açıklama</label>
+                            <textarea id="teslimatAdresiGuncellemeTalebiAciklama" name="teslimatAdresiGuncellemeTalebiAciklama" class="aciklamaTextArea" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="guncelleme-talebi-modal-button-container cancelButton">
+                    <a href="#" id="teslimatAdresiGuncellemeTalebiCancel">Vazgeç</a>
+                </div>
+                <div class="guncelleme-talebi-modal-button-container">
+                    <a href="#" id="teslimatAdresiGuncellemeTalebiSubmit">Gönder</a>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="guncellemeTalebiGonderildiModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="img/checkout/ico-successful.png" srcset="img/checkout/ico-successful@2x.png 2x, img/checkout/ico-successful@3x.png 3x" class="ico-successful">
+            </div>
+            <div class="modal-body">
+                <h4>Talebiniz Gönderildi</h4>
+                <div class="modal-desc">Güncelleme talebiniz aşağıda listelenen yöneticilerinize iletilmiştir.</div>
+                <div class="modal-user-container">
+                    <div class="modal-user-item">
+                        Muharrem Gürsoy
+                        <span>muharrem@gmail.com</span>
+                    </div>
+                    <div class="modal-user-item">
+                        Volkan Özturk
+                        <span>volkiozturk@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="guncelleme-talebi-gonderildi-modal-button-container">
+                    <a href="#" id="guncellemeTalebiGonderildiOk">Tamam</a>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!--FOOTER-->
 <div class="container-fluid footer-first-row">
@@ -437,9 +551,27 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
+<script src="js/modal.js"></script>
 <script>
     $(document).ready(function() {
         $('select').niceSelect();
+        $("#faturaAdresiGuncellemeTalebi").click(function () {
+            $('#faturaAdresiGuncellemeTalebiModal').modal('show');
+        });
+        $("#teslimatAdresiGuncellemeTalebi").click(function () {
+            $('#teslimatAdresiGuncellemeTalebiModal').modal('show');
+        });
+        $("#faturaAdresiGuncellemeTalebiSubmit").click(function () {
+            $('#faturaAdresiGuncellemeTalebiModal').modal('hide');
+            $("#guncellemeTalebiGonderildiModal").modal("show");
+        });
+        $("#teslimatAdresiGuncellemeTalebiSubmit").click(function () {
+            $('#teslimatAdresiGuncellemeTalebiModal').modal('hide');
+            $("#guncellemeTalebiGonderildiModal").modal("show");
+        });
+        $("#guncellemeTalebiGonderildiOk").click(function () {
+            $("#guncellemeTalebiGonderildiModal").modal("hide");
+        })
     });
 </script>
 </body>
