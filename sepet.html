@@ -680,12 +680,106 @@
                 </div>
 
                 <div class="ozel-kampanya">
-                    <span class="kampanya-accordion">
-                        Sepete Özel Kampanyalar
-                    </span>
-                    <span class="icon-ico-arrow-down">
-
-                    </span>
+                    <div class="head">
+                        <span class="text">
+                            Sepete Özel Kampanyalar
+                        </span>
+                        <span class="icon-ico-arrow-down"></span>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <div class="first-col">
+                                    <div>
+                                        <i class="fa fa-circle-thin" aria-hidden="true">
+                                            <i class="fa fa-circle" aria-hidden="true"></i>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="second-col">
+                                    <span>
+                                        Sepette %20 İndirim
+                                    </span>
+                                    <span>
+                                        Son kullanma tarihi: 12/05/2017
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="first-col">
+                                    <div>
+                                        <i class="fa fa-circle-thin" aria-hidden="true">
+                                            <i class="fa fa-circle" aria-hidden="true"></i>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="second-col">
+                                    <span>
+                                        Sepette %20 İndirim
+                                    </span>
+                                    <span>
+                                        Son kullanma tarihi: 12/05/2017
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="first-col">
+                                    <div>
+                                        <i class="fa fa-circle-thin" aria-hidden="true">
+                                            <i class="fa fa-circle" aria-hidden="true"></i>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="second-col">
+                                    <span>
+                                        Sepette %20 İndirim
+                                    </span>
+                                    <span>
+                                        Son kullanma tarihi: 12/05/2017
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="first-col">
+                                    <div>
+                                        <i class="fa fa-circle-thin" aria-hidden="true">
+                                            <i class="fa fa-circle" aria-hidden="true"></i>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="second-col">
+                                    <span>
+                                        Sepette %20 İndirim
+                                    </span>
+                                    <span>
+                                        Son kullanma tarihi: 12/05/2017
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="first-col">
+                                    <div>
+                                        <i class="fa fa-circle-thin" aria-hidden="true">
+                                            <i class="fa fa-circle" aria-hidden="true"></i>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="second-col">
+                                    <span>
+                                        Sepette %20 İndirim
+                                    </span>
+                                    <span>
+                                        Son kullanma tarihi: 12/05/2017
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="bottom">
+                            <a href="#">
+                                Kampanya Detaylarını Göster
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="kargo">
@@ -715,36 +809,38 @@
                 </div>
             </div>
             <div class="basket-suggest">
-                <div>
+                <div class="icon-box">
                    <span class="icon-ico-free-shipping"></span>
                 </div>
-                <div>
+                <div class="text-box">
                     <span>
                         Sepetinize <span>10₺’lik</span> ürün daha ekleyin.
                     </span>
                     <span>
                         Kargo ücreti ödemeyin.
+                        <a href="#">Önerileri göster.</a>
                     </span>
-                    <a href="#">Önerileri göster.</a>
+
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 
 <div class="container-fluid basket-special-products">
     <div class="container">
-        <div class="basket-special-button">
+        <div class="basket-special-accordion">
+            <div class="basket-special-button">
             <span>
                 <span class="text">
                     Sizin İçin Seçtiklerimiz
                 </span>
                 <span class="icon-ico-arrow-down"></span>
             </span>
-        </div>
-        <div class="basket-speacial-slider">
+            </div>
+            <div class="basket-special-slider">
 
+            </div>
         </div>
     </div>
 </div>
@@ -771,6 +867,20 @@
             active: false,
             header: ".head"
 
+        });
+
+        $(".ozel-kampanya").accordion({
+            collapsible: true,
+            active: false,
+            header: ".head",
+            heightStyle: "content"
+        });
+
+        $(".basket-special-accordion").accordion({
+            collapsible: true,
+            active: false,
+            header: ".basket-special-button",
+            heightStyle: "content"
         });
 
         $(".basket-right").Stickyfill();
