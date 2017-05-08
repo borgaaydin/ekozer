@@ -642,9 +642,13 @@
 
     .nav_list {
       @include box-shadow-args(0 0 0 0 rgba(0, 0, 0, 0));
-      li {
+      >li {
         height: 50px;
         line-height: 50px;
+
+        .icon-ico-arrow-down {
+          top: 20px;
+        }
       }
     }
   }
