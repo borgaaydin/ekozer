@@ -36,6 +36,9 @@
   @include col();
   @include span(30, $gutter_pc, $gutter_px, $padding, $max_columns);
   @include beta();
+  background-color: white;
+
+  @include box-shadow-args(0 3px 3px 0 rgba(218, 218, 218, 0.25));
 }
 
 .account-nav {
@@ -44,4 +47,254 @@
   @include beta();
   margin-right: 0;
 
+  ul.main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0 ;
+    width: 100%;
+
+    .parent-nav {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      border: 0;
+      align-items: flex-start;
+      padding-left: 0;
+
+      .head {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-left: 4px solid #dde3e8;
+        border-top: 1px solid #f0f3f6;
+        padding-left: 20px;
+
+        &.active {
+          border-left: 4px solid #434b54;
+        }
+
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    >li {
+      height: 48px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 20px;
+      border-left: 4px solid #dde3e8;
+      border-top: 1px solid #f0f3f6;
+
+      width: 100%;
+
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.38;
+      color: #434b54;
+
+      a {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.38;
+        color: #434b54;
+        position: relative;
+
+        .icon-ico-navi-right {
+          position: absolute;
+          right: 10px;
+          top: 3px;
+        }
+      }
+
+      .child-nav {
+        padding: 0;
+        width: 100%;
+
+        >li {
+          height: 48px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          padding-left: 20px;
+          border-left: 4px solid #dde3e8;
+          border-top: 1px solid #f0f3f6;
+
+          width: 100%;
+
+          &.active {
+            border-left: 4px solid #ff9f69;
+
+            a {
+              color: #ff9f69;
+            }
+
+            .icon-ico-navi-right {
+              color: #ff9f69;
+            }
+          }
+
+          a {
+            width: 100%;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.57;
+            color: #434b54;
+            position: relative;
+
+            .icon-ico-navi-right {
+              position: absolute;
+              right: 10px;
+              top: 3px;
+            }
+          }
+        }
+      }
+      
+
+    }
+  }
+}
+
+.account-content {
+  @include col();
+  @include span(24, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include beta();
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .head {
+    padding: 25px 20px;
+    h5 {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.22;
+      color: #434b54;
+      margin: 0;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 1.57;
+      color: #8c9196;
+    }
+  }
+
+  .body {
+    min-height: 94px;
+    padding: 20px;
+  }
+
+  .bottom {
+    height: 108px;
+    background-color: #fafafc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .update-pass {
+      height: 48px;
+      background-color: #ffffff;
+      @include box-shadow-args(0 3px 3px 0 rgba(154, 154, 154, 0.32));
+      border: solid 1px #fff8f3;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 40px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: #f98e4e;
+    }
+
+    .update-button {
+      height: 48px;
+      background-color: #ff9f69;
+      @include box-shadow-args(0 3px 3px 0 rgba(154, 154, 154, 0.32));
+      display: inline-flex;
+      align-items: center;
+      padding: 0 60px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}
+
+.account-content {
+  //INPUT STYLING
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #82858a;
+    display: block;
+    margin-bottom: 6px;
+  }
+  input[type="text"], input[type="password"], select, .nice-select, .adressTextArea {
+    height: 54px;
+    background-color: #fbfbfa;
+    border: solid 1px #f0f3f6;
+    width: calc(100% - 4px);
+    color: #626971;
+    font-size:16px;
+  }
+  input[type="text"], input[type="password"] {
+    padding: 0 16px 0 12px;
+    width: calc(100% - 32px);
+  }
+  input:read-only {
+    background-color: #f0f3f8;
+    border: solid 1px #f0f3f6;
+    color: #4c535c;
+  }
+  input:focus, .open, textarea:focus {
+    border: solid 1px #ff9f69;
+    outline: none;
+    color: #4c535c;
+  }
+
+  .nice-select {
+    height: 58px;
+    border-radius: 0;
+    .list {
+      border-radius: 0;
+      margin-top: 2px;
+      width: 100%;
+      max-height: 292px;
+      overflow-y: auto;
+      padding: 0 12.4px 0 9px;
+      .option {
+        color: #868a8f;
+        padding: 10px 0 12px 0;
+        font-size: 16px;
+        line-height: 1.38;
+        box-shadow: inset 0 -1px 0 0 #f0f3f6;
+        min-height: 16px;
+        &:last-child {
+          box-shadow: none;
+        }
+        &:hover, &.focus {
+          background: white;
+          font-weight: normal;
+        }
+      }
+      .option.selected {
+        color: #f57353;
+        background: white;
+      }
+    }
+  }
+  .current {
+    line-height: 58px;
+  }
 }
