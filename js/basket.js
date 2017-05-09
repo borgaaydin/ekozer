@@ -53,4 +53,8 @@ $(document).ready(function() {
             $(".accordion").accordion( "option", "active", false );
         }
     });
+
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 });

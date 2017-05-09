@@ -91,7 +91,7 @@
       border-left: 4px solid #dde3e8;
       border-top: 1px solid #f0f3f6;
 
-      width: 100%;
+      width: 200px;
 
       font-size: 16px;
       font-weight: 500;
@@ -167,7 +167,9 @@
   @include col();
   @include span(24, $gutter_pc, $gutter_px, $padding, $max_columns);
   @include beta();
-  margin-left: 20px;
+  width: 960px;
+  margin-left: 0;
+  margin-right: 0;
   display: flex;
   flex-direction: column;
 
@@ -297,4 +299,29 @@
   .current {
     line-height: 58px;
   }
+}
+
+.personal-details {
+
+  .body {
+    padding-right: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .personal-input {
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+#siparisOnayTutar,
+#ekozerPuan {
+  font-size: 26px;
+  text-align: center;
+  color: #4c535c;
 }

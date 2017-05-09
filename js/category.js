@@ -12,6 +12,15 @@ $(function() {
         slidesToScroll: 1
     });
 
+    $(".product_slider").slick({
+        arrows: true,
+        variableWidth: true,
+        infinite: false,
+        dots: false,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 5
+    });
 
     $('select').niceSelect();
 

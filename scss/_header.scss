@@ -92,6 +92,10 @@
         font-weight: 600;
         color: #434b54;
         margin-right: 30px;
+        display: flex;
+        flex-direction: row;
+
+        a {margin-left: 4px}
       }
     }
 

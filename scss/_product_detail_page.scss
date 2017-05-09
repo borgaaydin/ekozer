@@ -209,6 +209,7 @@
     opacity: 1;
     background-color: #ffffff;
     box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+    border-color: transparent;
   }
 }
 
@@ -278,18 +279,23 @@
   position: relative;
 
   .favori-box {
-    width: 188px;
     height: 38px;
     background-color: #ffffff;
     box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.32);
     border: solid 1px #fff8f3;
     float: right;
     position: relative;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+    padding: 0 15px;
+
+    .icon-download {
+      color: #f98e4e;
+      margin-right: 10px;
+    }
 
     &.active,
     &:hover,
@@ -298,9 +304,14 @@
       border: solid 1px #fff8f3;
       color: #626971;
       background-color: #fff7f2;
+
+      span.favori-title,
+      span.icon-download{
+        color: #f57353;
+      }
     }
 
-    >span:nth-child(2) {
+    .favori-title {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -903,10 +914,14 @@
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
   position: absolute;
   background-color: white;
-  display: inline-block;
+  display: none;
   top: 55px;
   left: -22px;
   z-index: 99;
+
+  &.active {
+    color: #f57353;
+  }
 
   .input-bar {
     height: 67px;
@@ -927,25 +942,30 @@
 
       text-align: center;
 
-      .validate-button {
-        display: none;
-        position: absolute;
-        width: 48px;
-        height: 48px;
-        background-color: #ffffff;
-        box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.32);
-        border: solid 1px #fff8f3;
-        align-items: center;
-        justify-content: center;
-
-      }
-
       &:focus {
         text-align: left;
 
         .validate-button {
-          display: flex;
+
         }
+      }
+    }
+
+    .validate-button {
+      position: absolute;
+      right: 9px;
+      width: 48px;
+      height: 48px;
+      background-color: #ffffff;
+      box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.32);
+      border: solid 1px #fff8f3;
+      display: none;
+      align-items: center;
+      justify-content: center;
+
+
+      .icon-ico-checkbox-check {
+        color: #f57353;
       }
     }
   }
@@ -975,6 +995,11 @@
       align-items: center;
       justify-content: space-between;
       box-shadow: inset 0 -1px 0 0 #f0f3f6;
+
+      .icon-ico-checkbox-check {
+        color: #f57353;
+        display: none;
+      }
       
       a {
         font-size: 16px;
@@ -994,9 +1019,14 @@
         }
       }
 
-      &:hover {
+      &:hover,
+      &.active {
         a {
           color: #f57353;
+        }
+
+        .icon-ico-checkbox-check {
+          display: block;
         }
       }
     }

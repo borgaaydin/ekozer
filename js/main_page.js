@@ -13,7 +13,7 @@ $(function() {
         arrows: true,
         variableWidth: true,
         infinite: false,
-        dots: true,
+        dots: false,
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 5
@@ -24,6 +24,8 @@ $(function() {
         active: false,
         heightStyle: "content"
     });
+
+    $('[data-toggle="tooltip"]').tooltip();
 
     var display = false;
     $( ".logged-nav-button" ).click(function() {

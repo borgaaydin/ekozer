@@ -39,4 +39,22 @@ $(function() {
             $('.copyright').addClass("product-copyright");
         }
     });
+
+    $( "#yeni-favori-input" ).focus(function() {
+        $(".validate-button").css("display", "flex");
+    }).blur(function() {
+        $(".validate-button").css("display", "none");
+    });
+
+    $(".favori-box").click(function(event){
+        $(this).addClass("active");
+        $(".favori-hover").css("display", "inline-block");
+        event.stopPropagation();
+    })
+
+    $('html').click(function() {
+        $(".favori-box").removeClass("active");
+        $(".favori-hover").css("display", 'none');
+    });
+
 });
