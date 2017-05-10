@@ -59,4 +59,7 @@ $(document).ready(function() {
     $(".show-suggest-bar").click(function(){
         $(".basket-special-accordion").accordion( "option", "active", 0 );
     });
+
+    // to open modal
+    // $('#sepetModal').modal('show')
 });
