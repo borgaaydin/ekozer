@@ -53,8 +53,10 @@ $(document).ready(function() {
             $(".accordion").accordion( "option", "active", false );
         }
     });
+    $('[data-toggle="tooltip"]').tooltip();
 
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
+
+    $(".show-suggest-bar").click(function(){
+        $(".basket-special-accordion").accordion( "option", "active", 0 );
     });
 });
