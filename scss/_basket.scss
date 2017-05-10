@@ -80,10 +80,21 @@
 
     .kdv {
       margin-bottom: 10px;
-      span:first-child {
+      >span:first-child {
         font-size: 16px;
         line-height: 1.38;
         color: #8c9196;
+        display: flex;
+        flex-direction: row;
+
+        img {
+          margin-left: 6px;
+        }
+
+        .custom-toolt {
+          top: -64px;
+          left: -46px;
+        }
       }
 
       span:last-child {
@@ -1224,4 +1235,76 @@
     }
   }
 
+}
+
+.custom-ttip-box {
+  position: relative;
+  cursor: pointer;
+
+  img.question {
+    height: 18px;
+    width: 18px;
+  }
+
+  &:hover .custom-toolt {
+    display: flex;
+  }
+
+  .custom-toolt {
+    width: 180px;
+    position: absolute;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    top: -100px;
+    left: -28px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: calc(50% - 3px);
+      top: 100%;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid rgba(0, 0, 0, 0.8);
+      clear: both;
+    }
+
+    ul:first-child {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;
+      margin: 9px 12px;
+
+      li {
+        font-size: 12px;
+        color: white;
+        font-weight: 200;
+      }
+    }
+
+    ul:last-child {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: right;
+      margin: 9px 12px;
+
+      li {
+        font-size: 12px;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
 }

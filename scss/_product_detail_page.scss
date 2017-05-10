@@ -1037,6 +1037,10 @@
   position: relative;
   cursor: pointer;
 
+  .custom-toolt {
+    display: none;
+  }
+
   &:hover .custom-toolt {
     display: flex;
   }
