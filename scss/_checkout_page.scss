@@ -1,6 +1,10 @@
 .checkout {
   background-color: #f8f9fc;
+
 }
+
+
+
 
 .checkout-left {
   @include col();
@@ -404,17 +408,17 @@
   line-height: 1.1;
   color: #434b54;
 }
-.kargoBedeliHesaplanacak {
-  font-size: 14px;
-  line-height: 1.57;
-  color: #b6bbc0;
-}
 .kargoBedeliFiyat {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.1;
   color: #434b54;
   margin-left: 12px;
+}
+.kargoBedeliHesaplanacak {
+  font-size: 14px;
+  line-height: 1.57;
+  color: #b6bbc0;
 }
 .blank {
   height: 38px;
@@ -433,6 +437,7 @@
     text-align: center;
     color: #ffffff;
     border: none;
+    outline: 0;
   }
 }
 .disabledButton {
@@ -481,6 +486,7 @@
       background: #ffffff;
       box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.32);
       border: solid 1px #fff8f3;
+      outline: 0;
     }
   }
 }
@@ -1063,6 +1069,7 @@
       line-height: 1.5;
       color: #8c9196;
       box-shadow: inset 0 -1px 0 0 #8c9196;
+      outline: 0;
       span {
         margin-left: 4px;
         font-size: 18px;
@@ -1097,6 +1104,7 @@
       color: #f98e4e;
       box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.32);
       border: solid 1px #fff8f3;
+      outline: 0;
     }
   }
   .yetkisi-olmayan {
@@ -1109,6 +1117,7 @@
       line-height: 1.5;
       color: #8c9196;
       box-shadow: inset 0 -1px 0 0 #8c9196;
+      outline: 0;
     }
   }
 }
@@ -1224,6 +1233,7 @@
         color: #ffffff;
         background: #ff9f69;
         box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+        outline: 0;
       }
     }
     .cancelButton {
@@ -1232,6 +1242,7 @@
         background: transparent;
         box-shadow: none;
         color: #434b54;
+        outline: 0;
       }
     }
   }
@@ -1382,7 +1393,7 @@
         height: 48px;
         color: #ffffff;
         background: #ff9f69;
-        box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+        @include box-shadow-args(0 3px 3px 0 rgba(255, 159, 105, 0.25));
 
       }
     }
@@ -1396,11 +1407,13 @@
   padding-left: 18px;
   border-radius: 0;
   line-height: 1.38;
+  outline: 0;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
   background: transparent;
   color: #fa9458;
   box-shadow: inset 4px 0 0 0 #ff9f69, inset 0 1px 0 0 #f0f3f6;
+  outline: 0;
 }
 .nav-stacked > li {
   box-shadow: inset 4px 0 0 0 #dde3e8, inset 0 1px 0 0 #f0f3f6;

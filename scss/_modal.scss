@@ -20,17 +20,43 @@
 
   padding: 17px 40px 30px 40px;
 
-  a {
-    width: 160px;
+  a.orange {
+    padding: 0 40px;
     height: 48px;
     background-color: #ff9f69;
     color: white;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     @include box-shadow-args( 0 3px 3px 0 rgba(255, 159, 105, 0.25));
     margin-top: 25px;
+  }
 
+  a.white {
+    padding: 0 40px;
+    height: 48px;
+    background-color: #ffffff;
+    color: #f98e4e;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include box-shadow-args( 0 3px 3px 0 rgba(154, 154, 154, 0.32));
+    border: solid 1px #fff8f3;
+
+    margin-top: 25px;
+  }
+
+  a.plain {
+    padding: 0 40px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px rgba(206, 211, 219, 0.31);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #434b54;
   }
 
   h5 {
@@ -60,4 +86,52 @@
 
 #sepetModal {
 
+}
+
+#categoryRequestModal {
+  .modal-dialog {
+    width: 541px;
+  }
+
+  h5 {
+    font-weight: 400;
+  }
+
+  p {
+    max-width: 380px;
+  }
+
+  div.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: -30px;
+    margin-bottom: -10px;
+
+    a {
+      margin-left: 20px;
+    }
+  }
+}
+
+#categoryRequestCompletedModal {
+  .modal-dialog {
+    width: 420px;
+
+  }
+}
+
+
+
+#loadingModal {
+  .modal-dialog {
+    width: 200px;
+    margin: 400px auto;
+    
+    .fa-spinner {
+      color: #f98e4e;
+    }
+  }
 }

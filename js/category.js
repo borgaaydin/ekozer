@@ -59,4 +59,9 @@ $(function() {
         });
         $(this).addClass("active");
     });
+
+    // to open modal
+     $('#categoryRequestModal').modal('show')
+
+
 });

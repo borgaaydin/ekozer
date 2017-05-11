@@ -37,4 +37,15 @@ $(function() {
             $(".accordion").accordion( "option", "active", false );
         }
     });
+
+    $('.auth_button_container a').click(function() {
+        $.blockUI({
+            message: $('#loadingModal'),
+            css: {
+                width: '0',
+                left:  "-10px"
+            }
+        });
+        test();
+    });
 });
