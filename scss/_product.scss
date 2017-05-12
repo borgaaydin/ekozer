@@ -179,7 +179,12 @@
     @include clearfix();
 
 
-    >button {
+    >button,
+    div.button{
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
       width: 188px;
       margin: 0 auto;
       height: 48px;
@@ -188,7 +193,6 @@
 
       font-size: 16px;
       font-weight: 300;
-      text-align: center;
       color: #ffffff;
       border: 0;
     }
@@ -210,7 +214,9 @@
   }
 
   .product-button {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
