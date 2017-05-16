@@ -1327,6 +1327,123 @@
     }
   }
 }
+.havale-basarili-container {
+  width: 100%;
+  background: #fff;
+  margin: 10px 0 120px;
+  padding: 45px 40px 40px 40px;
+  h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    text-align: center;
+    color: #434b54;
+  }
+  .havale-basarili-message {
+    margin-top: 35px;
+    background-color: #fbfcfc;
+    padding-top: 40px;
+  }
+  .havale-basarili-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .havale-basarili-detay {
+    text-align: center;
+    color: #434b54;
+    line-height: 1.3;
+    font-size: 20px;
+    display: block;
+    span.havale-zamani {
+      font-weight: bold;
+    }
+    span.havale-no {
+      font-weight: bold;
+    }
+  }
+  .havale-basarili-bilgilendirme {
+    @include col();
+    @include span(22, $gutter_pc, $gutter_px, $padding, $max_columns);
+    margin: 30px auto;
+    background-color: #ffffff;
+    box-shadow: 0 3px 3px 0 rgba(218, 218, 218, 0.25);
+    float: none;
+    position: relative;
+    .havale-basarili-bilgilendirme-icon {
+      position: absolute;
+      top:0;
+      left:0;
+    }
+    .havale-basarili-bilgilendirme-content {
+      padding:33px 60px 37px;
+      font-size: 16px;
+      line-height: 1.62;
+      text-align: center;
+      color: #8c9196;
+    }
+  }
+  .havale-basarili-banka-detaylari {
+    display: flex;
+    align-items: center;
+    height: 170px;
+    padding-bottom: 40px;
+    .havale-basarili-hesap-bilgileri {
+      width: 50%;
+      height: 100%;
+      border-right: solid 1px #dde3e8;
+      float: left;
+      .havale-basarili-hesap-bilgileri-icon {
+        padding: 61px 0 0 69px;
+        display: inline-block;
+        margin-right: 7px;
+        img {
+          max-width: 100%;
+        }
+      }
+      .havale-basarili-hesap-bilgileri-content {
+        display: inline-block;
+        padding-top: 46px;
+        vertical-align: top;
+        .havale-basarili-hesap-bilgileri-content-iban {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.12;
+          color: #434b54;
+          margin-bottom: 20px;
+        }
+        .havale-basarili-hesap-bilgileri-content-banka {
+          font-size: 16px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.38;
+          letter-spacing: normal;
+          color: #8c9196;
+        }
+        .havale-basarili-hesap-bilgileri-content-subehesap {
+          font-weight: 600;
+          color: #8c9196;
+          span {
+            color: #343b43;
+          }
+          .havale-basarili-hesap-bilgileri-content-subekodu {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    .havale-basarili-banka-bilgilendirme {
+      width: calc(50% - 102px);
+      height: 100%;
+      padding: 32px 40px 0 62px;
+      font-size: 16px;
+      line-height: 1.62;
+      color: #8c9196;
+    }
+  }
+}
 #guncellemeTalebiGonderildiModal {
   > div.modal-dialog {
     width: 420px;
