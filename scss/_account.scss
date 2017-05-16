@@ -574,12 +574,20 @@ input.numbered-input {
   }
 }
 
-.bireyselSifrenizSifreIcon {
+.eskiSifre, .yeniSifre {
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.eskiSifrenizSifreIcon, .yeniSifrenizSifreIcon {
   position: absolute;
   top: 40px;
   right: 17px;
-  &:hover {
-    cursor: pointer;
+  width: 24px;
+  .eye {
+    top:0;
+    right: 0;
   }
 }
 

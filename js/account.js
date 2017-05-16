@@ -9,32 +9,63 @@ $(document).ready(function() {
         heightStyle: "content"
     });
 
-    var bireyselSifreniz = $("#bireyselSifreniz");
+    var eskiSifre = $("#eskiSifre");
     var change = "";
-    $(".bireyselSifreniz .eye-closed").click(function(){
+    $(".eskiSifre .eye-closed").click(function(){
         change = "password";
         $(this).hide();
         var rep = $("<input type='" + change + "' />")
-            .attr("id", bireyselSifreniz.attr("id"))
-            .attr("name", bireyselSifreniz.attr("name"))
-            .attr('class', bireyselSifreniz.attr('class'))
-            .val(bireyselSifreniz.val())
-            .insertBefore(bireyselSifreniz);
-        bireyselSifreniz.remove();
-        bireyselSifreniz = rep;
-        $(".bireyselSifreniz .eye").show();
-    }).insertAfter(bireyselSifreniz);
-    $(".bireyselSifreniz .eye").click(function(){
+            .attr("id", eskiSifre.attr("id"))
+            .attr("name", eskiSifre.attr("name"))
+            .attr('class', eskiSifre.attr('class'))
+            .val(eskiSifre.val())
+            .insertBefore(eskiSifre);
+        eskiSifre.remove();
+        eskiSifre = rep;
+        $(".eskiSifre .eye").show();
+    }).insertAfter(eskiSifre);
+    $(".eskiSifre .eye").click(function(){
         change = "text";
         $(this).hide();
         var rep = $("<input type='" + change + "' />")
-            .attr("id", bireyselSifreniz.attr("id"))
-            .attr("name", bireyselSifreniz.attr("name"))
-            .attr('class', bireyselSifreniz.attr('class'))
-            .val(bireyselSifreniz.val())
-            .insertBefore(bireyselSifreniz);
-        bireyselSifreniz.remove();
-        bireyselSifreniz = rep;
-        $(".bireyselSifreniz .eye-closed").show();
-    }).insertAfter(bireyselSifreniz);
+            .attr("id", eskiSifre.attr("id"))
+            .attr("name", eskiSifre.attr("name"))
+            .attr('class', eskiSifre.attr('class'))
+            .val(eskiSifre.val())
+            .insertBefore(eskiSifre);
+        eskiSifre.remove();
+        eskiSifre = rep;
+        $(".eskiSifre .eye-closed").show();
+    }).insertAfter(eskiSifre);
+
+
+
+    var yeniSifre = $("#yeniSifre");
+    var change = "";
+    $(".yeniSifre .eye-closed").click(function(){
+        change = "password";
+        $(this).hide();
+        var rep = $("<input type='" + change + "' />")
+            .attr("id", yeniSifre.attr("id"))
+            .attr("name", yeniSifre.attr("name"))
+            .attr('class', yeniSifre.attr('class'))
+            .val(yeniSifre.val())
+            .insertBefore(yeniSifre);
+        yeniSifre.remove();
+        yeniSifre = rep;
+        $(".yeniSifre .eye").show();
+    }).insertAfter(yeniSifre);
+    $(".yeniSifre .eye").click(function(){
+        change = "text";
+        $(this).hide();
+        var rep = $("<input type='" + change + "' />")
+            .attr("id", yeniSifre.attr("id"))
+            .attr("name", yeniSifre.attr("name"))
+            .attr('class', yeniSifre.attr('class'))
+            .val(yeniSifre.val())
+            .insertBefore(yeniSifre);
+        yeniSifre.remove();
+        yeniSifre = rep;
+        $(".yeniSifre .eye-closed").show();
+    }).insertAfter(yeniSifre);
 });
