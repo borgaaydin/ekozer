@@ -1383,6 +1383,41 @@
       text-align: center;
       color: #8c9196;
     }
+    .havale-basarili-bilgilendirme-yonetici-container {
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      flex-direction: row;
+      margin-top: 25px;
+      .havale-basarili-bilgilendirme-yonetici-item {
+        border: solid 1px #dde3e8;
+        height: 75px;
+        width: calc(50% - 2px);
+        font-size: 16px;
+        line-height: 1.38;
+        text-align: center;
+        .yonetici-isim {
+          margin-top: 15px;
+          color: #434b54;
+        }
+        .yonetici-email {
+          color: #93989c;
+        }
+      }
+    }
+  }
+  .havale-basarili-siparis-durumu {
+    width: 502px;
+    height: 78px;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 33px;
+    color: #8c9196;
+    a {
+      text-decoration: underline;
+    }
   }
   .havale-basarili-banka-detaylari {
     display: flex;
@@ -1441,6 +1476,9 @@
       font-size: 16px;
       line-height: 1.62;
       color: #8c9196;
+      a {
+        text-decoration: underline;
+      }
     }
   }
 }
