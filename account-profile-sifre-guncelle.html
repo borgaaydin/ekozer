@@ -548,7 +548,7 @@
                     <div class="account-body">
                         <div class="account-nav">
                             <ul class="main-nav">
-                                <li class="parent-nav accordion">
+                                <li class="parent-nav leftAccordion">
                                     <span class="head">
                                         <i class="fa fa-plus" aria-hidden="true"></i>
                                         <i class="fa fa-minus" aria-hidden="true"></i>
@@ -575,7 +575,7 @@
                                         <span class="icon-ico-navi-right"></span>
                                     </a>
                                 </li>
-                                <li class="parent-nav accordion">
+                                <li class="parent-nav leftAccordion">
                                     <span class="head">
                                         <i class="fa fa-plus" aria-hidden="true"></i>
                                         <i class="fa fa-minus" aria-hidden="true"></i>
@@ -816,7 +816,7 @@
     <script src="js/account.js"></script>
     <script>
         $(document).ready(function() {
-            $(".accordion:first-child").accordion("option", "active", 0);
+            $(".leftAccordion").eq(0).accordion("option", "active", 0);
         });
     </script>
 </body>

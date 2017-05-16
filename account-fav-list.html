@@ -548,14 +548,14 @@
                     <div class="account-body">
                         <div class="account-nav">
                             <ul class="main-nav">
-                                <li class="parent-nav accordion">
+                                <li class="parent-nav leftAccordion">
                                     <span class="head active">
                                         <i class="fa fa-plus" aria-hidden="true"></i>
                                         <i class="fa fa-minus" aria-hidden="true"></i>
                                         Profilim
                                     </span>
                                     <ul class="child-nav">
-                                        <li class="active">
+                                        <li class="">
                                             <a href="#">
                                                 Kişisel Bilgilerim
                                                 <span class="icon-ico-navi-right"></span>
@@ -575,22 +575,22 @@
                                         <span class="icon-ico-navi-right"></span>
                                     </a>
                                 </li>
-                                <li class="parent-nav accordion">
+                                <li class="parent-nav leftAccordion">
                                     <span class="head active">
                                         <i class="fa fa-plus" aria-hidden="true"></i>
                                         <i class="fa fa-minus" aria-hidden="true"></i>
                                         Favorilerim
                                     </span>
                                     <ul class="child-nav">
-                                        <li class="">
+                                        <li class="active">
                                             <a href="#">
-                                                Kişisel Bilgilerim
+                                                Alışveriş Listem
                                                 <span class="icon-ico-navi-right"></span>
                                             </a>
                                         </li>
                                         <li class="">
                                             <a href="#">
-                                                Şirket Bilgilerim
+                                                Beğendiklerim
                                                 <span class="icon-ico-navi-right"></span>
                                             </a>
                                         </li>
@@ -611,7 +611,7 @@
 
                             </ul>
                         </div>
-                        <div class="account-content personal-details">
+                        <div class="account-content fav-list">
                             <div class="head">
                                 <h5>
                                     Alışveriş Listem
@@ -620,92 +620,228 @@
                                     Alışveriş sırasında kaydettiğiniz ürünleri soldaki listelerinizden seçerek aşağıda görebilirsiniz.
                                 </span>
                             </div>
-                            <form class="body">
-                                <div class="bireyselAdVeSoyad personal-input">
-                                    <label for="bireyselAdVeSoyad">Adınız ve Soyadınız</label>
-                                    <input type="text" id="bireyselAdVeSoyad" name="bireyselAdVeSoyad" placeholder="Muharrem Songüldönmez" required readonly>
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
+
+                            <div class="body">
+                                <div class="fav-list-nav table-list5">
+                                    <div class="col1">
+                                        <span>
+                                           Kod
+                                        </span>
                                     </div>
-                                </div>
-                                <div class="ekozerPuan personal-input">
-                                    <label for="ekozerPuan">Ekozer Puanınız</label>
-                                    <input type="text" id="ekozerPuan" name="ekozerPuan" placeholder="300 ₺" required readonly>
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
+                                    <div class="col2">
+                                        <span>
+                                           Ürün Adı
+                                        </span>
                                     </div>
-                                </div>
-                                <div class="siparisOnayTutar personal-input">
-                                    <label for="siparisOnayTutar">Sipariş Onay Tutarınız</label>
-                                    <input type="text" id="siparisOnayTutar" name="siparisOnayTutar" placeholder="2.000 ₺" required readonly>
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
+                                    <div class="col3">
+                                        <span>
+                                           Fiyat
+                                        </span>
+                                    </div>
+                                    <div class="col4">
+                                        <span>
+                                           KDV
+                                        </span>
+                                    </div>
+                                    <div class="col5">
+                                        <span>Toplam</span>
+                                        <span>(KDV Dahil)</span>
                                     </div>
                                 </div>
 
-                                <div class="bireyselEposta personal-input">
-                                    <label for="bireyselEposta">E-posta Adresiniz*</label>
-                                    <input type="text" id="bireyselEposta" name="bireyselEposta" placeholder="muhsongul@erbilgida.com" required readonly>
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                                    </div>
-                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="" class="table-list5">
+                                            <div class="col1">
+                                                <span>
+                                                    S12453
+                                                </span>
+                                            </div>
+                                            <div class="col2">
+                                                <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
+                                                <span>
+                                                    Pritt Keçeli Kalem 12"li
+                                                </span>
+                                            </div>
+                                            <div class="col3">
+                                                <span>
+                                                    4,04 ₺
+                                                </span>
+                                            </div>
+                                            <div class="col4">
+                                                <span>
+                                                    % 18,00
+                                                </span>
+                                            </div>
+                                            <div class="col5">
+                                                <span>
+                                                    4,77 ₺
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="removeFromList">
+                                            <img src="img/icons/cart-close.png"
+                                                 srcset="img/icons/cart-close@2x.png 2x,
+					                                    img/icons/cart-close@3x.png 3x"
+                                                 class="cart-close">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="table-list5">
+                                            <div class="col1">
+                                                <span>
+                                                    S12453
+                                                </span>
+                                            </div>
+                                            <div class="col2">
+                                                <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
+                                                <span>
+                                                    Pritt Keçeli Kalem 12"li
+                                                </span>
+                                            </div>
+                                            <div class="col3">
+                                                <span>
+                                                    4,04 ₺
+                                                </span>
+                                            </div>
+                                            <div class="col4">
+                                                <span>
+                                                    % 18,00
+                                                </span>
+                                            </div>
+                                            <div class="col5">
+                                                <span>
+                                                    4,77 ₺
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="removeFromList">
+                                            <img src="img/icons/cart-close.png"
+                                                 srcset="img/icons/cart-close@2x.png 2x,
+					                                    img/icons/cart-close@3x.png 3x"
+                                                 class="cart-close">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="table-list5">
+                                            <div class="col1">
+                                                <span>
+                                                    S12453
+                                                </span>
+                                            </div>
+                                            <div class="col2">
+                                                <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
+                                                <span>
+                                                    Pritt Keçeli Kalem 12"li
+                                                </span>
+                                            </div>
+                                            <div class="col3">
+                                                <span>
+                                                    4,04 ₺
+                                                </span>
+                                            </div>
+                                            <div class="col4">
+                                                <span>
+                                                    % 18,00
+                                                </span>
+                                            </div>
+                                            <div class="col5">
+                                                <span>
+                                                    4,77 ₺
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="removeFromList">
+                                            <img src="img/icons/cart-close.png"
+                                                 srcset="img/icons/cart-close@2x.png 2x,
+					                                    img/icons/cart-close@3x.png 3x"
+                                                 class="cart-close">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="table-list5">
+                                            <div class="col1">
+                                                <span>
+                                                    S12453
+                                                </span>
+                                            </div>
+                                            <div class="col2">
+                                                <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
+                                                <span>
+                                                    Pritt Keçeli Kalem 12"li
+                                                </span>
+                                            </div>
+                                            <div class="col3">
+                                                <span>
+                                                    4,04 ₺
+                                                </span>
+                                            </div>
+                                            <div class="col4">
+                                                <span>
+                                                    % 18,00
+                                                </span>
+                                            </div>
+                                            <div class="col5">
+                                                <span>
+                                                    4,77 ₺
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="removeFromList">
+                                            <img src="img/icons/cart-close.png"
+                                                 srcset="img/icons/cart-close@2x.png 2x,
+					                                    img/icons/cart-close@3x.png 3x"
+                                                 class="cart-close">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="table-list5">
+                                            <div class="col1">
+                                                <span>
+                                                    S12453
+                                                </span>
+                                            </div>
+                                            <div class="col2">
+                                                <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
+                                                <span>
+                                                    Pritt Keçeli Kalem 12"li
+                                                </span>
+                                            </div>
+                                            <div class="col3">
+                                                <span>
+                                                    4,04 ₺
+                                                </span>
+                                            </div>
+                                            <div class="col4">
+                                                <span>
+                                                    % 18,00
+                                                </span>
+                                            </div>
+                                            <div class="col5">
+                                                <span>
+                                                    4,77 ₺
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="removeFromList">
+                                            <img src="img/icons/cart-close.png"
+                                                 srcset="img/icons/cart-close@2x.png 2x,
+					                                    img/icons/cart-close@3x.png 3x"
+                                                 class="cart-close">
+                                        </a>
+                                    </li>
 
-                                <div class="cepTelNo personal-input">
-                                    <label for="cepTelNo">Cep Telefon Numaranız*</label>
-                                    <input type="text" id="cepTelNo" name="cepTelNo" placeholder="" >
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                                    </div>
-                                </div>
+                                </ul>
+                            </div>
 
-                                <div class="isTelNo personal-input">
-                                    <label for="isTelNo">İş Yeri Numaranız</label>
-                                    <input type="text" id="isTelNo" name="isTelNo" placeholder="">
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                                    </div>
-                                </div>
-
-                                <div class="isTelNoDahili personal-input">
-                                    <label for="isTelNoDahili">Dahili</label>
-                                    <input type="text" id="isTelNoDahili" name="isTelNoDahili" placeholder="">
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                                    </div>
-                                </div>
-
-                                <div class="kisiselBilgiChecbox">
-                                    <span class="title">
-                                        İletişim Tercihleriniz
-                                    </span>
-                                    <div class="pretty">
-                                        <input type="checkbox" name="kurumsalKampanya" value="kurumsalKampanya" id="kurumsalKampanya">
-                                        <label for="kurumsalKampanya"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>Kampanyalardan haberdar olmak istiyorum:</label>
-                                    </div>
-                                    <div class="kurumsalKampanyaCheckboxDetails">
-                                        <div class="pretty">
-                                            <input type="checkbox" name="kurumsalKampanyaSms" value="kurumsalKampanyaSms" id="kurumsalKampanyaSms">
-                                            <label for="kurumsalKampanyaSms"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>SMS</label>
-                                        </div>
-                                        <div class="pretty kurumsalKampanyaSubcheckbox">
-                                            <input type="checkbox" name="kurumsalKampanyaEposta" value="kurumsalKampanyaEposta" id="kurumsalKampanyaEposta">
-                                            <label for="kurumsalKampanyaEposta"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>E-posta</label>
-                                        </div>
-                                        <div class="pretty">
-                                            <input type="checkbox" name="kurumsalKampanyaCagriMerkezi" value="kurumsalKampanyaCagriMerkezi" id="kurumsalKampanyaCagriMerkezi">
-                                            <label for="kurumsalKampanyaCagriMerkezi"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>Çağrı Merkezi</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
                             <div class="bottom">
-                                <a href="#" id="updatePassword" class="update-pass">
-                                    Şifremi Güncelle
+                                <a href="#" class="delete-list">
+                                    Listeyi Kaldır
                                 </a>
-                                <a href="#" class="update-button">
-                                    Güncelle
+                                <a href="#" class="clear-list">
+                                    Listeyi Temizle
                                 </a>
+
                             </div>
                         </div>
                     </div>
@@ -897,14 +1033,7 @@
     <script src="js/modal.js"></script>
     <script>
         $(document).ready(function() {
-            $(".accordion:first-child").accordion("option", "active", 0);
-
-            // to open modal
-
-
-            $('#updatePassword').click(function(){
-                $('#sifreGuncelleModal').modal('show')
-            });
+            $(".leftAccordion").eq(1).accordion("option", "active", 0);
         });
     </script>
 </body>

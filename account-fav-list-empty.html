@@ -555,7 +555,7 @@
                                         Profilim
                                     </span>
                                     <ul class="child-nav">
-                                        <li class="active">
+                                        <li>
                                             <a href="#">
                                                 Kişisel Bilgilerim
                                                 <span class="icon-ico-navi-right"></span>
@@ -582,15 +582,15 @@
                                         Favorilerim
                                     </span>
                                     <ul class="child-nav">
-                                        <li class="">
+                                        <li class="active">
                                             <a href="#">
-                                                Kişisel Bilgilerim
+                                                Alışveriş Listem
                                                 <span class="icon-ico-navi-right"></span>
                                             </a>
                                         </li>
                                         <li class="">
                                             <a href="#">
-                                                Şirket Bilgilerim
+                                                Beğendiklerim
                                                 <span class="icon-ico-navi-right"></span>
                                             </a>
                                         </li>
@@ -897,14 +897,7 @@
     <script src="js/modal.js"></script>
     <script>
         $(document).ready(function() {
-            $(".accordion:first-child").accordion("option", "active", 0);
-
-            // to open modal
-
-
-            $('#updatePassword').click(function(){
-                $('#sifreGuncelleModal').modal('show')
-            });
+            $(".leftAccordion").eq(1).accordion("option", "active", 0);
         });
     </script>
 </body>

@@ -3,11 +3,12 @@
  */
 
 $(document).ready(function() {
-    $(".accordion").accordion({
+    $(".leftAccordion").accordion({
         collapsible: true,
         active: false,
         heightStyle: "content"
     });
+
     var bireyselSifreniz = $("#bireyselSifreniz");
     var change = "";
     $(".bireyselSifreniz .eye-closed").click(function(){
