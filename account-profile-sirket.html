@@ -555,13 +555,13 @@
                                         Profilim
                                     </span>
                                     <ul class="child-nav">
-                                        <li class="active">
+                                        <li>
                                             <a href="#">
                                                 Kişisel Bilgilerim
                                                 <span class="icon-ico-navi-right"></span>
                                             </a>
                                         </li>
-                                        <li class="">
+                                        <li class="active">
                                             <a href="#">
                                                 Şirket Bilgilerim
                                                 <span class="icon-ico-navi-right"></span>
@@ -611,98 +611,65 @@
 
                             </ul>
                         </div>
-                        <div class="account-content personal-details">
+                        <div class="account-content company-details">
                             <div class="head">
                                 <h5>
-                                    Kişisel Bilgilerim
+                                    Şirket Bilgilerim
                                 </h5>
                                 <span>
-                                    Üyelik bilgilerinizi görebilir ve düzenleyebilirsiniz.
+                                    Çalışmakta olduğunuz şirketin bilgilerini görebilir ve düzenleyebilirsiniz.
                                 </span>
                             </div>
                             <form class="body">
-                                <div class="bireyselAdVeSoyad personal-input">
-                                    <label for="bireyselAdVeSoyad">Adınız ve Soyadınız</label>
-                                    <input type="text" id="bireyselAdVeSoyad" name="bireyselAdVeSoyad" placeholder="Muharrem Songüldönmez" required readonly>
+                                <div class="sirketUnvan personal-input">
+                                    <label for="sirketUnvan">Şirket Unvanı</label>
+                                    <input type="text" id="sirketUnvan" name="sirketUnvan" placeholder="Kardeşler Gıda Ltd. Şti." required readonly>
                                     <div class="hataMesaj">
                                         Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
                                     </div>
                                 </div>
-                                <div class="ekozerPuan personal-input">
-                                    <label for="ekozerPuan">Ekozer Puanınız</label>
-                                    <input type="text" id="ekozerPuan" name="ekozerPuan" placeholder="300 ₺" required readonly>
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                                    </div>
-                                </div>
-                                <div class="siparisOnayTutar personal-input">
-                                    <label for="siparisOnayTutar">Sipariş Onay Tutarınız</label>
-                                    <input type="text" id="siparisOnayTutar" name="siparisOnayTutar" placeholder="2.000 ₺" required readonly>
+                                <div class="sirketTcKimlik personal-input">
+                                    <label for="sirketTcKimlik">TC Kimlik No</label>
+                                    <input type="text" id="sirketTcKimlik" name="sirketTcKimlik" placeholder="2130023021" required readonly>
                                     <div class="hataMesaj">
                                         Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
                                     </div>
                                 </div>
 
-                                <div class="bireyselEposta personal-input">
-                                    <label for="bireyselEposta">E-posta Adresiniz*</label>
-                                    <input type="text" id="bireyselEposta" name="bireyselEposta" placeholder="muhsongul@erbilgida.com" required readonly>
+                                <div class="sirketCalisan personal-input">
+                                    <label for="sirketCalisan">Çalışan Sayısı</label>
+                                    <select id="sirketCalisan" name="sirketCalisan" required>
+                                        <option data-display="50-100" value="50-100">50-100</option>
+                                        <option value="50-100">50-100</option>
+                                        <option value="50-100">50-100</option>
+                                    </select>
                                     <div class="hataMesaj">
                                         Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
                                     </div>
                                 </div>
 
-                                <div class="cepTelNo personal-input">
-                                    <label for="cepTelNo">Cep Telefon Numaranız*</label>
-                                    <input type="text" id="cepTelNo" name="cepTelNo" placeholder="" >
+                                <div class="sirketAdres personal-input">
+                                    <label for="sirketAdres">Şirket Adresi</label>
+                                    <input type="text" id="sirketAdres" name="sirketAdres" placeholder="Bağdat Caddesi No: 121 34740 Caddebostan / Kadıköy / İstanbul" required readonly>
                                     <div class="hataMesaj">
                                         Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
                                     </div>
                                 </div>
 
-                                <div class="isTelNo personal-input">
-                                    <label for="isTelNo">İş Yeri Numaranız</label>
-                                    <input type="text" id="isTelNo" name="isTelNo" placeholder="">
+                                <div class="sirketSektor personal-input">
+                                    <label for="sirketSektor">Sektör</label>
+                                    <select id="sirketSektor" name="sirketSektor" required>
+                                        <option data-display="Teknoloji" value="Teknoloji">Teknoloji</option>
+                                        <option value="Teknoloji">Teknoloji</option>
+                                        <option value="Hırdavat">Hırdavat</option>
+                                    </select>
                                     <div class="hataMesaj">
                                         Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
                                     </div>
                                 </div>
 
-                                <div class="isTelNoDahili personal-input">
-                                    <label for="isTelNoDahili">Dahili</label>
-                                    <input type="text" id="isTelNoDahili" name="isTelNoDahili" placeholder="">
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                                    </div>
-                                </div>
-
-                                <div class="kisiselBilgiChecbox">
-                                    <span class="title">
-                                        İletişim Tercihleriniz
-                                    </span>
-                                    <div class="pretty">
-                                        <input type="checkbox" name="kurumsalKampanya" value="kurumsalKampanya" id="kurumsalKampanya">
-                                        <label for="kurumsalKampanya"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>Kampanyalardan haberdar olmak istiyorum:</label>
-                                    </div>
-                                    <div class="kurumsalKampanyaCheckboxDetails">
-                                        <div class="pretty">
-                                            <input type="checkbox" name="kurumsalKampanyaSms" value="kurumsalKampanyaSms" id="kurumsalKampanyaSms">
-                                            <label for="kurumsalKampanyaSms"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>SMS</label>
-                                        </div>
-                                        <div class="pretty kurumsalKampanyaSubcheckbox">
-                                            <input type="checkbox" name="kurumsalKampanyaEposta" value="kurumsalKampanyaEposta" id="kurumsalKampanyaEposta">
-                                            <label for="kurumsalKampanyaEposta"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>E-posta</label>
-                                        </div>
-                                        <div class="pretty">
-                                            <input type="checkbox" name="kurumsalKampanyaCagriMerkezi" value="kurumsalKampanyaCagriMerkezi" id="kurumsalKampanyaCagriMerkezi">
-                                            <label for="kurumsalKampanyaCagriMerkezi"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>Çağrı Merkezi</label>
-                                        </div>
-                                    </div>
-                                </div>
                             </form>
                             <div class="bottom">
-                                <a href="#" id="updatePassword" class="update-pass">
-                                    Şifremi Güncelle
-                                </a>
                                 <a href="#" class="update-button">
                                     Güncelle
                                 </a>
@@ -854,57 +821,17 @@
         </div>
     </div>
 
-    <div id="sifreGuncelleModal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <h5>
-                    Kişisel Bilgilerimi Güncelle
-                </h5>
-                <p>
-                    Devam etmek için lütfen şifrenizi girin.
-                </p>
-                <div class="yeniSifre modal-input-content personal-input">
-                    <label for="yeniSifre">Şifreniz</label>
-                    <input type="password" id="yeniSifre" name="yeniSifre" required>
-                    <div class="bireyselSifrenizSifreIcon">
-                        <img src="img/signup/eye.png" srcset="img/signup/eye@2x.png 2x, img/signup/eye@3x.png 3x" class="eye">
-                        <img src="img/signup/eye-closed.png" srcset="img/signup/eye-closed@2x.png 2x, img/signup/eye-closed@3x.png 3x" class="eye-closed">
-                    </div>
-                    <div class="hataMesaj">
-                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                    </div>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="plain" data-dismiss="modal">
-                        Vazgeç
-                    </a>
-                    <a href="#" class="orange" data-dismiss="modal">
-                        Tamam
-                    </a>
-                </div>
-
-
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main_page.js"></script>
     <script src="js/account.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+
     <script>
         $(document).ready(function() {
             $(".accordion:first-child").accordion("option", "active", 0);
-
-            // to open modal
-
-
-            $('#updatePassword').click(function(){
-                $('#sifreGuncelleModal').modal('show')
-            });
+            $('select').niceSelect();
         });
     </script>
 </body>

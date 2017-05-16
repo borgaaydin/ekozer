@@ -2,6 +2,10 @@
   background-color: black;
 }
 
+.modal-open {
+  padding-right: 0 !important;
+}
+
 .modal-backdrop.in {
   opacity: 0.75;
 }
@@ -122,8 +126,6 @@
 
   }
 }
-
-
 
 #loadingModal {
   .modal-dialog {

@@ -533,7 +533,7 @@
 
     </div>
 
-    <div class="container-fluid account-profile">
+    <div class="container-fluid account-support">
         <div class="container">
             <div class="row">
                 <div>
@@ -602,7 +602,7 @@
                                         <span class="icon-ico-navi-right"></span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#">
                                         Destek ve İade
                                         <span class="icon-ico-navi-right"></span>
@@ -614,97 +614,99 @@
                         <div class="account-content personal-details">
                             <div class="head">
                                 <h5>
-                                    Kişisel Bilgilerim
+                                    Destek ve İade
                                 </h5>
                                 <span>
-                                    Üyelik bilgilerinizi görebilir ve düzenleyebilirsiniz.
+                                    Ürün iadesi ve diğer destek taleplerinizi bize bildirebilirsiniz.
                                 </span>
                             </div>
+                            <div class="firstBody">
+                                <div class="icons">
+                                    <div class="footer-icon footer-phone">
+                                        <img srcset="img/footer/icons/ico-footer-callus@2x.png 2x, img/footer/icons/ico-footer-callus@3x.png 3x" src="img/footer/icons/ico-footer-callus.png" alt="Bizi Arayın">
+                                        <div class="icon-overlay">
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                Bizi Arayın
+                                            </h4>
+                                            <h3>
+                                                <a href="tel:+904440612">444 06 12</a>
+                                            </h3>
+                                        </div>
+
+                                    </div>
+                                    <div class="footer-icon footer-mail">
+                                        <img srcset="img/footer/icons/ico-footer-writetous@2x.png 2x, img/footer/icons/ico-footer-writetous@3x.png 3x" src="img/footer/icons/ico-footer-writetous.png" alt="Bize Yazın">
+                                        <div class="icon-overlay">
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                Bize Yazın
+                                            </h4>
+                                            <h3>
+                                                <a href="mailto:info@ekozer.com">info@ekozer.com</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    Ürün iade, değişim, teknik destek ve diğer tüm taleplerinizi; telefonla, e-postayla ya da
+                                    aşağıdaki formu kullanarak bize iletebilirsiniz.
+
+                                </p>
+                                <p>
+                                    Talebiniz ilgili bölüme yönlendirilecek ve en kısa zamanda işleme alıncaktır.
+                                </p>
+                            </div>
                             <form class="body">
-                                <div class="bireyselAdVeSoyad personal-input">
-                                    <label for="bireyselAdVeSoyad">Adınız ve Soyadınız</label>
-                                    <input type="text" id="bireyselAdVeSoyad" name="bireyselAdVeSoyad" placeholder="Muharrem Songüldönmez" required readonly>
+
+                                <div class="supportAdSoyad personal-input">
+                                    <label for="supportAdSoyad">Adınız ve Soyadınız*</label>
+                                    <input type="text" id="supportAdSoyad" name="supportAdSoyad" placeholder="" required>
                                     <div class="hataMesaj">
                                         Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
                                     </div>
                                 </div>
-                                <div class="ekozerPuan personal-input">
-                                    <label for="ekozerPuan">Ekozer Puanınız</label>
-                                    <input type="text" id="ekozerPuan" name="ekozerPuan" placeholder="300 ₺" required readonly>
+                                <div class="supportEposta personal-input">
+                                    <label for="supportEposta">E-posta Adresiniz*</label>
+                                    <input type="text" id="supportEposta" name="supportEposta" placeholder="" required>
                                     <div class="hataMesaj">
                                         Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
                                     </div>
                                 </div>
-                                <div class="siparisOnayTutar personal-input">
-                                    <label for="siparisOnayTutar">Sipariş Onay Tutarınız</label>
-                                    <input type="text" id="siparisOnayTutar" name="siparisOnayTutar" placeholder="2.000 ₺" required readonly>
+                                <div class="supportTel personal-input">
+                                    <label for="supportTel">Telefon Numaranız</label>
+                                    <input type="text" id="supportTel" name="supportTel" placeholder="" required>
                                     <div class="hataMesaj">
                                         Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
                                     </div>
                                 </div>
 
-                                <div class="bireyselEposta personal-input">
-                                    <label for="bireyselEposta">E-posta Adresiniz*</label>
-                                    <input type="text" id="bireyselEposta" name="bireyselEposta" placeholder="muhsongul@erbilgida.com" required readonly>
+                                <div class="supportKonu">
+                                    <label for="supportKonu">Konu Seçiniz*</label>
+                                    <select id="supportKonu" name="supportKonu" required>
+                                        <option data-display="Öneri" value="Öneri">Öneri</option>
+                                        <option value="Öneri">Öneri</option>
+                                        <option value="Öneri">Öneri</option>
+                                    </select>
+                                    <div class="hataMesaj">
+                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
+                                    </div>
+                                </div>
+                                <div class="supportMesaj">
+                                    <label for="supportMesaj">Mesajınız</label>
+                                    <textarea id="supportMesaj" name="supportMesaj" class="adressTextArea" required></textarea>
                                     <div class="hataMesaj">
                                         Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
                                     </div>
                                 </div>
 
-                                <div class="cepTelNo personal-input">
-                                    <label for="cepTelNo">Cep Telefon Numaranız*</label>
-                                    <input type="text" id="cepTelNo" name="cepTelNo" placeholder="" >
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                                    </div>
-                                </div>
 
-                                <div class="isTelNo personal-input">
-                                    <label for="isTelNo">İş Yeri Numaranız</label>
-                                    <input type="text" id="isTelNo" name="isTelNo" placeholder="">
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                                    </div>
-                                </div>
-
-                                <div class="isTelNoDahili personal-input">
-                                    <label for="isTelNoDahili">Dahili</label>
-                                    <input type="text" id="isTelNoDahili" name="isTelNoDahili" placeholder="">
-                                    <div class="hataMesaj">
-                                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                                    </div>
-                                </div>
-
-                                <div class="kisiselBilgiChecbox">
-                                    <span class="title">
-                                        İletişim Tercihleriniz
-                                    </span>
-                                    <div class="pretty">
-                                        <input type="checkbox" name="kurumsalKampanya" value="kurumsalKampanya" id="kurumsalKampanya">
-                                        <label for="kurumsalKampanya"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>Kampanyalardan haberdar olmak istiyorum:</label>
-                                    </div>
-                                    <div class="kurumsalKampanyaCheckboxDetails">
-                                        <div class="pretty">
-                                            <input type="checkbox" name="kurumsalKampanyaSms" value="kurumsalKampanyaSms" id="kurumsalKampanyaSms">
-                                            <label for="kurumsalKampanyaSms"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>SMS</label>
-                                        </div>
-                                        <div class="pretty kurumsalKampanyaSubcheckbox">
-                                            <input type="checkbox" name="kurumsalKampanyaEposta" value="kurumsalKampanyaEposta" id="kurumsalKampanyaEposta">
-                                            <label for="kurumsalKampanyaEposta"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>E-posta</label>
-                                        </div>
-                                        <div class="pretty">
-                                            <input type="checkbox" name="kurumsalKampanyaCagriMerkezi" value="kurumsalKampanyaCagriMerkezi" id="kurumsalKampanyaCagriMerkezi">
-                                            <label for="kurumsalKampanyaCagriMerkezi"><i class="icon-ico-checkbox-check" aria-hidden="true"></i>Çağrı Merkezi</label>
-                                        </div>
-                                    </div>
-                                </div>
                             </form>
                             <div class="bottom">
-                                <a href="#" id="updatePassword" class="update-pass">
-                                    Şifremi Güncelle
-                                </a>
-                                <a href="#" class="update-button">
-                                    Güncelle
+                                <a href="#" class="update-pass">
+                                    Gönder
                                 </a>
                             </div>
                         </div>
@@ -854,58 +856,15 @@
         </div>
     </div>
 
-    <div id="sifreGuncelleModal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <h5>
-                    Kişisel Bilgilerimi Güncelle
-                </h5>
-                <p>
-                    Devam etmek için lütfen şifrenizi girin.
-                </p>
-                <div class="yeniSifre modal-input-content personal-input">
-                    <label for="yeniSifre">Şifreniz</label>
-                    <input type="password" id="yeniSifre" name="yeniSifre" required>
-                    <div class="bireyselSifrenizSifreIcon">
-                        <img src="img/signup/eye.png" srcset="img/signup/eye@2x.png 2x, img/signup/eye@3x.png 3x" class="eye">
-                        <img src="img/signup/eye-closed.png" srcset="img/signup/eye-closed@2x.png 2x, img/signup/eye-closed@3x.png 3x" class="eye-closed">
-                    </div>
-                    <div class="hataMesaj">
-                        Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
-                    </div>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="plain" data-dismiss="modal">
-                        Vazgeç
-                    </a>
-                    <a href="#" class="orange" data-dismiss="modal">
-                        Tamam
-                    </a>
-                </div>
-
-
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main_page.js"></script>
     <script src="js/account.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $(".accordion:first-child").accordion("option", "active", 0);
+        $('select').niceSelect();
 
-            // to open modal
-
-
-            $('#updatePassword').click(function(){
-                $('#sifreGuncelleModal').modal('show')
-            });
-        });
     </script>
 </body>
 </html>
