@@ -169,6 +169,7 @@
             font-size: 14px;
             font-weight: 300;
             line-height: 1.57;
+            margin-left: 20px;
             color: #434b54;
             position: relative;
 
@@ -186,7 +187,8 @@
   }
 }
 
-.account-content {
+.account-content,
+.corporate-content{
   @include col();
   @include span(24, $gutter_pc, $gutter_px, $padding, $max_columns);
   @include beta();
