@@ -725,6 +725,43 @@
   }
 }
 
+.ui-accordion-header-active {
+  .fa-plus {
+    display: none;
+  }
+  .fa-minus {
+    display: inline-block;
+  }
+}
+
+.category-accordion-block {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f1f4f6;
+
+  .block-head {
+    outline:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    height: 44px;
+
+    >span {
+      line-height: 18px;
+    }
+
+    .icons-block {
+      margin: 0 10px;
+    }
+  }
+
+  .category-filter-list ul li span {
+    padding-left: 25px;
+  }
+
+}
+
 .urun-talep {
 
 }
