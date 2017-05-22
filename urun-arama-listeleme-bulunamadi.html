@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="white">
+<body class="">
 
 <div class="container-fluid header-group hg-inner-page">
     <div class="container-fluid header">
@@ -1296,13 +1296,60 @@
     </div>
 </div>
 
-<div class="container-fluid after-search-container">
+<div class="container-fluid after-search-container urun-talep-cont">
     <div class="container">
         <div class="row">
             <div class="urun-talep">
-                <a href="#">
-
-                </a>
+                <div class="head-section">
+                    <h5>
+                        Ürün talep edin!
+                    </h5>
+                    <p>
+                        Aradığınız ürünü bulamadınız mı? Ürün talep formunu doldurarak satın almak
+                        istediğiniz ürünü talep edin, mağazamıza en kısa sürede ekleyelim.
+                    </p>
+                </div>
+                <form class="input-section personal-details">
+                    <div class="left">
+                        <div class="urunMarkasi personal-input">
+                            <label for="urunMarkasi">Ürün Markası</label>
+                            <input type="text" id="urunMarkasi" name="urunMarkasi" placeholder="Marka Yazınız" required>
+                            <div class="hataMesaj">
+                                Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
+                            </div>
+                        </div>
+                        <div class="urunModeli personal-input">
+                            <label for="urunModeli">Ürün Modeli</label>
+                            <input type="text" id="urunModeli" name="urunModeli" placeholder="Model Yazınız" required>
+                            <div class="hataMesaj">
+                                Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
+                            </div>
+                        </div>
+                        <div class="urunLink personal-input">
+                            <label for="urunLink">Örnek Ürün Linki</label>
+                            <input type="text" id="urunLink" name="urunLink" placeholder="http://" required>
+                            <div class="hataMesaj">
+                                Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="urunAciklama">
+                            <label for="urunAciklama">Ürün Açıklaması</label>
+                            <textarea id="urunAciklama" name="urunAciklama" class="adressTextArea" required></textarea>
+                            <div class="hataMesaj">
+                                Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata Test Hata
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="bottom-section">
+                    <a href="#">
+                        <span>
+                            Ürün Talep Et
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

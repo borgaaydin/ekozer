@@ -280,7 +280,8 @@
 }
 
 .account-content,
-.modal-input-content{
+.modal-input-content,
+.input-section{
   //INPUT STYLING
   label {
     font-size: 14px;
@@ -643,6 +644,9 @@ input.numbered-input {
 }
 
 .account-support {
+  .head {
+    padding-bottom: 10px;
+  }
 
   .firstBody {
     margin: 0 20px;
