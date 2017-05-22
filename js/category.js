@@ -61,7 +61,7 @@ $(function() {
     });
 
     // to open modal
-    // $('#categoryRequestModal').modal('show')
+     $('#categoryRequestModal').modal('show')
 
 
 });

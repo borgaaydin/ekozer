@@ -853,5 +853,46 @@
 
     }
   }
+}
+
+#categoryRequestModal {
+  .modal-content{
+    padding: 17px 20px 30px 20px;
+  }
+
+  .input-section {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .urunMarkasi {
+      width: 239px;
+    }
+
+    .urunModeli {
+      width: 240px;
+      margin-right: 0;
+    }
+
+    .urunLink {
+      width: 500px;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    .urunAciklama {
+      width: 500px;
+      margin-bottom: 10px;
+
+      textarea {
+        height: 150px;
+        width: 491px;
+        resize: none;
+      }
+    }
+  }
 
 }
