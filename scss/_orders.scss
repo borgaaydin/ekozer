@@ -124,6 +124,12 @@
         }
       }
 
+      .col4 {
+        span {
+          color: #73787e;
+        }
+      }
+
       .col5 {
         span {
           font-weight: 500;
@@ -153,6 +159,69 @@
       background-color: #ffefe6;
       box-shadow: inset 0 -1px 0 0 #f3f4f6, inset 0 1px 0 0 #f3f4f6;
       border: solid 1px #ff9f69;
+
+      .col4 {
+        span {
+          color: #6f5c53;
+        }
+      }
+    }
+  }
+}
+
+.orders-list.regular-list {
+  ul {
+    li {
+      @include box-shadow-args(inset 0 -1px 0 0 #f4f4f7);
+      margin-bottom: 0;
+
+      &:hover {
+        background-color: #fcfcfd;
+        @include box-shadow-args(inset 0 -1px 0 0 #f4f4f7);
+      }
+
+      .col4 span{
+        color: #434b54;
+      }
+
+      .col6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a span{
+          font-size: 14px;
+          line-height: 1.71;
+          color: #8c9196;
+        }
+      }
+
+      .order-status {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.38;
+        text-align: center;
+        color: #464e57;
+
+        &.iptal-edildi {
+          font-weight: 300;
+          font-style: italic;
+          line-height: 1.38;
+          text-align: center;
+          color: #b75656;
+          border: 0;
+        }
+
+        &.teslim-edildi {
+          font-size: 16px;
+          font-weight: 300;
+          font-style: italic;
+          line-height: 1.38;
+          text-align: center;
+          color: #64ac7c;
+          border: 0;
+        }
+      }
     }
   }
 }
