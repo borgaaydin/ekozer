@@ -145,6 +145,7 @@
       @include beta();
       display: flex;
       flex-direction: row;
+      max-width: 462px;
 
       input {
         width: 462px;
