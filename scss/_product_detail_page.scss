@@ -723,6 +723,13 @@
         width: 60px;
         height: 48px;
         box-shadow: inset 0 -1px 0 0 #ced3db, inset 0 1px 0 0 #ced3db;
+
+        input {
+          border: 0;
+          width: 100%;
+          text-align: center;
+          box-sizing: border-box;
+        }
       }
 
       >span.product-count-label {

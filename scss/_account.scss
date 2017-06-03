@@ -545,8 +545,12 @@ input.numbered-input {
   text-align: center;
   color: #4c535c;
 }
-.fa-minus {
-  display: none;
+
+
+.ui-accordion-header {
+  .fa-minus {
+    display: none;
+  }
 }
 
 .ui-accordion-header-active {
