@@ -120,10 +120,16 @@
     box-shadow: inset 0px 18px 20px -20px rgba(0,0,0,0.25);
 
     h5 {
-      padding: 17px 16px 12px 16px;
-      margin: 0;
+      padding: 0 16px 0 16px;
+      margin: 17px 0 2px 0;
       line-height: 1.38;
+      height: auto;
+      overflow: hidden;
       color: #434b54;
+      max-height: 66px;
+      min-height: 66px;
+      font-size: 16px;
+      display: inline-block;
     }
   }
 
@@ -159,7 +165,7 @@
   }
 
   .actual-price {
-    margin: 0 16px;
+    margin: 0 0 0 16px;
 
     >span:first-child {
       color:#f57353;
@@ -198,6 +204,7 @@
       font-weight: 300;
       color: #ffffff;
       border: 0;
+      outline: 0;
 
       >span {
         margin: 0 auto;
