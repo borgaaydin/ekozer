@@ -72,6 +72,16 @@
     background-color: white;
     position: relative;
 
+    &.bireysel {
+      .first-row {
+        display: none;
+      }
+
+      .second-row {
+        height: 64px;
+      }
+    }
+
     .first-row {
       height: 32px;
       background-color: #fff7f3;

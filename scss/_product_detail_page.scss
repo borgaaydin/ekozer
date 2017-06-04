@@ -95,8 +95,9 @@
   @include beta();
 
   background-color: #ffffff;
-  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.08));
   padding:15px 0 23px 20px;
+  max-height: 502px;
 
   h1 {
     color: #434b54;
@@ -123,7 +124,7 @@
   width: 28px;
   height: 23px;
   background-color: #ff9f69;
-  box-shadow: 0 2px 2px 0 rgba(221, 149, 103, 0.25);
+  @include box-shadow-args(0 2px 2px 0 rgba(221, 149, 103, 0.25));
 
   display: flex;
   align-items: center;
@@ -140,7 +141,7 @@
 
 .taksit-counter {
   background-color: #ff9f69;
-  box-shadow: 0 2px 2px 0 rgba(221, 149, 103, 0.25);
+  @include box-shadow-args(0 2px 2px 0 rgba(221, 149, 103, 0.25));
   height: 24px;
   display: flex;
   flex-direction: row;
@@ -174,7 +175,7 @@
   z-index: 33;
 
   background-color: #ffffff;
-  box-shadow: 0 -3px 9px 0 rgba(0, 0, 0, 0.08);
+  @include box-shadow-args(0 -3px 9px 0 rgba(0, 0, 0, 0.08));
 
   h1 {
     color: #434b54;
@@ -208,7 +209,7 @@
   .slick-current {
     opacity: 1;
     background-color: #ffffff;
-    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+    @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.08));
     border-color: transparent;
   }
 }
@@ -220,10 +221,12 @@
 
   background-color: #ffffff;
   border: solid 1px #f7f7f7;
+  max-height: 390px;
 
   .slick-slide {
     img {
       margin:0 auto;
+      max-height: 388px;
     }
   }
 }
@@ -270,10 +273,10 @@
 
   @include clearfix();
   width: 520px;
-  height: 561px;
+  height: 502px;
 
   background-color: #ffffff;
-  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.08));
 
   z-index: 31;
   position: relative;
@@ -300,7 +303,7 @@
     &.active,
     &:hover,
     &:focus {
-      box-shadow: 0 0 6px 0 rgba(154, 154, 154, 0.32);
+      @include box-shadow-args( 0 0 6px 0 rgba(154, 154, 154, 0.32));
       border: solid 1px #fff8f3;
       color: #626971;
       background-color: #fff7f2;
@@ -326,7 +329,7 @@
 
   .product-options {
     @include clearfix();
-    margin-top: 33px;
+    margin-top: 10px;
     margin-left: 30px;
     display: flex;
     flex-direction: row;
@@ -377,7 +380,7 @@
           padding: 10px 0 12px 0;
           font-size: 16px;
           line-height: 1.38;
-          box-shadow: inset 0 -1px 0 0 #f0f3f6;
+          @include box-shadow-args(inset 0 -1px 0 0 #f0f3f6);
           min-height: auto;
 
           &:last-child {
@@ -460,7 +463,7 @@
 
             padding: 3px 0;
 
-            box-shadow: inset 2px 0 0 0 rgba(255, 255, 255, 0.2), inset -2px 0 0 0 rgba(255, 255, 255, 0.2);
+            @include box-shadow-args(inset 2px 0 0 0 rgba(255, 255, 255, 0.2), inset -2px 0 0 0 rgba(255, 255, 255, 0.2));
           }
         }
       }
@@ -601,7 +604,7 @@
     max-width: 66px;
     height: 22px;
     background-color: #67ddac;
-    box-shadow: 0 2px 2px 0 rgba(103, 221, 172, 0.25);
+    @include box-shadow-args(0 2px 2px 0 rgba(103, 221, 172, 0.25));
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -673,7 +676,7 @@
       height: 22px;
       line-height: 24px;
       background-color: #f3ae37;
-      box-shadow: 0 2px 2px 0 rgba(255, 171, 26, 0.25);
+      @include box-shadow-args(0 2px 2px 0 rgba(255, 171, 26, 0.25));
       color: #ffffff;
       text-align: center;
       font-size: 14px;
@@ -686,7 +689,7 @@
       height: 22px;
       line-height: 24px;
       background-color: #67ddac;
-      box-shadow: 0 2px 2px 0 rgba(103, 221, 172, 0.25);
+      @include box-shadow-args( 0 2px 2px 0 rgba(103, 221, 172, 0.25));
       color: #ffffff;
       text-align: center;
       font-size: 14px;
@@ -722,7 +725,7 @@
         color: #4c535c;
         width: 60px;
         height: 48px;
-        box-shadow: inset 0 -1px 0 0 #ced3db, inset 0 1px 0 0 #ced3db;
+        @include box-shadow-args(inset 0 -1px 0 0 #ced3db, inset 0 1px 0 0 #ced3db);
 
         input {
           border: 0;
@@ -778,7 +781,7 @@
       width: 200px;
       height: 48px;
       background-color: #ff9f69;
-      box-shadow: 0 3px 3px 0 rgba(255, 159, 105, 0.25);
+      @include box-shadow-args(0 3px 3px 0 rgba(255, 159, 105, 0.25));
       align-items: center;
       justify-content: center;
       cursor: pointer;
@@ -793,7 +796,7 @@
 
 .product-detail-shipment-row {
   background-color: #fcfcfc;
-  box-shadow: inset 0 1px 0 0 #f3f5f8;
+  @include box-shadow-args(inset 0 1px 0 0 #f3f5f8);
   display: block;
   margin-top: 16px;
   height: 84px;
@@ -918,7 +921,7 @@
 
 .favori-hover {
   width: 240px;
-  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.08));
   position: absolute;
   background-color: white;
   display: none;
@@ -964,7 +967,7 @@
       width: 48px;
       height: 48px;
       background-color: #ffffff;
-      box-shadow: 0 3px 3px 0 rgba(154, 154, 154, 0.32);
+      @include box-shadow-args(0 3px 3px 0 rgba(154, 154, 154, 0.32));
       border: solid 1px #fff8f3;
       display: none;
       align-items: center;
@@ -1001,7 +1004,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      box-shadow: inset 0 -1px 0 0 #f0f3f6;
+      @include box-shadow-args(inset 0 -1px 0 0 #f0f3f6);
 
       .icon-ico-checkbox-check {
         color: #f57353;
