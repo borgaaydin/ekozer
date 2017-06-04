@@ -562,6 +562,27 @@
         }
       }
 
+      .col7 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.57;
+          text-align: center;
+          color: #464e57;
+        }
+
+        a {
+          font-size: 14px;
+          line-height: 1.71;
+          color: #8c9196;
+          border-bottom: 1px solid #8c9196;
+        }
+      }
+
       >div {
         display: inline-flex;
         justify-content: center;
