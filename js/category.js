@@ -63,5 +63,27 @@ $(function() {
     // to open modal
     // $('#categoryRequestModal').modal('show')
 
+    $(".regular-filter-list").each(function(){
+        $(this).find("ul li").hide();
+        x = 9;
+        $(this).find('ul li:lt('+x+')').show();
+
+        if($(this).find("ul li").length <= 9) {
+            $(this).find(".filter-show-all-bottom").hide();
+        }
+
+        $(this).find(".showAll").click(function () {
+            x = $(this).find("ul li").length;
+            $(this).find('ul li:lt('+x+')').show();
+        });
+    });
+
+    $('.showAll').click(function (event) {
+        event.preventDefault();
+        x= $(".regular-filter-list ul li").length;
+        $('.regular-filter-list ul li:lt('+x+')').show();
+    });
+
+
 
 });
