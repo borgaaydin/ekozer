@@ -342,6 +342,7 @@
         font-size: 14px;
         color: #8c9196;
         line-height: 24px;
+        margin: 10px 20px;
       }
 
       div.bottom {
@@ -576,8 +577,11 @@
         background-color: #f98e4e;
 
         color: white;
-        padding: 3px 4px;
+        padding: 3px;
         font-size: 12px;
+        min-width: 12px;
+        min-height: 12px;
+        display: block;
         font-weight: 600;
         border-radius: 12px;
         @include box-shadow-args( 0 2px 2px 0 rgba(221, 149, 103, 0.25));

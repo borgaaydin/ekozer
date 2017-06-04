@@ -157,3 +157,7 @@ a:hover{
 .hata {
   position: relative;
 }
+
+input::-ms-clear {
+  display: none;
+}

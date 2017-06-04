@@ -50,11 +50,20 @@ $(function() {
         $(this).addClass("active");
         $(".favori-hover").css("display", "inline-block");
         event.stopPropagation();
-    })
+    });
+
+    $(".product-detail-button a").click(function(event) {
+        $(".basket-hovered").show();
+        $(".header .basket-hovered ul").scrollTop(9999);
+        event.stopPropagation();
+    });
 
     $('html').click(function() {
         $(".favori-box").removeClass("active");
         $(".favori-hover").css("display", 'none');
+        $(".header .basket-hovered ul").scrollTop(0);
+        $(".basket-hovered").removeAttr("style");
     });
+
 
 });
