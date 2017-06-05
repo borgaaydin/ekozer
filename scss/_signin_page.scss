@@ -331,6 +331,17 @@
   line-height: 1.14;
   color: #664949;
   position: relative;
+
+  ul {
+    list-style: none;
+
+    li {
+      font-size: 14px;
+      line-height: 1.14;
+      color: #664949;
+    }
+  }
+
   .signin-error-alert-image {
     position: absolute;
     top: 0;
