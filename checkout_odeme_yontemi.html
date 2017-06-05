@@ -131,12 +131,90 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div>
-                                        <div class="krediKartiTaksitSecenekleriGoster">
-                                            <a href="#" id="krediKartiTaksitSecenekleriGosterButton"><span class="icon-ico-plus"></span>Taksit Seçeneklerini Göster</a>
+
+                                <div class="taksitSecenekleri">
+                                    <div class="taksitHead tableTaksit4">
+                                        <div class="col1">
+                                            <img src="" alt="">
                                         </div>
-                                        <div class="krediKartiTaksitSecenekleriDetay installments">
+                                        <div class="col2">
+                                            <span>
+                                                Taksit Adedi
+                                            </span>
+                                        </div>
+                                        <div class="col3">
+                                            <span>
+                                                Taksit Tutarı
+                                            </span>
+                                        </div>
+                                        <div class="col4">
+                                            <span>
+                                                Toplam Tutar
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <ul>
+                                        <li class="taksitItem tekCekim tableTaksit4">
+                                            <div class="col1">
+                                                <div class="pretty circle">
+                                                    <input type="radio" name="radio1">
+                                                    <label><i class="fa fa-circle"></i></label>
+                                                </div>
+
+                                            </div>
+                                            <div class="col2">
+                                                <span>
+                                                    Tek Çekim
+                                                </span>
+                                            </div>
+                                            <div class="col3">
+
+                                            </div>
+                                            <div class="col4">
+                                                <span>
+                                                    99,90 ₺
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="taksitItem tableTaksit4">
+                                            <div class="col1">
+                                                <div class="pretty circle">
+                                                    <input type="radio" name="radio1">
+                                                    <label><i class="fa fa-circle"></i></label>
+                                                </div>
+
+                                            </div>
+                                            <div class="col2">
+                                                <span>
+                                                    2
+                                                </span>
+                                            </div>
+                                            <div class="col3">
+                                                <span>
+                                                    63 ₺
+                                                </span>
+                                            </div>
+                                            <div class="col4">
+                                                <span>
+                                                    99,90 ₺
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="row">
+                                    <div class="krediKartiSecenekler">
+                                        <div class="krediKartiTaksitSecenekleriGoster head">
+                                            <a href="#" id="krediKartiTaksitSecenekleriGosterButton">
+                                                <span class="fa fa-plus"></span>
+                                                <span class="fa fa-minus"></span>
+                                                <span class="text">Taksit Seçeneklerini Göster</span>
+
+                                            </a>
+                                        </div>
+                                        <div class="krediKartiTaksitSecenekleriDetay content installments">
                                             <div class="installment-detail axess">
                                                 <div>
                                                     <img src="img/product/bank-logos/axess.png" srcset="img/product/bank-logos/axess@2x.png 2x, img/product/bank-logos/axess@3x.png 3x" class="axess">
@@ -769,8 +847,12 @@
                             </div>
                         </div>
                         <div class="alisverisBilgileriOnayCheckbox">
-                            <div><input type="checkbox" name="mesafeliSatisSozlesmesi" value="mesafeliSatisSozlesmesi" id="mesafeliSatisSozlesmesi"><label><span id="mesafeliSatisSozlesmesiLabel">Mesafeli Satış sözleşmesi</span>'ni okudum ve onaylıyorum.</label></div>
-                            <div><input type="checkbox" name="onBilgilendirmeFormu" value="onBilgilendirmeFormu" id="onBilgilendirmeFormu"><label><span id="onBilgilendirmeFormuLabel">Ön Bilgilendirme formu</span>'nu okudum ve onaylıyorum.</label></div>
+                            <div>
+                                <input type="checkbox" name="mesafeliSatisSozlesmesi" value="mesafeliSatisSozlesmesi" id="mesafeliSatisSozlesmesi"><label><span id="mesafeliSatisSozlesmesiLabel">Mesafeli Satış sözleşmesi</span>'ni okudum ve onaylıyorum.</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="onBilgilendirmeFormu" value="onBilgilendirmeFormu" id="onBilgilendirmeFormu"><label><span id="onBilgilendirmeFormuLabel">Ön Bilgilendirme formu</span>'nu okudum ve onaylıyorum.</label>
+                            </div>
                         </div>
                     </div>
                     <div class="blank"></div>
@@ -971,6 +1053,13 @@
         });
 
         $(".siparis-ozeti").accordion({
+            collapsible: true,
+            active: false,
+            header: ".head",
+            heightStyle: "content"
+        });
+
+        $(".krediKartiSecenekler").accordion({
             collapsible: true,
             active: false,
             header: ".head",

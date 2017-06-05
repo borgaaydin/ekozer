@@ -778,7 +778,7 @@
   }
 }
 .krediKartiTaksitSecenekleriGoster {
-  margin: 90px -20px 0 -20px;
+  margin: 0 -20px 0 -20px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.38;
@@ -1589,8 +1589,18 @@
 }
 .pretty.circle {
   margin: 0;
+  position: relative;
+  width: 100%;
+
   label {
     margin-bottom: 0;
+    position: relative;
+    height: 58px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 8;
     i {
       padding: 1px;
       color: #ff9f69;
@@ -1769,6 +1779,146 @@
           line-height: 1.33;
           color: #8c9196;
         }
+      }
+    }
+  }
+}
+
+.krediKartiSecenekler {
+  .head {
+    outline: 0;
+  }
+
+  .ui-accordion-header-active {
+
+    a span.text {
+      color: #ff9f69;
+    }
+
+  }
+}
+
+.taksitSecenekleri {
+  margin: 20px -20px 0 -20px;
+  background-color: #fbfcfc;
+  @include box-shadow-args(inset 0 1px 0 0 #f0f3f6);
+  padding: 20px;
+
+  .tableTaksit4 {
+    .col1 {
+      width: 120px;
+    }
+
+    .col2 {
+      width: 120px;
+    }
+
+    .col3 {
+      width: 150px;
+    }
+
+    .col4 {
+      width: 150px;
+    }
+  }
+
+  .taksitHead {
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    >div {
+      height: 40px;
+      background-color: #ffffff;
+      border: solid 1px #f0f3f6;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.64;
+      text-align: center;
+      color: #6d6e70;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+
+  }
+
+  .tekCekim {
+    .col2 {
+      width: 266px;
+    }
+
+    .col3 {
+      display: none;
+    }
+  }
+
+  .taksitItem {
+    border: solid 1px #f0f3f6;
+    margin-bottom: 10px;
+
+
+    >div {
+      height: 58px;
+      background-color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+    .col1 {
+      background-color: rgba(221, 227, 232, 0.1);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .col2 {
+      span {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.64;
+        text-align: center;
+        color: #768291;
+      }
+    }
+
+    .col3 {
+      span {
+        font-size: 14px;
+        line-height: 1.64;
+        letter-spacing: -0.1px;
+        text-align: center;
+        color: #768291;
+      }
+    }
+
+    .col4 {
+      span {
+        font-size: 14px;
+        line-height: 1.64;
+        letter-spacing: -0.1px;
+        text-align: center;
+        color: #768291;
       }
     }
   }
