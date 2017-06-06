@@ -23,6 +23,34 @@
     .arama-davet {
       display: inline-flex;
       flex-direction: row;
+      align-items: center;
+
+      .sube-kullanici-arama {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 4px;
+
+        input {
+          width: 240px;
+          padding-left: 20px;
+          height: 42px;
+          background-color: #fbfbfa;
+          border: solid 1px #f0f3f6;
+        }
+
+        button {
+          background-color: transparent;
+          border: 0;
+          outline: 0;
+          margin-left: -40px;
+
+          span {
+            font-size: 24px;
+            color: #8c9196;
+          }
+        }
+      }
 
       a {
         margin-left: 20px;
@@ -37,6 +65,157 @@
       margin: 0;
     }
   }
+
+  .bottom {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .kullanicilar-liste-head {
+    .account-table4 {
+      @include box-shadow-args(0 3px 3px 0 rgba(218, 218, 218, 0.25));
+
+      >div {
+        height: 50px;
+        background-color: #fcfcfc;
+        @include box-shadow-args(inset 1px 0 0 0 rgba(0, 0, 0, 0.04));
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.21;
+        color: #82858a;
+
+        .active {
+          background-color: white;
+          border: solid 1px #f0f3f6;
+
+        }
+
+        a {
+          padding-left: 20px;
+          height: 100%;
+          width: 100%;
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .kullanicilar-liste-bekleyen {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+    li {
+      margin-bottom: 10px;
+
+      .account-table4 {
+        box-shadow: inset 0 -1px 0 0 #f3f4f6, inset 0 1px 0 0 #f3f4f6;
+        border: solid 1px #ff9f69;
+
+        >div {
+          height: 101px;
+          background-color: #ffefe6;
+          display: inline-flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          >span, >a {
+            margin-left: 20px;
+            font-size: 16px;
+            line-height: 1.38;
+            color: #6f5c53;
+          }
+
+          a {
+            border-bottom: 1px solid #8c9196;
+            font-weight: 500;
+            color: #6f5c53;
+          }
+        }
+
+        >div.col4 {
+          justify-content: center;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .kullanicilar-liste {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+    li {
+      margin-bottom: 0;
+      cursor: pointer;
+      position: relative;
+
+      .text-edit {
+        position: absolute;
+        right: -15px;
+        top: 34px;
+        display: none;
+      }
+
+
+      &:nth-of-type(odd) {
+        @include box-shadow-args(inset 0 -1px 0 0 #f3f4f6, inset 0 1px 0 0 #f3f4f6);
+      }
+
+      &:nth-of-type(even) {
+        background-color: #fcfcfd;
+      }
+
+      &:hover {
+        @include box-shadow-args(0 3px 3px 0 rgba(218, 218, 218, 0.25));
+        z-index: 12;
+
+        .text-edit {
+          display: block;
+        }
+      }
+
+      .account-table4 {
+        >div {
+          height: 101px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          >span, >a {
+            margin-left: 20px;
+            font-size: 16px;
+            line-height: 1.38;
+            color: #6f5c53;
+          }
+
+          a {
+            border-bottom: 1px solid #8c9196;
+            font-weight: 500;
+            color: #6f5c53;
+          }
+        }
+
+        >div.col4 {
+          justify-content: center;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .sube-secimi {
@@ -44,4 +223,60 @@
   background-color: #fbfcfc;
   width: 100%;
   border-left: 1px solid #eceded;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .select-box {
+    width: 320px;
+    margin-left: 20px;
+
+    .nice-select,
+    .current{
+      height: 48px;
+      line-height: 48px;
+    }
+  }
+
+  a {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 160px;
+    height: 48px;
+    background-color: #ffffff;
+    @include box-shadow-args(0 3px 3px 0 rgba(154, 154, 154, 0.32));
+    border: solid 1px #fff8f3;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f98e4e;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
+.account-table4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  .col1 {
+    width: 140px;
+  }
+
+  .col2 {
+    width: 280px;
+  }
+
+  .col3 {
+    width: 380px;
+  }
+
+  .col4 {
+    width: 120px;
+    text-align: center;
+
+  }
+}
+
