@@ -23,6 +23,34 @@
     .arama-davet {
       display: inline-flex;
       flex-direction: row;
+      align-items: center;
+
+      .sube-kullanici-arama {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 4px;
+
+        input {
+          width: 240px;
+          padding-left: 20px;
+          height: 42px;
+          background-color: #fbfbfa;
+          border: solid 1px #f0f3f6;
+        }
+
+        button {
+          background-color: transparent;
+          border: 0;
+          outline: 0;
+          margin-left: -40px;
+
+          span {
+            font-size: 24px;
+            color: #8c9196;
+          }
+        }
+      }
 
       a {
         margin-left: 20px;
