@@ -56,6 +56,15 @@
     @include span(12, $gutter_pc, $gutter_px, $padding, $max_columns);
     @include beta();
   }
+  .kullanici-davet-et-kullanici-adi-soyadi, .kullanici-davet-et-kullanici-eposta, .kullanici-davet-et-kullanici-checkbox, .kullanici-davet-et-kullanici-siparis-onay-tutari {
+    @include col();
+    @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
+  }
+  .kullanici-davet-et-kullanici-cep-no {
+    @include col();
+    @include span(7.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
   .kullanici-davet-et-siparis-onay-tutari, .kullanici-davet-et-kullanici-siparis-onay-tutari {
     position: relative;
   }
@@ -72,14 +81,5 @@
     position: absolute;
     top: 40px;
     right: 17px;
-  }
-  .kullanici-davet-et-kullanici-adi-soyadi, .kullanici-davet-et-kullanici-eposta, .kullanici-davet-et-kullanici-checkbox, .kullanici-davet-et-kullanici-siparis-onay-tutari {
-    @include col();
-    @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
-  }
-  .kullanici-davet-et-kullanici-cep-no {
-    @include col();
-    @include span(7.5, $gutter_pc, $gutter_px, $padding, $max_columns);
-    @include beta();
   }
 }
