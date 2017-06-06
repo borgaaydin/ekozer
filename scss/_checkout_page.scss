@@ -605,6 +605,8 @@
 }
 #mesafeliSatisSozlesmesiLabel, #onBilgilendirmeFormuLabel {
   text-decoration: underline;
+  z-index: 999;
+  position: relative;
   &:hover {
     cursor: pointer;
   }

@@ -425,8 +425,18 @@
                             </div>
                         </div>
                         <div class="alisverisBilgileriOnayCheckbox">
-                            <div><input type="checkbox" name="mesafeliSatisSozlesmesi" value="mesafeliSatisSozlesmesi" id="mesafeliSatisSozlesmesi"><label><span id="mesafeliSatisSozlesmesiLabel">Mesafeli Satış sözleşmesi</span>'ni okudum ve onaylıyorum.</label></div>
-                            <div><input type="checkbox" name="onBilgilendirmeFormu" value="onBilgilendirmeFormu" id="onBilgilendirmeFormu"><label><span id="onBilgilendirmeFormuLabel">Ön Bilgilendirme formu</span>'nu okudum ve onaylıyorum.</label></div>
+                            <div>
+                                <div class="pretty">
+                                    <input type="checkbox" name="mesafeliSatisSozlesmesi" value="mesafeliSatisSozlesmesi" id="mesafeliSatisSozlesmesi">
+                                    <label><i class="icon-ico-checkbox-check" aria-hidden="true"></i><span id="mesafeliSatisSozlesmesiLabel">Mesafeli Satış sözleşmesi</span>'ni okudum ve onaylıyorum.</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pretty">
+                                    <input type="checkbox" name="onBilgilendirmeFormu" value="onBilgilendirmeFormu" id="onBilgilendirmeFormu">
+                                    <label><i class="icon-ico-checkbox-check" aria-hidden="true"></i><span id="onBilgilendirmeFormuLabel">Ön Bilgilendirme formu</span>'nu okudum ve onaylıyorum.</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="blank"></div>
@@ -593,6 +603,12 @@
 <script src="js/modal.js"></script>
 <script>
     $(document).ready(function() {
+        var uncheckOnBilgilendirme = function() {
+            $('#onBilgilendirmeFormu').prop('checked', false);
+        };
+        var uncheckMesafeliSatisSozlesmesi = function() {
+            $('#mesafeliSatisSozlesmesi').prop('checked', false);
+        };
         $('select').niceSelect();
         $('.nav-stacked a').click(function (e) {
             e.preventDefault()
@@ -600,6 +616,7 @@
         })
         $('#mesafeliSatisSozlesmesiLabel').click(function() {
             $('#mesafeliSatisSozlesmesiModal').modal('show');
+            setTimeout(uncheckMesafeliSatisSozlesmesi, 1);
         });
         $('#mesafeliSatisSozlesmesiOnay').click(function() {
             $('#mesafeliSatisSozlesmesiModal').modal('hide');
@@ -607,6 +624,7 @@
         });
         $('#onBilgilendirmeFormuLabel').click(function() {
             $('#onBilgilendirmeFormuModal').modal('show');
+            setTimeout(uncheckOnBilgilendirme, 1);
         });
         $('#onBilgilendirmeFormuOnay').click(function() {
             $('#onBilgilendirmeFormuModal').modal('hide');
