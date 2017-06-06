@@ -616,7 +616,7 @@
         <div class="checkout-right">
             <div class="row">
                 <div>
-                    <div class="alisverisBilgileri">
+                    <div class="alisverisBilgileri checkout-accordion">
                         <div class="siparis-ozeti">
                             <div class="alisverisBilgileri-title head">
                                 Sipariş Özetiniz <span class="urunSayisi">7 Ürün</span>
@@ -788,7 +788,7 @@
                             </div>
                         </div>
 
-                        <div class="fatura-teslimat-bilgi">
+                        <div class="fatura-teslimat-bilgi checkout-accordion">
                             <div class="alisverisBilgileri-title head">
                                 Fatura ve Teslimat Bilgileri
                                 <span class="dropdown-mark icon-ico-arrow-down"></span>
@@ -1048,14 +1048,7 @@
             heightStyle: "content"
         });
 
-        $(".siparis-ozeti").accordion({
-            collapsible: true,
-            active: false,
-            header: ".head",
-            heightStyle: "content"
-        });
-
-        $(".krediKartiSecenekler").accordion({
+        $(".checkout-accordion").accordion({
             collapsible: true,
             active: false,
             header: ".head",

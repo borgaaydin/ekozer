@@ -1,0 +1,47 @@
+.account-subeler {
+  .head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    a.subelerEkleButon {
+      width: 180px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      @include box-shadow-args(0 3px 3px 0 rgba(154, 154, 154, 0.32));
+      border: solid 1px #fff8f3;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: #f98e4e;
+    }
+
+    .arama-davet {
+      display: inline-flex;
+      flex-direction: row;
+
+      a {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .body {
+    .kullanicilar-liste {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.sube-secimi {
+  height: 110px;
+  background-color: #fbfcfc;
+  width: 100%;
+  border-left: 1px solid #eceded;
+}
