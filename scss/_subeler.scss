@@ -71,6 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    border-left: 1px solid #eceded;
   }
 
   .kullanicilar-liste-head {
@@ -260,7 +261,6 @@
   flex-direction: row;
   align-items: center;
 
-
   .col1 {
     width: 140px;
   }
@@ -279,4 +279,107 @@
 
   }
 }
+
+.head-with-button {
+  padding-bottom: 30px;
+
+  .back-button {
+    span {
+      color: #434b54;
+    }
+  }
+
+  >div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      margin-right: 20px;
+
+      border: solid 1px #ced3db;
+    }
+  }
+
+}
+
+.account-subeler {
+
+  >div, .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .faturaDetaylari {
+    padding: 0 20px;
+  }
+
+  .row >div,
+  .body >div{
+    margin-bottom: 20px;
+  }
+
+
+
+  .sirketUnvan,
+  .sirketVergiNo{
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  .sirketVergiDairesi {
+    width: 280px;
+  }
+
+  .sirketAdres {
+    width: 920px;
+  }
+
+  .faturaSubeAdi {
+    width: 460px;
+    margin-right: 100px;
+  }
+  .faturaSubeFaturaYetkilisi {
+    width: 460px;
+    margin-right: 20px;
+  }
+  .faturaYetkilisiEposta {
+    width: 440px;
+  }
+
+  .faturaIl {
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  .faturaIlce {
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  .faturaPostaKodu {
+    width: 280px;
+  }
+
+  .faturaAdresi {
+    width: 460px;
+    margin-right: 20px;
+
+    textarea {
+      height: 150px;
+      resize: none;
+    }
+  }
+
+  .faturaSubeTelefonNumarasi {
+    width: 440px;
+  }
+}
+
 
