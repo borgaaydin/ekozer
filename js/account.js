@@ -68,4 +68,6 @@ $(document).ready(function() {
         yeniSifre = rep;
         $(".yeniSifre .eye-closed").show();
     }).insertAfter(yeniSifre);
+
+    $('select').niceSelect();
 });
