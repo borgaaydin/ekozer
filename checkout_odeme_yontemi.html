@@ -848,10 +848,16 @@
                         </div>
                         <div class="alisverisBilgileriOnayCheckbox">
                             <div>
-                                <input type="checkbox" name="mesafeliSatisSozlesmesi" value="mesafeliSatisSozlesmesi" id="mesafeliSatisSozlesmesi"><label><span id="mesafeliSatisSozlesmesiLabel">Mesafeli Satış sözleşmesi</span>'ni okudum ve onaylıyorum.</label>
+                                <div class="pretty">
+                                <input type="checkbox" name="mesafeliSatisSozlesmesi" value="mesafeliSatisSozlesmesi" id="mesafeliSatisSozlesmesi">
+                                    <label><i class="icon-ico-checkbox-check" aria-hidden="true"></i><span id="mesafeliSatisSozlesmesiLabel">Mesafeli Satış sözleşmesi</span>'ni okudum ve onaylıyorum.</label>
+                                </div>
                             </div>
                             <div>
-                                <input type="checkbox" name="onBilgilendirmeFormu" value="onBilgilendirmeFormu" id="onBilgilendirmeFormu"><label><span id="onBilgilendirmeFormuLabel">Ön Bilgilendirme formu</span>'nu okudum ve onaylıyorum.</label>
+                                <div class="pretty">
+                                    <input type="checkbox" name="onBilgilendirmeFormu" value="onBilgilendirmeFormu" id="onBilgilendirmeFormu">
+                                    <label><i class="icon-ico-checkbox-check" aria-hidden="true"></i><span id="onBilgilendirmeFormuLabel">Ön Bilgilendirme formu</span>'nu okudum ve onaylıyorum.</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -975,7 +981,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Üyelik Sözleşmesi</h4>
+                <h4 class="modal-title">Mesafeli Satış Sözleşmesi</h4>
             </div>
             <div class="modal-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt lorem vitae orci semper auctor. Mauris finibus a lacus in lacinia. Sed sed pharetra felis. Etiam id ex erat. Nulla a semper nisl, ac rutrum ante.</p>
@@ -1021,6 +1027,12 @@
 <script src="js/modal.js"></script>
 <script>
     $(document).ready(function() {
+        var uncheckOnBilgilendirme = function() {
+            $('#onBilgilendirmeFormu').prop('checked', false);
+        };
+        var uncheckMesafeliSatisSozlesmesi = function() {
+            $('#mesafeliSatisSozlesmesi').prop('checked', false);
+        };
         $('select').niceSelect();
         $('.nav-stacked a').click(function (e) {
             e.preventDefault();
@@ -1028,6 +1040,7 @@
         });
         $('#mesafeliSatisSozlesmesiLabel').click(function() {
             $('#mesafeliSatisSozlesmesiModal').modal('show');
+            setTimeout(uncheckMesafeliSatisSozlesmesi, 1);
         });
         $('#mesafeliSatisSozlesmesiOnay').click(function() {
             $('#mesafeliSatisSozlesmesiModal').modal('hide');
@@ -1035,6 +1048,7 @@
         });
         $('#onBilgilendirmeFormuLabel').click(function() {
             $('#onBilgilendirmeFormuModal').modal('show');
+            setTimeout(uncheckOnBilgilendirme, 1);
         });
         $('#onBilgilendirmeFormuOnay').click(function() {
             $('#onBilgilendirmeFormuModal').modal('hide');
