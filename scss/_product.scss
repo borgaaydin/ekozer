@@ -187,6 +187,12 @@
     position: absolute;
     @include clearfix();
 
+    .icon-ico-navi-right {
+      position: absolute;
+      right: 36px;
+      top: 14px;
+    }
+
 
     >button,
     div.button{
