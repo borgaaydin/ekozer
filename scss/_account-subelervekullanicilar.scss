@@ -1,0 +1,76 @@
+.subelervekullanicilar-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  .subelervekullanicilar-header-icon {
+    width: 42px;
+    height: 42px;
+    border: solid 1px rgba(206,211,219,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+}
+.kullanici-davet-et-form {
+  padding: 20px;
+  .row {
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #82858a;
+    display: block;
+    margin-bottom: 6px;
+  }
+  input[type="text"], input[type="email"], select, .nice-select, .adressTextArea {
+    height: 54px;
+    background-color: #fbfbfa;
+    border: solid 1px #f0f3f6;
+    width: calc(100% - 2px);
+    color: #626971;
+    font-size:16px;
+  }
+  input[type="text"], input[type="email"] {
+    padding: 0 20px;
+    width: calc(100% - 42px);
+  }
+  input:read-only {
+    background-color: #f0f3f8;
+    border: solid 1px #f0f3f6;
+    color: #4c535c;
+  }
+  input:focus, .open, textarea:focus {
+    border: solid 1px #ff9f69;
+    outline: none;
+    color: #4c535c;
+  }
+  .kullanici-davet-et-adi-soyadi, .kullanici-davet-et-checkbox {
+    @include col();
+    @include span(11.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+  }
+  .kullanici-davet-et-eposta, .kullanici-davet-et-siparis-onay-tutari {
+    @include col();
+    @include span(12, $gutter_pc, $gutter_px, $padding, $max_columns);
+    @include beta();
+  }
+  .kullanici-davet-et-siparis-onay-tutari {
+    position: relative;
+  }
+  .kullanici-davet-et-checkbox {
+    padding-top: 20px;
+    label {
+      font-weight: normal;
+    }
+  }
+  .kullanici-davet-et-checkbox-2 {
+    padding-left: 23px;
+  }
+  .kullanici-davet-et-siparis-onay-tutari-info {
+    position: absolute;
+    top: 40px;
+    right: 17px;
+  }
+}
