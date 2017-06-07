@@ -161,3 +161,15 @@ a:hover{
 input::-ms-clear {
   display: none;
 }
+
+.main-page-header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.main-page-header-group {
+  .nav_container {
+    margin-top: 66px;
+  }
+}
