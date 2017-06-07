@@ -83,3 +83,31 @@
     right: 17px;
   }
 }
+
+.sube-secme-list {
+  .sube-accordion {
+
+    margin: 10px 20px;
+    width: 920px;
+
+    >div {
+      margin-bottom: 10px;
+      @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.08));
+    }
+
+    .sube-accordion-head {
+      height: 68px;
+      background-color: #ffffff;
+      border: solid 1px #f3f5f8;
+      box-sizing: border-box;
+      outline: 0;
+      text-align: left;
+
+    }
+
+    .sube-accordion-content {
+      height: 230px;
+      background-color: #fbfcfc;
+    }
+  }
+}

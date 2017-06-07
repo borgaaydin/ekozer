@@ -681,58 +681,43 @@
                                     Şube ve Yetki Düzenlemesi
                                 </h5>
                                 <span>
-                                        Davet ettiğiniz kullanıcının bağlı olacağı şubeleri ve yetkilerini belirleyebilirsiniz.
-                                    </span>
+                                    Davet ettiğiniz kullanıcının bağlı olacağı şubeleri ve yetkilerini belirleyebilirsiniz.
+                                </span>
                             </div>
                         </div>
 
-                        <div class="body">
-                            <div class="">
-                                <div class="kullanicilar-liste-head">
+                        <div class="sube-secme-list">
+                            <div class="sube-accordion">
+                                <div>
+                                    <div class="sube-accordion-head head">
+                                        <h5>
+                                            YKB Caddebostan Şubesi
+                                        </h5>
+                                    </div>
+                                    <div class="sube-accordion-content content">
 
+                                    </div>
                                 </div>
-                                <ul class="kullanicilar-liste-bekleyen">
-                                    <li>
-                                        <div class="table4">
-                                            <div class="col1">
+                                <div>
+                                    <div class="sube-accordion-head head">
+                                        <h5>
+                                            YKB Suadiye Şubesi
+                                        </h5>
+                                    </div>
+                                    <div class="sube-accordion-content content">
 
-                                            </div>
-                                            <div class="col2">
-
-                                            </div>
-                                            <div class="col3">
-
-                                            </div>
-                                            <div class="col4">
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="kullanicilar-liste">
-                                    <li>
-                                        <div class="table4">
-                                            <div class="col1">
-
-                                            </div>
-                                            <div class="col2">
-
-                                            </div>
-                                            <div class="col3">
-
-                                            </div>
-                                            <div class="col4">
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
 
                         <div class="bottom">
-
+                            <a href="#" class="vazgecButton">
+                                Vazgeç
+                            </a>
+                            <a href="#" class="ekleButton">
+                                Ekle
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -923,6 +908,16 @@
 <script src="js/account.js"></script>
 <script src="js/modal.js"></script>
 <script>
+
+    $(document).ready(function() {
+        $(".sube-accordion").accordion({
+            collapsible:true,
+            active:false,
+            heightStyle: "content",
+            header: ".head"
+        });
+    });
+
 </script>
 </body>
 </html>

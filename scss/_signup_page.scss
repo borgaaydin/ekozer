@@ -415,6 +415,8 @@
   .nice-select {
     height: 58px;
     border-radius: 0;
+    position: relative;
+    z-index: 1000;
     .list {
       border-radius: 0;
       margin-top: 2px;
@@ -609,6 +611,8 @@
       font-weight:normal;
       color: #8c9196;
       margin-left: 8px;
+      z-index: 12;
+      position: relative;
     }
     input {
       margin-left: 26px;

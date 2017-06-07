@@ -50,8 +50,9 @@
   .search_input {
     height: $header_element_height;
     padding-left: 14px;
+    padding-right: 60px;
     border: 0;
-    width: calc(100% - 15px);
+    width: calc(100% - 75px);
     background-color: #ffffff;
     box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
 
@@ -165,7 +166,7 @@
         position: absolute;
         right: 0;
         top: 54px;
-        z-index: 22;
+        z-index: 42;
         background-color: #ffffff;
         @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.08));
 
