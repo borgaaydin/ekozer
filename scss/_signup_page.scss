@@ -386,6 +386,8 @@
     color: #82858a;
     display: block;
     margin-bottom: 6px;
+    position: relative;
+    z-index: 12;
   }
   input[type="text"], input[type="password"], select, .nice-select, .adressTextArea {
     height: 54px;

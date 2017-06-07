@@ -66,6 +66,7 @@
   box-shadow: inset 0 -3px 0 0 #f98e4e;
   .checkout-navigation-item-title, .checkout-navigation-item-number {
     color: #f98e4e;
+    cursor: pointer;
   }
   .checkout-navigation-item-number {
     border: solid 2px rgba(249, 142, 78, 0.06);
@@ -728,6 +729,7 @@
   .nice-select {
     height: 58px;
     border-radius: 0;
+    z-index: 100;
     .list {
       border-radius: 0;
       margin-top: 2px;
@@ -1658,6 +1660,7 @@
 
   .basket-body {
     background-color: white;
+    width: 380px;
     @include box-shadow-args(0 6px 6px 0 rgba(218, 218, 218, 0.64));
 
     ul {
@@ -1752,6 +1755,7 @@
 .fatura-teslimat-bilgi {
   .fatura-teslimat-body {
     background-color: white;
+    width: 380px;
     @include box-shadow-args(0 6px 6px 0 rgba(218, 218, 218, 0.64));
 
     ul {
@@ -1759,7 +1763,6 @@
       padding: 0 20px;
       margin: 0;
       max-height: 200px;
-      width: calc(100% - 25px);
       overflow-y: scroll;
 
 

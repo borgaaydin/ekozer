@@ -123,6 +123,8 @@
 
       a {
         border-bottom: 1px solid #8c9196;
+        text-align: center;
+        font-size: 14px;
         span {
 
         }
@@ -143,8 +145,12 @@
       }
 
       .col6 {
-        a span{
-          color: #595447;
+        a {
+          text-align: center;
+          span{
+            color: #595447;
+            font-size: 14px;
+          }
         }
       }
 
