@@ -595,8 +595,11 @@
     display: inline;
     font-size: 14px;
     font-weight: normal;
-    margin-left: 8px;
     color: #8c9196;
+
+    i {
+      margin-right: 4px;
+    }
   }
   div {
     &:first-child {
@@ -605,9 +608,14 @@
   }
 }
 #mesafeliSatisSozlesmesiLabel, #onBilgilendirmeFormuLabel {
-  text-decoration: underline;
+
   z-index: 999;
   position: relative;
+
+  .link {
+    text-decoration: underline;
+  }
+
   &:hover {
     cursor: pointer;
   }
@@ -1945,6 +1953,73 @@
         letter-spacing: -0.1px;
         text-align: center;
         color: #768291;
+      }
+    }
+  }
+}
+
+#mesafeliSatisSozlesmesiModal,
+#onBilgilendirmeFormuModal {
+  .modal-content {
+    padding: 0;
+  }
+
+  .signup-form-footer .signup-form-button-container {
+    padding: 0;
+    margin: 30px 0;
+  }
+}
+
+.krediKartiGuvenlikKodu {
+
+
+
+  .guvenlikKoduBox {
+    width: 280px;
+    height: 84px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    right: -10px;
+    top: 35px;
+    background-color: rgba(67, 75, 84, 0.76);
+    @include box-shadow-args(0 6px 6px 0 rgba(218, 218, 218, 0.64));
+    z-index: 101;
+    border-radius: 4px;
+
+    &:after {
+      bottom: 100%;
+      left: 92%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(67, 75, 84, 0);
+      border-bottom-color: rgba(67, 75, 84, 0.76);
+      border-width: 6px;
+      margin-left: -6px;
+    }
+
+    .text {
+      font-size: 12px;
+      font-weight: 500;
+      font-style: italic;
+      line-height: 1.17;
+      color: #ffffff;
+      max-width: 180px;
+    }
+  }
+
+  .guvenlikKoduIcon {
+    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+      .guvenlikKoduBox {
+        display: inline-flex;
       }
     }
   }
