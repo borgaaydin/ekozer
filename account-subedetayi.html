@@ -611,55 +611,98 @@
                             </ul>
                         </div>
                         <div class="account-content account-subeler">
+                            <div class="head head-with-button">
+                                <div>
+                                    <a href="" class="back-button">
+                                        <span class="icon-ico-navi-left">
+
+                                        </span>
+                                    </a>
+                                    <div>
+                                        <h5>
+                                            YKB Caddebostan Şubesi
+                                        </h5>
+                                        <span>
+                                            Şubenize ait adres bilgilerini ve bağlı kullanıcıları görüntüleyebilirsiniz.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="head">
                                 <div>
                                     <h5>
-                                        Şubeler
+                                        Şube Fatura Adresi
                                     </h5>
                                     <span>
-                                        Var olan şubelerinizi görüntüleyebilir ve düzenleyebilirsiniz.
+                                        Şube adresinizi görebilir ve düzenleyebilirsiniz.
                                     </span>
                                 </div>
-
-
-                                <a href="#" class="subelerEkleButon">
-                                    Yeni Şube Ekle
-                                </a>
-
-
                             </div>
 
-                            <div class="sube-secimi">
-                                <div class="select-box">
-                                    <label>
-                                        Şube Seçiniz
-                                    </label>
-                                    <select id="sube-secimi" name="sube-secimi">
-                                        <option data-display="YKB" value="YKB">YKB</option>
-                                        <option value="Ankara">Ankara</option>
-                                    </select>
-                                </div>
-                                <a href="#">
-                                    Şube Detayına Git
-                                </a>
-                            </div>
+                            <ul class="sube-fatura-adres-list">
+                                <li>
+                                    <div>
+                                        <span class="first-row">
+                                            Ahmet Yılmaz - ahmetyilmaz@gmail.com.tr
+                                        </span>
+                                        <span class="second-row">
+                                            Bağdat Caddesi No: 42 34740 Suadiye / Kadıköy / İstanbul
+                                        </span>
+                                    </div>
+                                    <a href="#" class="edit">
+                                        Düzenle
+                                        <span class="icon-ico-edit"></span>
+                                    </a>
+                                </li>
+                            </ul>
 
                             <div class="head">
                                 <div>
                                     <h5>
-                                        Tüm Kullanıcılar
+                                        Teslimat Adresleri
                                     </h5>
                                     <span>
-                                        Tüm kullanıcıları görüntüleyebilir ve düzenleyebilirsiniz.
+                                        YKB Caddebostan şubesine bağlı teslimat adresleri.
                                     </span>
                                 </div>
                                 <div class="arama-davet">
-                                    <div class="sube-kullanici-arama">
-                                        <input class="search_input" type="search" placeholder="Kullanıcı Ara">
-                                        <button type="submit">
-                                            <span class="icon-ico-search"></span>
-                                        </button>
+                                    <a href="#" class="subelerEkleButon">
+                                        Teslimat Adresi Ekle
+                                    </a>
+                                </div>
+                            </div>
+
+                            <ul class="sube-teslimat-adres-list">
+                                <li>
+                                    <div>
+                                        <span class="title">
+                                            Depo
+                                        </span>
+                                        <span class="first-row">
+                                            Ahmet Yılmaz - 0 (216) 123 12 12
+                                        </span>
+                                        <span class="second-row">
+                                            Bağdat Caddesi No: 42 34740 Suadiye / Kadıköy / İstanbul
+                                        </span>
                                     </div>
+                                    <a href="#" class="edit">
+                                        Düzenle
+                                        <span class="icon-ico-edit"></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="head">
+                                <div>
+                                    <h5>
+                                        Kullanıcılar
+                                    </h5>
+                                    <span>
+                                        YKB Caddebostan Şubesi kullanıcılarını görebilir ve düzenleyebilirsiniz.
+                                    </span>
+                                </div>
+                                <div class="arama-davet">
                                     <a href="#" class="subelerEkleButon">
                                         Kullanıcı Davet Et
                                     </a>
@@ -667,121 +710,52 @@
                             </div>
 
                             <div class="body">
-                                <div class="">
-                                    <div class="kullanicilar-liste-head">
-                                        <div class="account-table4">
+                                <div class="kullanicilar-liste-head">
+                                    <div class="account-table3">
+                                        <div class="col1">
+                                            <a href="#">
+                                                Üyelik Tarihi
+                                            </a>
+                                        </div>
+                                        <div class="col2">
+                                            <a href="#">
+                                                Kullanıcı
+                                            </a>
+                                        </div>
+                                        <div class="col3">
+                                            <a href="#">
+                                                Sipariş Onay Tutarı
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="kullanicilar-liste">
+                                    <li>
+                                        <div class="account-table3">
                                             <div class="col1">
-                                                <a href="#">
-                                                    Üyelik Tarihi
-                                                </a>
+                                                    <span>
+                                                        23.03.2017
+                                                    </span>
                                             </div>
                                             <div class="col2">
                                                 <a href="#">
-                                                    Kullanıcı
+                                                    Osman Durmuş
                                                 </a>
                                             </div>
                                             <div class="col3">
-                                                <a href="#">
-                                                    Şube
-                                                </a>
-                                            </div>
-                                            <div class="col4">
-                                                <a href="#">
-                                                    Sipariş Onay Tutarı
-                                                </a>
+                                                <span>
+                                                    120.000 ₺
+                                                </span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <ul class="kullanicilar-liste-bekleyen">
-                                        <li>
-                                            <div class="account-table4">
-                                                <div class="col1">
-                                                    <span>
-                                                        23.03.2017
-                                                    </span>
-                                                </div>
-                                                <div class="col2">
-                                                    <a href="#">
-                                                        Volkan Öztürk
-                                                    </a>
-                                                </div>
-                                                <div class="col3">
-                                                    <span>
-                                                        Onay Bekliyor
-                                                    </span>
-                                                </div>
-                                                <div class="col4">
-                                                    <span>
-                                                        -
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <ul class="kullanicilar-liste">
-                                        <li>
-                                            <div class="account-table4">
-                                                <div class="col1">
-                                                    <span>
-                                                        23.03.2017
-                                                    </span>
-                                                </div>
-                                                <div class="col2">
-                                                    <a href="#">
-                                                        Osman Durmuş
-                                                    </a>
-                                                </div>
-                                                <div class="col3">
-                                                    <span>
-                                                        YKB Caddebostan Şubesi, YKB Suadiye Şubesi
-                                                    </span>
-                                                </div>
-                                                <div class="col4">
-                                                    <span>
-                                                        120.000 ₺
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="text-edit">
-                                                <img src="img/icons/text-edit-big.png"
-                                                     srcset="img/icons/text-edit-big@2x.png 2x,
+                                        <a href="#" class="text-edit">
+                                            <img src="img/icons/text-edit-big.png"
+                                                 srcset="img/icons/text-edit-big@2x.png 2x,
 					                                    img/icons/text-edit-big@3x.png 3x"
-                                                     class="img-text-edit">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <div class="account-table4">
-                                                <div class="col1">
-                                                    <span>
-                                                        23.03.2017
-                                                    </span>
-                                                </div>
-                                                <div class="col2">
-                                                    <a href="#">
-                                                        Osman Durmuş
-                                                    </a>
-                                                </div>
-                                                <div class="col3">
-                                                    <span>
-                                                        YKB Caddebostan Şubesi, YKB Suadiye Şubesi
-                                                    </span>
-                                                </div>
-                                                <div class="col4">
-                                                    <span>
-                                                        120.000 ₺
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="text-edit">
-                                                <img src="img/icons/text-edit-big.png"
-                                                     srcset="img/icons/text-edit-big@2x.png 2x,
-					                                    img/icons/text-edit-big@3x.png 3x"
-                                                     class="img-text-edit">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
+                                                 class="img-text-edit">
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
 
                             <div class="bottom">
