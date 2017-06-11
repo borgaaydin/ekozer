@@ -90,6 +90,10 @@
     margin: 10px 20px;
     width: 920px;
 
+    .ui-accordion-header-icon {
+      display: none;
+    }
+
     >div {
       margin-bottom: 10px;
       @include box-shadow-args(0 2px 9px 0 rgba(0, 0, 0, 0.08));
@@ -102,12 +106,98 @@
       box-sizing: border-box;
       outline: 0;
       text-align: left;
+      cursor: pointer;
+      justify-content: flex-start;
 
+      .prettycircle {
+        border: 1px solid #8c9196;
+        border-radius: 12px;
+        height: 19px;
+        width: 19px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+
+        i {
+          font-size: 16px;
+          color: transparent;
+        }
+      }
+    }
+
+    .ui-accordion-header-active {
+      .prettycircle {
+        border-color: #ff9f69;
+        i {
+          color: #ff9f69;
+        }
+      }
     }
 
     .sube-accordion-content {
-      height: 230px;
       background-color: #fbfcfc;
+
+      .sube-yetkiler {
+        padding: 20px 0;
+        margin: 0 20px 0 0;
+        list-style: none;
+
+        li {
+          width: 400px;
+          padding-left: 20px;
+          height: 54px;
+          margin-left: 20px;
+          box-shadow: inset 0 -1px 0 0 #f0f3f6;
+          display: inline-flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          label {
+            font-size: 14px;
+            color: #8c9196;
+            font-weight: 400;
+          }
+        }
+
+      }
+    }
+  }
+}
+.account-subeler {
+  div.sube-liste-bottom {
+    background-color: #fafafc;
+
+    .vazgecButton {
+      width: 130px;
+      height: 48px;
+      border: solid 1px rgba(206, 211, 219, 0.3);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: #434b54;
+      margin-left: 20px;
+    }
+
+    .ekleButton {
+      width: 130px;
+      height: 48px;
+      background-color: #ffffff;
+      @include box-shadow-args(0 3px 3px 0 rgba(154, 154, 154, 0.32));
+      border: solid 1px #fff8f3;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: #f98e4e;
+      margin-left: 20px;
     }
   }
 }

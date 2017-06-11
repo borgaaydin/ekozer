@@ -52,11 +52,11 @@ $(function() {
         event.stopPropagation();
     });
 
-    $(".product-detail-button a").click(function(event) {
-        $(".basket-hovered").show();
-        $(".header .basket-hovered ul").scrollTop(9999);
-        event.stopPropagation();
-    });
+    // $(".product-detail-button a").click(function(event) {
+    //     $(".basket-hovered").show();
+    //     $(".header .basket-hovered ul").scrollTop(9999);
+    //     event.stopPropagation();
+    // });
 
     $('html').click(function() {
         $(".favori-box").removeClass("active");
