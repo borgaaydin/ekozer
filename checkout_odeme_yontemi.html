@@ -1049,7 +1049,7 @@
             e.preventDefault();
             $(this).tab('show');
         });
-        $('#mesafeliSatisSozlesmesiLabel').click(function() {
+        $('#mesafeliSatisSozlesmesiLabel>span').click(function() {
             $('#mesafeliSatisSozlesmesiModal').modal('show');
             setTimeout(uncheckMesafeliSatisSozlesmesi, 1);
         });
@@ -1057,7 +1057,7 @@
             $('#mesafeliSatisSozlesmesiModal').modal('hide');
             $('#mesafeliSatisSozlesmesi').prop('checked', true);
         });
-        $('#onBilgilendirmeFormuLabel').click(function() {
+        $('#onBilgilendirmeFormuLabel>span').click(function() {
             $('#onBilgilendirmeFormuModal').modal('show');
             setTimeout(uncheckOnBilgilendirme, 1);
         });
