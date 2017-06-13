@@ -259,6 +259,7 @@
     font-weight: 400;
     text-align: center;
     color: #ffffff;
+    margin-left: 20px;
   }
 
   .cancel-button {
@@ -1003,5 +1004,11 @@ input.numbered-input {
       margin: 0;
       background-color: transparent;
     }
+  }
+}
+
+.modal-content {
+  .eskiSifre {
+    margin-bottom: 20px;
   }
 }
