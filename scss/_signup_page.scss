@@ -40,7 +40,7 @@
 
 // Override pretty z-index
 .pretty > input[type='checkbox'], .pretty > input[type='radio'] {
-  z-index: 99 !important;
+  z-index: 99999 !important;
 }
 
 .sahisSirketiChecked {
