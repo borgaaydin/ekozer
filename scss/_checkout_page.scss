@@ -194,7 +194,7 @@
   .nice-select {
     height: 58px;
     border-radius: 0;
-    z-index: 103;
+    z-index: 99999;
 
     .list {
       border-radius: 0;
@@ -273,6 +273,7 @@
     font-weight: 500;
     text-align: center;
     margin: 30px 0 30px 20px;
+    outline: 0;
   }
   .cancelButton {
     color: #434b54;
@@ -618,7 +619,7 @@
 }
 #mesafeliSatisSozlesmesiLabel, #onBilgilendirmeFormuLabel {
 
-  z-index: 999999;
+  z-index: 99999;
   position: relative;
   line-height: 25px;
   height: 20px;

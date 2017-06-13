@@ -40,7 +40,7 @@
 
 // Override pretty z-index
 .pretty > input[type='checkbox'], .pretty > input[type='radio'] {
-  z-index: 99999 !important;
+  z-index: 99 !important;
 }
 
 .sahisSirketiChecked {
@@ -227,9 +227,13 @@
       color: #8c9196;
       margin-left: 8px;
       cursor: pointer;
+
+      i {
+        z-index: 2;
+      }
     }
     input {
-      margin-left: 26px;
+      margin-left: 6px;
     }
     .bireyselKampanyaCheckboxDetails {
       padding-left: 23px;
@@ -954,4 +958,10 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+#mesafeliSatisSozlesmesi,
+#onBilgilendirmeFormu {
+  z-index: 9999 !important;
 }

@@ -177,3 +177,26 @@ input::-ms-clear {
 .pretty {
   z-index: 99 !important;
 }
+
+#bireyselUyelikSozlesmesi {
+  z-index: 99;
+
+}
+
+.signup-bireysel-form-container .bireyselKampanyaCheckbox label {
+  z-index: 999;
+}
+
+#bireyselUyelikSozlesmesiModal {
+  .modal-content {
+    padding: 0;
+  }
+
+  .signup-form-footer {
+    background-color: #ffffff;
+    .signup-form-button-container {
+      padding: 0;
+      margin: 30px 0;
+    }
+  }
+}
