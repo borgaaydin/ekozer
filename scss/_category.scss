@@ -343,7 +343,6 @@
 
   &.three-grid {
 
-
     .product-link{
       margin-bottom: 4px;
       min-height: 516px;
@@ -364,6 +363,10 @@
       .product-button {
         button {
           width: 260px;
+        }
+
+        .icon-ico-navi-right {
+          right: 75px;
         }
       }
 

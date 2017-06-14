@@ -183,11 +183,14 @@ input::-ms-clear {
 
 }
 
-.signup-bireysel-form-container .bireyselKampanyaCheckbox label {
+.signup-bireysel-form-container .bireyselKampanyaCheckbox label,
+.signup-kurumsal-form-container .kurumsalKampanyaCheckbox label{
   z-index: 999;
 }
 
-#bireyselUyelikSozlesmesiModal {
+#bireyselUyelikSozlesmesiModal,
+#kurumsalUyelikSozlesmesiModal,
+#uyelikSozlesmesiModal{
   .modal-content {
     padding: 0;
   }
