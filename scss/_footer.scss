@@ -245,11 +245,27 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    .copyright-text {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+
+      >span {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6px;
+      }
+    }
+
+
   }
 
   .copyright-text {
     @include col();
-    @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+    @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
     @include alpha();
     text-align: left;
     font-size: 14px;
