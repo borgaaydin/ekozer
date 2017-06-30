@@ -6,6 +6,115 @@
   @include box-shadow-args(0 7px 14px 0 rgba(0, 0, 0, 0.24));
 }
 
+.footer-icon {
+  @include col();
+  @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  .icon-overlay {
+    position: absolute;
+    width: 50px;
+    height: 90px;
+    background-color: rgba(255, 230, 210, 0.49);
+    left: 25px;
+    top: 25px;
+  }
+
+  img {
+    position: relative;
+    z-index: 11;
+  }
+
+  h4 {
+    color: #f98e4e;
+    margin: 16px 0 5px 20px;
+  }
+
+  h3 {
+    margin-top: 5px;
+    margin-left: 20px;
+
+    a {
+      color: #6f7276;
+      font-weight: 300;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer-social {
+  @include beta();
+
+  .social-icons {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+
+    .sc-icon {
+      width: 42px;
+      height: 42px;
+      border: solid 1px #ced3db;
+      margin-right: 6px;
+
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        color: #6F7276;
+        font-size: 24px;
+      }
+    }
+
+    .facebook {
+      &:hover {
+        background-color: #3b5a9a;
+        border-color: #3b5a9a;
+        i {
+          color: white;
+        }
+      }
+    }
+
+    .twitter {
+      &:hover {
+        background-color: #23abe7;
+        border-color: #23abe7;
+        i {
+          color: white;
+        }
+      }
+    }
+
+    .linkedin {
+      &:hover {
+        background-color: #117bb7;
+        border-color: #117bb7;
+        i {
+          color: white;
+        }
+      }
+    }
+
+    .instagram {
+      &:hover {
+        background-color: #cd486b;
+        border-color: #cd486b;
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
 .footer-first-row {
   height: 256px;
   margin-top: 193px;
@@ -19,115 +128,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  }
-
-  .footer-icon {
-    @include col();
-    @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-
-    .icon-overlay {
-      position: absolute;
-      width: 50px;
-      height: 90px;
-      background-color: rgba(255, 230, 210, 0.49);
-      left: 25px;
-      top: 25px;
-    }
-
-    img {
-      position: relative;
-      z-index: 11;
-    }
-
-    h4 {
-      color: #f98e4e;
-      margin: 16px 0 5px 20px;
-    }
-
-    h3 {
-      margin-top: 5px;
-      margin-left: 20px;
-
-      a {
-        color: #6f7276;
-        font-weight: 300;
-        text-decoration: none;
-      }
-    }
-  }
-
-  .footer-social {
-    @include beta();
-
-    .social-icons {
-      margin-left: 20px;
-      display: flex;
-      flex-direction: row;
-
-      .sc-icon {
-        width: 42px;
-        height: 42px;
-        border: solid 1px #ced3db;
-        margin-right: 6px;
-
-        cursor: pointer;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        i {
-          color: #6F7276;
-          font-size: 24px;
-        }
-      }
-
-      .facebook {
-        &:hover {
-          background-color: #3b5a9a;
-          border-color: #3b5a9a;
-          i {
-            color: white;
-          }
-        }
-      }
-
-      .twitter {
-        &:hover {
-          background-color: #23abe7;
-          border-color: #23abe7;
-          i {
-            color: white;
-          }
-        }
-      }
-
-      .linkedin {
-        &:hover {
-          background-color: #117bb7;
-          border-color: #117bb7;
-          i {
-            color: white;
-          }
-        }
-      }
-
-      .instagram {
-        &:hover {
-          background-color: #cd486b;
-          border-color: #cd486b;
-          i {
-            color: white;
-          }
-        }
-      }
-    }
   }
 
   .bulten-row {

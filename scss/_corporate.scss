@@ -93,3 +93,153 @@
     }
   }
 }
+
+.corporate-iletisim {
+  h5 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.22;
+    color: #434b54;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    margin: 0;
+  }
+}
+
+.corporate-iletisim-icons {
+  display: block;
+  margin: 30px 0 0 0;
+
+  .footer-icon {
+    margin-bottom: 32px;
+    img {
+      width: 56px;
+    }
+
+    .icon-overlay {
+      width: 40px;
+      height: 73px;
+      top: 2px;
+      left: 20px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .left {
+    width: 460px;
+    display: block;
+    float: left;
+
+    .footer-icon {
+      width: 420px;
+
+      img {
+        align-self: flex-start;
+        margin-top: 12px;
+        margin-left: 6px;
+        width: initial;
+      }
+    }
+
+    .iletisim-adres {
+      p {
+        max-width: 420px;
+        font-size: 16px;
+        line-height: 1.56;
+        color: #6f7276;
+        margin: 8px 0 5px 20px;
+      }
+    }
+  }
+
+  .right {
+    display: block;
+    float: left;
+    width: 460px;
+
+    >div {
+      float: left;
+      width: 220px;
+    }
+
+    .footer-icon {
+      width: 220px;
+      float: left;
+    }
+
+    .footer-social {
+      .sc-icon {
+        width: 32px;
+        height: 32px;
+
+        i {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.corporate-iletisim-form {
+
+  form {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .bottom {
+    margin: 20px -20px -20px -20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      width: 130px;
+      height: 48px;
+      background-color: #ff9f69;
+      @include box-shadow-args(0 3px 3px 0 rgba(255, 159, 105, 0.25));
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .personal-input {
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .supportTel {
+    margin-right: 0;
+    width: 278px;
+  }
+
+  .supportKonu {
+    width: 440px;
+    margin-right: 14px;
+  }
+
+  .supportMesaj {
+    width: 460px;
+
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+  }
+}
