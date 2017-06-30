@@ -74,7 +74,7 @@
         width: 42px;
         height: 42px;
         border: solid 1px #ced3db;
-        margin-right: 20px;
+        margin-right: 6px;
 
         cursor: pointer;
 
@@ -112,6 +112,16 @@
         &:hover {
           background-color: #117bb7;
           border-color: #117bb7;
+          i {
+            color: white;
+          }
+        }
+      }
+
+      .instagram {
+        &:hover {
+          background-color: #cd486b;
+          border-color: #cd486b;
           i {
             color: white;
           }
