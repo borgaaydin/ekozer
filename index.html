@@ -4113,6 +4113,44 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <div id="sifreGuncelleModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <h5>
+                    Ekozer.com Bültenine Kayıt Olun
+                </h5>
+                <p>
+                    Lütfen Güvenlik Kodunu Girin
+                </p>
+                <form id="frmPassword" novalidate="novalidate">
+                    <div class="eskiSifre modal-input-content personal-input">
+                        <label for="eskiSifre">Eski Şifreniz</label>
+                        <input id="eskiSifre" data-val="true" data-val-length="Eski Şifre 400 ile 0 değeri aralığında olmalıdır." data-val-length-max="400" data-val-required="Eski Şifre boş olamaz" name="OldPassword" type="password"><img src="img/signup/eye.png" srcset="img/signup/eye@2x.png 2x, img/signup/eye@3x.png 3x" class="eye"><img src="img/signup/eye-closed.png" srcset="img/signup/eye-closed@2x.png 2x, img/signup/eye-closed@3x.png 3x" class="eye-closed">
+                        <div class="yeniSifrenizSifreIcon">
+                        </div>
+                        <div class="field-validation-valid hataMesaj hidden"></div>
+                    </div>
+                    <div class="yeniSifre modal-input-content personal-input">
+                        <label for="yeniSifre">Yeni Şifreniz</label>
+                        <input id="yeniSifre" data-val="true" data-val-length="Şifre 400 ile 0 değeri aralığında olmalıdır." data-val-length-max="400" data-val-required="Şifre boş olamaz" name="Password" onchange="passwordChanged(this)" type="password"><img src="img/signup/eye.png" srcset="img/signup/eye@2x.png 2x, img/signup/eye@3x.png 3x" class="eye"><img src="img/signup/eye-closed.png" srcset="img/signup/eye-closed@2x.png 2x, img/signup/eye-closed@3x.png 3x" class="eye-closed">
+                        <input data-val="true" data-val-equalto="Şifre Tekrar Şifre ile aynı olmalıdır" data-val-equalto-other="*.Password" data-val-length="Şifre Tekrar 400 ile 0 değeri aralığında olmalıdır." data-val-length-max="400" data-val-required="Şifre Tekrar boş olamaz" id="RePassword" name="RePassword" type="hidden" value="">
+                        <div class="yeniSifrenizSifreIcon">
+                        </div>
+                        <div class="field-validation-valid hataMesaj hidden"></div>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="plain" data-dismiss="modal">
+                            Vazgeç
+                        </a>
+                        <a href="#" onclick="" class="orange">
+                            Kayıt Ol
+                        </a>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/slick.min.js"></script>

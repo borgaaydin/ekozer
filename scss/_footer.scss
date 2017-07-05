@@ -261,6 +261,10 @@
       flex-direction: row;
       align-items: center;
 
+      img {
+        max-height: 40px;
+      }
+
       >span {
         display: inline-flex;
         flex-direction: row;
