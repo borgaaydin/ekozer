@@ -464,6 +464,7 @@
   padding: 10px 20px;
   bottom: 50px;
   right: -25px;
+  z-index: 33;
   &:after {
     content:'';
     position: absolute;
