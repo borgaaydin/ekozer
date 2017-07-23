@@ -22,6 +22,7 @@
 .category-left {
   @include col();
   @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include sticky(120px);
 
   ul {
     list-style: none;
@@ -247,6 +248,7 @@
   }
 }
 
+
 .regular-filter-list {
   border:1px solid #f0f3f6;
 
@@ -315,6 +317,24 @@
             color: white;
           }
         }
+      }
+    }
+  }
+}
+
+.color-picking-list {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      a {
+        padding: 11px;
+        border: solid 1px #e1e1e1;
+        display: block;
+        margin-right: 6px;
+        border-radius: 4px;
       }
     }
   }

@@ -84,6 +84,7 @@ $(function() {
         $('.regular-filter-list ul li:lt('+x+')').show();
     });
 
+    $(".category-left").Stickyfill();
 
 
 });

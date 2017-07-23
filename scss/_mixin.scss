@@ -44,3 +44,15 @@
 @mixin scale($scale) {
   @include transform(scale($scale));
 }
+
+@mixin sticky($top) {
+  position: -webkit-sticky;
+  position: sticky;
+  top: $top;
+
+  &:before,
+  &:after{
+    content: '';
+    display: table;
+  }
+}
