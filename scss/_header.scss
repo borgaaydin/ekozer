@@ -892,6 +892,8 @@
 
       h5 {
         margin: 27px 0 16px 30px;
+        white-space: nowrap;
+        font-size: 17px;
       }
 
       >ul {
@@ -899,6 +901,7 @@
         padding: 0;
         padding-left: 30px;
         text-align: left;
+        min-height: 126px;
 
         >li {
           height:24px;
