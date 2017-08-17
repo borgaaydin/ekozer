@@ -811,8 +811,7 @@
   left:0;
   top:58px;
   z-index: 42;
-
-  height: 406px;
+  height: auto;
   background-color: #ffffff;
 
   @include col();
