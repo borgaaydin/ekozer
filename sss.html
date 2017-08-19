@@ -632,7 +632,7 @@
 
                             </ul>
                         </div>
-                        <div class="corporate-content">
+                        <div class="corporate-content corporate-sss">
                             <h5>
                                 Sıkça Sorulan Sorular
                             </h5>
@@ -645,7 +645,13 @@
                                     Ödeme/Taksit Seçenekleri
                                 </h5>
                                 <div class="sss-accordion">
-                                    <h3>Section 1</h3>
+                                    <h3>
+                                        <span class="head active">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                            Üyelik
+                                        </span>
+                                    </h3>
                                     <div>
                                         <p>
                                             Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
@@ -654,7 +660,13 @@
                                             odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
                                         </p>
                                     </div>
-                                    <h3>Section 2</h3>
+                                    <h3>
+                                        <span class="head active">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                            Üyelik
+                                        </span>
+                                    </h3>
                                     <div>
                                         <p>
                                             Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
@@ -663,7 +675,13 @@
                                             suscipit faucibus urna.
                                         </p>
                                     </div>
-                                    <h3>Section 3</h3>
+                                    <h3>
+                                        <span class="head active">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                            Üyelik
+                                        </span>
+                                    </h3>
                                     <div>
                                         <p>
                                             Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
@@ -672,7 +690,13 @@
                                             lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
                                         </p>
                                     </div>
-                                    <h3>Section 4</h3>
+                                    <h3>
+                                        <span class="head active">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                            Üyelik
+                                        </span>
+                                    </h3>
                                     <div>
                                         <p>
                                             Cras dictum. Pellentesque habitant morbi tristique senectus et netus
@@ -692,7 +716,13 @@
                                     Ödeme/Taksit Seçenekleri
                                 </h5>
                                 <div class="sss-accordion">
-                                    <h3>Section 1</h3>
+                                    <h3>
+                                        <span class="head active">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                            Üyelik
+                                        </span>
+                                    </h3>
                                     <div>
                                         <p>
                                             Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
@@ -701,7 +731,13 @@
                                             odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
                                         </p>
                                     </div>
-                                    <h3>Section 2</h3>
+                                    <h3>
+                                        <span class="head active">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                            Üyelik
+                                        </span>
+                                    </h3>
                                     <div>
                                         <p>
                                             Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
@@ -710,7 +746,13 @@
                                             suscipit faucibus urna.
                                         </p>
                                     </div>
-                                    <h3>Section 3</h3>
+                                    <h3>
+                                        <span class="head active">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                            Üyelik
+                                        </span>
+                                    </h3>
                                     <div>
                                         <p>
                                             Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
@@ -719,7 +761,13 @@
                                             lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
                                         </p>
                                     </div>
-                                    <h3>Section 4</h3>
+                                    <h3>
+                                        <span class="head active">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                            Üyelik
+                                        </span>
+                                    </h3>
                                     <div>
                                         <p>
                                             Cras dictum. Pellentesque habitant morbi tristique senectus et netus
@@ -925,7 +973,11 @@
     <script>
         $(document).ready(function() {
             $(".leftAccordion").eq(1).accordion("option", "active", 0);
-            $( ".sss-accordion" ).accordion();
+            $( ".sss-accordion" ).accordion({
+                active:"false",
+                heightStyle:"content",
+                collapsible:"true"
+            });
         });
     </script>
 </body>
