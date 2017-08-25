@@ -144,17 +144,14 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-      }
+        outline: none;
 
-      &.open {
+        &.ui-state-active {
 
-        .logged-nav-container {
-          display: block;
-        }
-
-        .logged-nav-button>span {
-          @include transform(rotate(180deg));
-          color: #f46b49;
+          >span {
+            @include transform(rotate(180deg));
+            color: #f46b49;
+          }
         }
       }
 
