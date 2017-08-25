@@ -200,6 +200,15 @@
 
   @include box-shadow-args(inset 1px 0 0 0 rgba(0, 0, 0, 0.04));
 
+  ul {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #8c9196;
+    margin: 5px 0;
+    list-style: circle;
+  }
+
   .head {
     padding: 25px 20px;
     h5 {
