@@ -22,7 +22,6 @@ $(function() {
     });
 
     $(".logged-nav-container").click(function (e) {
-        e.preventDefault();
         e.stopPropagation();
     })
 
