@@ -3,9 +3,15 @@
  */
 
 $(function() {
-
     var display = false;
     var loggedNav = $(".logged-nav");
+
+    loggedNav.accordion({
+        collapsible: true,
+        active: false,
+        heightStyle: "content"
+    });
+
     $(document).click(function(e) {
         e.stopPropagation();
         display = loggedNav.accordion("option", "active");
