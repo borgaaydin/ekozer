@@ -233,7 +233,6 @@
 
 .product-title-image {
   position: relative;
-  overflow: hidden;
 
   .product-slogan {
     position: absolute;
@@ -1067,19 +1066,19 @@
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 4px;
-    top: -100px;
-    right: -4px;
+    top: 30px;
+    right: -2px;
 
     &::after {
       content: '';
       position: absolute;
       left: calc(50% - 3px);
-      top: 100%;
+      bottom: 100%;
       width: 0;
       height: 0;
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
-      border-top: 6px solid rgba(0, 0, 0, 0.8);
+      border-bottom: 6px solid rgba(0, 0, 0, 0.8);
       clear: both;
     }
 
