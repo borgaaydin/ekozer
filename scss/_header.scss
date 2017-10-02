@@ -942,7 +942,7 @@
 
 .search_typeahead {
   width: calc(100% - 20px);
-  height: 600px;
+  height: auto;
   position: absolute;
   top:45px;
   background-color: white;
@@ -952,7 +952,7 @@
   @include box-shadow-args(0 16px 9px 0 rgba(0, 0, 0, 0.1));
 
   .search_list {
-    height: 340px;
+    height: auto;
     background-color: white;
     margin: 20px 20px 0 20px;
 
@@ -1024,7 +1024,7 @@
   }
 
   .search-categories-suggest {
-    height: 140px;
+    height: auto;
     background-color: #fafafc;
     padding-top: 15px;
 
@@ -1057,7 +1057,7 @@
   }
 
   .search-categories-brands {
-    height: 85px;
+    height: auto;
     background-color: #fafafc;
     padding-top: 15px;
     @include box-shadow-args(0 -1px 0 0 #dde3e8);
