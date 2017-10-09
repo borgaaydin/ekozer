@@ -136,6 +136,7 @@
     .faturaIl, .faturaIlce {
       @include col();
       @include span(6.5, $gutter_pc, $gutter_px, $padding, $max_columns);
+      position: relative;
     }
     .faturaPostaKodu {
       @include col();
