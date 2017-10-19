@@ -998,6 +998,11 @@ input.numbered-input {
     .favori-input-block {
       display: inline-block;
 
+      .edit-icon,
+      .valid-icon {
+        cursor: pointer;
+      }
+
       .show-mode {
         display: inline-block;
         padding-right: 6px;

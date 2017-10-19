@@ -843,8 +843,6 @@
                         Tamam
                     </a>
                 </div>
-
-
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
@@ -861,13 +859,18 @@
             $(".edit-icon").click(function(){
                 $(".show-mode").hide();
                 $(".edit-mode").show();
-
+                $(".edit-mode input").focus();
             });
             $(".valid-icon").click(function(){
                 $(".edit-mode").hide();
                 $(".show-mode").show();
-
             });
+            $(".edit-mode input").blur(function(){
+                $(".edit-mode").hide();
+                $(".show-mode").show();
+            });
+
+
 
             $(".leftAccordion").eq(1).accordion("option", "active", 0);
         });
