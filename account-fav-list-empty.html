@@ -614,20 +614,28 @@
                         <div class="account-content fav-list fav-list-custom">
                             <div class="head">
                                 <h5>
-                                    <input type="text" placeholder="Beğendiklerim" class="favori-title-input">
-                                    <a class="input-icon edit-icon">
-                                        <img src="img/icons/text-edit.png"
-                                             srcset="img/icons/text-edit@2x.png 2x,
+                                    <div class="favori-input-block">
+                                        <div class="show-mode">
+                                            <span>
+                                                Beğendiklerim
+                                            </span>
+                                            <a class="input-icon edit-icon">
+                                                <img src="img/icons/text-edit.png"
+                                                     srcset="img/icons/text-edit@2x.png 2x,
 					                                    img/icons/text-edit@3x.png 3x"
-                                             class="text-edit">
-                                    </a>
-                                    <a class="input-icon edit-valid">
-                                        <img src="img/icons/ico-steps-completed-tick.png"
-                                             srcset="img/icons/ico-steps-completed-tick@2x.png 2x,
+                                                     class="text-edit">
+                                            </a>
+                                        </div>
+                                        <div class="edit-mode">
+                                            <input type="text" placeholder="Beğendiklerim">
+                                            <a class="input-icon valid-icon">
+                                                <img src="img/icons/ico-steps-completed-tick.png"
+                                                     srcset="img/icons/ico-steps-completed-tick@2x.png 2x,
 					                                    img/icons/ico-steps-completed-tick@3x.png 3x"
-                                             class="ico-steps-completed-tick">
-                                    </a>
-
+                                                     class="text-valid">
+                                            </a>
+                                        </div>
+                                    </div>
                                 </h5>
                                 <span>
                                     Alışveriş sırasında kaydettiğiniz ürünleri soldaki listelerinizden seçerek aşağıda görebilirsiniz.
@@ -850,13 +858,14 @@
     <script src="js/modal.js"></script>
     <script>
         $(document).ready(function() {
-            $( ".favori-title-input" ).focus(function() {
-                $(".edit-icon").hide();
-                $(".edit-valid").show();
+            $(".edit-icon").click(function(){
+                $(".show-mode").hide();
+                $(".edit-mode").show();
 
-            }).blur(function() {
-                $(".edit-valid").hide();
-                $(".edit-icon").show();
+            });
+            $(".valid-icon").click(function(){
+                $(".edit-mode").hide();
+                $(".show-mode").show();
 
             });
 

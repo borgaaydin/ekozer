@@ -995,9 +995,30 @@ input.numbered-input {
 
     .edit-valid {display: none;}
 
+    .favori-input-block {
+      display: inline-block;
+
+      .show-mode {
+        display: inline-block;
+        padding-right: 6px;
+        position: relative;
+
+        span {
+          font-size: 16px;
+          line-height: 18px;
+          color: #434b54;
+        }
+      }
+
+      .edit-mode {
+        display: none;
+        position: relative;
+      }
+    }
+
     .input-icon {
       position: absolute;
-      left: 120px;
+      right: -20px;
       top: -4px;
 
       img {
@@ -1013,6 +1034,7 @@ input.numbered-input {
       padding: 0;
       margin: 0;
       background-color: transparent;
+      padding-right: 10px;
     }
   }
 }
