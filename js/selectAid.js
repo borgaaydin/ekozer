@@ -1,7 +1,7 @@
 /**
  * Created by borga on 12/07/2017.
  */
-$(document).ready(function(){
+$(window).load(function(){
     $( ".nice-select" ).keypress(function(e) {
         var list = $(this).find("ul.list");
         var items = $(this).find("ul.list li").slice(1);

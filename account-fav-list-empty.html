@@ -614,19 +614,19 @@
                         <div class="account-content fav-list fav-list-custom">
                             <div class="head">
                                 <h5>
-                                    <input type="text" placeholder="Beğendiklerim">
-                                    <span class="input-icon edit-icon">
+                                    <input type="text" placeholder="Beğendiklerim" class="favori-title-input">
+                                    <a class="input-icon edit-icon">
                                         <img src="img/icons/text-edit.png"
                                              srcset="img/icons/text-edit@2x.png 2x,
 					                                    img/icons/text-edit@3x.png 3x"
                                              class="text-edit">
-                                    </span>
-                                    <span class="input-icon edit-valid">
+                                    </a>
+                                    <a class="input-icon edit-valid">
                                         <img src="img/icons/ico-steps-completed-tick.png"
                                              srcset="img/icons/ico-steps-completed-tick@2x.png 2x,
 					                                    img/icons/ico-steps-completed-tick@3x.png 3x"
                                              class="ico-steps-completed-tick">
-                                    </span>
+                                    </a>
 
                                 </h5>
                                 <span>
@@ -850,6 +850,16 @@
     <script src="js/modal.js"></script>
     <script>
         $(document).ready(function() {
+            $( ".favori-title-input" ).focus(function() {
+                $(".edit-icon").hide();
+                $(".edit-valid").show();
+
+            }).blur(function() {
+                $(".edit-valid").hide();
+                $(".edit-icon").show();
+
+            });
+
             $(".leftAccordion").eq(1).accordion("option", "active", 0);
         });
     </script>
