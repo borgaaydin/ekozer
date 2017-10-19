@@ -1022,9 +1022,11 @@ input.numbered-input {
     }
 
     .input-icon {
-      position: absolute;
-      right: -20px;
-      top: -4px;
+      display: inline-block;
+      margin-bottom: -6px;
+
+      height: 22px;
+      width: 22px;
 
       img {
         height: 22px;
@@ -1039,7 +1041,6 @@ input.numbered-input {
       padding: 0;
       margin: 0;
       background-color: transparent;
-      padding-right: 10px;
     }
   }
 }

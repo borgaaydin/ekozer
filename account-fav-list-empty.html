@@ -619,21 +619,21 @@
                                             <span>
                                                 Beğendiklerim
                                             </span>
-                                            <a class="input-icon edit-icon">
+                                            <span class="input-icon edit-icon">
                                                 <img src="img/icons/text-edit.png"
                                                      srcset="img/icons/text-edit@2x.png 2x,
 					                                    img/icons/text-edit@3x.png 3x"
                                                      class="text-edit">
-                                            </a>
+                                            </span>
                                         </div>
                                         <div class="edit-mode">
                                             <input type="text" placeholder="Beğendiklerim">
-                                            <a class="input-icon valid-icon">
+                                            <span class="input-icon valid-icon">
                                                 <img src="img/icons/ico-steps-completed-tick.png"
                                                      srcset="img/icons/ico-steps-completed-tick@2x.png 2x,
 					                                    img/icons/ico-steps-completed-tick@3x.png 3x"
                                                      class="text-valid">
-                                            </a>
+                                            </span>
                                         </div>
                                     </div>
                                 </h5>
@@ -856,21 +856,25 @@
     <script src="js/modal.js"></script>
     <script>
         $(document).ready(function() {
+            var clicky;
+
             $(".edit-icon").click(function(){
                 $(".show-mode").hide();
                 $(".edit-mode").show();
                 $(".edit-mode input").focus();
             });
-            $(".valid-icon").click(function(){
-                $(".edit-mode").hide();
-                $(".show-mode").show();
-            });
-            $(".edit-mode input").blur(function(){
-                $(".edit-mode").hide();
-                $(".show-mode").show();
+
+            $(".edit-mode input").blur(function(e){
+                console.log(clicky);
+                if( !(clicky.is(".text-valid")) ) {
+                    $(".edit-mode").hide();
+                    $(".show-mode").show();
+                }
             });
 
-
+            $(document).mousedown(function(e) {
+                clicky = $(e.target);
+            });
 
             $(".leftAccordion").eq(1).accordion("option", "active", 0);
         });
