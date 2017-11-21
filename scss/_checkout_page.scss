@@ -541,6 +541,13 @@
   }
 }
 
+.checkout-odeme-yontemi-full {
+  @include col();
+  @include span(20, $gutter_pc, $gutter_px, $padding, $max_columns);
+  @include beta();
+  padding: 0 20px;
+}
+
 .checkout-odeme-yontemi-right {
   @include col();
   @include span(15, $gutter_pc, $gutter_px, $padding, $max_columns);

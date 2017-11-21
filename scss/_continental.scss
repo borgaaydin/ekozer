@@ -1,0 +1,122 @@
+.continental-checkout-head {
+  .auth_logged_container {
+    float: right;
+  }
+}
+
+.continental-checkout {
+  .checkout-odeme-yontemi-header .description {
+    margin-bottom: 20px;
+  }
+
+  .separator {
+    border-bottom: 1px solid #ECEDED;
+  }
+
+  .product-delete {
+    right: 4px !important;
+  }
+
+  .basket-product-list {
+    h5 {
+      font-size: 16px;
+      line-height: 1.38;
+      color: #8c9196;
+      margin: 0 0 4px 0;
+    }
+  }
+
+  .basket-product-list ul li .price-col {
+    width: 120px;
+  }
+
+  .basket-product-list .list-titles span:nth-child(3) {
+    width: 80px;
+  }
+
+  .price-col {
+    .puan {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.1;
+      text-align: right;
+      color: #434b54;
+
+      >span {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .genelToplamFiyat {
+    >span {
+      font-size: 14px;
+    }
+  }
+}
+
+.continental__puan-button {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff9f69;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(221, 149, 103, 0.25);
+  -moz-box-shadow: 0 2px 2px 0 rgba(221, 149, 103, 0.25);
+  box-shadow: 0 2px 2px 0 rgba(221, 149, 103, 0.25);
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 8px 2px 8px;
+}
+
+.continental-warning {
+  margin-top: 0;
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    .head-title {
+      margin-left: 44px;
+    }
+
+    div.head-inside {
+      width: calc(100% - 24px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 12px 12px;
+      background-color: #FEF3D5;
+
+      >div {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+
+
+      }
+    }
+  }
+  ol {
+    background-color: #FFFBF5;
+  }
+
+}
+
+.continental__urun-liste {
+  max-height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.kredi-karti-container {
+
+}
