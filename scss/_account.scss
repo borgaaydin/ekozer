@@ -297,7 +297,8 @@
     font-size: 14px;
     font-weight: 600;
     color: #82858a;
-    display: block;
+    display: inline-flex;
+    line-height: 22px;
     margin-bottom: 6px;
   }
   input[type="text"], input[type="password"], select, .nice-select, .adressTextArea {
