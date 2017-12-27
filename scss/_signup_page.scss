@@ -322,6 +322,10 @@
   text-decoration: underline;
   position: relative;
   z-index: 999;
+
+  .link {
+    margin-left: -2px;
+  }
 }
 #bireyselUyelikSozlesmesiLabel:hover, #kurumsalUyelikSozlesmesiLabel:hover, #davetUyelikSozlesmesiLabel:hover {
   cursor: pointer;
