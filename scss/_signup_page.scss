@@ -221,7 +221,8 @@
   }
   .bireyselKampanyaCheckbox {
     label {
-      display: inline;
+      display: inline-flex;
+      align-items: center;
       font-size: 14px;
       font-weight:normal;
       color: #8c9196;
