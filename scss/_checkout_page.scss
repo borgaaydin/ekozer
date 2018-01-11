@@ -1263,7 +1263,7 @@
   .modal-body {
     background: #fff;
     height: auto;
-    padding: 0 20px;
+    padding: 0 30px;
   }
   .modal-desc {
     height: auto;
@@ -1317,7 +1317,7 @@
     display: block;
     margin-bottom: 6px;
   }
-  input[type="text"], select, .nice-select, .aciklamaTextArea {
+  input[type="text"],input[type="number"], select, .nice-select, .aciklamaTextArea {
     height: 54px;
     background-color: #fbfbfa;
     border: solid 1px #f0f3f6;
@@ -1325,7 +1325,7 @@
     color: #626971;
     font-size:16px;
   }
-  input[type="text"] {
+  input[type="text"],input[type="number"] {
     padding: 0 20px;
     width: calc(100% - 42px);
   }
