@@ -3,9 +3,6 @@
 
 }
 
-
-
-
 .checkout-left {
   @include col();
   @include span(20, $gutter_pc, $gutter_px, $padding, $max_columns);
