@@ -337,11 +337,22 @@
     line-height: 1.57;
     color: #8c9196;
     padding: 8px 20px 10px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    & > span {
-      float: right;
+    @include clearfix();
+
+    .text {
+      display: inline-block;
+      width: 290px;
+    }
+
+    .kullanilanPuan {
       color: #434b54;
       line-height: 1.57;
+      white-space: nowrap;
     }
   }
   .alisverisBilgileri-kampanyaIndirimleri {
