@@ -98,12 +98,13 @@
         color: #f56b49;
         margin-left: 10px;
         line-height: 14px;
-        padding-top: 4px;
+        padding-top: 16px;
         height: 26px;
-        display: inline-flex;
-        align-items: center;
-        width: 140px;
+        display: inline;
+        width: auto;
         overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       span.company-fund {
