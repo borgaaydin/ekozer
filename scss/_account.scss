@@ -201,7 +201,6 @@
   @include box-shadow-args(inset 1px 0 0 0 rgba(0, 0, 0, 0.04));
 
   ul {
-    padding-left: 15px;
     font-size: 14px;
     line-height: 1.57;
     color: #8c9196;
@@ -1049,5 +1048,295 @@ input.numbered-input {
 .modal-content {
   .eskiSifre {
     margin-bottom: 20px;
+  }
+}
+
+
+#iptal_modal,
+#iade_modal,
+#tum_iptal_modal,
+#iptaldetay_modal,
+#iadedetay_modal,
+#takipet_modal{
+  .siparislerim_text {
+    margin: 20px 0;
+    color: #8c9196;
+    width: 100%;
+  }
+
+  .siparislerim_line {
+    .bold {
+      font-weight: 600;
+    }
+  }
+
+  .barkod-goruntule {
+    margin-top: 20px;
+
+    a {
+      font-size: 14px;
+      line-height: 1.71;
+      color: #8c9196;
+      border-bottom: 1px solid #8c9196;
+      cursor: pointer;
+    }
+  }
+
+  .modal-content {
+
+    h5 {
+      font-weight: 400;
+    }
+
+  }
+
+  p {
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 50px;
+    >a {
+      margin-left: 20px;
+    }
+
+    a.orange {
+      margin-top: 0;
+    }
+  }
+
+  .modal-dialog {
+    width: 420px;
+    height: inherit;
+    @include box-shadow-args(0 6px 8px 0 rgba(0, 0, 0, 0.04));
+  }
+
+  .modal-content {
+    .yeniSifre {
+      width: 380px;
+    }
+  }
+
+  .iptaliade_head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+      text-align: left;
+    }
+  }
+
+
+  .qty-col {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-detail-counter {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    div.product-count {
+      text-align: center;
+      >span.product-count-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        text-align: center;
+        color: #4c535c;
+        min-width: 32px;
+        padding: 0 5px;
+        height: 32px;
+        box-shadow: inset 0 -1px 0 0 #ced3db, inset 0 1px 0 0 #ced3db;
+        background-color: white;
+        width: 42px;
+
+        input {
+          border: 0;
+          width: 100%;
+          text-align: center;
+          box-sizing: border-box;
+          outline: 0;
+        }
+      }
+
+      >span.product-count-label {
+        width: 32px;
+        font-size: 12px;
+        text-align: center;
+        color: #b9bec3;
+        display: inline-block;
+        margin-top: 8px;
+      }
+    }
+
+    &:hover {
+      >a.product-counter-minus,
+      >a.product-counter-plus {
+        background-color: #fff7f2;
+
+        i {
+          color: #434b54;
+        }
+      }
+    }
+
+    >a.product-counter-minus,
+    >a.product-counter-plus {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 30px;
+      height: 30px;
+      background-color: #ffffff;
+      border: solid 1px #ced3db;
+
+      i {
+        color: #ff9f69;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.iptaliade-sebep {
+  width: 100%;
+  background: #fff;
+
+  h4 {
+    margin:0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #434b54;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 1.38;
+    color: #8c9196;
+  }
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #82858a;
+    display: block;
+    margin-bottom: 6px;
+  }
+  input[type="text"], input[type="password"], select, .nice-select {
+    height: 54px;
+    background-color: #fbfbfa;
+    border: solid 1px #f0f3f6;
+    color: #626971;
+    font-size:16px;
+  }
+  .nice-select {
+    height: 58px;
+    border-radius: 0;
+    float: none;
+    .list {
+      border-radius: 0;
+      margin-top: 2px;
+      width: 100%;
+      max-height: 292px;
+      overflow-y: auto;
+      padding: 0 12.4px 0 9px;
+      .option {
+        color: #868a8f;
+        padding: 10px 0 12px 0;
+        font-size: 16px;
+        line-height: 1.38;
+        box-shadow: inset 0 -1px 0 0 #f0f3f6;
+        min-height: 16px;
+        &:last-child {
+          box-shadow: none;
+        }
+        &:hover, &.focus {
+          background: white;
+          font-weight: normal;
+        }
+      }
+      .option.selected {
+        color: #f57353;
+        background: white;
+      }
+    }
+  }
+  .current {
+    line-height: 58px;
+  }
+}
+
+.iptaliade-urun {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 20px 0 0 0;
+
+  span {
+    text-align: left;
+    text-overflow: "…";
+    font-size: 14px;
+    line-height: 1.57;
+    color: #73787e;
+    margin: 0 20px;
+  }
+
+  img {
+    max-width: 60px;
+    border: solid 1px #f3f4f6;
+    margin-left: 20px;
+  }
+}
+
+.order-detail-list {
+  li {
+    .table-list7 {
+      .col7 {
+        span {
+          margin: 0;
+        }
+
+        .iptal-edildi {
+          font-weight: 300;
+          font-style: italic;
+          line-height: 1.38;
+          text-align: center;
+          color: #b75656;
+          border: 0;
+          margin: 0;
+        }
+
+        .teslim-edildi {
+          font-weight: 300;
+          font-style: italic;
+          line-height: 1.38;
+          text-align: center;
+          color: #64ac7c;
+          border: 0;
+          margin: 0;
+        }
+
+        .ttip {
+          border: 0;
+        }
+      }
+    }
   }
 }

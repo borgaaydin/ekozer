@@ -10,7 +10,7 @@
 
 <body>
 
-    <div class="container-fluid header-group hg-inner-page">
+    <div class="container-fluid header-group ">
         <div class="container-fluid header">
             <div class="container">
                 <div class="row">
@@ -19,13 +19,13 @@
                             <img src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x, img/logo/logo@3x.png 3x" class="logo">
                         </a>
                     </div>
-                    <div class="search_input_container">
+                    <form class="search_input_container"> <!--Change div to form-->
                         <input class="search_input" type="search" placeholder="Aradığını Hızlıca Bul">
                         <a href="#">
                             <span class="icon-ico-search"></span>
                         </a>
-                    </div>
-                    <div class="auth_button_container hidden">
+                    </form>
+                    <div class="auth_button_container">
                         <a href="#">
                                 <span class="auth_button_text">
                                     <span>
@@ -40,129 +40,39 @@
                                 </span>
                         </a>
                     </div>
-                    <div class="auth_logged_container">
-                        <div class="first-row">
-                                <span class="company-name">
-                                    Damstartup Stüdyo
-                                </span>
-                            <span class="company-fund">
-                                    12.550
-                                    <i class="fa fa-try" aria-hidden="true"></i>
-                                    <span class="icon-ico-questio-oval"></span>
-                                </span>
-
-                        </div>
-                        <div class="second-row">
-                                <span class="customer-name">
-                                    Muharrem Songüldönmez
-                                </span>
-                        </div>
-                        <div class="logged-nav">
-                            <div class="logged-nav-button">
-                                <span class="icon-ico-arrow-down"></span>
-                            </div>
-                            <div class="logged-nav-container">
-                                <div>
-                                    <div class="company-list">
-                                            <span class="title">
-                                                Şirketler
-                                            </span>
-                                        <ul class="logged-nav-list">
-                                            <li>
-                                                <a href="#">
-                                                    Yirmibirgram Reklam ve Pazarlama
-                                                </a>
-                                            </li>
-                                            <li class="active">
-                                                <a href="#">
-                                                    DAM Startup Studio
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Yirmibirgram Reklam ve Pazarlama
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="options-list">
-                                            <span class="title">
-                                                Hesabım
-                                            </span>
-                                        <ul class="logged-nav-list">
-                                            <li>
-                                                <div class="accordion">
-                                                    <h3>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                        <i class="fa fa-minus" aria-hidden="true"></i>
-                                                        Profilim
-                                                    </h3>
-                                                    <div>
-                                                        <a href="#">
-                                                            Kişisel Bilgilerim
-                                                        </a>
-                                                        <a href="#">
-                                                            Şirket Bilgilerim
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Siparişlerim
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <div class="accordion">
-                                                    <h3>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                        <i class="fa fa-minus" aria-hidden="true"></i>
-                                                        Favorilerim
-                                                    </h3>
-                                                    <div>
-                                                        <a href="#">...</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Şubeler ve Kullanıcılar
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Destek ve İade
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="logout">
-                                        <a href="#">
-                                                <span>
-                                                Çıkış Yap
-                                                </span>
-                                            <span class="icon-ico-logout"></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="basket_button_container">
                         <a href="#">
                                 <span class="basket_button_text">
                                     Sepetim
                                 </span>
-                            <span class="basket_count">
-                                    12
-                                </span>
+                            <!--<span class="basket_count">-->
+                            <!--12-->
+                            <!--</span>-->
                             <span class="icon-ico-basket"></span>
                         </a>
+                        <div class="basket-hovered empty">
+                            <div class="basket-body">
+                                <img src="img/ico-basket-blankpage.png"
+                                     srcset="img/ico-basket-blankpage@2x.png 2x,
+                                                img/ico-basket-blankpage@3x.png 3x"
+                                     class="ico-basket-blankpage">
+                                <p>
+                                    Ekozer'de ilginizi çekebilecek binlerce ürün ve size özel fırsatlar var. Keşfetmeye hemen başlayın!
+                                </p>
+                            </div>
+                            <div class="bottom">
+                                <a href="#">
+                                        <span>
+                                            Mağazaya Dön
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid nav_container inner-page">
+        <div class="container-fluid nav_container">
             <div class="container">
                 <div class="row nav_row">
                     <nav>
@@ -529,8 +439,17 @@
             </div>
         </div>
     </div>
-    <div class="header-push">
 
+
+
+    <div class="container-fluid" id="bannerClub" style="margin-top: 10px;">
+        <div class="container" id="bannerClub">
+
+            <a href="/test-ozel-kategori">
+                <img src="/media/img/kargo-bedava-75tl-uzeri-1180x205.jpg" alt="/media/img/kargo-bedava-75tl-uzeri-1180x205.jpg" style="height: 205px; width: 1180px; background-color: #222222;">
+            </a>
+
+        </div>
     </div>
 
 
