@@ -1057,7 +1057,8 @@ input.numbered-input {
 #tum_iptal_modal,
 #iptaldetay_modal,
 #iadedetay_modal,
-#takipet_modal{
+#takipet_modal,
+#genel_modal {
   .siparislerim_text {
     margin: 20px 0;
     color: #8c9196;
@@ -1121,7 +1122,8 @@ input.numbered-input {
     }
   }
 
-  .iptaliade_head {
+  .iptaliade_head,
+  .modal-head {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1214,7 +1216,12 @@ input.numbered-input {
   }
 }
 
-.iptaliade-sebep {
+.modal-combobox {
+  margin-top: 10px;
+}
+
+.iptaliade-sebep,
+.modal-combobox {
   width: 100%;
   background: #fff;
 
