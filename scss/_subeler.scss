@@ -234,6 +234,7 @@
   .select-box {
     width: 320px;
     margin-left: 20px;
+    z-index: 15;
 
     .nice-select,
     .current{
