@@ -692,27 +692,18 @@
                                 </div>
                             </div>
 
-                            <div class="verify-bar">
-                                <a href="#" class="onayla-button">
-                                    Onayla
-                                </a>
-                                <a href="#" class="reddet-button">
-                                    Reddet
-                                </a>
-                            </div>
-
-                            <div class="verify-bar">
-                                <a href="#" class="onayla-button" data-toggle="modal" data-target="#tum_iptal_modal">
-                                    Tüm Ürünleri İptal Et
-                                </a>
-                            </div>
-
-                            <div class="order-list-header table-list7">
-                                <div class="col1">
-                                    <span>
-                                       Kod
-                                    </span>
+                            <div class="head">
+                                <div class="order-detail-title">
+                                    <h5>
+                                        Toplu Ürün İptal
+                                    </h5>
+                                    <p>
+                                        Lütfen iptal etmek istediğiniz ürünleri seçin.
+                                    </p>
                                 </div>
+                            </div>
+
+                            <div class="order-list-header table-list7 orders-return-list">
                                 <div class="col2">
                                     <span>
                                        Ürün Adı
@@ -725,383 +716,178 @@
                                 </div>
                                 <div class="col4">
                                     <span>
-                                       Fiyat
+                                       İptal Sebebiniz
                                     </span>
                                 </div>
                                 <div class="col5">
-                                    <span>KDV</span>
-                                </div>
-                                <div class="col6">
-                                    <span>Toplam</span>
-                                    <span>(KDV Dahil)</span>
-                                </div>
-                                <div class="col7">
                                     <span>
-                                        Durum
+                                        Seçili Ürün
                                     </span>
                                 </div>
                             </div>
-                            <ul class="order-detail-list">
+                            <ul class="order-detail-list orders-return-list">
                                 <li>
                                     <div class="table-list7">
-                                        <div class="col1">
-                                                <span>
-                                                    S12453
-                                                </span>
-                                        </div>
                                         <div class="col2">
                                             <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
                                             <span>
-                                                    Pritt Keçeli Kalem 12"li
-                                                </span>
+                                                Pritt Keçeli Kalem 12"li
+                                            </span>
                                         </div>
                                         <div class="col3">
-                                                <span>
-                                                    1 Koli
-                                                </span>
+                                            <div class="qty-col">
+                                                <div class="product-detail-counter">
+                                                    <a class="product-counter-minus">
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="product-count">
+                                                    <span class="product-count-box">
+                                                        <input type="text" class="quantity" id="quantity" value="1" style="width:100%">
+                                                    </span>
+                                                        <span class="product-count-label">
+                                                        Paket
+                                                    </span>
+                                                    </div>
+                                                    <a class="product-counter-plus">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col4">
-                                                <span>
-                                                    4,04 ₺
-                                                </span>
+                                            <select id="sebep-secimi" name="sebep-secimi">
+                                                <option data-display="Seçiniz" value="Seç">Seçiniz</option>
+                                                <option value="1">Yanlışlıkla sipariş verdim.</option>
+                                                <option value="2">Gelen ürün isteğime uygun değil.</option>
+                                                <option value="1">Yanlışlıkla sipariş verdim.</option>
+                                                <option value="2">Gelen ürün isteğime uygun değil.</option>
+                                                <option value="3">Diğer</option>
+                                                <option value="1">Yanlışlıkla sipariş verdim.</option>
+                                                <option value="2">Gelen ürün isteğime uygun değil.</option>
+                                                <option value="3">Diğer</option>
+                                                <option value="3">Diğer</option>
+                                            </select>
                                         </div>
                                         <div class="col5">
-                                                <span>
-                                                    % 18,00
-                                                </span>
-                                        </div>
-                                        <div class="col6">
-                                                <span>
-                                                    4,77 ₺
-                                                </span>
-                                        </div>
-                                        <div class="col7">
-                                            <span>
-                                               Hazırlanıyor
-                                            </span>
-                                            <a href="#" data-toggle="modal" data-target="#iptal_modal">
-                                                İptal Et
-                                            </a>
+                                            <div class="selected-checkbox pretty">
+                                                <input type="checkbox" name="select1-checkbox" id="select1-checkbox">
+                                                <label for="select1-checkbox">
+                                                    <i class="icon-ico-checkbox-check" aria-hidden="true"></i>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="table-list7">
-                                        <div class="col1">
-                                                <span>
-                                                    S12453
-                                                </span>
-                                        </div>
                                         <div class="col2">
                                             <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
                                             <span>
-                                                    Pritt Keçeli Kalem 12"li
-                                                </span>
+                                                Pritt Keçeli Kalem 12"li
+                                            </span>
                                         </div>
                                         <div class="col3">
-                                                <span>
-                                                    1 Koli
-                                                </span>
+                                            <div class="qty-col">
+                                                <div class="product-detail-counter">
+                                                    <a class="product-counter-minus">
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="product-count">
+                                                    <span class="product-count-box">
+                                                        <input type="text" class="quantity" id="quantity" value="1" style="width:100%">
+                                                    </span>
+                                                        <span class="product-count-label">
+                                                        Paket
+                                                    </span>
+                                                    </div>
+                                                    <a class="product-counter-plus">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col4">
-                                                <span>
-                                                    4,04 ₺
-                                                </span>
+                                            <select id="sebep-secimi" name="sebep-secimi">
+                                                <option data-display="Seçiniz" value="Seç">Seçiniz</option>
+                                                <option value="1">Yanlışlıkla sipariş verdim.</option>
+                                                <option value="2">Gelen ürün isteğime uygun değil.</option>
+                                                <option value="1">Yanlışlıkla sipariş verdim.</option>
+                                                <option value="2">Gelen ürün isteğime uygun değil.</option>
+                                                <option value="3">Diğer</option>
+                                                <option value="1">Yanlışlıkla sipariş verdim.</option>
+                                                <option value="2">Gelen ürün isteğime uygun değil.</option>
+                                                <option value="3">Diğer</option>
+                                                <option value="3">Diğer</option>
+                                            </select>
                                         </div>
                                         <div class="col5">
-                                                <span>
-                                                    % 18,00
-                                                </span>
-                                        </div>
-                                        <div class="col6">
-                                                <span>
-                                                    4,77 ₺
-                                                </span>
-                                        </div>
-                                        <div class="col7">
-                                            <span class="iptal-edildi">
-                                               İptal Edildi
-                                            </span>
-                                            <a href="#" data-toggle="modal" data-target="#iptaldetay_modal">
-                                                Detay
-                                            </a>
+                                            <div class="selected-checkbox pretty">
+                                                <input type="checkbox" name="select2-checkbox" id="select2-checkbox">
+                                                <label for="select2-checkbox">
+                                                    <i class="icon-ico-checkbox-check" aria-hidden="true"></i>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="table-list7">
-                                        <div class="col1">
-                                                <span>
-                                                    S12453
-                                                </span>
-                                        </div>
                                         <div class="col2">
                                             <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
                                             <span>
-                                                    Pritt Keçeli Kalem 12"li
-                                                </span>
+                                                Pritt Keçeli Kalem 12"li
+                                            </span>
                                         </div>
                                         <div class="col3">
-                                                <span>
-                                                    1 Koli
-                                                </span>
+                                            <div class="qty-col">
+                                                <div class="product-detail-counter">
+                                                    <a class="product-counter-minus">
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="product-count">
+                                                    <span class="product-count-box">
+                                                        <input type="text" class="quantity" id="quantity" value="1" style="width:100%">
+                                                    </span>
+                                                        <span class="product-count-label">
+                                                        Paket
+                                                    </span>
+                                                    </div>
+                                                    <a class="product-counter-plus">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col4">
-                                                <span>
-                                                    4,04 ₺
-                                                </span>
+                                            <select id="sebep-secimi" name="sebep-secimi">
+                                                <option data-display="Seçiniz" value="Seç">Seçiniz</option>
+                                                <option value="1">Yanlışlıkla sipariş verdim.</option>
+                                                <option value="2">Gelen ürün isteğime uygun değil.</option>
+                                                <option value="1">Yanlışlıkla sipariş verdim.</option>
+                                                <option value="2">Gelen ürün isteğime uygun değil.</option>
+                                                <option value="3">Diğer</option>
+                                                <option value="1">Yanlışlıkla sipariş verdim.</option>
+                                                <option value="2">Gelen ürün isteğime uygun değil.</option>
+                                                <option value="3">Diğer</option>
+                                                <option value="3">Diğer</option>
+                                            </select>
                                         </div>
                                         <div class="col5">
-                                                <span>
-                                                    % 18,00
-                                                </span>
-                                        </div>
-                                        <div class="col6">
-                                                <span>
-                                                    4,77 ₺
-                                                </span>
-                                        </div>
-                                        <div class="col7">
-                                            <span>
-                                               Kargoda
-                                            </span>
-                                            <a href="#" data-toggle="modal" data-target="#takipet_modal">
-                                                Takip et
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="table-list7">
-                                        <div class="col1">
-                                                <span>
-                                                    S12453
-                                                </span>
-                                        </div>
-                                        <div class="col2">
-                                            <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
-                                            <span>
-                                                    Pritt Keçeli Kalem 12"li
-                                                </span>
-                                        </div>
-                                        <div class="col3">
-                                                <span>
-                                                    1 Koli
-                                                </span>
-                                        </div>
-                                        <div class="col4">
-                                                <span>
-                                                    4,04 ₺
-                                                </span>
-                                        </div>
-                                        <div class="col5">
-                                                <span>
-                                                    % 18,00
-                                                </span>
-                                        </div>
-                                        <div class="col6">
-                                                <span>
-                                                    4,77 ₺
-                                                </span>
-                                        </div>
-                                        <div class="col7">
-                                            <span>
-                                               İade talebi aldındı.
-                                            </span>
-                                            <a href="#" data-toggle="modal" data-target="#iadedetay_modal">
-                                                Detaylar
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="table-list7">
-                                        <div class="col1">
-                                                <span>
-                                                    S12453
-                                                </span>
-                                        </div>
-                                        <div class="col2">
-                                            <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
-                                            <span>
-                                                    Pritt Keçeli Kalem 12"li
-                                                </span>
-                                        </div>
-                                        <div class="col3">
-                                                <span>
-                                                    1 Koli
-                                                </span>
-                                        </div>
-                                        <div class="col4">
-                                                <span>
-                                                    4,04 ₺
-                                                </span>
-                                        </div>
-                                        <div class="col5">
-                                                <span>
-                                                    % 18,00
-                                                </span>
-                                        </div>
-                                        <div class="col6">
-                                                <span>
-                                                    4,77 ₺
-                                                </span>
-                                        </div>
-                                        <div class="col7">
-                                            <span class="teslim-edildi">
-                                               Teslim Edildi
-                                            </span>
-                                            <a class="ttip" href="#" data-toggle="tooltip" data-placement="top" title="İade edilemeyen ürün">
-                                                <img src="img/icons/question-trans.png"
-                                                     srcset="img/icons/question-trans@2x.png 2x,img/icons/question-trans@3x.png 3x"
-                                                     class="question">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="table-list7">
-                                        <div class="col1">
-                                                <span>
-                                                    S12453
-                                                </span>
-                                        </div>
-                                        <div class="col2">
-                                            <img srcset="img/product/product-slider-sample-image-1@2x.png 2x" src="img/product/product-slider-sample-image-1.png" alt="Ürün">
-                                            <span>
-                                                    Pritt Keçeli Kalem 12"li
-                                                </span>
-                                        </div>
-                                        <div class="col3">
-                                                <span>
-                                                    1 Koli
-                                                </span>
-                                        </div>
-                                        <div class="col4">
-                                                <span>
-                                                    4,04 ₺
-                                                </span>
-                                        </div>
-                                        <div class="col5">
-                                                <span>
-                                                    % 18,00
-                                                </span>
-                                        </div>
-                                        <div class="col6">
-                                                <span>
-                                                    4,77 ₺
-                                                </span>
-                                        </div>
-                                        <div class="col7">
-                                            <span class="teslim-edildi">
-                                               Teslim Edildi
-                                            </span>
-                                            <a href="#" data-toggle="modal" data-target="#iade_modal">
-                                                İade et
-                                            </a>
+                                            <div class="selected-checkbox pretty">
+                                                <input type="checkbox" name="select3-checkbox" id="select3-checkbox">
+                                                <label for="select3-checkbox">
+                                                    <i class="icon-ico-checkbox-check" aria-hidden="true"></i>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
 
                             </ul>
-                            <div class="bottom order-bottom">
-                                <div class="left-wing">
-                                    <div class="fatura-bottom">
-                                        <h3>
-                                            Fatura Adresi
-                                        </h3>
-                                        <div class="fatura-bottom-box">
-                                            <span class="title">
-                                                YKB Suadiye Şubesi
-                                            </span>
-                                            <span class="first-row">
-                                                Ahmet Yılmaz - ahmetyilmaz@gmail.com.tr
-
-                                            </span>
-                                            <span class="second-row">
-                                                Bağdat Caddesi No: 42 34740 Suadiye / Kadıköy / İstanbul
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="teslimat-bottom">
-                                        <h3>
-                                            Teslimat Adresi
-                                        </h3>
-                                        <div class="teslimat-bottom-box">
-                                            <span class="title">
-                                                YKB Depo
-                                            </span>
-                                            <span class="first-row">
-                                                Ahmet Yılmaz - 0 (216) 123 12 12
-
-                                            </span>
-                                            <span class="second-row">
-                                                Bağdat Caddesi No: 42 34740 Üsküdar / İstanbul
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="right-wing">
-                                    <div class="odeme-bottom">
-                                        <h3>
-                                            Ödeme Bilgileri
-                                        </h3>
-                                        <div class="odeme-bottom-box">
-                                            <div class="ara-toplam">
-                                                <span>
-                                                    Ara Toplam
-                                                </span>
-                                                <span>
-                                                    70 ₺
-                                                </span>
-                                            </div>
-                                            <div class="kdv">
-                                                <span>
-                                                    % 18,00 KDV
-                                                </span>
-                                                    <span>
-                                                    70 ₺
-                                                </span>
-                                            </div>
-                                            <div class="kdv">
-                                                <span>
-                                                    % 8,00 KDV
-                                                </span>
-                                                    <span>
-                                                    70 ₺
-                                                </span>
-                                            </div>
-                                            <div class="kargo-bedeli">
-                                                <span>
-                                                    Kargo Bedeli
-                                                </span>
-                                                <div>
-                                                    <span class="kargo-firma">
-                                                        Yurtiçi Kargo (Ekspres)
-                                                    </span>
-                                                    <span>
-                                                        70 ₺
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="genel-toplam">
-                                                <div>
-                                                    <span>
-                                                        Genel Toplam
-                                                    </span>
-                                                    <span>
-                                                        (KDV Dahil)
-                                                    </span>
-                                                </div>
-                                                <span class="toplam-tutar">
-                                                    126 ₺
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
+                            <div class="verify-bar">
+                                <a href="#" class="onayla-button" data-toggle="modal" data-target="#tum_iptal_modal">
+                                    Seçili Ürünleri İptal Et
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1387,6 +1173,7 @@
                             <option value="3">Diğer</option>
                         </select>
                     </div>
+
                 </div>
 
                 <div class="buttons">
@@ -1397,6 +1184,8 @@
                         İade Et
                     </a>
                 </div>
+
+
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
@@ -1520,6 +1309,16 @@
     <script src="js/jquery.nice-select.min.js"></script>
     <script>
         $('select').niceSelect();
+        $(document).ready(function() {
+            $(".selected-checkbox").click(function() {
+                var i = $('.selected-checkbox').index(this);
+                if($(this).find("input")[0].checked) {
+                    $(".order-detail-list>li").eq(i).addClass("selected");
+                } else {
+                    $(".order-detail-list>li").eq(i).removeClass("selected");
+                }
+            });
+        });
     </script>
 </body>
 </html>
