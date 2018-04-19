@@ -1,4 +1,5 @@
 $(function() {
+
     $(".product_detail_slider").slick({
         arrows: true,
         variableWidth: true,
