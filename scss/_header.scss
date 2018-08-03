@@ -839,6 +839,7 @@
 
       >li {
         @include box-shadow-args(inset 0 -1px 0 0 #fce6d8);
+        line-height: 58px;
 
         >a {
           text-align: left;
